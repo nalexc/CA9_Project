@@ -17,8 +17,8 @@
 \contentsline {subsection}{Frames and Kinematic Model}{8}{subsection*.14}
 \contentsline {subsubsection}{Earth Centered Inertial frame(ECI)}{8}{subsubsection*.15}
 \contentsline {subsubsection}{Orbit Reference frame(ORF)}{8}{subsubsection*.16}
-\contentsline {subsubsection}{Satellite Controller frame(SCF)}{8}{subsubsection*.17}
-\contentsline {section}{\numberline {4.3}Disturbance Models}{8}{section.4.3}
+\contentsline {subsubsection}{Satellite Controller frame(SCF)}{9}{subsubsection*.17}
+\contentsline {section}{\numberline {4.3}Disturbance Models}{9}{section.4.3}
 \contentsline {subsection}{Gravitational torque}{9}{subsection*.18}
 \contentsline {chapter}{\numberline {5}Acceptance test}{10}{chapter.5}
 \contentsline {chapter}{\numberline {6}Conclusion}{11}{chapter.6}

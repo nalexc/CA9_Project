@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  27 SEP 2017 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  27 SEP 2017 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3683,35 +3683,35 @@ Package pdftex.def Info: figures/earth.png used on input line 6.
 File: figures/aau_cubsat.jpg Graphic file (type jpg)
 
 <use figures/aau_cubsat.jpg>
-Package pdftex.def Info: figures/aau_cubsat.jpg used on input line 17.
+Package pdftex.def Info: figures/aau_cubsat.jpg used on input line 15.
 (pdftex.def)             Requested size: 136.57462pt x 136.57301pt.
  [2
 
  <./figures/earth.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 21.
+(Font)              <10> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 21.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 21.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 21.
+(Font)              <5> on input line 19.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 19.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 21.
+line 19.
 
 <figures/MW.png, id=148, 496.85625pt x 418.56375pt>
 File: figures/MW.png Graphic file (type png)
  <use figures/MW.png>
-Package pdftex.def Info: figures/MW.png used on input line 35.
+Package pdftex.def Info: figures/MW.png used on input line 33.
 (pdftex.def)             Requested size: 111.53606pt x 93.95563pt.
 
 <figures/cubsat.jpg, id=149, 868.24374pt x 999.735pt>
 File: figures/cubsat.jpg Graphic file (type jpg)
  <use figures/cubsat.jpg>
-Package pdftex.def Info: figures/cubsat.jpg used on input line 44.
+Package pdftex.def Info: figures/cubsat.jpg used on input line 42.
 (pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
 
 [3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat.jpg>])
@@ -3774,9 +3774,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49285 strings out of 493014
- 1022492 string characters out of 6133351
- 1611194 words of memory out of 5000000
+ 49286 strings out of 493014
+ 1022503 string characters out of 6133351
+ 1612194 words of memory out of 5000000
  51930 multiletter control sequences out of 15000+600000
  114307 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3802,10 +3802,10 @@ ublic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
 mss10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (21 pages, 1511063 bytes).
+Output written on main.pdf (21 pages, 1510873 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
  163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
