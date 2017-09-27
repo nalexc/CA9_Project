@@ -5,7 +5,12 @@ In order to control the distance between two or more satellites in orbit, a math
 
 \section{Coordinate systems}
 \subsubsection{Earth Centered Inertial frame(ECI)}
-%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/ECI}
+	\caption{ECI coordinate frame}
+	\label{fig:pico}
+\end{figure}
 In order to describe the orbit formation of the satellite, the ECI frame is used, since it can be seen as a non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right-handed coordinate system. 
 %
 \subsubsection{Orbit Reference frame(ORF)}
@@ -40,7 +45,7 @@ where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_{1} h_{2
 Inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain
 %
 \begin{flalign}
-	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot}} ={N_{tot}-\omega}     {\mathrm{x}  ({I_{s}}{\omega} +{h_{tot}})}
+	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot)}} ={N_{tot}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
 For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \label{Appendix A}.      
@@ -48,7 +53,7 @@ For three reaction wheels attached at the body coordinate system which are the a
 For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
 \begin{flalign}
-	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_({tot)}+I_{s}^{-1}N_{tot}}
+	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_{(tot)}+I_{s}^{-1}N_{tot}}
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
@@ -66,7 +71,7 @@ where the negative sign denotes the absorbed momentum. The total torque from ext
 	\label{eq:angularmomentum4}
 \end{flalign}
 %
-which constitute the dynamics of the satellite with 3 reaction wheels. At the final equation \eqref{eq:angularmomentum4} is shown the time dependency of the variables. 
+which constitute the dynamics of the satellite with three reaction wheels. At the final equation \eqref{eq:angularmomentum4} is shown the time dependency of the variables. 
 %
 \section{Disturbance Models}\label{sec:useCase} 
 \subsection{Gravitational torque}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  27 SEP 2017 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  28 SEP 2017 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2273,16 +2273,10 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
 (./main.aux
 
+LaTeX Warning: Label `fig:pico' multiply defined.
+
+
 LaTeX Warning: Label `sec:useCase' multiply defined.
-
-
-LaTeX Warning: Label `eq:angularmomentum2Appedix1' multiply defined.
-
-
-LaTeX Warning: Label `eq:angularmomentum2Appedix2' multiply defined.
-
-
-LaTeX Warning: Label `eq:angularmomentum2Appedix3' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -3717,36 +3711,42 @@ File: figures/MW.png Graphic file (type png)
 Package pdftex.def Info: figures/MW.png used on input line 33.
 (pdftex.def)             Requested size: 111.53606pt x 93.95563pt.
 
-<figures/cubsat.jpg, id=159, 868.24374pt x 999.735pt>
-File: figures/cubsat.jpg Graphic file (type jpg)
- <use figures/cubsat.jpg>
-Package pdftex.def Info: figures/cubsat.jpg used on input line 42.
-(pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
+<figures/cubsat_copy.jpg, id=159, 868.24374pt x 999.735pt>
+File: figures/cubsat_copy.jpg Graphic file (type jpg)
 
-[3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat.jpg>])
-(./chapters/requirements.tex [5]
+<use figures/cubsat_copy.jpg>
+Package pdftex.def Info: figures/cubsat_copy.jpg used on input line 42.
+(pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
+ [3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat_copy.jp
+g>]) (./chapters/requirements.tex [5]
 Chapter 3.
 ) (./chapters/Modelling.tex [6
 
 ]
 Chapter 4.
+<figures/ECI.jpeg, id=201, 1877.0125pt x 1678.27pt>
+File: figures/ECI.jpeg Graphic file (type jpg)
+ <use figures/ECI.jpeg>
+Package pdftex.def Info: figures/ECI.jpeg used on input line 10.
+(pdftex.def)             Requested size: 227.62206pt x 203.5092pt.
+
 [7
 
-] [8]) (./chapters/acceptTest.tex [9]
+ <./figures/ECI.jpeg>] [8] [9]) (./chapters/acceptTest.tex [10]
 Chapter 5.
-) (./chapters/conclusion.tex [10
+) (./chapters/conclusion.tex [11
 
 ]
 Chapter 6.
-) (./appendix/appendix_1.tex [11
+) (./appendix/appendix_1.tex [12
 
 ]
 Appendix A.
-) (./appendix/code.tex [12
+) (./appendix/code.tex [13
 
 ]
 Appendix B.
-) [13
+) [14
 
 ] (./main.lox)
 \tf@lox=\write8
@@ -3757,7 +3757,7 @@ Appendix B.
 
  
 AED: lastpage setting LastPage
-[14
+[15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
@@ -3776,13 +3776,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49264 strings out of 493014
- 1022183 string characters out of 6133351
- 1612516 words of memory out of 5000000
- 51909 multiletter control sequences out of 15000+600000
+ 49273 strings out of 493014
+ 1022331 string characters out of 6133351
+ 1612642 words of memory out of 5000000
+ 51913 multiletter control sequences out of 15000+600000
  111194 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10411b,1699s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,23n,92p,10411b,1693s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@Biezl} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -3805,10 +3805,10 @@ ist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/lm/lmss10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy
 10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (20 pages, 1472495 bytes).
+Output written on main.pdf (21 pages, 1643046 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
