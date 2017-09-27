@@ -13,7 +13,7 @@ In order to describe the behavior of the satellite a dynamic model based on reac
 Euler's equation of motion describing the rotation of a rigid body is given by
 % 
 \begin{flalign}
-	\dot{L} = {N_{tot}- \omega }{\times{x}  {L}}
+	\dot{L} = {N_{tot}- \omega }{\times {L}}
 	\label{eq:eulerequation}
 \end{flalign}
 % 
@@ -29,7 +29,7 @@ where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_{1} h_{2
 inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain
 %
 \begin{flalign}
-	{\frac{d}{dt}(I_{s}{\omega})+\dot{h_{tot}}} ={N_{tot}-\omega}     {\mathrm{x}  ({I_{s}}{\omega} +{h_{tot}})}
+	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot}} ={N_{tot}-\omega}     {\mathrm{x}  ({I_{s}}{\omega} +{h_{tot}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
 For three reaction wheels attached at the body coordinate system and at the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the appedix A (\fxnote write in Appedix).      
@@ -37,14 +37,14 @@ For three reaction wheels attached at the body coordinate system and at the axis
 For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
 \begin{flalign}
-	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h_{tot}}+I_{s}^{-1}N_{tot}}
+	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_({tot)}+I_{s}^{-1}N_{tot}}
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
 The rate of change in angular momentum $\dot{h_{tot}}$ for small changes, and with the assumption that the controller is not in saturation state, can be absorbed from the controller. This can be written as 
 %
 \begin{flalign}
-	{\dot{h_{tot}}} ={-N{c}}
+	{\dot{h}_{(tot)}} ={-N{c}}
 	\label{eq:rate of change}
 \end{flalign}
 %
