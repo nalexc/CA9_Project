@@ -11,19 +11,18 @@
 \contentsline {subsection}{Pointing accuracy}{5}{subsection*.12}
 \contentsline {chapter}{\numberline {3}Requirements}{6}{chapter.3}
 \contentsline {chapter}{\numberline {4}Modelling}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Orbital Model}{7}{section.4.1}
-\contentsline {section}{\numberline {4.2}Equations of Motion}{7}{section.4.2}
-\contentsline {subsection}{Dynamic Model}{7}{subsection*.13}
-\contentsline {subsection}{Frames and Kinematic Model}{8}{subsection*.14}
-\contentsline {subsubsection}{Earth Centered Inertial frame(ECI)}{8}{subsubsection*.15}
-\contentsline {subsubsection}{Orbit Reference frame(ORF)}{8}{subsubsection*.16}
-\contentsline {subsubsection}{Satellite Controller frame(SCF)}{9}{subsubsection*.17}
-\contentsline {section}{\numberline {4.3}Disturbance Models}{9}{section.4.3}
-\contentsline {subsection}{Gravitational torque}{9}{subsection*.18}
+\contentsline {section}{\numberline {4.1}Coordinate systems}{7}{section.4.1}
+\contentsline {subsubsection}{Earth Centered Inertial frame(ECI)}{7}{subsubsection*.13}
+\contentsline {subsubsection}{Orbit Reference frame(ORF)}{7}{subsubsection*.14}
+\contentsline {subsubsection}{Satellite Controller frame(SCF)}{7}{subsubsection*.15}
+\contentsline {section}{\numberline {4.2}Kinematics}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Dynamic Model}{8}{section.4.3}
+\contentsline {section}{\numberline {4.4}Disturbance Models}{8}{section.4.4}
+\contentsline {subsection}{Gravitational torque}{8}{subsection*.16}
 \contentsline {chapter}{\numberline {5}Acceptance test}{10}{chapter.5}
 \contentsline {chapter}{\numberline {6}Conclusion}{11}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future work}{11}{section.6.1}
 \contentsline {chapter}{\numberline {A}Appendix A }{12}{appendix.A}
 \contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{12}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{12}{subsection*.19}
+\contentsline {subsection}{Inertia matrix}{12}{subsection*.17}
 \contentsline {chapter}{\numberline {B}Appendix A}{13}{appendix.B}
