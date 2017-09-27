@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Problem statement}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Use-case}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2}System Description}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}About AAU-CubeSat}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}AAU-CubeSat actuators}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}AAU-CubeSat sensors}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Pointing accuracy}{5}{section.2.4}
+\contentsline {chapter}{\numberline {3}Requirements}{6}{chapter.3}
+\contentsline {chapter}{\numberline {4}Modelling}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Orbital Model}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Equations of Motion}{7}{section.4.2}
+\contentsline {subsection}{Dynamic Model}{7}{subsection*.9}
+\contentsline {subsection}{Frames and Kinematic Model}{8}{subsection*.10}
+\contentsline {subsubsection}{Earth Centered Inertial frame(ECI)}{8}{subsubsection*.11}
+\contentsline {subsubsection}{Orbit Reference frame(ORF)}{8}{subsubsection*.12}
+\contentsline {subsubsection}{Satellite Controller frame(SCF)}{8}{subsubsection*.13}
+\contentsline {section}{\numberline {4.3}Disturbance Models}{8}{section.4.3}
+\contentsline {subsection}{Gravitational torque}{9}{subsection*.14}
+\contentsline {chapter}{\numberline {5}Acceptance test}{10}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future work}{11}{section.6.1}
+\contentsline {chapter}{\numberline {A}Appendix name }{12}{appendix.A}
+\contentsline {chapter}{\numberline {B}Zip file}{13}{appendix.B}

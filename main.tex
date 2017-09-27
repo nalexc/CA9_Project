@@ -1,0 +1,57 @@
+%preamble - package unclusion and set up
+\input{setup/preamble.tex}
+
+%macros - please read this file
+\input{setup/macros.tex} % :TIP: If you are using TeXstudio you can open
+                         %     the file by Ctrl+LeftClick on setup/macros.tex
+\begin{document}         %     If the file doesn't exist, you will be asked
+	
+\pagestyle{empty} %disable headers and footers
+\pagenumbering{roman} %use roman page numbering in the frontmatter I II...
+\fancyfoot[RE,LO]{17gr834} %page number on all pages
+\fancyfoot[LE,RO]{\thepage}
+\fancyhead[LE,LO,RE,RO]{}
+
+\input{chapters/frontpage.tex}	%frontpage doh
+\cleardoublepage
+\input{chapters/titelsheet2.tex}
+\cleardoublepage
+\input{chapters/preface.tex}
+
+\tableofcontents         %     weather or not you want to create it.
+\cleardoublepage
+
+\pagenumbering{arabic} %use arabic page numbering in the mainmatter
+\fancyfoot[RO,LE]{\thepage \text{ of} \pageref{LastPage}}
+\fancyfoot[RE,LO]{17gr834}
+\fancyhead[RE,LO]{}
+\fancyhead[RE,LO]{\color{aaublue}\small\nouppercase\leftmark} %even page - chapter title
+\pagestyle{fancy}
+
+%||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+%|||||||       Set Section and chapters as input below   ||||||||
+%||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+\input{chapters/Introduction.tex}
+\input{chapters/SetupDescribtion.tex}
+\input{chapters/requirements.tex}
+\input{chapters/Modelling.tex}
+\input{chapters/acceptTest.tex}
+\input{chapters/conclusion.tex}
+
+%%% Bibliography %%%
+%\printbibliography
+%\cleardoublepage
+%---------- Appendix Below ----------------------------------------
+\appendix
+\input{appendix/appendix_1.tex}
+\input{appendix/code.tex}
+%
+
+%%% Bibliography %%%
+\printbibliography
+
+%%% List of Corrections
+\listoffixmes
+
+\end{document}
