@@ -80,32 +80,29 @@ The orbit reference frame in Cartesian coordinates can be seen as a non-changing
 %
 In order to derive the kinematic equations, a controller reference frame should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
 %
-\section{Disturbances}
+\section{Disturbance Models}\label{sec:useCase} 
 \subsection{Gravitational torque}
-An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to the Newton's law of universal gravitation.
+An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to Newton's law of universal gravitation.
 \[
-dF_i = -G\frac{m_{earth}}{||R_i||^2}dm_i \cdot \frac{R_i}{||R_i||}
+dF_i = -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 \]
 where \textit{G} is the gravitational constant, \textit{$m_{earth}$} is the mass of the earth and \textit{$R_i^2$} is the vector from the earth to the infinitesimal element of the satellite. \\
 The moment of the gravitational force about the geometric center is calculated as the formula:
 \[
 N_{gra} = \int_{sat} r_i \times dF_i 
 \]
-with $r_i$ is the vector from the geometric center to the infinitesimal element. $r_i$ can be written as the sum of the vector from the geometric vector to the mass center $r_{g,m}$ and the vector from the mass center to the elemement $r_{m,i}$. Therefore, the expression of the gravitational torque is simplified:
+with $r_i$ is the vector from the geometric center to the infinitesimal element. $r_i$ can be written as the sum of the vector from the geometric vector to the mass center $r_{g,m}$ and the vector from the mass center of the element $r_{m,i}$. Therefore, the expression of the gravitational torque is simplified:
 \begin{align*}
 	N_{gra} &= \int_{sat} r_{g,m} \times dF_i + \int_{sat} r_{m,i} \times dF_i \\
-	&= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{||R_i||^3}dm_i \cdot {R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{||R_i||^3}dm_i \cdot R_i
+	&= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 \end{align*}
-We can assumed that $||r_{m,g}|| << ||R_i||$ and $R_i$ can be supposed constant and equals to the vector from the center of the earth to the geometric center of the satellite $R_{e,g}$. Thus, The second term is null by definition of the mass center.
+We can assumed that $r_{m,g} << R_i$ and $R_i$ can be supposed constant and equals to the vector from the center of the earth to the geometric center of the satellite $R_{e,g}$. Thus, The second term is null by definition of the mass center.
 \[
-\Rightarrow N_{gra} = G\frac{m_{sat} \cdot m_{earth}}{||R_{e,g}||^3} \cdot (R_{e,g} \times r_{g,m})
+\Rightarrow N_{gra} = G\frac{m_{sat} \cdot m_{earth}}{R_{e,g}^2} \cdot (\hat{R_i} \times r_{g,m})
 \]
 The position of the center of mass was measured for the previous project and is eqals to [?;?;?] in the frame of the satellite. Therefore, $r_{g,m,i}$ can be expressed in the inertial frame as following:
 \[
 [r_{g,m,i};0] = q_{i,s} \otimes [?;?;?.0] \otimes q_{i,s}*
 \]
 where $q_{i,s}$ is the quaternion that represents the rotation of the satellite in the inertia frame and $\otimes$ is the quaternion multiplication. Thus, the moment of force can be calculated by this expression above.
-
-
-
-\end{document}
+  7890
