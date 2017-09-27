@@ -1,11 +1,11 @@
 \chapter{Modelling}
-In order to control the average distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in depth analysis it is deemed not necessary.
+In order to control the average distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary.
 %   
 \section{Orbital Model}
 %
 \section{Equations of Motion}
 %
-This chapter provides a description of the dynamic and kinematic equations of motion which constitute the base for further analysis and description of the forces and/or disturbances, which may affect a rigid body within  Low Earth Orbit(LEO).
+This chapter provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within  Low Earth Orbit(LEO).
 %
 \subsection{Dynamic Model}
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   
@@ -59,11 +59,11 @@ which constitute the dynamics of the satellite with 3 reaction wheels. At the fi
 %
 \subsection{Frames and Kinematic Model}
 %
-This section will provide the orbit-attitude determination of the satellite using quaternion parameters. Since the differential Drag control method is based in the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames should be obtained.     
+This section will provide the orbit-attitude determination of the satellite using quaternion parameters. Since the differential Drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames should be obtained.     
 %
 \subsubsection{Earth Centered Inertial frame(ECI)}
 %
-In order to describe the orbit formation of the satellite, the ECI frame is used, since it can be seen as non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right handed coordinate system. 
+In order to describe the orbit formation of the satellite, the ECI frame is used, since it can be seen as a non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right-handed coordinate system. 
 %
 \subsubsection{Orbit Reference frame(ORF)}
 %
@@ -71,11 +71,11 @@ The orbit reference frame in Cartesian coordinates can be seen as a non-changing
 %
 \subsubsection{Satellite Controller frame(SCF)}
 %
-In order to derive the kinematic equations a controller reference frame should be specified. It is located in the center of mass of the satellite and it is defined such that the axis with higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
+In order to derive the kinematic equations, a controller reference frame should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
 %
 \section{Disturbance Models}\label{sec:useCase} 
 \subsection{Gravitational torque}
-An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to the Newton's law of universal gravitation.
+An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to Newton's law of universal gravitation.
 \[
 dF_i = -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 \]
@@ -84,7 +84,7 @@ The moment of the gravitational force about the geometric center is calculated a
 \[
 N_{gra} = \int_{sat} r_i \times dF_i 
 \]
-with $r_i$ is the vector from the geometric center to the infinitesimal element. $r_i$ can be written as the sum of the vector from the geometric vector to the mass center $r_{g,m}$ and the vector from the mass center to the elemement $r_{m,i}$. Therefore, the expression of the gravitational torque is simplified:
+with $r_i$ is the vector from the geometric center to the infinitesimal element. $r_i$ can be written as the sum of the vector from the geometric vector to the mass center $r_{g,m}$ and the vector from the mass center of the element $r_{m,i}$. Therefore, the expression of the gravitational torque is simplified:
 \begin{align*}
 	N_{gra} &= \int_{sat} r_{g,m} \times dF_i + \int_{sat} r_{m,i} \times dF_i \\
 	&= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
