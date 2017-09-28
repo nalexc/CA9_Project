@@ -19,14 +19,14 @@
 \contentsline {subsubsection}{\textit {Orbit Reference frame(ORF)}}{9}{subsubsection*.19}
 \contentsline {subsubsection}{\textit {Satellite Body Frame(SBF)}}{9}{subsubsection*.21}
 \contentsline {subsubsection}{\textit {Satellite Controller frame(SCF)}}{9}{subsubsection*.22}
-\contentsline {section}{\numberline {4.2}Kinematics}{9}{section.4.2}
+\contentsline {section}{\numberline {4.2}Kinematics}{10}{section.4.2}
 \contentsline {section}{\numberline {4.3}Dynamic Model}{10}{section.4.3}
-\contentsline {section}{\numberline {4.4}Disturbance Models}{10}{section.4.4}
-\contentsline {subsection}{Gravitational torque}{10}{subsection*.23}
-\contentsline {chapter}{\numberline {5}Acceptance test}{12}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{13}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future work}{13}{section.6.1}
-\contentsline {chapter}{\numberline {A}Appendix A }{14}{appendix.A}
-\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{14}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{14}{subsection*.24}
-\contentsline {chapter}{\numberline {B}Appendix A}{15}{appendix.B}
+\contentsline {section}{\numberline {4.4}Disturbance Models}{11}{section.4.4}
+\contentsline {subsection}{Gravitational torque}{11}{subsection*.24}
+\contentsline {chapter}{\numberline {5}Acceptance test}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{14}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future work}{14}{section.6.1}
+\contentsline {chapter}{\numberline {A}Appendix A }{15}{appendix.A}
+\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{15}{section.A.1}
+\contentsline {subsection}{Inertia matrix}{15}{subsection*.25}
+\contentsline {chapter}{\numberline {B}Appendix A}{16}{appendix.B}

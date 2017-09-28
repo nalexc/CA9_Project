@@ -34,8 +34,15 @@ The orbit reference shown in \figref{fig:OFR} is a frame defined in Cartesian co
 	\label{fig:OFR}
 \end{figure}
 \subsubsection{\textit{Satellite Body Frame(SBF)}}
+The satellite body frame is placed in the center of mass of the satellite as shown in  \figref{fig:frames}. 
 \subsubsection{\textit{Satellite Controller frame(SCF)}}
-In order to derive the kinematic equations, a controller reference frame should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
+In order to derive the kinematic equations, a controller reference frame seen in \figref{fig:frames} should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{figures/frames}
+\caption{Satellite body frame and satellite controller frame}
+\label{fig:frames}
+\end{figure}
 \section{Kinematics}
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames should be obtained.     
 %
@@ -64,7 +71,7 @@ Inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} 
 	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot)}} ={N_{tot}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
-For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \label{Appendix A}.      
+For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \appref{chap:A}).
 %
 For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
