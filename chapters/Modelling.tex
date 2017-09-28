@@ -2,23 +2,39 @@
 This chapter provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within  Low Earth Orbit(LEO). The coordinate systems are defined first and then the model is derived the model for the satellite is defined based on rigid body dynamics and kinematics. 
 
 In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
-
-\section{Coordinate systems}
-\subsubsection{Earth Centered Inertial frame(ECI)}
+%
+\section{Coordinate frames}
+In order to determine the attitude in three-dimensional space, various coordinate frames are defined.
+\subsection{Reference Coordinate Systems}
+In order to define an orbit around Earth, two specific Earth coordinate systems are defined. Both of them have their origin in the geometrical center of Earth and are named the Earth Centered Inertial (ECI) coordinate frame and the Earth Centered Earth Fixed (ECEF) coordinate frame. These can be seen in \figref{fig:ECI} and \figref{fig:ECEF}
+\subsubsection{\textit{Earth Centered Inertial frame(ECI)}}
+In order to describe the orbit formation of the satellite, the ECI frame shown in \figref{fig:ECI} is used, since it can be seen as a non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right-handed coordinate system. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{figures/ECI}
 	\caption{ECI coordinate frame}
-	\label{fig:pico}
+	\label{fig:ECI}
 \end{figure}
-In order to describe the orbit formation of the satellite, the ECI frame is used, since it can be seen as a non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right-handed coordinate system. 
-%
-\subsubsection{Orbit Reference frame(ORF)}
-%
-The orbit reference frame in Cartesian coordinates can be seen as a non-changing frame with respect the earth and the satellite. The $z$ axis always pointing at the nadir point and it is parallel to the $z_{e}$ axis o the inertial frame of the earth. The $x_{o}$ axis, it is parallel to the orbit plane and $y_{o}$ is the cross product of the $x_{o}$ and $z_{o}$. 
-%
-\subsubsection{Satellite Controller frame(SCF)}
-%
+\subsubsection{\textit{Earth Centered Earth Fixed Frame (ECEF)}}
+Another coordinate frame is the Earth Centered Earth Fixed (ECEF) coordinate frame shown in \figref{fig:ECEF}. In this case the X-axis is passing through the zero longitude, also known as Greenwich meredian, and the Z-axis parallel with the rotational axis. In this way the ECEF frame is fixed to the earth itself and rotates around with it.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{figures/ECEF}
+\caption{ECEF coordinate frame}
+\label{fig:ECEF}
+\end{figure}
+\subsection{Satellite Coordinate Systems}
+For the purpose of determining the attitude of the satellite, several coordinate systems are introduced. The attitude and position of the satellite is given as a rotation between the satellite fixed coordinate frames and the reference frames.
+\subsubsection{\textit{Orbit Reference frame(ORF)}}
+The orbit reference shown in \figref{fig:OFR} is a frame defined in Cartesian coordinates that can be seen as a non-changing frame with respect the earth and the satellite. The $z$ axis always pointing at the Nadir point and it is parallel to the $z_{e}$ axis o the inertial frame of the earth. The $x_{o}$ axis, it is parallel to the orbit plane and $y_{o}$ is the cross product of the $x_{o}$ and $z_{o}$. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figures/OFR}
+	\caption{ORF coordinate frame}
+	\label{fig:OFR}
+\end{figure}
+\subsubsection{\textit{Satellite Body Frame(SBF)}}
+\subsubsection{\textit{Satellite Controller frame(SCF)}}
 In order to derive the kinematic equations, a controller reference frame should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
 \section{Kinematics}
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames should be obtained.     

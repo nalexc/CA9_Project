@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  28 SEP 2017 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  28 SEP 2017 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2273,9 +2273,6 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
 (./main.aux
 
-LaTeX Warning: Label `fig:pico' multiply defined.
-
-
 LaTeX Warning: Label `sec:useCase' multiply defined.
 
 )
@@ -3724,29 +3721,42 @@ Chapter 3.
 
 ]
 Chapter 4.
-<figures/ECI.jpeg, id=201, 1877.0125pt x 1678.27pt>
+<figures/ECI.jpeg, id=203, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
  <use figures/ECI.jpeg>
-Package pdftex.def Info: figures/ECI.jpeg used on input line 10.
-(pdftex.def)             Requested size: 227.62206pt x 203.5092pt.
+Package pdftex.def Info: figures/ECI.jpeg used on input line 14.
+(pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
 
 [7
 
- <./figures/ECI.jpeg>] [8] [9]) (./chapters/acceptTest.tex [10]
+] <figures/ECEF.jpeg, id=216, 1034.86626pt x 893.3375pt>
+File: figures/ECEF.jpeg Graphic file (type jpg)
+
+<use figures/ECEF.jpeg>
+Package pdftex.def Info: figures/ECEF.jpeg used on input line 22.
+(pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
+ [8 <./figures/ECI.jpeg> <./figures/ECEF.jpeg>]
+<figures/OFR.jpeg, id=225, 1551.7975pt x 1343.0175pt>
+File: figures/OFR.jpeg Graphic file (type jpg)
+ <use figures/OFR.jpeg>
+Package pdftex.def Info: figures/OFR.jpeg used on input line 32.
+(pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
+
+[9 <./figures/OFR.jpeg>] [10]) (./chapters/acceptTest.tex [11]
 Chapter 5.
-) (./chapters/conclusion.tex [11
+) (./chapters/conclusion.tex [12
 
 ]
 Chapter 6.
-) (./appendix/appendix_1.tex [12
+) (./appendix/appendix_1.tex [13
 
 ]
 Appendix A.
-) (./appendix/code.tex [13
+) (./appendix/code.tex [14
 
 ]
 Appendix B.
-) [14
+) [15
 
 ] (./main.lox)
 \tf@lox=\write8
@@ -3757,7 +3767,7 @@ Appendix B.
 
  
 AED: lastpage setting LastPage
-[15
+[16
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
@@ -3766,7 +3776,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A11E65C61D0F7ED15B7F4C88F675A414;982.
+(rerunfilecheck)             Checksum: F5E83550D3E6817F1E445B2ACD36748A;981.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3776,13 +3786,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49273 strings out of 493014
- 1022331 string characters out of 6133351
- 1612642 words of memory out of 5000000
- 51913 multiletter control sequences out of 15000+600000
- 111194 words of font info for 86 fonts, out of 8000000 for 9000
+ 49295 strings out of 493014
+ 1022672 string characters out of 6133351
+ 1612818 words of memory out of 5000000
+ 51925 multiletter control sequences out of 15000+600000
+ 115465 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10411b,1693s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,23n,92p,10411b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@Biezl} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -3794,21 +3804,22 @@ c/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
 ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/lm/lmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmss10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (21 pages, 1643046 bytes).
+6/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
+s10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (22 pages, 1792335 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 328 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
