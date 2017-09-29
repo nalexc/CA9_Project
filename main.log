@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  28 SEP 2017 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  29 SEP 2017 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3793,10 +3793,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49302 strings out of 493014
- 1022790 string characters out of 6133351
- 1612860 words of memory out of 5000000
- 51929 multiletter control sequences out of 15000+600000
+ 49309 strings out of 493014
+ 1022872 string characters out of 6133351
+ 1612952 words of memory out of 5000000
+ 51933 multiletter control sequences out of 15000+600000
  115465 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10411b,1697s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3823,10 +3823,10 @@ f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 lic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
 s10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (23 pages, 1875424 bytes).
+Output written on main.pdf (23 pages, 1877049 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

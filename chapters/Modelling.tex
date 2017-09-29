@@ -121,4 +121,18 @@ The position of the center of mass was measured for the previous project and is 
 [r_{g,m,i};0] = q_{i,s} \otimes [?;?;?.0] \otimes q_{i,s}*
 \]
 where $q_{i,s}$ is the quaternion that represents the rotation of the satellite in the inertia frame and $\otimes$ is the quaternion multiplication. Thus, the moment of force can be calculated by this expression above.
-  7890
+\subsection{Solar radiation}
+Due to low earth orbit flying, the surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite center of mass(CoM). 
+
+The torque around CoM is given by:
+\begin{flalign}
+   N_{rad} = F_{rad} \times R_{CoM}
+	\label{eq:tor}
+\end{flalign}
+The pressure $F_{rad}$ can be expressed as:
+\begin{flalign}
+	F_{rad} = C_{a} P A
+	\label{eq:Pres}
+\end{flalign}
+where $C_{a}$ is and $P$ is 
+to be continued
