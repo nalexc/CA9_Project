@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  1 OCT 2017 01:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  2 OCT 2017 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3620,7 +3620,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: figures/aau-sat.jpg Graphic file (type jpg)
 
 <use figures/aau-sat.jpg>
-Package pdftex.def Info: figures/aau-sat.jpg used on input line 26.
+Package pdftex.def Info: figures/aau-sat.jpg used on input line 27.
 (pdftex.def)             Requested size: 364.19667pt x 257.54759pt.
  [1
 
@@ -3702,26 +3702,26 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 19.
 
-<figures/MW.png, id=158, 496.85625pt x 418.56375pt>
+<figures/MW.png, id=157, 496.85625pt x 418.56375pt>
 File: figures/MW.png Graphic file (type png)
  <use figures/MW.png>
 Package pdftex.def Info: figures/MW.png used on input line 33.
 (pdftex.def)             Requested size: 111.53606pt x 93.95563pt.
 
-<figures/cubsat_copy.jpg, id=159, 868.24374pt x 999.735pt>
-File: figures/cubsat_copy.jpg Graphic file (type jpg)
-
-<use figures/cubsat_copy.jpg>
-Package pdftex.def Info: figures/cubsat_copy.jpg used on input line 42.
+<figures/cubsat.jpg, id=158, 868.24374pt x 999.735pt>
+File: figures/cubsat.jpg Graphic file (type jpg)
+ <use figures/cubsat.jpg>
+Package pdftex.def Info: figures/cubsat.jpg used on input line 42.
 (pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
- [3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat_copy.jp
-g>]) (./chapters/requirements.tex [5]
+
+[3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat.jpg>])
+(./chapters/requirements.tex [5]
 Chapter 3.
 ) (./chapters/Modelling.tex [6
 
 ]
 Chapter 4.
-<figures/ECI.jpeg, id=203, 978.65625pt x 925.4575pt>
+<figures/ECI.jpeg, id=204, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
  <use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 14.
@@ -3729,20 +3729,20 @@ Package pdftex.def Info: figures/ECI.jpeg used on input line 14.
 
 [7
 
-] <figures/ECEF.jpeg, id=216, 1034.86626pt x 893.3375pt>
+] <figures/ECEF.jpeg, id=217, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
 
 <use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 22.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
  [8 <./figures/ECI.jpeg> <./figures/ECEF.jpeg>]
-<figures/OFR.jpeg, id=225, 1551.7975pt x 1343.0175pt>
+<figures/OFR.jpeg, id=226, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
  <use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 32.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
 
-<figures/frames.jpeg, id=228, 1182.4175pt x 1198.4775pt>
+<figures/frames.jpeg, id=229, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
@@ -3783,7 +3783,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F5E83550D3E6817F1E445B2ACD36748A;981.
+(rerunfilecheck)             Checksum: B650742536062CE71AA687FCBC96BF9B;981.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3793,10 +3793,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49320 strings out of 493014
- 1023004 string characters out of 6133351
- 1614214 words of memory out of 5000000
- 51939 multiletter control sequences out of 15000+600000
+ 49318 strings out of 493014
+ 1022943 string characters out of 6133351
+ 1614213 words of memory out of 5000000
+ 51936 multiletter control sequences out of 15000+600000
  115465 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10411b,1697s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3804,10 +3804,10 @@ pdfTeX warning (dest): name{cite.0@Biezl} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/loca
-l/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/
-2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dis
-t/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
+l/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016
+/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dis
+t/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
 ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/201
@@ -3823,10 +3823,10 @@ f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 lic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
 s10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (23 pages, 1877616 bytes).
+Output written on main.pdf (23 pages, 1850047 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

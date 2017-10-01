@@ -1,5 +1,5 @@
 \chapter{System Description}\label{chap:systemDescribtion}
-The overall idea of the project is to consider more than one satellites flying in formation., with a certain distance in between and with the purpose of maintaining that distance by exchanging information. As a proof of concept, an AAU-CubeSat will be used, by choosing six AAU-CubeSat that orbit the Earth like is shown in  \figref{fig:1}. Therefore, a control system is developed, where the six satellites are nodes and they represent periods. Each satellite can only communicat with his two neighbour. In this project, all CubeSat's will be assumed identical, where each satellite needs to fulfill a few requirements stated in \chapref{chap:requirements}. Moreover, a full-scale implementation of the system will not be possible, therefore, the whole system will be simulated using MATLAB and Simulink. 
+The overall idea of the project is to consider more than one satellites flying in formation, with a certain distance in between and with the purpose of maintaining that distance by using the drag force. As a proof of concept, an AAU-CubeSat will be used, by choosing six AAU-CubeSat that orbit the Earth like is shown in  \figref{fig:1}. Therefore, a control system is developed, where the six satellites are nodes and they represent periods. Each satellite can only communicat with his two neighbour. In this project, all CubeSat's will be assumed identical, where each satellite needs to fulfill a few requirements stated in \chapref{chap:requirements}. Moreover, a full-scale implementation of the system will not be possible, therefore, the whole system will be simulated using MATLAB and Simulink. 
 %
 \begin{figure}[H]
 	\centering
@@ -16,12 +16,12 @@ The AAU-CubeSat shown in \figref{fig:pico} is a pico-satellite developed by Stan
 	\caption{View of CubeSat satellite}
 	\label{fig:pico}
 \end{figure}
-The pico-satellite is designed for LEO, therefore a few constraints are imposed. The CubeSat is limited in size and weight. The dimensions of the satellite are $10cm\times10cm\times10cm$, while the weight around 1 kg. \fxnote{ref}
+The pico-satellite is designed for LEO, therefore a few constraints are imposed. The CubeSat is limited in size and weight. The dimensions of the satellite are $10cm\times10cm\times30cm$, while the weight is around 1 kg. \fxnote{ref}
 
 In order place the CubeSat on the orbit, a deployment system is used, called P-POD \fxnote{ref} This system uses the force of a spring to launch the satellite into space. The satellite will be placed inside the launch rocket as payload. By using this system, an important advantage is reducing the cost of the launch.
 %
 \subsection{AAU-CubeSat actuators}
-The selection of attitude control components is important in order to meet the performance requirements. For this project, three magnetorquers and three momentum wheels have been chosen as actuators. Initially, using only three momentum wheels has been considered, but the downside of using only momentum wheels is that some amount of momentum can be stored in the wheel, which will imply having a way to take back all that momentum and use it. Therefore, there are two ways to release that torque, one is to use magnetorquers and the second to use thrusters. \fxnote{ref}
+The selection of attitude control components is important in order to meet the performance requirements. For this project, three magnetorquers and three momentum wheels have been chosen as actuators. Initially, using only three momentum wheels has been considered, but the downside of using only momentum wheels is that some amount of momentum can be stored in the wheel, which will imply having a way to take back all that momentum and use it. Therefore, there are multiple ways to release that torque, and one is to use magnetorquers. 
 
 \textbf{Magnetorquers} are wire coils which generate an electromagnetic field. The field interacts with the Earth magnetic field and a torque is generated for stabilizing the satellite. An important aspect of the magnetorquer is when the momentum wheel reaches a maximum speed and can no longer produce the torque (this is referred as wheel saturation'), so a magnetorquer is used to extract the momentum from the wheel.
 %
@@ -39,7 +39,7 @@ The selection of attitude control components is important in order to meet the p
 		\centering
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=1\linewidth]{figures/cubsat_copy}
+			\includegraphics[width=1\linewidth]{figures/cubsat}
 			\caption{Expanded view for CubeSat}
 			\label{fig:cub}
 		\end{figure}
@@ -47,6 +47,9 @@ The selection of attitude control components is important in order to meet the p
 \end{table}
 %
 \textbf{Momentum wheels} shown in \figref{fig:MW} strength is that no information is needed about the magnetic field in order to control the CubeSat torque. These wheels are capable to store the momentum needed for maneuvering or pointing.
+
+\textbf{Thrusters} ...description... Removing energy from the system it can be proved easily by using the drag force, but gaining energy it might be possible only if thrusters are used.
+%  colloid thruster or "electrospray thruster"
 %
 \subsection{AAU-CubeSat sensors}
 The CubeSat can sustain itself using solar pannels [ref in fig 2.4] with in the middle a sun sensor, which provide a vector equal to the direction of the sun and also a magnetometer that gives a vector of the Earth's magnetic field. Whether the Earth’s magnetic field is measured, or the sun vector, the objective is to use these sensors to deliver vector solutions for determining the satellite’s pointing and rotation rates.
