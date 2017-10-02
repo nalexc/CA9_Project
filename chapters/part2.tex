@@ -1,48 +1,8 @@
+\part{Attitude control}
 \chapter{Modelling}
 This chapter provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within  Low Earth Orbit(LEO). The coordinate systems are defined first and then the model for the satellite is derived, based on rigid body dynamics and kinematics. 
 
 In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
-
-\section{Coordinate frames}
-In order to determine the attitude in three-dimensional space, various coordinate frames are defined.
-\subsection{Reference Coordinate Systems}
-In order to define an orbit around Earth, two specific Earth coordinate systems are defined. Both of them have their origin in the geometrical center of Earth and are named the Earth Centered Inertial (ECI) coordinate frame and the Earth Centered Earth Fixed (ECEF) coordinate frame. These can be seen in \figref{fig:ECI} and \figref{fig:ECEF}
-\subsubsection{\textit{Earth Centered Inertial frame(ECI)}}
-In order to describe the orbit formation of the satellite, the ECI frame shown in \figref{fig:ECI} is used, since it can be seen as a non-accelerating frame. The $z$ axis is pointing through the geographical north pole, the $x$ axis is crossing from the point where the equatorial of the earth and the vernal equinox met and the $y$ axis is the cross product of $x$ and $z$ creating a right-handed coordinate system. 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\linewidth]{figures/ECI}
-	\caption{ECI coordinate frame}
-	\label{fig:ECI}
-\end{figure}
-\subsubsection{\textit{Earth Centered Earth Fixed Frame (ECEF)}}
-Another coordinate frame is the Earth Centered Earth Fixed (ECEF) coordinate frame shown in \figref{fig:ECEF}. In this case the X-axis is passing through the zero longitude, also known as Greenwich meredian, and the Z-axis parallel with the rotational axis. In this way the ECEF frame is fixed to the earth itself and rotates around with it.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{figures/ECEF}
-\caption{ECEF coordinate frame}
-\label{fig:ECEF}
-\end{figure}
-\subsection{Satellite Coordinate Systems}
-For the purpose of determining the attitude of the satellite, several coordinate systems are introduced. The attitude and position of the satellite is given as a rotation between the satellite fixed coordinate frames and the reference frames.
-\subsubsection{\textit{Orbit Reference frame(ORF)}}
-The orbit reference shown in \figref{fig:OFR} is a frame defined in Cartesian coordinates that can be seen as a non-changing frame with respect the earth and the satellite. The $z$ axis always pointing at the Nadir point and it is parallel to the $z_{e}$ axis o the inertial frame of the earth. The $x_{o}$ axis, it is parallel to the orbit plane and $y_{o}$ is the cross product of the $x_{o}$ and $z_{o}$. 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\linewidth]{figures/OFR}
-	\caption{ORF coordinate frame}
-	\label{fig:OFR}
-\end{figure}
-\subsubsection{\textit{Satellite Body Frame(SBF)}}
-The satellite body frame is placed in the center of mass of the satellite as shown in  \figref{fig:frames}. 
-\subsubsection{\textit{Satellite Controller frame(SCF)}}
-In order to derive the kinematic equations, a controller reference frame seen in \figref{fig:frames} should be specified. It is located in the center of mass of the satellite and it is defined such that the axis of higher inertia $z_{c}$ pointing in the center of ECI and the $x_{c}$ axis with the smallest inertia, pointing along with  the orbit's $x_{o}$ 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\linewidth]{figures/frames}
-\caption{Satellite body frame and satellite controller frame}
-\label{fig:frames}
-\end{figure}
 \section{Kinematics}
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames should be obtained.     
 %
@@ -115,7 +75,7 @@ with $r_i$ is the vector from the geometric center to the infinitesimal element.
 	\label{eq:ref3}
 \end{flalign}
 \[
-	= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
+= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 \]
 We can assumed that $r_{m,g} << R_i$ and $R_i$ can be supposed constant and equals to the vector from the center of the earth to the geometric center of the satellite $R_{e,g}$. Thus, The second term is null by definition of the mass center.
 \begin{flalign}
@@ -133,7 +93,7 @@ Due to low earth orbit flying, the surface of the CubeSat will absorb or reflect
 
 The torque around CoM is given by:
 \begin{flalign}
-   N_{rad} = F_{rad} \times R_{CoM}
+	N_{rad} = F_{rad} \times R_{CoM}
 	\label{eq:tor}
 \end{flalign}
 where $F_{rad}$  is the solar radiation  and $R_{CoM}$ is the vector from the centre of mass to the geometric centre of radiation
@@ -144,26 +104,4 @@ The solar radiation $F_{rad}$ can be expressed as:
 	\label{eq:Pres}
 \end{flalign}
 where $C_{a}$ is absorption constant of the radiated area and $P$ is the solar flux, while  $A$ is the radiated area
-\subsection{Aerodynamic Drag Force}
-The satellite is subjected to a aerodynamic drag force due to the atmosphere. The collisions with the air caused a force in the opposite direction of the velocity of the satellite. the force was modeled by Lord Rayleigh[ref]:
-\[
-\vec{F_D} = \frac{1}{2} \rho \cdot C_D \cdot A_{\perp} ||\vec{v}|| \vec{v}
-\]
-where $\rho$ is the density of the air, $C_D$ is the drag coefficient, $A_{\perp}$ is the area that is perpendicular of the velocity of the satellite $\vec{v}$. \\
-The drag coefficient $C_D$ and the perpendicular area $A_{\perp}$ depend of the orientation of the satellite. Therefore, this force can be used as a input for the control of the position and the velocity of the satellite. \\\
-The density of the air depends of the altitude of the satellite, of the air temperature but we considered to be constant in our case to simplify the modelization. $\rho$ is chosen to be equal to $1.454 \cdot 10^-13$ $[\frac{Kg}{m^3}]$ based to the  empirical model of the Committee on Space Research (COSPAR) International Reference Atmosphere [Ref]. \\ %J. R. Wertz, Spacecraft Attitude Determination and Control. Kluwer Academic Publishers, 1st ed., 1994.
-The drag coefficient as said before is orientation dependant. The maximum value of $C_D$ is equal to 1.05 for a non tilited cubed as shown on the figure \ref{drag_coef} and equal to 0.80 for an angled cubed. In our modelization, we will assume that the drag coefficient is constant and equal to 1(not sure which value take) in order to simplified the equation. \\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\linewidth]{figures/drag_coef}
-	\caption{ORF coordinate frame}
-	\label{fig:OFR}
-\end{figure}
-Therefore, the only parameter that we control is the perpendicular area $A_{\perp}$. The maximum and minimum value of $A_{perp}$ are represented at the figure\ref{a_perp}. Thus, the minimum value is the surface of a square of 10cm of dimension ($A_{\perp} = 100cm^2$) and the maximum value is the surface of an hexagone of 10cm of dimension ($A_{\perp} = \frac{3\sqrt{3}}{2} 100cm^2$)
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\linewidth]{figures/a_prep}
-	\caption{ORF coordinate frame}
-	\label{fig:OFR}
-\end{figure}
-
+\chapter{Attitude control design}
