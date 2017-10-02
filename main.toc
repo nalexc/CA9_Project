@@ -22,20 +22,22 @@
 \contentsline {chapter}{\numberline {4}Modelling}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Disturbance Models}{10}{section.4.1}
 \contentsline {subsection}{Aerodynamic Drag Force}{10}{subsection*.24}
-\contentsline {chapter}{\numberline {5}Distance control design}{12}{chapter.5}
-\contentsline {part}{II\hspace {1em}Attitude control}{13}{part.2}
-\contentsline {chapter}{\numberline {6}Modelling}{14}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kinematics}{14}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dynamic Model}{14}{section.6.2}
-\contentsline {section}{\numberline {6.3}Disturbance Models}{15}{section.6.3}
-\contentsline {subsection}{Gravitational torque}{15}{subsection*.27}
-\contentsline {subsection}{Solar radiation}{16}{subsection*.28}
-\contentsline {chapter}{\numberline {7}Attitude control design}{17}{chapter.7}
-\contentsline {part}{III\hspace {1em} Test and implementation}{18}{part.3}
-\contentsline {chapter}{\numberline {8}Acceptance test}{19}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusion}{20}{chapter.9}
-\contentsline {section}{\numberline {9.1}Future work}{20}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix A }{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{21}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{21}{subsection*.29}
-\contentsline {chapter}{\numberline {B}Appendix B}{22}{appendix.B}
+\contentsline {subsection}{Solar radiation}{11}{subsection*.27}
+\contentsline {section}{\numberline {4.2}State Space Representation}{12}{section.4.2}
+\contentsline {chapter}{\numberline {5}Distance control design}{13}{chapter.5}
+\contentsline {part}{II\hspace {1em}Attitude control}{14}{part.2}
+\contentsline {chapter}{\numberline {6}Modelling}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kinematics}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}Dynamic Model}{15}{section.6.2}
+\contentsline {section}{\numberline {6.3}Disturbance Models}{16}{section.6.3}
+\contentsline {subsection}{Gravitational torque}{16}{subsection*.28}
+\contentsline {subsection}{Solar radiation}{17}{subsection*.29}
+\contentsline {chapter}{\numberline {7}Attitude control design}{18}{chapter.7}
+\contentsline {part}{III\hspace {1em} Test and implementation}{19}{part.3}
+\contentsline {chapter}{\numberline {8}Acceptance test}{20}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusion}{21}{chapter.9}
+\contentsline {section}{\numberline {9.1}Future work}{21}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix A }{22}{appendix.A}
+\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{22}{section.A.1}
+\contentsline {subsection}{Inertia matrix}{22}{subsection*.30}
+\contentsline {chapter}{\numberline {B}Appendix B}{23}{appendix.B}
