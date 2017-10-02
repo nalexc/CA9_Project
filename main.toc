@@ -5,31 +5,31 @@
 \contentsline {section}{\numberline {1.1}Problem statement}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Use-case}{1}{section.1.2}
 \contentsline {chapter}{\numberline {2}System Description}{2}{chapter.2}
-\contentsline {subsection}{About AAU-CubeSat}{2}{subsection*.5}
-\contentsline {subsection}{AAU-CubeSat actuators}{3}{subsection*.7}
-\contentsline {subsection}{AAU-CubeSat sensors}{4}{subsection*.11}
-\contentsline {subsection}{Pointing accuracy}{5}{subsection*.12}
-\contentsline {section}{\numberline {2.1}Coordinate frames}{5}{section.2.1}
-\contentsline {subsection}{Reference Coordinate Systems}{5}{subsection*.13}
-\contentsline {subsubsection}{\textit {Earth Centered Inertial frame(ECI)}}{5}{subsubsection*.14}
-\contentsline {subsubsection}{\textit {Earth Centered Earth Fixed Frame (ECEF)}}{6}{subsubsection*.16}
-\contentsline {subsubsection}{Satellite Coordinate Systems}{6}{subsubsection*.18}
-\contentsline {subsubsection}{\textit {Orbit Reference frame(ORF)}}{6}{subsubsection*.19}
-\contentsline {subsubsection}{\textit {Satellite Body Frame(SBF)}}{7}{subsubsection*.21}
-\contentsline {subsubsection}{\textit {Satellite Controller frame(SCF)}}{7}{subsubsection*.22}
+\contentsline {section}{\numberline {2.1}About AAU-CubeSat}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}AAU-CubeSat actuators}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}AAU-CubeSat sensors}{4}{section.2.3}
+\contentsline {subsection}{Pointing accuracy}{5}{subsection*.9}
+\contentsline {section}{\numberline {2.4}Coordinate frames}{5}{section.2.4}
+\contentsline {subsection}{Reference Coordinate Systems}{5}{subsection*.10}
+\contentsline {subsubsection}{\textit {Earth Centered Inertial frame(ECI)}}{5}{subsubsection*.11}
+\contentsline {subsubsection}{\textit {Earth Centered Earth Fixed Frame (ECEF)}}{6}{subsubsection*.13}
+\contentsline {subsubsection}{Satellite Coordinate Systems}{6}{subsubsection*.15}
+\contentsline {subsubsection}{\textit {Orbit Reference frame(ORF)}}{6}{subsubsection*.16}
+\contentsline {subsubsection}{\textit {Satellite Body Frame(SBF)}}{7}{subsubsection*.18}
+\contentsline {subsubsection}{\textit {Satellite Controller frame(SCF)}}{7}{subsubsection*.19}
 \contentsline {chapter}{\numberline {3}Requirements}{8}{chapter.3}
 \contentsline {part}{I\hspace {1em}Distance control}{9}{part.1}
 \contentsline {chapter}{\numberline {4}Modelling}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Disturbance Models}{10}{section.4.1}
-\contentsline {subsection}{Aerodynamic Drag Force}{10}{subsection*.24}
+\contentsline {subsection}{Aerodynamic Drag Force}{10}{subsection*.21}
 \contentsline {chapter}{\numberline {5}Distance control design}{12}{chapter.5}
 \contentsline {part}{II\hspace {1em}Attitude control}{13}{part.2}
 \contentsline {chapter}{\numberline {6}Modelling}{14}{chapter.6}
 \contentsline {section}{\numberline {6.1}Kinematics}{14}{section.6.1}
 \contentsline {section}{\numberline {6.2}Dynamic Model}{14}{section.6.2}
 \contentsline {section}{\numberline {6.3}Disturbance Models}{15}{section.6.3}
-\contentsline {subsection}{Gravitational torque}{15}{subsection*.27}
-\contentsline {subsection}{Solar radiation}{16}{subsection*.28}
+\contentsline {subsection}{Gravitational torque}{15}{subsection*.25}
+\contentsline {subsection}{Solar radiation}{16}{subsection*.26}
 \contentsline {chapter}{\numberline {7}Attitude control design}{17}{chapter.7}
 \contentsline {part}{III\hspace {1em} Test and implementation}{18}{part.3}
 \contentsline {chapter}{\numberline {8}Acceptance test}{19}{chapter.8}
@@ -37,5 +37,5 @@
 \contentsline {section}{\numberline {9.1}Future work}{20}{section.9.1}
 \contentsline {chapter}{\numberline {A}Appendix A }{21}{appendix.A}
 \contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{21}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{21}{subsection*.29}
+\contentsline {subsection}{Inertia matrix}{21}{subsection*.27}
 \contentsline {chapter}{\numberline {B}Appendix B}{22}{appendix.B}

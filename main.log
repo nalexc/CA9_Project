@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  2 OCT 2017 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  2 OCT 2017 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2273,12 +2273,6 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
 (./main.aux
 
-LaTeX Warning: Label `fig:OFR' multiply defined.
-
-
-LaTeX Warning: Label `fig:OFR' multiply defined.
-
-
 LaTeX Warning: Label `sec:useCase' multiply defined.
 
 )
@@ -3622,7 +3616,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 7.
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (./chapters/frontpage.tex
-<figures/aau-sat.jpg, id=103, 563.4651pt x 398.4486pt>
+<figures/aau-sat.jpg, id=115, 563.4651pt x 398.4486pt>
 File: figures/aau-sat.jpg Graphic file (type jpg)
 
 <use figures/aau-sat.jpg>
@@ -3635,7 +3629,7 @@ es/aau-sat.jpg>]) [2
 
 
 ] (./chapters/titelsheet2.tex
-<figures/aaulogo-en.png, id=117, 230.8625pt x 151.56625pt>
+<figures/aaulogo-en.png, id=129, 230.8625pt x 151.56625pt>
 File: figures/aaulogo-en.png Graphic file (type png)
 
 <use figures/aaulogo-en.png>
@@ -3679,20 +3673,21 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout7 = `main.toc'.
 
 
-[6] (./chapters/Introduction.tex
+[6] [7] [8
+
+] (./chapters/Introduction.tex
 Chapter 1.
 ) (./chapters/SetupDescribtion.tex [1
 
-
 ]
 Chapter 2.
-<figures/earth.png, id=179, 1209.51875pt x 1108.14pt>
+<figures/earth.png, id=202, 1209.51875pt x 1108.14pt>
 File: figures/earth.png Graphic file (type png)
  <use figures/earth.png>
 Package pdftex.def Info: figures/earth.png used on input line 6.
 (pdftex.def)             Requested size: 273.14923pt x 250.25073pt.
 
-<figures/aau_cubsat.jpg, id=181, 1710.39pt x 1710.39pt>
+<figures/aau_cubsat.jpg, id=204, 1710.39pt x 1710.39pt>
 File: figures/aau_cubsat.jpg Graphic file (type jpg)
 
 <use figures/aau_cubsat.jpg>
@@ -3711,43 +3706,43 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 19.
 
-<figures/MW.png, id=193, 496.85625pt x 418.56375pt>
+<figures/MW.png, id=215, 496.85625pt x 418.56375pt>
 File: figures/MW.png Graphic file (type png)
  <use figures/MW.png>
-Package pdftex.def Info: figures/MW.png used on input line 33.
+Package pdftex.def Info: figures/MW.png used on input line 32.
 (pdftex.def)             Requested size: 111.53606pt x 93.95563pt.
 
-<figures/cubsat.jpg, id=194, 868.24374pt x 999.735pt>
+<figures/cubsat.jpg, id=216, 868.24374pt x 999.735pt>
 File: figures/cubsat.jpg Graphic file (type jpg)
  <use figures/cubsat.jpg>
-Package pdftex.def Info: figures/cubsat.jpg used on input line 42.
+Package pdftex.def Info: figures/cubsat.jpg used on input line 41.
 (pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
 
 [3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat.jpg>]
-<figures/ECI.jpeg, id=224, 978.65625pt x 925.4575pt>
+<figures/ECI.jpeg, id=244, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
  <use figures/ECI.jpeg>
-Package pdftex.def Info: figures/ECI.jpeg used on input line 72.
+Package pdftex.def Info: figures/ECI.jpeg used on input line 70.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
 
-<figures/ECEF.jpeg, id=226, 1034.86626pt x 893.3375pt>
+<figures/ECEF.jpeg, id=246, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
  <use figures/ECEF.jpeg>
-Package pdftex.def Info: figures/ECEF.jpeg used on input line 80.
+Package pdftex.def Info: figures/ECEF.jpeg used on input line 78.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
 
-[5 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=239, 1551.7975pt x 1343.0175pt>
+[5 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=260, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
 
 <use figures/OFR.jpeg>
-Package pdftex.def Info: figures/OFR.jpeg used on input line 90.
+Package pdftex.def Info: figures/OFR.jpeg used on input line 88.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
  [6 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=251, 1182.4175pt x 1198.4775pt>
+<figures/frames.jpeg, id=272, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
-Package pdftex.def Info: figures/frames.jpeg used on input line 100.
+Package pdftex.def Info: figures/frames.jpeg used on input line 98.
 (pdftex.def)             Requested size: 182.09486pt x 184.55513pt.
 ) (./chapters/requirements.tex [7 <./figures/OFR.jpeg> <./figures/frames.jpeg>]
 
@@ -3759,27 +3754,27 @@ Chapter 3.
 ]
 Chapter 4.
 
-LaTeX Warning: Reference `drag_coef' on page 10 undefined on input line 12.
+LaTeX Warning: Reference `drag_coef' on page 10 undefined on input line 17.
 
-<figures/drag_coef.png, id=277, 365.86688pt x 142.5325pt>
-File: figures/drag_coef.png Graphic file (type png)
+<figures/drag_coef.jpg, id=296, 365.86688pt x 142.5325pt>
+File: figures/drag_coef.jpg Graphic file (type jpg)
 
-<use figures/drag_coef.png>
-Package pdftex.def Info: figures/drag_coef.png used on input line 15.
-(pdftex.def)             Requested size: 182.09486pt x 70.93983pt.
+<use figures/drag_coef.jpg>
+Package pdftex.def Info: figures/drag_coef.jpg used on input line 23.
+(pdftex.def)             Requested size: 156.1498pt x 60.83104pt.
 
-
-LaTeX Warning: Reference `a_perp' on page 10 undefined on input line 19.
-
-<figures/a_prep.jpeg, id=278, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=297, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
-Package pdftex.def Info: figures/a_prep.jpeg used on input line 22.
-(pdftex.def)             Requested size: 182.09486pt x 98.18849pt.
+Package pdftex.def Info: figures/a_prep.jpeg used on input line 32.
+(pdftex.def)             Requested size: 223.07211pt x 120.29338pt.
+
+
+LaTeX Warning: Reference `a_perp' on page 10 undefined on input line 38.
 
 [10
 
- <./figures/drag_coef.png>] [11 <./figures/a_prep.jpeg>]
+ <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>] [11]
 Chapter 5.
 ) (./chapters/part2.tex [12
 
@@ -3829,7 +3824,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D0E456107E993CDD4A619F6A98EDC8A5;1437.
+(rerunfilecheck)             Checksum: 9957DC863C6EB3DFF3B8FF00EF74FF5C;1647.
 
 
 LaTeX Warning: There were undefined references.
@@ -3842,10 +3837,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49385 strings out of 493014
- 1023800 string characters out of 6133351
- 1614215 words of memory out of 5000000
- 51975 multiletter control sequences out of 15000+600000
+ 49395 strings out of 493014
+ 1023905 string characters out of 6133351
+ 1614372 words of memory out of 5000000
+ 51981 multiletter control sequences out of 15000+600000
  133326 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10411b,1707s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3873,10 +3868,10 @@ c/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri1
 2.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmss10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (29 pages, 2023064 bytes).
+Output written on main.pdf (31 pages, 1962949 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
