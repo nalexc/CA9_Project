@@ -19,29 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{Biezl}{online}{}
-      \name{author}{1}{}{%
-        {{hash=f6b91a2b3f53afeaa355d1082535ec21}{%
-           family={Biezl},
-           family_i={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{f6b91a2b3f53afeaa355d1082535ec21}
-      \strng{fullhash}{f6b91a2b3f53afeaa355d1082535ec21}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{23}
-      \field{month}{10}
-      \field{title}{Vierquadrantensteller}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2015}
-      \field{year}{2010}
-      \verb{url}
-      \verb https://commons.wikimedia.org/wiki/File:Vierquadrantensteller.svg
-      \endverb
-    \endentry
     \entry{SADC}{book}{}
       \name{author}{1}{}{%
         {{hash=a5b4fce2000f2b1ce4b0af8eadfa6e5b}{%
@@ -63,7 +40,31 @@
       \field{title}{Spacecraft attitude determination and control}
       \field{year}{1984}
     \endentry
+    \entry{wik}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           family_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{10}
+      \field{title}{Drag coefficient}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2015}
+      \field{year}{2010}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Drag_coefficient
+      \endverb
+    \endentry
   \endsortlist
+  \missing{Biezl}
 \endrefsection
 \endinput
 

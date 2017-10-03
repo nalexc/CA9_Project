@@ -4,16 +4,16 @@ This chapter provides a description of the dynamic and kinematic equations of mo
 
 In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
 \section{Kinematics}
-This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames has been obtained \fxnote{chapter 2}.
+This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames have been obtained \fxnote{chapter 2}.
 
-Quaternion parameterization it is deemed useful for the kinematic analysis of the satellite. Since the product of two quaternion give the combined rotation, we shall specify the representation of rotation at time $t$ of the collaborating frames in order to derive the combined rotation at time $t+\Delta{t}$.The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$.The orientation of the controller reference frame $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $\Delta{t}$ with respect the orientation at time $t$ can be represented as $q_{c}(\Delta_{t}$, then the orientation of the satellite at $t+\Delta{t}$ can found as
+Quaternion parameterization it is deemed useful for the kinematic analysis of the satellite. Since the product of two quaternions gives the combined rotation, we shall specify the representation of rotation at time $t$ of the collaborating frames in order to derive the combined rotation at time $t+\Delta{t}$. The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$. The orientation of the controller reference frame $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $\Delta{t}$ with respect the orientation at time $t$ can be represented as $q_{c}(\Delta_{t}$, then the orientation of the satellite at $t+\Delta{t}$ can found as
 %
 \begin{flalign}
 	q(t+\Delta{t}) = {q_{c}(\Delta_{t}) \otimes q(t)}
 	\label{eq:quaternionproduct}
 \end{flalign}
 %
-with the components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $t$ \cite{Biezl} written as $[e_{x} e_{y} e_{z}]$ respectively and $\Delta{\Phi}$ the rotation at time $\Delta(t)$, the parameters of the controller quaternion can be written\cite{Biezl} as 
+with the components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $t$ \cite{SADC} written as $[e_{x} e_{y} e_{z}]$ respectively and $\Delta{\Phi}$ the rotation at time $\Delta(t)$, the parameters of the controller quaternion can be written\cite{SADC} as 
 %
 \begin{flalign}
 	q_{1c} = {e_{x}\sin\frac{\Delta\Phi}{2}}
@@ -51,14 +51,14 @@ combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion
 	\label{eq:quaternionmult}
 \end{flalign}  
 %
-where I is the $4x4$ identity matrix. Using the small angle approximation \cite{Biezl} for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
+where I is the $4x4$ identity matrix. Using the small angle approximation \cite{SADC} for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
 %
  \begin{flalign}
  	q(t+\Delta{t}) = {[1 + \frac{1}{2} \Omega \Delta(t)]q(t)} 
  	\label{eq:controllerquaternionfinal}
  \end{flalign} 
 %
-with $\Omega$ be the skew symmetric matrix\cite{Biezl} 
+with $\Omega$ be the skew symmetric matrix\cite{SADC} 
 \begin{flalign}
 	{\Omega)}
 	= 
