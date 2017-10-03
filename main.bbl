@@ -42,6 +42,27 @@
       \verb https://commons.wikimedia.org/wiki/File:Vierquadrantensteller.svg
       \endverb
     \endentry
+    \entry{SADC}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a5b4fce2000f2b1ce4b0af8eadfa6e5b}{%
+           family={Wertz},
+           family_i={W\bibinitperiod},
+           given={James\bibnamedelima R.},
+           given_i={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {KluwerAcademicPublisher}%
+      }
+      \strng{namehash}{a5b4fce2000f2b1ce4b0af8eadfa6e5b}
+      \strng{fullhash}{a5b4fce2000f2b1ce4b0af8eadfa6e5b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{title}{Spacecraft attitude determination and control}
+      \field{year}{1984}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

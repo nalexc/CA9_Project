@@ -37,7 +37,7 @@
 \contentsline {chapter}{\numberline {8}Acceptance test}{20}{chapter.8}
 \contentsline {chapter}{\numberline {9}Conclusion}{21}{chapter.9}
 \contentsline {section}{\numberline {9.1}Future work}{21}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix A }{22}{appendix.A}
-\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{22}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{22}{subsection*.28}
-\contentsline {chapter}{\numberline {B}Appendix B}{23}{appendix.B}
+\contentsline {chapter}{\numberline {A}Appendix A }{23}{appendix.A}
+\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{23}{section.A.1}
+\contentsline {subsection}{Inertia matrix}{23}{subsection*.29}
+\contentsline {chapter}{\numberline {B}Appendix B}{24}{appendix.B}
