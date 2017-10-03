@@ -9,14 +9,14 @@ This section will provide the orbit-attitude determination of the satellite usin
 \section{Dynamic Model}
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   
 %
-Euler's equation of motion describing the rotation of a rigid body is given by: \fxnote {ref}
+Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques\cite{Biezl} and is given by: 
 % 
 \begin{flalign}
 	\dot{L} = {N_{tot}- \omega }{\times {L}}
 	\label{eq:eulerequation}
 \end{flalign}
 % 
-where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite and the reaction wheels, given by:
+where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by\cite{Biezl}:
 %
 \begin{flalign}
 	{L} = {I_{s}}{\omega}+{h_{tot}}
@@ -31,7 +31,7 @@ Inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} 
 	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot)}} ={N_{tot}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
-For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \appref{chap:A}).
+For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \appref{chap:A}.
 %
 For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
