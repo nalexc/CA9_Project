@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  3 OCT 2017 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  3 OCT 2017 15:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -3831,13 +3831,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51167 strings out of 493328
- 1054288 string characters out of 3139116
- 1683351 words of memory out of 3000000
- 53740 multiletter control sequences out of 15000+200000
+ 51170 strings out of 493328
+ 1054337 string characters out of 3139116
+ 1683406 words of memory out of 3000000
+ 53742 multiletter control sequences out of 15000+200000
  133326 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10413b,1755s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,23n,92p,10413b,1753s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.0@SADC} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -3865,9 +3865,9 @@ blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
 /MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsy8.pfb>
-Output written on main.pdf (32 pages, 2031311 bytes).
+Output written on main.pdf (32 pages, 2032476 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

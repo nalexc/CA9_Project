@@ -5,8 +5,15 @@ This chapter provides a description of the dynamic and kinematic equations of mo
 In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
 \section{Kinematics}
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames has been obtained \fxnote{chapter 2}.
+
+Quaternion parameterization it is deemed useful for the kinematic analysis of the satellite. Since the product of two quaternion give the combined rotation, we shall specify the representation of rotation at time $t$ of the collaborating frames in order to derive the combined rotation at time $t+\Delta{t}$.The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$.The orientation of the controller reference frame $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $\Delta{t}$ with respect the orientation at time $t$ can be represented as $q_{c}(\Delta_{t}$, then the orientation of the satellite at $t+\Delta{t}$ can found as
 %
-     
+\begin{flalign}
+	q(t+\Delta{t}) = {q_{c}(\Delta_{t}) \otimes q(t)}
+	\label{eq:quaternionproduct}
+\end{flalign}
+%
+  with components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$      
 %
 \section{Dynamic Model}
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   
