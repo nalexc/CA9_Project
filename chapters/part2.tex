@@ -13,7 +13,65 @@ Quaternion parameterization it is deemed useful for the kinematic analysis of th
 	\label{eq:quaternionproduct}
 \end{flalign}
 %
-  with components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$      
+with the components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $t$ \cite{Biezl} written as $[e_{x} e_{y} e_{z}]$ respectively and $\Delta{\Phi}$ the rotation at time $\Delta(t)$, the parameters of the controller quaternion can be written\cite{Biezl} as 
+%
+\begin{flalign}
+	q_{1c} = {e_{x}\sin\frac{\Delta\Phi}{2}}
+	\label{eq:controllerquaternion1}
+\end{flalign}
+%
+\begin{flalign}
+	q_{2c} = {e_{y}\sin\frac{\Delta\Phi}{2}}
+	\label{eq:controllerquaternion2}
+\end{flalign}
+%
+\begin{flalign}
+	q_{3c} = {e_{z}\sin\frac{\Delta\Phi}{2}}
+	\label{eq:controllerquaternion3}
+\end{flalign}
+%
+\begin{flalign}
+	q_{4c} = {\cos\frac{\Delta\Phi}{2}}
+	\label{eq:controllerquaternion4}
+\end{flalign}
+%
+combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion4} with \eqref{eq:quaternionproduct} we obtain 
+%
+\begin{flalign}
+	q(t+\Delta{t})
+	= 
+	\{\cos\frac{\Delta\Phi}{2} I_{(4x4)}+\sin\frac{\Delta\Phi}{2}
+	\begin{bmatrix}
+		0 &e_{z}&-e_{y}&e_{x} \\
+		-e_{z}&0&e_{x}&e_{y}  \\ 
+		e_{y}&-e_{x}&0&e_{z} \\
+		-e_{x} &e_{y}&-e_{z}&0
+	\end{bmatrix} 
+\} q(t)
+	\label{eq:quaternionmult}
+\end{flalign}  
+%
+where I is the $4x4$ identity matrix. Using the small angle approximation \cite{Biezl} for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
+%
+ \begin{flalign}
+ 	q(t+\Delta{t}) = {[1 + \frac{1}{2} \Omega \Delta(t)]q(t)} 
+ 	\label{eq:controllerquaternionfinal}
+ \end{flalign} 
+%
+with $\Omega$ be the skew symmetric matrix\cite{Biezl} 
+\begin{flalign}
+	{\Omega)}
+	= 
+	\begin{bmatrix}
+		0& \omega_{z}& - \omega_{y}& \omega_{x} \\
+		-\omega_{z}& 0&\omega_{1}& \omega_{x}  \\ 
+		\omega_{y}& -\omega_{x}&0& \omega_{z} \\
+		-\omega_{x}& -\omega_{y}& -\omega_{z}&0
+	\end{bmatrix} 
+	\label{eq:skewsymmetricmatrixquaternion}
+\end{flalign}
+%
+the angle approximations where taken as $\cos\frac{\Delta\Phi}{2} \simeq 1$ and $\sin\frac{\Delta\Phi}{2}\simeq \frac{1}{2} \omega \Delta(t) $
 %
 \section{Dynamic Model}
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   

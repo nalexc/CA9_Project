@@ -28,16 +28,16 @@
 \contentsline {part}{II\hspace {1em}Attitude control}{14}{part.2}
 \contentsline {chapter}{\numberline {6}Modelling}{15}{chapter.6}
 \contentsline {section}{\numberline {6.1}Kinematics}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dynamic Model}{15}{section.6.2}
-\contentsline {section}{\numberline {6.3}Disturbance Models}{16}{section.6.3}
-\contentsline {subsection}{Gravitational torque}{16}{subsection*.26}
-\contentsline {subsection}{Solar radiation}{17}{subsection*.27}
-\contentsline {chapter}{\numberline {7}Attitude control design}{18}{chapter.7}
-\contentsline {part}{III\hspace {1em} Test and implementation}{19}{part.3}
-\contentsline {chapter}{\numberline {8}Acceptance test}{20}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusion}{21}{chapter.9}
-\contentsline {section}{\numberline {9.1}Future work}{21}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix A }{22}{appendix.A}
-\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{22}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{22}{subsection*.28}
-\contentsline {chapter}{\numberline {B}Appendix B}{23}{appendix.B}
+\contentsline {section}{\numberline {6.2}Dynamic Model}{16}{section.6.2}
+\contentsline {section}{\numberline {6.3}Disturbance Models}{17}{section.6.3}
+\contentsline {subsection}{Gravitational torque}{17}{subsection*.26}
+\contentsline {subsection}{Solar radiation}{18}{subsection*.27}
+\contentsline {chapter}{\numberline {7}Attitude control design}{19}{chapter.7}
+\contentsline {part}{III\hspace {1em} Test and implementation}{20}{part.3}
+\contentsline {chapter}{\numberline {8}Acceptance test}{21}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusion}{22}{chapter.9}
+\contentsline {section}{\numberline {9.1}Future work}{22}{section.9.1}
+\contentsline {chapter}{\numberline {A}Appendix A }{23}{appendix.A}
+\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{23}{section.A.1}
+\contentsline {subsection}{Inertia matrix}{23}{subsection*.28}
+\contentsline {chapter}{\numberline {B}Appendix B}{24}{appendix.B}

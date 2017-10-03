@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  3 OCT 2017 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  3 OCT 2017 16:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -3778,27 +3778,27 @@ Chapter 5.
 Chapter 6.
 [15
 
-] [16] [17]
+] [16] [17] [18]
 Chapter 7.
-) (chapters/acceptTest.tex [18
+) (chapters/acceptTest.tex [19
 
-] [19
+] [20
 
 ]
 Chapter 8.
-) (chapters/conclusion.tex [20
+) (chapters/conclusion.tex [21
 
 ]
 Chapter 9.
-) (appendix/appendix_1.tex [21
+) (appendix/appendix_1.tex [22
 
 ]
 Appendix A.
-) (appendix/code.tex [22
+) (appendix/code.tex [23
 
 ]
 Appendix B.
-) [23
+) [24
 
 ] (main.lox)
 \tf@lox=\write8
@@ -3809,7 +3809,7 @@ Appendix B.
 
  
 AED: lastpage setting LastPage
-[24
+[25
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
@@ -3831,10 +3831,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51170 strings out of 493328
- 1054337 string characters out of 3139116
- 1683406 words of memory out of 3000000
- 53742 multiletter control sequences out of 15000+200000
+ 51192 strings out of 493328
+ 1054724 string characters out of 3139116
+ 1685731 words of memory out of 3000000
+ 53756 multiletter control sequences out of 15000+200000
  133326 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10413b,1753s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3865,9 +3865,9 @@ blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
 /MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsy8.pfb>
-Output written on main.pdf (32 pages, 2032476 bytes).
+Output written on main.pdf (33 pages, 2041092 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
