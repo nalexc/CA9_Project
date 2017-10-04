@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  3 OCT 2017 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  4 OCT 2017 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3698,13 +3698,13 @@ Chapter 1.
 
 ]
 Chapter 2.
-<figures/earth.png, id=207, 1209.51875pt x 1108.14pt>
+<figures/earth.png, id=205, 1209.51875pt x 1108.14pt>
 File: figures/earth.png Graphic file (type png)
  <use figures/earth.png>
 Package pdftex.def Info: figures/earth.png used on input line 6.
 (pdftex.def)             Requested size: 273.14923pt x 250.25073pt.
 
-<figures/aau_cubsat.jpg, id=209, 1710.39pt x 1710.39pt>
+<figures/aau_cubsat.jpg, id=207, 1710.39pt x 1710.39pt>
 File: figures/aau_cubsat.jpg Graphic file (type jpg)
 
 <use figures/aau_cubsat.jpg>
@@ -3723,39 +3723,39 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 19.
 
-<figures/MW.png, id=220, 496.85625pt x 418.56375pt>
+<figures/MW.png, id=218, 496.85625pt x 418.56375pt>
 File: figures/MW.png Graphic file (type png)
  <use figures/MW.png>
 Package pdftex.def Info: figures/MW.png used on input line 33.
 (pdftex.def)             Requested size: 111.53606pt x 93.95563pt.
 
-<figures/cubsat.jpg, id=221, 868.24374pt x 999.735pt>
+<figures/cubsat.jpg, id=219, 868.24374pt x 999.735pt>
 File: figures/cubsat.jpg Graphic file (type jpg)
  <use figures/cubsat.jpg>
 Package pdftex.def Info: figures/cubsat.jpg used on input line 42.
 (pdftex.def)             Requested size: 223.07211pt x 256.84352pt.
 
 [3 <./figures/aau_cubsat.jpg>] [4 <./figures/MW.png> <./figures/cubsat.jpg>]
-<figures/ECI.jpeg, id=249, 978.65625pt x 925.4575pt>
+<figures/ECI.jpeg, id=247, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
  <use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 72.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
 
-<figures/ECEF.jpeg, id=251, 1034.86626pt x 893.3375pt>
+<figures/ECEF.jpeg, id=249, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
  <use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 80.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
 
-[5 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=265, 1551.7975pt x 1343.0175pt>
+[5 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=263, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
 
 <use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 90.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
  [6 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=277, 1182.4175pt x 1198.4775pt>
+<figures/frames.jpeg, id=275, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
@@ -3770,14 +3770,14 @@ Chapter 3.
 
 ]
 Chapter 4.
-<figures/drag_coef.jpg, id=304, 365.86688pt x 142.5325pt>
+<figures/drag_coef.jpg, id=302, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 35.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=305, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=303, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 44.
@@ -3855,7 +3855,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  49486 strings out of 493014
  1025347 string characters out of 6133351
- 1616821 words of memory out of 5000000
+ 1616810 words of memory out of 5000000
  52045 multiletter control sequences out of 15000+600000
  136439 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3885,10 +3885,10 @@ m/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
 dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/lm/lmtt12.pfb>
-Output written on main.pdf (34 pages, 2028100 bytes).
+Output written on main.pdf (34 pages, 2024133 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
+ 582 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
  137 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
