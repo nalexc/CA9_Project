@@ -156,7 +156,7 @@ The position of the center of mass was measured for the previous project and is 
 \end{flalign}
 where $q_{i,s}$ is the quaternion that represents the rotation of the satellite in the inertia frame and $\otimes$ is the quaternion multiplication. Thus, the moment of force can be calculated by this expression above.
 \subsection{Solar radiation}
-Due to low earth orbit flying, the surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite center of mass(CoM). 
+Tfhe surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite center of mass(CoM). \cite{SADC}
 
 The torque around CoM is given by:
 \begin{flalign}
@@ -170,5 +170,12 @@ The solar radiation $F_{rad}$ can be expressed as:
 	F_{rad} = C_{a} P A
 	\label{eq:Pres}
 \end{flalign}
-where $C_{a}$ is absorption constant of the radiated area and $P$ is the solar flux, while  $A$ is the radiated area
+where $C_{a}$ is the surface’s reflectance: 0 for a perfect absorber, 1 for a perfect reflector,   while $P$ is the solar flux and  $A$ is the radiated area
+
+The solar flux can be computed as follows:
+\begin{flalign}
+	P = \dfrac{F_s}{c}
+	\label{eq:flux}
+\end{flalign}
+where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 \chapter{Attitude control design}
