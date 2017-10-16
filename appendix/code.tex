@@ -1,1 +1,75 @@
 \chapter{Appendix B}\label{chap:Appendix A}
+\section{Derivation of relative dynamics equations}
+The vector position from the center of the Earth to the satellite 1 and the satellite 2 is given by
+\begin{flalign}
+\vec{p_1} &= R \cdot \vec{\hat{x}} \\
+\vec{p_2} &= R \cdot \vec{\hat{x}} + x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}}
+\end{flalign}
+the first time derivative and second time relative of $\vec{p_1}$ and $\vec{p_2}$ is computed:
+\begin{flalign*}
+\dot{\vec{p_1}} &= \dot{R} \cdot \vec{\hat{x}} + R(\vec{w} \times \vec{\hat{x}}) 
+\end{flalign*}
+where $\vec{w}$ is the angular velocity vector and $\vec{w} = w \cdot \vec{\hat{z}}$ due to the fact the position of the satellites stay all over the time in the plan $(\vec{\hat{x}},\vec{\hat{y}})$. Therefore, the first time derivative and the second time derivative are given by:
+\begin{flalign*}
+\dot{\vec{p_1}} &= \dot{R} \cdot \vec{\hat{x}} + w R \cdot \vec{\hat{y}} \\
+\ddot{\vec{p_1}} &= \ddot{R} \cdot \vec{\hat{x}} + w\dot{R} \cdot \vec{\hat{y}} + \dot{w} R \cdot \vec{\hat{y}} + w \dot{R} \cdot \vec{\hat{y}} + wR \cdot (\vec{w} \times \vec{\hat{y}}) \\
+&= \ddot{R} \cdot \vec{\hat{x}} + 2w\dot{R} \cdot \vec{\hat{y}} + \dot{w} R \cdot \vec{\hat{y}} - w^2R \cdot \vec{\hat{x}} \\
+\dot{\vec{p_2}} &= \dot{\vec{p_1}} +  \dot{x} \cdot \vec{\hat{x}} + x w \cdot \vec{\hat{y}} + \dot{y} \cdot \vec{\hat{y}} - y w \cdot \vec{\hat{x}} \\
+&= \dot{\vec{p_1}} + (\dot{x} - yw) \cdot \vec{\hat{x}} + (xw + \dot{y}) \cdot \vec{\hat{y}} \\
+\ddot{\vec{p_2}} & = \ddot{\vec{p_1}} + (\ddot{x} - \dot{y}w - y\dot{w}) \cdot \vec{\hat{x}} + (\dot{x} - yw) w \cdot \vec{\hat{y}} + (\dot{x}w + x\dot{w} + \ddot{y}) \cdot \vec{\hat{y}} - (xw + \dot{y}) w \cdot \vec{\hat{x}} \\
+&= \ddot{\vec{p_1}} + (\ddot{x} - 2\dot{y}w - y\dot{w} - xw^2) \cdot \vec{\hat{x}} + (\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2) \cdot \vec{\hat{y}}
+\end{flalign*}
+Furthermore, The Newton law gives:
+\begin{flalign}
+	m\ddot{\vec{p_1}} &= \vec{F_{grav,1}} + \vec{F_{drag,1}} + \vec{F_{dist,1}} \\
+	m\ddot{\vec{p_2}} &= \vec{F_{grav,2}} + \vec{F_{drag,2}} + \vec{F_{dist,2}} \\
+	\Rightarrow \ddot{\vec{p_2}} - \ddot{\vec{p_1}} &= \frac{1}{m}(\Delta \vec{F_{grav}} + \Delta \vec{F_{drag}} + \Delta F_{dist})
+\end{flalign}
+with m is the mass of both satellites. The gravity is given by the universal law of gravitation:
+\begin{flalign*}
+\frac{\vec{F_{grav,1}}}{m} &= -G\frac{m_{earth}}{||\vec{R}||^3} \vec{R} \\
+\frac{\vec{F_{grav,2}}}{m} &= -G\frac{m_{earth}}{||\vec{R} + \vec{r}||^3} (\vec{R} + \vec{r})
+\end{flalign*}
+where $\vec{r} = (x,y)$ is the vector from the satellite 1 to the satellite 2. The denominateur can be approximated by(reference):
+\begin{flalign*}
+||\vec{R} + \vec{r}||^{-3} &= ||(\vec{R} + \vec{r})\cdot(\vec{R} + \vec{r})||^{\frac{-3}{2}} \\
+&= ||\vec{R} \cdot \vec{R} + \vec{r} \cdot \vec{r} + 2\vec{R} \cdot \vec{r}||^{\frac{-3}{2}} \\
+&= R^{-3}||1 + \frac{\vec{r} \cdot \vec{r}}{R^2} + 2\frac{\vec{r} \cdot \vec{R}}{R^2}||^{\frac{-3}{2}}
+\end{flalign*}
+Due to the fact the $r << R$, the second term can be neglected and by using the approximation $(1 + x)^q = 1 + qx$ when $x << 1$. The expression can be approximated by:
+\begin{flalign*}
+||\vec{R} + \vec{r}||^{-3} &= R^{-3}(1 - 3\frac{\vec{r} \cdot \vec{R}}{R^2}) \\
+&= R^{-3}(1 - 3\frac{x}{R})
+\end{flalign*} 
+and thus, the difference between the gravity force on satellite 2 and the the gravity force on 1 is:
+\begin{flalign*}
+\vec{F_{grav,2}} - \vec{F_{grav,1}} &\approx -G \frac{m_{earth}}{R^3} ((1 - 3\frac{x}{R}) (\vec{R} + \vec{r}) - \vec{R}) \\
+&\approx -G \frac{m_{earth}}{R^3} (\vec{r} - 3x \cdot \vec{\hat{x}} + 3 \frac{x}{R} \vec{r}) \\
+&\approx -\frac{\mu}{R^3} (-2x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}})
+\end{flalign*} 
+with $\mu = G \cdot m_{earth}$, The drag force can be modelling be using the formula(ref):
+\begin{flalign*}
+	\vec{F_{drag,1}} &= -u_1 ||\dot{\vec{p_1}}|| \dot{\vec{p_1}}\\
+	& = -u_1 ||\dot{\vec{p_1}}|| (\dot{R} \cdot \vec{\hat{x}} + wR \cdot \vec{\hat{y}}) \\
+	\vec{F_{drag,2}} &= -u_2 ||\dot{\vec{p_2}}|| \dot{\vec{p_2}} \\
+	& = -u_2 ||\dot{\vec{p_2}}|| ((\dot{R} + \dot{x} - yw)\cdot \vec{\hat{x}} + (wR + xw + \dot{y}) \cdot \vec{\hat{y}})
+\end{flalign*}
+Therefore, the equation(reference B3 i don't know how to do it) becomes:
+\begin{equation}
+\left\{
+	\begin{flalign}
+		&\ddot{R} - w^2R = -\frac{\mu}{R^2} -\frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} + \frac{F_{dist,x}}{m} \\
+		&2w\dot{R} + \dot{w}R = -\frac{u_1}{m} ||\dot{\vec{p_1}}|| wR
+	\end{flalign}
+\right.
+\end{equation}
+and the equation( reference B5) gives:
+\begin{equation}
+\left\{
+	\begin{flalign}
+		& \ddot{x} - 2\dot{y}w - y\dot{w} - xw^2 = 2x\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - yw) + \frac{\Delta F_{dist,x}}{m}\\
+		&\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2 = -y\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + xw + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+	\end{flalign}
+\right.
+\end{equation}
+

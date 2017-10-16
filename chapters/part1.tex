@@ -85,4 +85,20 @@ with
 \vec{f(x)} = \left[ \begin{array}{c} \vec{v} \\ -G\cdot m_{earth} \frac{\vec{p}}{||\vec{p}||^3} \end{array} \right], \ \vec{g(x)} = \left[ \begin{array}{c} \vec{0} \\ - \frac{1}{m_{sat}}||\vec{v}||\vec{v} \end{array} \right]
 \]
 and $\vec{\delta(x,t)}$ reprensent the influence all the disturbances.
+\section{Relative dynamics}
+In order to analyse the distance between two satellites, the relative dynamics is computed. In order to simplify the system. The two will be assumed to stay all over the stay in the same. This assumption has also to be made due to the limitation of the direction of the input control (the drag force). \\
+To compute the equations of the motion of one satellite compared to an other one, a new frame is used. The frame is illustrated in the figure\ref{rel_dyn}. The origin is the satellite 1, the axis $\vec{\hat{x}}$ is defined by $\vec{\hat{x}} = \frac{\vec{R}}{R}$ where $\vec{R}$ is the vector from the center of the Earth to the satellite 1, the axis $\vec{\hat{y}}$ is perpendicular to $\vec{\hat{x}}$ and in the plan of motion of the satellites and $\vec{\hat{z}}$ is defined by the right-hand law ($\vec{\hat{z}} = \vec{\hat{x}} \times \vec{\hat{y}}$). \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/relativeDynamics}
+	\caption{Frame for the relative dynamics}
+	\label{fig:rel_dyn}
+\end{figure} 
+Therefore, the vector position from the earth to the satellite 1 and the satellite 2 can be espressed in this frame:
+\begin{flalign}
+\vec{p_1} &= R \cdot \vec{\hat{x}} \\
+\vec{p_2} &= R \cdot \vec{\hat{x}} + x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}} \\
+\end{flalign}
+The equations of relative motions can ve derived (reference to appendixes):
+
 \chapter{Distance control design}
