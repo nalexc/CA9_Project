@@ -91,7 +91,7 @@ where $B(r, \phi, \lambda)$ is the spherical harmonic expansion used to correct 
 \end{figure} 
 In order to solve the problem regarding the oblatness, the gravitational potential of the Earth is extended into series of spherical harmonics: [ref]
 \begin{flalign}
-	\eq B(r, \phi , \lambda) = \frac{\mu}{r} \left\{ \sum_{n=2}^{\infty} \left [ \left (\frac{R_e}{r} \right)^{n} J_n P_n sin(\phi)  + \sum_{m=1}^{n} \left (\frac{R_e}{r}\right)^{n} (C_{nm} cos(m\lambda) + S_{nm} sin(m\lambda)) P_{nm} sin(\phi)  \right] \right\}
+	 B(r, \phi , \lambda) = \frac{\mu}{r} \left\{ \sum_{n=2}^{\infty} \left [ \left (\frac{R_e}{r} \right)^{n} J_n P_n sin(\phi)| + \sum_{m=1}^{n} \left (\frac{R_e}{r}\right)^{n} (C_{nm} cos(m\lambda) + S_{nm} sin(m\lambda)) P_{nm} sin(\phi)  \right] \right\} 
 	\label{eq:phi2}
 \end{flalign}
 where $r, \phi , \lambda$ are spherical coordinates and the parameteres from the function are defined as follows: $r$ is the geocentric distance of point $P$, $\phi$ is the geocentric latitude, $\lambda$ is the geographical longitude, $R_e$ is the mean equatorial radius of the Earth, $cos(m\lambda)$ and $sin(m\lambda)$ are harmonics in $\lambda$, $J_{nm}$ are the zonal harmonic coefficients, $J_n$ zonal harmonic coefficients of order 0, $P_{nm} $ associated Legendre polynomial of degree $n$ and order $m$, $P_n$ is Legendre polynomial degree $n$ and order 0, $C_{nm}$ is tesseral harmonic coefficients for $n \neq m$, $S_{nm}$ is sectoral harmonic coefficients for $n =m$
@@ -110,9 +110,9 @@ The gravitational forces acting on the satellite are obtained from the relation:
 \end{flalign}
 and is obtaining the following:
 \begin{flalign}
-	F_x = -\frac{\partial U}{\partial x} = \mu [ -\frac{x}{r^3} + A_{J_2} (15 \frac{xz^2}{r^7} - 3\frac{x}{r^5}    )  ]       \\
-		F_y = -\frac{\partial U}{\partial y} = \mu [ -\frac{y}{r^3} + A_{J_2} (15 \frac{yz^2}{r^7} - 3\frac{y}{r^5}    )  ]       \\
-			F_z = - \frac{\partial U}{\partial z} =  \mu [ -\frac{z}{r^3} + A_{J_2} (15 \frac{z^3}{r^7} - 3\frac{z}{r^5}    )  ]       
+	F_x = -\frac{\partial U}{\partial x} = \mu \left[ -\frac{x}{r^3} + A_{J_2} \left(15 \frac{xz^2}{r^7} - 3\frac{x}{r^5}   \right ) \right ]       \\
+		F_y = -\frac{\partial U}{\partial y} = \mu \left[ -\frac{y}{r^3} + A_{J_2} \left(15 \frac{yz^2}{r^7} - 3\frac{y}{r^5}   \right ) \right ]       \\
+			F_z = - \frac{\partial U}{\partial z} =  \mu \left[ -\frac{z}{r^3} + A_{J_2} \left(15 \frac{z^3}{r^7} - 3\frac{z}{r^5}   \right )  \right]       
 	\label{eq:Pr34331}
 \end{flalign}
 where $A_{J_2}  = \frac{1}{2} J_2 R_e^2$ and and$R_e$ is the mean radius ofthe earth at the equator
