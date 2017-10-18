@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  18 OCT 2017 01:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  18 OCT 2017 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3892,11 +3892,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49498 strings out of 493014
- 1025306 string characters out of 6133351
- 1621356 words of memory out of 5000000
- 52035 multiletter control sequences out of 15000+600000
- 133326 words of font info for 103 fonts, out of 8000000 for 9000
+ 49500 strings out of 493014
+ 1025325 string characters out of 6133351
+ 1621357 words of memory out of 5000000
+ 52036 multiletter control sequences out of 15000+600000
+ 136314 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10411b,2376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
@@ -3923,7 +3923,7 @@ texlive/2016/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/lm/lmsy8.pfb>
-Output written on main.pdf (38 pages, 2131221 bytes).
+Output written on main.pdf (38 pages, 2132300 bytes).
 PDF statistics:
  633 PDF objects out of 1000 (max. 8388607)
  549 compressed objects within 6 object streams

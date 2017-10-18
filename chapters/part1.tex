@@ -91,17 +91,17 @@ where $B(r, \phi, \lambda)$ is the spherical harmonic expansion used to correct 
 \end{figure} 
 In order to solve the problem regarding the oblatness, the gravitational potential of the Earth is extended into series of spherical harmonics: [ref]
 \begin{flalign}
-  B(r, \phi , \lambda) = \frac{\mu}{r} \left\{ \sum_{n=2}^{\infty}  [(\frac{R_e}{r})^{n} J_n P_n sin(\phi)  + \sum_{m=1}^{n} (\frac{R_e}{r})^{n} (C_{nm} cos(m\lambda) + S_{nm} sin(m\lambda)) P_{nm} sin(\phi) ]\right\}
-	\label{eq:Pr31}
+	\eq B(r, \phi , \lambda) = \frac{\mu}{r} \left\{ \sum_{n=2}^{\infty} \left [ \left (\frac{R_e}{r} \right)^{n} J_n P_n sin(\phi)  + \sum_{m=1}^{n} \left (\frac{R_e}{r}\right)^{n} (C_{nm} cos(m\lambda) + S_{nm} sin(m\lambda)) P_{nm} sin(\phi)  \right] \right\}
+	\label{eq:phi2}
 \end{flalign}
 where $r, \phi , \lambda$ are spherical coordinates and the parameteres from the function are defined as follows: $r$ is the geocentric distance of point $P$, $\phi$ is the geocentric latitude, $\lambda$ is the geographical longitude, $R_e$ is the mean equatorial radius of the Earth, $cos(m\lambda)$ and $sin(m\lambda)$ are harmonics in $\lambda$, $J_{nm}$ are the zonal harmonic coefficients, $J_n$ zonal harmonic coefficients of order 0, $P_{nm} $ associated Legendre polynomial of degree $n$ and order $m$, $P_n$ is Legendre polynomial degree $n$ and order 0, $C_{nm}$ is tesseral harmonic coefficients for $n \neq m$, $S_{nm}$ is sectoral harmonic coefficients for $n =m$
 
 The expression for gravitational potential of the Earth can be approximate as:
 \begin{flalign}
-   U \approx -\frac{\mu}{r} [1 - \sum_{n=2}^{\infty}(\frac{R_e}{r})^{n} J_n P_n sin(\phi)   ] = \frac{\mu}{r} [U_0 + U_{J_2} + U_{J_3} + ...]
+   U \approx -\frac{\mu}{r} \left[1 - \sum_{n=2}^{\infty} \left(\frac{R_e}{r}\right)^{n} J_n P_n sin(\phi)  \right ] = \frac{\mu}{r} [U_0 + U_{J_2} + U_{J_3} + ...]
 	\label{eq:Pr341}
 \end{flalign}
-where $U_0$ = -1 and $U_{J_2}$ = $(\frac{R_e}{r})^{2} J_2 \frac{1}{2} (3 sin^2 \phi -1) $
+where $U_0$ = -1 and $U_{J_2}$ = $\left(\frac{R_e}{r}\right)^{2} J_2 \frac{1}{2} (3 sin^2 \phi -1) $
 
 The gravitational forces acting on the satellite are obtained from the relation:
 \begin{flalign}
@@ -116,7 +116,7 @@ and is obtaining the following:
 	\label{eq:Pr34331}
 \end{flalign}
 where $A_{J_2}  = \frac{1}{2} J_2 R_e^2$ and and$R_e$ is the mean radius ofthe earth at the equator
-
+	
 \section{State Space Representation}
 The state of the system is the vector position and the vecteur velocity in the inertia frame:
 \[
