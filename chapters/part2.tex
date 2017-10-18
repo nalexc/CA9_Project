@@ -40,21 +40,21 @@ combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion
 \begin{flalign}
 	q(t+\Delta{t})
 	= 
-	\{\cos\frac{\Delta\Phi}{2} I_{(4x4)}+\sin\frac{\Delta\Phi}{2}
+	\left\{\cos\frac{\Delta\Phi}{2} I_{(4x4)}+\sin\frac{\Delta\Phi}{2}
 	\begin{bmatrix}
 		0 &e_{z}&-e_{y}&e_{x} \\
 		-e_{z}&0&e_{x}&e_{y}  \\ 
 		e_{y}&-e_{x}&0&e_{z} \\
 		-e_{x} &e_{y}&-e_{z}&0
 	\end{bmatrix} 
-\} q(t)
+\right \} q(t)
 	\label{eq:quaternionmult}
 \end{flalign}  
 %
 where I is the $4x4$ identity matrix. Using the small angle approximation \cite{SADC} for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
 %
  \begin{flalign}
- 	q(t+\Delta{t}) = {[1 + \frac{1}{2} \Omega \Delta(t)]q(t)} 
+ 	q(t+\Delta{t}) = \left[1 + \frac{1}{2} \Omega \Delta(t)\right]q(t)
  	\label{eq:controllerquaternionfinal}
  \end{flalign} 
 %
