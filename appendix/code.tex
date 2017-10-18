@@ -24,6 +24,7 @@ Furthermore, The Newton law gives:
 	m\ddot{\vec{p_1}} &= \vec{F_{grav,1}} + \vec{F_{drag,1}} + \vec{F_{dist,1}} \\
 	m\ddot{\vec{p_2}} &= \vec{F_{grav,2}} + \vec{F_{drag,2}} + \vec{F_{dist,2}} \\
 	\Rightarrow \ddot{\vec{p_2}} - \ddot{\vec{p_1}} &= \frac{1}{m}(\Delta \vec{F_{grav}} + \Delta \vec{F_{drag}} + \Delta F_{dist})
+	\label{eq:new_dif}
 \end{flalign}
 with m is the mass of both satellites. The gravity is given by the universal law of gravitation:
 \begin{flalign*}
@@ -72,4 +73,34 @@ and the equation( reference B5) gives:
 	\end{aligned}
 \right.
 \end{equation}
-
+The operating point is the position ($x*,y*$) of the satellite 2 in the frame of satellite. $x*$ and $y*$ can be computed thanks to the \figref{fig:operating_pt}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{figures/operating_point}
+	\caption{Operating point}
+	\label{fig:operating_pt}
+\end{figure} 
+Thanks to basic trigonometry:
+\begin{flalign*}
+d &= 2R*sin(\frac{\alpha}{2}) \\
+x* &= -d*sin(\beta_2) \\
+&= -d*sin(\frac{\alpha}{2}) \\
+&= -2R*sin(\frac{\alpha}{2})^2 \\
+y* &= d*cos(\frac{\alpha}{2}) \\
+&= 2R*sin(\frac{\alpha}{2})*cos(\frac{\alpha}{2}) \\
+&= R*sin(\alpha)
+\end{flalign*}
+with $\alpha$ is the desired angle between satellite and so $\beta_2 = 90^{\circ} - \beta_1 = 90^{\circ} - (90^{\circ} - \frac{\alpha}{2}) = \frac{\alpha}{2}$. Therefore we change the coordinate reference as following:
+\begin{flalign*}
+x &\Leftarrow x - x* \\
+y &\Leftarrow y - y* 
+\end{flalign*}
+Thus, the equations (reference B7) become:
+\begin{equation}
+\left\{
+\begin{aligned}
+	& \ddot{x} - 2\dot{y}w - (y + y*)\dot{w} - (x + x*)w^2 = 2(x + x*)\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y*)w) + \frac{\Delta F_{dist,x}}{m}\\
+	&\ddot{y} + 2\dot{x}w + (x + x*)\dot{w} - (y + y*)w^2 = -(y + y*)\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x*)w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+\end{aligned}
+\right.
+\end{equation}
