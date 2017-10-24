@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  24 OCT 2017 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  24 OCT 2017 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3706,11 +3706,11 @@ Package pdftex.def Info: figures/cub.jpg used on input line 16.
 [2
 
  <./figures/sat_form.jpeg>]
-<figures/RW.png, id=191, 853.1875pt x 703.62875pt>
-File: figures/RW.png Graphic file (type png)
- <use figures/RW.png>
-Package pdftex.def Info: figures/RW.png used on input line 34.
-(pdftex.def)             Requested size: 133.84462pt x 110.38191pt.
+<figures/RW.jpeg, id=191, 1551.7975pt x 1397.22pt>
+File: figures/RW.jpeg Graphic file (type jpg)
+ <use figures/RW.jpeg>
+Package pdftex.def Info: figures/RW.jpeg used on input line 34.
+(pdftex.def)             Requested size: 200.76353pt x 180.74954pt.
 
 <figures/cubsat1.jpg, id=192, 208.3785pt x 239.9364pt>
 File: figures/cubsat1.jpg Graphic file (type jpg)
@@ -3718,28 +3718,28 @@ File: figures/cubsat1.jpg Graphic file (type jpg)
 <use figures/cubsat1.jpg>
 Package pdftex.def Info: figures/cubsat1.jpg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 256.85754pt.
- [3 <./figures/cub.jpg>] [4 <./figures/RW.png> <./figures/cubsat1.jpg>] <figure
-s/ECI.jpeg, id=215, 978.65625pt x 925.4575pt>
+ [3 <./figures/cub.jpg>] [4 <./figures/RW.jpeg> <./figures/cubsat1.jpg>] <figur
+es/ECI.jpeg, id=214, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
 
 <use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 73.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
- <figures/ECEF.jpeg, id=217, 1034.86626pt x 893.3375pt>
+ <figures/ECEF.jpeg, id=216, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
 
 <use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 81.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
  [5 <./figures/ECI.jpeg>]
-<figures/OFR.jpeg, id=231, 1551.7975pt x 1343.0175pt>
+<figures/OFR.jpeg, id=230, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
  <use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 91.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
 
 [6 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=243, 1182.4175pt x 1198.4775pt>
+<figures/frames.jpeg, id=242, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
@@ -3752,14 +3752,14 @@ Chapter 3.
 
 ]
 Chapter 4.
-<figures/drag_coef.jpg, id=266, 365.86688pt x 142.5325pt>
+<figures/drag_coef.jpg, id=265, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 34.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=267, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=266, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
@@ -3775,13 +3775,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 79.
 
-<figures/j2.jpg, id=296, 395.4775pt x 216.81pt>
+<figures/j2.jpg, id=295, 395.4775pt x 216.81pt>
 File: figures/j2.jpg Graphic file (type jpg)
  <use figures/j2.jpg>
 Package pdftex.def Info: figures/j2.jpg used on input line 95.
 (pdftex.def)             Requested size: 273.14923pt x 149.74792pt.
  [11 <./figures/j2.jpg>] [12]
-<figures/relativeDynamics.png, id=325, 703.62875pt x 592.2125pt>
+<figures/relativeDynamics.png, id=324, 703.62875pt x 592.2125pt>
 File: figures/relativeDynamics.png Graphic file (type png)
 
 <use figures/relativeDynamics.png>
@@ -3822,7 +3822,7 @@ Appendix A.
 Appendix B.
 [24
 
-] <figures/operating_point.jpg, id=459, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=458, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -3858,7 +3858,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  49514 strings out of 493014
- 1025758 string characters out of 6133351
+ 1025762 string characters out of 6133351
  1621798 words of memory out of 5000000
  52052 multiletter control sequences out of 15000+600000
  133326 words of font info for 103 fonts, out of 8000000 for 9000
@@ -3894,9 +3894,9 @@ xlive/2016/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/public/lm/lmsy8.pfb>
-Output written on main.pdf (33 pages, 2104558 bytes).
+Output written on main.pdf (33 pages, 2074408 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
+ 595 PDF objects out of 1000 (max. 8388607)
  517 compressed objects within 6 object streams
  159 named destinations out of 1000 (max. 500000)
  288 words of extra memory for PDF output out of 10000 (max. 10000000)
