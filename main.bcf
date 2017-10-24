@@ -2079,8 +2079,9 @@
     <bcf:citekey order="4">SADC</bcf:citekey>
     <bcf:citekey order="5">SADC</bcf:citekey>
     <bcf:citekey order="6">SADC</bcf:citekey>
-    <bcf:citekey order="7">Biezl</bcf:citekey>
+    <bcf:citekey order="7">SADC</bcf:citekey>
     <bcf:citekey order="8">Biezl</bcf:citekey>
-    <bcf:citekey order="9">SADC</bcf:citekey>
+    <bcf:citekey order="9">Biezl</bcf:citekey>
+    <bcf:citekey order="10">SADC</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

@@ -1,8 +1,8 @@
 \chapter{Attitude control}
 \section{Modelling}
-This chapter provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within  Low Earth Orbit(LEO). The coordinate systems are defined first and then the model for the satellite is derived, based on rigid body dynamics and kinematics. 
-
-In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
+This section provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within LEO. The coordinate systems are defined first and then the model for the satellite is derived, based on rigid body dynamics and kinematics. 
+%In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
+%
 \subsection{Kinematics}
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames have been obtained \fxnote{chapter 2}.
 
@@ -57,10 +57,9 @@ where I is the $4x4$ identity matrix. Using the small angle approximation \cite{
  	q(t+\Delta{t}) = \left[1 + \frac{1}{2} \Omega \Delta(t)\right]q(t)
  	\label{eq:controllerquaternionfinal}
  \end{flalign} 
-%
 with $\Omega$ be the skew symmetric matrix\cite{SADC} 
 \begin{flalign}
-	{\Omega)}
+	\Omega
 	= 
 	\begin{bmatrix}
 		0& \omega_{z}& - \omega_{y}& \omega_{x} \\
@@ -90,7 +89,7 @@ where $N_{tot}$ represents all the external torques caused from the actuator and
 	\label{eq:angularmomentum}
 \end{flalign}
 %
-where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_{1} h_{2} h_{3}]^{T}$, all seen in the satellites coordinate system and $I_{s}$ is the inertia matrix of the satellite.
+where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$, all seen in the satellites coordinate system and $I_{s}$ is the inertia matrix of the satellite.
 %
 Inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain
 %
@@ -107,7 +106,7 @@ For the ease of notation, the cross product can be written as matrix operation u
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
-The rate of change in angular momentum $\dot{h_{tot}}$ can be absorbed from the controller. This can be written as:
+The rate of change in angular momentum $\dot{h}_{(tot)}$ can be absorbed from the controller. This can be written as:
 %
 \begin{flalign}
 	{\dot{h}_{(tot)}} ={-N{c}}
@@ -130,7 +129,7 @@ An unbalanced satellite in orbit is subjected to a torque due to the gravitation
 	dF_i = -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 	\label{eq:ref1}
 \end{flalign}
-where \textit{G} is the gravitational constant, \textit{$m_{earth}$} is the mass of the earth and \textit{$R_i^2$} is the vector from the earth to the infinitesimal element of the satellite. \\
+where \textit{G} is the gravitational constant, \textit{$m_{earth}$} is the mass of the earth and \textit{$R_i^2$} is the vector from the Earth to the infinitesimal element of the satellite. \\
 The moment of the gravitational force about the geometric center is calculated as the formula:
 \begin{flalign}
 	N_{gra} = \int_{sat} r_i \times dF_i 

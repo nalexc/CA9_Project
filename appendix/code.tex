@@ -1,4 +1,4 @@
-\chapter{Derivation of relative dynamics equations}\label{chap: B}
+\chapter{Derivation of relative dynamics equations} \label{chap:B}
 The vector position from the center of the Earth to the satellite 1 and the satellite 2 is given by
 \begin{flalign}
 \vec{p_1} &= R \cdot \vec{\hat{x}} \\
@@ -12,7 +12,7 @@ where $\vec{w}$ is the angular velocity vector and $\vec{w} = w \cdot \vec{\hat{
 \begin{flalign*}
 \dot{\vec{p_1}} &= \dot{R} \cdot \vec{\hat{x}} + w R \cdot \vec{\hat{y}} \\
 \ddot{\vec{p_1}} &= \ddot{R} \cdot \vec{\hat{x}} + w\dot{R} \cdot \vec{\hat{y}} + \dot{w} R \cdot \vec{\hat{y}} + w \dot{R} \cdot \vec{\hat{y}} + wR \cdot (\vec{w} \times \vec{\hat{y}}) \\
-&= \ddot{R} \cdot \vec{\hat{x}} + 2w\dot{R} \cdot \vec{\hat{y}} + \dot{w} R \cdot \vec{\hat{y}} - w^2R \cdot \vec{\hat{x}} \\
+%&= \ddot{R} \cdot \vec{\hat{x}} + 2w\dot{R} \cdot \vec{\hat{y}} + \dot{w} R \cdot \vec{\hat{y}} - w^2R \cdot \vec{\hat{x}} \\
 \dot{\vec{p_2}} &= \dot{\vec{p_1}} +  \dot{x} \cdot \vec{\hat{x}} + x w \cdot \vec{\hat{y}} + \dot{y} \cdot \vec{\hat{y}} - y w \cdot \vec{\hat{x}} \\
 &= \dot{\vec{p_1}} + (\dot{x} - yw) \cdot \vec{\hat{x}} + (xw + \dot{y}) \cdot \vec{\hat{y}} \\
 \ddot{\vec{p_2}} & = \ddot{\vec{p_1}} + (\ddot{x} - \dot{y}w - y\dot{w}) \cdot \vec{\hat{x}} + (\dot{x} - yw) w \cdot \vec{\hat{y}} + (\dot{x}w + x\dot{w} + \ddot{y}) \cdot \vec{\hat{y}} - (xw + \dot{y}) w \cdot \vec{\hat{x}} \\
@@ -98,8 +98,10 @@ Thus, the equations (reference B7) become:
 \begin{equation}
 \left\{
 \begin{aligned}
-	& \ddot{x} - 2\dot{y}w - (y + y*)\dot{w} - (x + x*)w^2 = 2(x + x*)\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y*)w) + \frac{\Delta F_{dist,x}}{m}\\
-	&\ddot{y} + 2\dot{x}w + (x + x*)\dot{w} - (y + y*)w^2 = -(y + y*)\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x*)w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+	& \ddot{x} - 2\dot{y}w - (y + y*)\dot{w} - (x + x*)w^2 = \\
+	&2(x + x*)\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y*)w) + \frac{\Delta F_{dist,x}}{m}\\
+	&\ddot{y} + 2\dot{x}w + (x + x*)\dot{w} - (y + y*)w^2 =\\
+	& -(y + y*)\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x*)w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 \end{aligned}
 \right.
 \end{equation}

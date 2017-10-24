@@ -34,11 +34,11 @@
 \contentsline {section}{\numberline {5.2}Disturbance Models}{17}{section.5.2}
 \contentsline {subsection}{Gravitational torque}{17}{subsection*.31}
 \contentsline {subsection}{Solar radiation}{18}{subsection*.32}
-\contentsline {section}{\numberline {5.3}Attitude control design}{19}{section.5.3}
-\contentsline {chapter}{\numberline {6} Implementation and test}{20}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acceptance test}{21}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{22}{chapter.8}
-\contentsline {subsection}{Future work}{22}{subsection*.33}
+\contentsline {section}{\numberline {5.3}Attitude control design}{18}{section.5.3}
+\contentsline {chapter}{\numberline {6} Implementation and test}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{20}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{21}{chapter.8}
+\contentsline {subsection}{Future work}{21}{subsection*.33}
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{23}{appendix.A}
 \contentsline {subsection}{Inertia matrix}{23}{subsection*.34}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{24}{appendix.B}
