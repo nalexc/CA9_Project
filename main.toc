@@ -18,29 +18,27 @@
 \contentsline {subsubsection}{\textit {Satellite Body Frame(SBF)}}{7}{subsubsection*.18}
 \contentsline {subsubsection}{\textit {Satellite Controller frame(SCF)}}{7}{subsubsection*.19}
 \contentsline {chapter}{\numberline {3}Requirements}{8}{chapter.3}
-\contentsline {part}{I\hspace {1em}Distance control}{9}{part.1}
-\contentsline {chapter}{\numberline {4}Modelling}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Disturbance Models}{10}{section.4.1}
-\contentsline {subsection}{Aerodynamic Drag Force}{10}{subsection*.21}
-\contentsline {subsection}{Solar radiation}{11}{subsection*.25}
-\contentsline {subsection}{$J_2$ gravity perturbation}{12}{subsection*.26}
-\contentsline {section}{\numberline {4.2}State Space Representation}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Relative dynamics}{14}{section.4.3}
-\contentsline {chapter}{\numberline {5}Distance control design}{16}{chapter.5}
-\contentsline {part}{II\hspace {1em}Attitude control}{17}{part.2}
-\contentsline {chapter}{\numberline {6}Modelling}{18}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kinematics}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dynamic Model}{19}{section.6.2}
-\contentsline {section}{\numberline {6.3}Disturbance Models}{20}{section.6.3}
-\contentsline {subsection}{Gravitational torque}{20}{subsection*.29}
-\contentsline {subsection}{Solar radiation}{21}{subsection*.30}
-\contentsline {chapter}{\numberline {7}Attitude control design}{22}{chapter.7}
-\contentsline {part}{III\hspace {1em} Test and implementation}{23}{part.3}
-\contentsline {chapter}{\numberline {8}Acceptance test}{24}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusion}{25}{chapter.9}
-\contentsline {section}{\numberline {9.1}Future work}{25}{section.9.1}
-\contentsline {chapter}{\numberline {A}Appendix A }{27}{appendix.A}
-\contentsline {section}{\numberline {A.1}Derivation of Equation of motion}{27}{section.A.1}
-\contentsline {subsection}{Inertia matrix}{27}{subsection*.31}
-\contentsline {chapter}{\numberline {B}Appendix B}{28}{appendix.B}
-\contentsline {section}{\numberline {B.1}Derivation of relative dynamics equations}{28}{section.B.1}
+\contentsline {chapter}{\numberline {4}Distance control}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modelling}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Disturbance Models}{9}{section.4.2}
+\contentsline {subsection}{Aerodynamic Drag Force}{9}{subsection*.21}
+\contentsline {subsection}{Solar radiation}{10}{subsection*.25}
+\contentsline {subsection}{$J_2$ gravity perturbation}{11}{subsection*.26}
+\contentsline {section}{\numberline {4.3}State Space Representation}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}Relative dynamics}{13}{section.4.4}
+\contentsline {section}{\numberline {4.5}Distance control design}{14}{section.4.5}
+\contentsline {chapter}{\numberline {5}Attitude control}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modelling}{15}{section.5.1}
+\contentsline {subsection}{Kinematics}{15}{subsection*.29}
+\contentsline {subsection}{Dynamic Model}{16}{subsection*.30}
+\contentsline {section}{\numberline {5.2}Disturbance Models}{17}{section.5.2}
+\contentsline {subsection}{Gravitational torque}{17}{subsection*.31}
+\contentsline {subsection}{Solar radiation}{18}{subsection*.32}
+\contentsline {section}{\numberline {5.3}Attitude control design}{19}{section.5.3}
+\contentsline {chapter}{\numberline {6} Implementation and test}{20}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{22}{chapter.8}
+\contentsline {subsection}{Future work}{22}{subsection*.33}
+\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{23}{appendix.A}
+\contentsline {subsection}{Inertia matrix}{23}{subsection*.34}
+\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{24}{appendix.B}

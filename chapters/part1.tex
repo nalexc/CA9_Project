@@ -1,26 +1,25 @@
-\part{Distance control}
-
-\chapter{Modelling}
-In this part, we'll focus on the modelling and the control of the distance between two satellites using the drag force as the control input of the system. First, we'll considerer that the orientation of the satellite is instantaneous and therefore, the drag force can be modified instantaneous. The Earth and the satellite is assumed to be a point mass to simplify the system. \\
+\chapter{Distance control}
+In this chapter, the focus will be on modeling and the control of the distance between two satellites using the drag force as the control input of the system. First, it is considered that the orientation of the satellite is instantaneous and therefore, the drag force can be modified instantaneously. The Earth and the satellite are assumed to be a point mass to simplify the system.
+\section{Modelling}
 The Satellite is mainly subjected to three forces: the gravity, the drag force and the sun radiation. Thus, the second law of Newton gives:
 \begin{flalign}
-\sum \vec{F} = m_{sat} \vec{a} = \vec{F_g} + \vec{F_D} + \vec{F_{rad}}
+\sum {F} = m_{sat} {a} = {F_g} + {F_D} + {F_{rad}}
 	\label{eq:ecc}
 \end{flalign}
 with the gravity can be modeled by:
 \begin{flalign}
-\vec{F_g} = -G\frac{m_earth \cdot m_sat}{||\vec{p}||^3} \vec{p}
+{F_g} = -G\frac{m_{earth} \cdot m_{sat}}{||{p}||^3} {p}
 	\label{eq:eccc}
 \end{flalign}
-where $\vec{p}$ is the vector position of the satellite (vector from the earth center to the mass center of the satellite in the inertital frame). The modelization of the $\vec{F_D}$ and $\vec{F_{rad}}$ are explained in the next section.
+where ${p}$ is the vector position of the satellite (vector from the earth center to the mass center of the satellite in the inertital frame). The modelization of the ${F_D}$ and ${F_{rad}}$ are explained in the next section.
 \section{Disturbance Models}
 \subsection{Aerodynamic Drag Force}
 The satellite is subjected to an aerodynamic drag force due to the atmosphere. The collisions with the air cause a force in the opposite direction of the velocity of the satellite. The force was modeled by Lord Rayleigh[ref]:
 \begin{flalign}
-\vec{F_D} = -\frac{1}{2} \rho \cdot C_D \cdot A_{\perp} ||\vec{v}|| \vec{v}
+{F_D} = -\frac{1}{2} \rho \cdot C_D \cdot A_{\perp} ||{v}||{v}
 	\label{eq:ec1c}
 \end{flalign}
-where $\rho$ is the density of the air, $C_D$ is the drag coefficient, $A_{\perp}$ is the area that is perpendicular of the velocity of the satellite $\vec{v}$. 
+where $\rho$ is the density of the air, $C_D$ is the drag coefficient, $A_{\perp}$ is the area that is perpendicular of the velocity of the satellite ${v}$. 
 
 The drag coefficient $C_D$ and the perpendicular area $A_{\perp}$ depend on the orientation of the satellite. Therefore, this force can be used as a input for the control of the position and the velocity of the satellite.
 
@@ -148,5 +147,4 @@ Therefore, the vector position from the earth to the satellite 1 and the satelli
 \vec{p_2} &= R \cdot \vec{\hat{x}} + x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}} \\
 \end{flalign}
 The equations of relative motions can ve derived (reference to appendixes):
-
-\chapter{Distance control design}
+\section{Distance control design}

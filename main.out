@@ -8,23 +8,18 @@
 \BOOKMARK [1][-]{section.2.3}{2.3 AAU-CubeSat sensors}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{2.4 Coordinate frames}{chapter.2}% 9
 \BOOKMARK [0][-]{chapter.3}{3 Requirements}{}% 10
-\BOOKMARK [-1][-]{part.1}{I Distance control}{}% 11
-\BOOKMARK [0][-]{chapter.4}{4 Modelling}{part.1}% 12
-\BOOKMARK [1][-]{section.4.1}{4.1 Disturbance Models}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.2}{4.2 State Space Representation}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.3}{4.3 Relative dynamics}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{5 Distance control design}{part.1}% 16
-\BOOKMARK [-1][-]{part.2}{II Attitude control}{}% 17
-\BOOKMARK [0][-]{chapter.6}{6 Modelling}{part.2}% 18
-\BOOKMARK [1][-]{section.6.1}{6.1 Kinematics}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.2}{6.2 Dynamic Model}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.3}{6.3 Disturbance Models}{chapter.6}% 21
-\BOOKMARK [0][-]{chapter.7}{7 Attitude control design}{part.2}% 22
-\BOOKMARK [-1][-]{part.3}{III \040Test and implementation}{}% 23
-\BOOKMARK [0][-]{chapter.8}{8 Acceptance test}{part.3}% 24
-\BOOKMARK [0][-]{chapter.9}{9 Conclusion}{part.3}% 25
-\BOOKMARK [1][-]{section.9.1}{9.1 Future work}{chapter.9}% 26
-\BOOKMARK [0][-]{appendix.A}{A Appendix A }{part.3}% 27
-\BOOKMARK [1][-]{section.A.1}{A.1 Derivation of Equation of motion}{appendix.A}% 28
-\BOOKMARK [0][-]{appendix.B}{B Appendix B}{part.3}% 29
-\BOOKMARK [1][-]{section.B.1}{B.1 Derivation of relative dynamics equations}{appendix.B}% 30
+\BOOKMARK [0][-]{chapter.4}{4 Distance control}{}% 11
+\BOOKMARK [1][-]{section.4.1}{4.1 Modelling}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{4.2 Disturbance Models}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.3}{4.3 State Space Representation}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.4}{4.4 Relative dynamics}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.5}{4.5 Distance control design}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{5 Attitude control}{}% 17
+\BOOKMARK [1][-]{section.5.1}{5.1 Modelling}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.2}{5.2 Disturbance Models}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{5.3 Attitude control design}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{6 \040Implementation and test}{}% 21
+\BOOKMARK [0][-]{chapter.7}{7 Acceptance test}{}% 22
+\BOOKMARK [0][-]{chapter.8}{8 Conclusion}{}% 23
+\BOOKMARK [0][-]{appendix.A}{A Derivation of equation of motion }{}% 24
+\BOOKMARK [0][-]{appendix.B}{B Derivation of relative dynamics equations}{}% 25
