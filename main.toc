@@ -42,3 +42,4 @@
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{23}{appendix.A}
 \contentsline {subsection}{Inertia matrix}{23}{subsection*.34}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{24}{appendix.B}
+\contentsline {chapter}{\numberline {C}Appendix name }{27}{appendix.C}
