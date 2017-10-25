@@ -162,3 +162,13 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+*.bcf
+
+*.bcf
+
+*.log
+
+*.gz
+
+*.pdf
