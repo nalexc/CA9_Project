@@ -172,3 +172,7 @@ TSWLatexianTemp*
 *.gz
 
 *.pdf
+
+*.log
+
+*.pdf
