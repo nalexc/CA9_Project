@@ -32,20 +32,22 @@ with m is the mass of both satellites. The gravity is given by the universal law
 \end{flalign*}
 where $\vec{r} = (x,y)$ is the vector from the satellite 1 to the satellite 2. The denominateur can be approximated by(reference):
 \begin{flalign*}
-||\vec{R} + \vec{r}||^{-3} &= ||(\vec{R} + \vec{r})\cdot(\vec{R} + \vec{r})||^{\frac{-3}{2}} \\
-&= ||\vec{R} \cdot \vec{R} + \vec{r} \cdot \vec{r} + 2\vec{R} \cdot \vec{r}||^{\frac{-3}{2}} \\
-&= R^{-3}||1 + \frac{\vec{r} \cdot \vec{r}}{R^2} + 2\frac{\vec{r} \cdot \vec{R}}{R^2}||^{\frac{-3}{2}}
+||\vec{R} + \vec{r}||^{-3} &= ||\vec{r}|| \\
+%||\vec{R} + \vec{r}||^{-3} &= ||(\vec{R} + \vec{r})\cdot(\vec{R} + \vec{r})||^{\frac{-3}{2}} \\
+%&= ||\vec{R} \cdot \vec{R} + \vec{r} \cdot \vec{r} + 2\vec{R} \cdot \vec{r}||^{\frac{-3}{2}} \\
+%&= R^{-3}||1 + \frac{\vec{r} \cdot \vec{r}}{R^2} + 2\frac{\vec{r} \cdot \vec{R}}{R^2}||^{\frac{-3}{2}}
 \end{flalign*}
-Due to the fact the $r << R$, the second term can be neglected and by using the approximation $(1 + x)^q = 1 + qx$ when $x << 1$. The expression can be approximated by:
-\begin{flalign*}
-||\vec{R} + \vec{r}||^{-3} &= R^{-3}(1 - 3\frac{\vec{r} \cdot \vec{R}}{R^2}) \\
-&= R^{-3}(1 - 3\frac{x}{R})
-\end{flalign*} 
+%Due to the fact the $r << R$, the second term can be neglected and by using the approximation $(1 + x)^q = 1 + qx$ when $x << 1$. The expression can be approximated by:
+%\begin{flalign*}
+%||\vec{R} + \vec{r}||^{-3} &= R^{-3}(1 - 3\frac{\vec{r} \cdot \vec{R}}{R^2}) \\
+%&= R^{-3}(1 - 3\frac{x}{R})
+%\end{flalign*} 
 and thus, the difference between the gravity force on satellite 2 and the the gravity force on 1 is:
 \begin{flalign*}
-\vec{F_{grav,2}} - \vec{F_{grav,1}} &\approx -G \frac{m_{earth}}{R^3} ((1 - 3\frac{x}{R}) (\vec{R} + \vec{r}) - \vec{R}) \\
-&\approx -G \frac{m_{earth}}{R^3} (\vec{r} - 3x \cdot \vec{\hat{x}} + 3 \frac{x}{R} \vec{r}) \\
-&\approx -\frac{\mu}{R^3} (-2x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}})
+\vec{F_{grav,2}} - \vec{F_{grav,1}} &\approx -\frac{\mu}{R^3}\vec{r} \\
+%\vec{F_{grav,2}} - \vec{F_{grav,1}} &\approx -G \frac{m_{earth}}{R^3} ((1 - 3\frac{x}{R}) (\vec{R} + \vec{r}) - \vec{R}) \\
+%&\approx -G \frac{m_{earth}}{R^3} (\vec{r} - 3x \cdot \vec{\hat{x}} + 3 \frac{x}{R} \vec{r}) \\
+%&\approx -\frac{\mu}{R^3} (-2x \cdot \vec{\hat{x}} + y \cdot \vec{\hat{y}})
 \end{flalign*} 
 with $\mu = G \cdot m_{earth}$, The drag force can be modelling be using the formula(ref):
 \begin{flalign*}
@@ -67,7 +69,7 @@ and the equation( reference B5) gives:
 \begin{equation}
 \left\{
 	\begin{aligned}
-		& \ddot{x} - 2\dot{y}w - y\dot{w} - xw^2 = 2x\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - yw) + \frac{\Delta F_{dist,x}}{m}\\
+		& \ddot{x} - 2\dot{y}w - y\dot{w} - xw^2 = -x\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - yw) + \frac{\Delta F_{dist,x}}{m}\\
 		&\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2 = -y\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + xw + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 	\end{aligned}
 \right.
@@ -99,7 +101,7 @@ Thus, the equations (reference B7) become:
 \left\{
 \begin{aligned}
 	& \ddot{x} - 2\dot{y}w - (y + y*)\dot{w} - (x + x*)w^2 = \\
-	&2(x + x*)\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y*)w) + \frac{\Delta F_{dist,x}}{m}\\
+	&-(x + x*)\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y*)w) + \frac{\Delta F_{dist,x}}{m}\\
 	&\ddot{y} + 2\dot{x}w + (x + x*)\dot{w} - (y + y*)w^2 =\\
 	& -(y + y*)\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x*)w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 \end{aligned}
