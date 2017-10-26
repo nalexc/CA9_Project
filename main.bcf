@@ -2120,15 +2120,33 @@
     <bcf:datasource type="file" datatype="bibtex">setup/bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">SADC</bcf:citekey>
-    <bcf:citekey order="2">wik</bcf:citekey>
-    <bcf:citekey order="3">SADC</bcf:citekey>
-    <bcf:citekey order="4">SADC</bcf:citekey>
-    <bcf:citekey order="5">SADC</bcf:citekey>
-    <bcf:citekey order="6">SADC</bcf:citekey>
-    <bcf:citekey order="7">SADC</bcf:citekey>
-    <bcf:citekey order="8">Biezl</bcf:citekey>
-    <bcf:citekey order="9">Biezl</bcf:citekey>
-    <bcf:citekey order="10">SADC</bcf:citekey>
+    <bcf:citekey order="1">SIDI</bcf:citekey>
+    <bcf:citekey order="2">SFF</bcf:citekey>
+    <bcf:citekey order="3">SF</bcf:citekey>
+    <bcf:citekey order="4">SF</bcf:citekey>
+    <bcf:citekey order="5">cs</bcf:citekey>
+    <bcf:citekey order="6">cs</bcf:citekey>
+    <bcf:citekey order="7">CDS</bcf:citekey>
+    <bcf:citekey order="8">PPOD</bcf:citekey>
+    <bcf:citekey order="9">view</bcf:citekey>
+    <bcf:citekey order="10">view</bcf:citekey>
+    <bcf:citekey order="11">FSA</bcf:citekey>
+    <bcf:citekey order="12">SADC</bcf:citekey>
+    <bcf:citekey order="13">wik</bcf:citekey>
+    <bcf:citekey order="14">SADC</bcf:citekey>
+    <bcf:citekey order="15">SADC</bcf:citekey>
+    <bcf:citekey order="16">SADC</bcf:citekey>
+    <bcf:citekey order="17">SADC</bcf:citekey>
+    <bcf:citekey order="18">SADC</bcf:citekey>
+    <bcf:citekey order="19">Biezl</bcf:citekey>
+    <bcf:citekey order="20">Biezl</bcf:citekey>
+    <bcf:citekey order="21">SADC</bcf:citekey>
   </bcf:section>
+  <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
 </bcf:controlfile>
