@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  25 OCT 2017 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  26 OCT 2017 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3684,89 +3684,89 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 [6] (./chapters/Introduction.tex
 Chapter 1.
-) (./chapters/SetupDescribtion.tex [1
+[1
 
 
-]
+]) (./chapters/SetupDescribtion.tex [2]
 Chapter 2.
-<figures/sat_form.jpeg, id=187, 1742.51pt x 1607.00375pt>
+<figures/sat_form.jpeg, id=199, 1742.51pt x 1607.00375pt>
 File: figures/sat_form.jpeg Graphic file (type jpg)
 
 <use figures/sat_form.jpeg>
 Package pdftex.def Info: figures/sat_form.jpeg used on input line 7.
 (pdftex.def)             Requested size: 318.66948pt x 293.88264pt.
 
-<figures/cub.jpg, id=189, 185.69376pt x 206.7725pt>
+<figures/cub.jpg, id=201, 185.69376pt x 206.7725pt>
 File: figures/cub.jpg Graphic file (type jpg)
  <use figures/cub.jpg>
 Package pdftex.def Info: figures/cub.jpg used on input line 16.
 (pdftex.def)             Requested size: 136.57462pt x 152.08165pt.
 
-[2
+[3
 
  <./figures/sat_form.jpeg>]
-<figures/RW.jpeg, id=197, 1551.7975pt x 1397.22pt>
+<figures/RW.jpeg, id=213, 1551.7975pt x 1397.22pt>
 File: figures/RW.jpeg Graphic file (type jpg)
  <use figures/RW.jpeg>
 Package pdftex.def Info: figures/RW.jpeg used on input line 34.
 (pdftex.def)             Requested size: 200.76353pt x 180.74954pt.
 
-<figures/cubsat1.jpg, id=198, 208.3785pt x 239.9364pt>
+<figures/cubsat1.jpg, id=214, 208.3785pt x 239.9364pt>
 File: figures/cubsat1.jpg Graphic file (type jpg)
 
 <use figures/cubsat1.jpg>
 Package pdftex.def Info: figures/cubsat1.jpg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 256.85754pt.
- [3 <./figures/cub.jpg>] [4 <./figures/RW.jpeg> <./figures/cubsat1.jpg>] <figur
-es/ECI.jpeg, id=220, 978.65625pt x 925.4575pt>
+ [4 <./figures/cub.jpg>] [5 <./figures/RW.jpeg> <./figures/cubsat1.jpg>] <figur
+es/ECI.jpeg, id=242, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
 
 <use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 73.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
- <figures/ECEF.jpeg, id=222, 1034.86626pt x 893.3375pt>
+ <figures/ECEF.jpeg, id=244, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
 
 <use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 81.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
- [5 <./figures/ECI.jpeg>]
-<figures/OFR.jpeg, id=236, 1551.7975pt x 1343.0175pt>
+ [6 <./figures/ECI.jpeg>]
+<figures/OFR.jpeg, id=258, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
  <use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 91.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
 
-[6 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=248, 1182.4175pt x 1198.4775pt>
+[7 <./figures/ECEF.jpeg>]
+<figures/frames.jpeg, id=271, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
 Package pdftex.def Info: figures/frames.jpeg used on input line 101.
 (pdftex.def)             Requested size: 182.09486pt x 184.55513pt.
-) (./chapters/requirements.tex [7 <./figures/OFR.jpeg> <./figures/frames.jpeg>]
+) (./chapters/requirements.tex [8 <./figures/OFR.jpeg> <./figures/frames.jpeg>]
 
 Chapter 3.
-) (./chapters/part1.tex [8
+) (./chapters/part1.tex [9
 
 ]
 Chapter 4.
-<figures/drag_coef.jpg, id=271, 365.86688pt x 142.5325pt>
+<figures/drag_coef.jpg, id=294, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 34.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=272, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=295, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 120.29338pt.
 
-[9
+[10
 
-] [10 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
+] [11 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -3774,19 +3774,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 79.
 
-<figures/j2.jpg, id=302, 395.4775pt x 216.81pt>
+<figures/j2.jpg, id=326, 395.4775pt x 216.81pt>
 File: figures/j2.jpg Graphic file (type jpg)
  <use figures/j2.jpg>
 Package pdftex.def Info: figures/j2.jpg used on input line 95.
 (pdftex.def)             Requested size: 273.14923pt x 149.74792pt.
- [11 <./figures/j2.jpg>] [12]
-<figures/relativeDynamics.png, id=330, 703.62875pt x 592.2125pt>
+ [12 <./figures/j2.jpg>] [13]
+<figures/relativeDynamics.png, id=355, 703.62875pt x 592.2125pt>
 File: figures/relativeDynamics.png Graphic file (type png)
 
 <use figures/relativeDynamics.png>
 Package pdftex.def Info: figures/relativeDynamics.png used on input line 149.
 (pdftex.def)             Requested size: 273.14923pt x 229.89565pt.
- [13]) (./chapters/part2.tex [14 <./figures/relativeDynamics.png (PNG copy)>]
+ [14]) (./chapters/part2.tex [15 <./figures/relativeDynamics.png (PNG copy)>]
 Chapter 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 7.
@@ -3796,32 +3796,31 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 7.
- [15
+ [16
 
-] [16] [17])
-(./chapters/acceptTest.tex [18]
+] [17] [18])
+(./chapters/acceptTest.tex [19]
 Chapter 6.
-[19
+[20
 
 ]
 Chapter 7.
-) (./chapters/conclusion.tex [20
+) (./chapters/conclusion.tex [21
 
 ]
 Chapter 8.
-) [21
-
-] [22
+) [22
 
 ] (./appendix/appendix_1.tex
 Appendix A.
 ) (./appendix/code.tex [23
 
+
 ]
 Appendix B.
 [24
 
-] <figures/operating_point.jpg, id=463, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=482, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -3831,7 +3830,14 @@ Package pdftex.def Info: figures/operating_point.jpg used on input line 78.
 Appendix C.
 ) [27
 
-] (./main.lox)
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 54.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [28
+
+]
+(./main.lox)
 \tf@lox=\write8
 \openout8 = `main.lox'.
 
@@ -3840,7 +3846,7 @@ Appendix C.
 
  
 AED: lastpage setting LastPage
-[28
+[29
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
@@ -3859,47 +3865,43 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49521 strings out of 493014
- 1025832 string characters out of 6133351
- 1621836 words of memory out of 5000000
- 52054 multiletter control sequences out of 15000+600000
- 133326 words of font info for 103 fonts, out of 8000000 for 9000
+ 49592 strings out of 493014
+ 1027119 string characters out of 6133351
+ 1622031 words of memory out of 5000000
+ 52110 multiletter control sequences out of 15000+600000
+ 136439 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10411b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.0@wik} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@SADC} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/loca
-l/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/
-2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dis
-t/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dv
-ips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr
-8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/lm/lmsy8.pfb>
-Output written on main.pdf (34 pages, 1880556 bytes).
+ 57i,23n,92p,10411b,1771s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-d
+ist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
+dvips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/l
+m-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
+mmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
+m/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt1
+2.pfb>
+Output written on main.pdf (35 pages, 1931340 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 526 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
  296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
