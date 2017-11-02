@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  26 OCT 2017 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  2 NOV 2017 11:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -2450,20 +2450,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
-8.
-
 Package biblatex Info: ... file 'main.bbl' found.
-(main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Biezl
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(main.bbl)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
 \AtBeginShipoutBox=\box124
@@ -3761,88 +3749,131 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
  [6]
 (chapters/Introduction.tex
 Chapter 1.
-) (chapters/SetupDescribtion.tex [1
+
+LaTeX Warning: Citation 'SIDI' on page 1 undefined on input line 2.
 
 
-]
+LaTeX Warning: Citation 'SFF' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'SF' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'SF' on page 1 undefined on input line 10.
+
+[1
+
+
+]) (chapters/SetupDescribtion.tex [2]
 Chapter 2.
-<figures/sat_form.jpeg, id=185, 1742.51pt x 1607.00375pt>
+<figures/sat_form.jpeg, id=190, 1742.51pt x 1607.00375pt>
 File: figures/sat_form.jpeg Graphic file (type jpg)
 
 <use figures/sat_form.jpeg>
 Package pdftex.def Info: figures/sat_form.jpeg used on input line 7.
 (pdftex.def)             Requested size: 318.66948pt x 293.88264pt.
 
-<figures/cub.jpg, id=187, 185.69376pt x 206.7725pt>
+<figures/cub.jpg, id=192, 185.69376pt x 206.7725pt>
 File: figures/cub.jpg Graphic file (type jpg)
  <use figures/cub.jpg>
 Package pdftex.def Info: figures/cub.jpg used on input line 16.
 (pdftex.def)             Requested size: 136.57462pt x 152.08165pt.
 
-[2
+
+LaTeX Warning: Citation 'cs' on page 3 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'cs' on page 3 undefined on input line 17.
+
+[3
 
  <./figures/sat_form.jpeg>]
-<figures/RW.jpeg, id=195, 1551.7975pt x 1397.22pt>
+
+LaTeX Warning: Citation 'CDS' on page 4 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'PPOD' on page 4 undefined on input line 22.
+
+<figures/RW.jpeg, id=200, 1551.7975pt x 1397.22pt>
 File: figures/RW.jpeg Graphic file (type jpg)
  <use figures/RW.jpeg>
 Package pdftex.def Info: figures/RW.jpeg used on input line 34.
 (pdftex.def)             Requested size: 200.76353pt x 180.74954pt.
 
-<figures/cubsat1.jpg, id=196, 208.3785pt x 239.9364pt>
+<figures/cubsat1.jpg, id=201, 208.3785pt x 239.9364pt>
 File: figures/cubsat1.jpg Graphic file (type jpg)
 
 <use figures/cubsat1.jpg>
 Package pdftex.def Info: figures/cubsat1.jpg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 256.85754pt.
- [3 <./figures/cub.jpg>] [4 <./figures/RW.jpeg> <./figures/cubsat1.jpg>] <figur
-es/ECI.jpeg, id=218, 978.65625pt x 925.4575pt>
-File: figures/ECI.jpeg Graphic file (type jpg)
 
-<use figures/ECI.jpeg>
+
+LaTeX Warning: Citation 'view' on page 4 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'view' on page 4 undefined on input line 44.
+
+[4 <./figures/cub.jpg>] [5 <./figures/RW.jpeg> <./figures/cubsat1.jpg>]
+<figures/ECI.jpeg, id=223, 978.65625pt x 925.4575pt>
+File: figures/ECI.jpeg Graphic file (type jpg)
+ <use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 73.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
- <figures/ECEF.jpeg, id=220, 1034.86626pt x 893.3375pt>
-File: figures/ECEF.jpeg Graphic file (type jpg)
 
-<use figures/ECEF.jpeg>
+<figures/ECEF.jpeg, id=225, 1034.86626pt x 893.3375pt>
+File: figures/ECEF.jpeg Graphic file (type jpg)
+ <use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 81.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
- [5 <./figures/ECI.jpeg>]
-<figures/OFR.jpeg, id=234, 1551.7975pt x 1343.0175pt>
+
+[6 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=239, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
- <use figures/OFR.jpeg>
+
+<use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 91.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
-
-[6 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=246, 1182.4175pt x 1198.4775pt>
+ [7 <./figures/ECEF.jpeg>]
+<figures/frames.jpeg, id=252, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
 Package pdftex.def Info: figures/frames.jpeg used on input line 101.
 (pdftex.def)             Requested size: 182.09486pt x 184.55513pt.
-) (chapters/requirements.tex [7 <./figures/OFR.jpeg> <./figures/frames.jpeg>]
+) (chapters/requirements.tex [8 <./figures/OFR.jpeg> <./figures/frames.jpeg>]
 Chapter 3.
-) (chapters/part1.tex [8
+) (chapters/part1.tex [9
 
 ]
 Chapter 4.
-<figures/drag_coef.jpg, id=269, 365.86688pt x 142.5325pt>
+
+LaTeX Warning: Citation 'FSA' on page 10 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'SADC' on page 10 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'wik' on page 10 undefined on input line 28.
+
+<figures/drag_coef.jpg, id=272, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 34.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=270, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=273, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 120.29338pt.
 
-[9
+[10
 
-] [10 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
+]
+
+LaTeX Warning: Citation 'SADC' on page 11 undefined on input line 57.
+
+[11 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -3855,14 +3886,14 @@ File: figures/j2.jpg Graphic file (type jpg)
  <use figures/j2.jpg>
 Package pdftex.def Info: figures/j2.jpg used on input line 95.
 (pdftex.def)             Requested size: 273.14923pt x 149.74792pt.
- [11 <./figures/j2.jpg>] [12]
-<figures/relativeDynamics.png, id=327, 703.62875pt x 592.2125pt>
+ [12 <./figures/j2.jpg>] [13]
+<figures/relativeDynamics.png, id=328, 703.62875pt x 592.2125pt>
 File: figures/relativeDynamics.png Graphic file (type png)
 
 <use figures/relativeDynamics.png>
 Package pdftex.def Info: figures/relativeDynamics.png used on input line 149.
 (pdftex.def)             Requested size: 273.14923pt x 229.89565pt.
- [13]) (chapters/part2.tex [14 <./figures/relativeDynamics.png (PNG copy)>]
+ [14]) (chapters/part2.tex [15 <./figures/relativeDynamics.png (PNG copy)>]
 Chapter 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 7.
@@ -3872,32 +3903,54 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 7.
- [15
 
-] [16] [17])
-(chapters/acceptTest.tex [18]
+
+LaTeX Warning: Citation 'SADC' on page 16 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'SADC' on page 16 undefined on input line 16.
+
+[16
+
+]
+
+LaTeX Warning: Citation 'SADC' on page 17 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'SADC' on page 17 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'Biezl' on page 17 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'Biezl' on page 17 undefined on input line 85.
+
+[17] [18]
+
+LaTeX Warning: Citation 'SADC' on page 19 undefined on input line 158.
+
+) (chapters/acceptTest.tex [19]
 Chapter 6.
-[19
+[20
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [20
+) (chapters/conclusion.tex [21
 
 ]
 Chapter 8.
-) [21
-
-] [22
+) [22
 
 ] (appendix/appendix_1.tex
 Appendix A.
 ) (appendix/code.tex [23
 
+
 ]
 Appendix B.
 [24
 
-] <figures/operating_point.jpg, id=459, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=449, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -3926,53 +3979,55 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1CFA52C58FBC2C5F21D51EA6A7C9749B;1660.
+(rerunfilecheck)             Checksum: E05358324DF25AEDC04027A043A29834;1693.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52168 strings out of 493323
- 1084232 string characters out of 3139066
- 1709693 words of memory out of 3000000
- 54698 multiletter control sequences out of 15000+200000
+ 52156 strings out of 493323
+ 1083968 string characters out of 3139066
+ 1709782 words of memory out of 3000000
+ 54687 multiletter control sequences out of 15000+200000
  659958 words of font info for 111 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10413b,1840s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{cite.0@wik} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@SADC} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files
-/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
-nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fi
-les/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmsy8.pfb>
-Output written on main.pdf (34 pages, 1940752 bytes).
+ 57i,23n,92p,10413b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program 
+Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi
+6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmsy8.pfb>
+Output written on main.pdf (34 pages, 1945773 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
  296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
