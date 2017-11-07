@@ -26,20 +26,21 @@
 \contentsline {subsection}{$J_2$ gravity perturbation}{12}{subsection*.26}
 \contentsline {section}{\numberline {4.3}State Space Representation}{13}{section.4.3}
 \contentsline {section}{\numberline {4.4}Relative dynamics}{14}{section.4.4}
-\contentsline {section}{\numberline {4.5}Distance control design}{15}{section.4.5}
-\contentsline {chapter}{\numberline {5}Attitude control}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Modelling}{16}{section.5.1}
-\contentsline {subsection}{Kinematics}{16}{subsection*.29}
-\contentsline {subsection}{Dynamic Model}{17}{subsection*.30}
-\contentsline {section}{\numberline {5.2}Disturbance Models}{18}{section.5.2}
-\contentsline {subsection}{Gravitational torque}{18}{subsection*.31}
-\contentsline {subsection}{Solar radiation}{19}{subsection*.32}
-\contentsline {section}{\numberline {5.3}Attitude control design}{19}{section.5.3}
-\contentsline {chapter}{\numberline {6} Implementation and test}{20}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acceptance test}{21}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{22}{chapter.8}
-\contentsline {subsection}{Future work}{22}{subsection*.33}
-\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{23}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{23}{subsection*.34}
-\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{24}{appendix.B}
-\contentsline {chapter}{\numberline {C}Linearisation of the relative dynamics eqations}{27}{appendix.C}
+\contentsline {subsubsection}{Relative state space representation}{15}{subsubsection*.29}
+\contentsline {section}{\numberline {4.5}Distance control design}{17}{section.4.5}
+\contentsline {chapter}{\numberline {5}Attitude control}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modelling}{18}{section.5.1}
+\contentsline {subsection}{Kinematics}{18}{subsection*.32}
+\contentsline {subsection}{Dynamic Model}{19}{subsection*.33}
+\contentsline {section}{\numberline {5.2}Disturbance Models}{20}{section.5.2}
+\contentsline {subsection}{Gravitational torque}{20}{subsection*.34}
+\contentsline {subsection}{Solar radiation}{21}{subsection*.35}
+\contentsline {section}{\numberline {5.3}Attitude control design}{21}{section.5.3}
+\contentsline {chapter}{\numberline {6} Implementation and test}{22}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{23}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{24}{chapter.8}
+\contentsline {subsection}{Future work}{24}{subsection*.36}
+\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{25}{appendix.A}
+\contentsline {subsection}{Inertia matrix}{25}{subsection*.37}
+\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{26}{appendix.B}
+\contentsline {chapter}{\numberline {C}Linearisation of the relative dynamics eqations}{29}{appendix.C}

@@ -142,8 +142,8 @@ with
 \]
 and ${\delta(x,t)}$ reprensent the influence all the disturbances.
 \section{Relative dynamics}
-In order to analyse the distance between two satellites, the relative dynamics are analyzed. \textbf{ In order to simplify the system, the satellites will be assumed to stay all over the stay in the same.} This assumption has also to be made due to the limitation of the direction of the input control (the drag force). \\
-To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the figure \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\hat{x}}$ is defined by ${\hat{x}} = \frac{{R}}{R}$ where ${R}$ is the vector from the center of the Earth to the first satellite, the axis ${\hat{y}}$ is perpendicular to ${\hat{x}}$ and in the plan of motion of the satellites and ${\hat{z}}$ is defined by the right-hand law (${\hat{z}} = {\hat{x}} \times {\hat{y}}$). \\
+In order to analyse the distance between two satellites, the relative dynamics are analyzed. Furthermore, to simplify the system, satellites will be assumed to stay in the same plane. This assumption has also to be made due to the limitation of the direction of the input control (the drag force). \\
+To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the figure \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\hat{x}}$ is defined by ${\hat{x}} = \frac{{R}}{R}$ where ${R}$ is the vector from the center of the Earth to the first satellite, the axis ${\hat{y}}$ is perpendicular to ${\hat{x}}$ and in the plane of motion of the satellites and ${\hat{z}}$ is defined by the right-hand law (${\hat{z}} = {\hat{x}} \times {\hat{y}}$). \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/relativeDynamics}
@@ -156,4 +156,65 @@ Therefore, the vector position from the Earth to the fist satellite and the seco
 {p_2} &= R \cdot {\hat{x}} + x \cdot {\hat{x}} + y \cdot {\hat{y}} 
 \end{flalign}
 The equations of relative motions are derived in \appref{chap:B}.
+%
+\subsubsection{Relative state space representation}
+%
+Since the equations of relative motion  that have been derived in \appref{chap:B} are not linear, an approximation of a linearization is made around the operating points, $x*$ and $y*$, by introducing the states with a new variable as $s = [x; \dot{x}; y; \dot{y}]$, more about this can be found in \appref{chap:C}.  
+%
+In order to derive the linear state space model the assumptions that the radius is constant and that the angular velocity, $w = \sqrt{\frac{\mu}{R^3}}$ is constant, lead in the assumption that $\dot{R} = 0$ and $\dot{w} = 0$. Furthermore, using the approximation $\dot{x}$, $y << y^{*}$ and $x, x^{*}$, $\frac{\dot{y}}{w} << R$, the \eqref{eq:statespaceassumption} has been derived. Finally assuming that $y* << R$ the linear system can be written in state space form  
+%
+ \begin{flalign*}
+ 	{\dot{x}(t)} ={A x(t) + Bu(t)}
+ \end{flalign*}  
+ \begin{flalign*}
+	{y(t)} ={ C x(t) + D u(t)}
+\end{flalign*} 
+%
+as
+%
+\begin{flalign*}
+	{A}
+	= 
+	\begin{bmatrix}
+		0& 1& 0 & 0 \\
+		0& 0&0&2w  \\ 
+		0&0&0&1 \\
+		0&-2w & 0 &0
+	\end{bmatrix} 
+\end{flalign*}
+\begin{flalign*}
+	{B}
+	= 
+	\begin{bmatrix}
+		0& \\
+		0&  \\ 
+		0& \\
+		-Rw&
+	\end{bmatrix} 
+\end{flalign*}
+%
+$C=eye(4) $ and $D =0$.
+%
+With this assumptions and by using a control law $u= u_2 - u_1$ from the \eqref{eq:statespaceassumption} it can be seen that when $u_2 > u_1$ then $u>0$ and in this case $y$ should have a decreasing attitude as seen in the \figref{fig:theoryapprox}
+%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]
+{figures/theoryapprox.eps}
+\caption{Theoretical decreasing attitude of y }
+\label{fig:theoryapprox}
+\end{figure}
+% 
+Taking into account all the above assumptions, this theoretical attitude of $y$ should be the same with the results from the actual model simulation, in order to proceed to the design of the controller. From the \figref{fig:practiceapprox} 
+%  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]
+	{figures/practiceapprox.eps}
+	\caption{The practical attitude of y is increasing }
+	\label{fig:practiceapprox}
+\end{figure}
+% 
+it can be seen that the theoretical with the practical attitude of $y$  are not the same. Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
+%
 \section{Distance control design}
