@@ -27,7 +27,8 @@
 \contentsline {section}{\numberline {4.3}State Space Representation}{13}{section.4.3}
 \contentsline {section}{\numberline {4.4}Relative dynamics}{14}{section.4.4}
 \contentsline {subsubsection}{Relative state space representation}{15}{subsubsection*.29}
-\contentsline {section}{\numberline {4.5}Distance control design}{17}{section.4.5}
+\contentsline {section}{\numberline {4.5}Control of the angular velocity}{17}{section.4.5}
+\contentsline {section}{\numberline {4.6}Distance control design}{17}{section.4.6}
 \contentsline {chapter}{\numberline {5}Attitude control}{18}{chapter.5}
 \contentsline {section}{\numberline {5.1}Modelling}{18}{section.5.1}
 \contentsline {subsection}{Kinematics}{18}{subsection*.32}
@@ -44,3 +45,4 @@
 \contentsline {subsection}{Inertia matrix}{25}{subsection*.37}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{26}{appendix.B}
 \contentsline {chapter}{\numberline {C}Linearisation of the relative dynamics eqations}{29}{appendix.C}
+\contentsline {chapter}{\numberline {D}Appendix name }{30}{appendix.D}
