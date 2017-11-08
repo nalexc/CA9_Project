@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  8 NOV 2017 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  8 NOV 2017 21:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -3951,8 +3951,29 @@ File: figures/test_coef-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/test_coef-eps-converted-to.pdf used on input l
 ine 229.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
- [17 <./figures/practiceapprox-eps-converted-to.pdf>]) (chapters/part2.tex [18 
-<./figures/test_coef-eps-converted-to.pdf>]
+ [17 <./figures/practiceapprox-eps-converted-to.pdf>] [18 <./figures/test_coef-
+eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig:bode_L' on page 19 undefined on input line 284.
+
+Package epstopdf Info: Source file: <figures/Bode_L.eps>
+(epstopdf)                    date: 2017-11-08 18:33:29
+(epstopdf)                    size: 45715 bytes
+(epstopdf)             Output file: <figures/Bode_L-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-08 18:34:07
+(epstopdf)                    size: 6905 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/Bode_L-eps-converte
+d-to.pdf figures/Bode_L.eps>
+(epstopdf)             \includegraphics on input line 288.
+Package epstopdf Info: Output file is already uptodate.
+<figures/Bode_L-eps-converted-to.pdf, id=400, 963.6pt x 457.71pt>
+File: figures/Bode_L-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Bode_L-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Bode_L-eps-converted-to.pdf used on input line
+ 288.
+(pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
+ [19 <./figures/Bode_L-eps-converted-to.pdf>]) (chapters/part2.tex [20]
 Chapter 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 7.
@@ -3964,66 +3985,66 @@ Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input
 line 7.
 
 
-LaTeX Warning: Citation 'SADC' on page 19 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 21 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'SADC' on page 19 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 21 undefined on input line 16.
 
-[19
+[21
 
 ]
 
-LaTeX Warning: Citation 'SADC' on page 20 undefined on input line 54.
+LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 54.
 
 
-LaTeX Warning: Citation 'SADC' on page 20 undefined on input line 60.
+LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 60.
 
 
-LaTeX Warning: Citation 'Biezl' on page 20 undefined on input line 78.
+LaTeX Warning: Citation 'Biezl' on page 22 undefined on input line 78.
 
 
-LaTeX Warning: Citation 'Biezl' on page 20 undefined on input line 85.
+LaTeX Warning: Citation 'Biezl' on page 22 undefined on input line 85.
 
-[20] [21]
+[22] [23]
 
-LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 158.
+LaTeX Warning: Citation 'SADC' on page 24 undefined on input line 158.
 
-) (chapters/acceptTest.tex [22]
+) (chapters/acceptTest.tex [24]
 Chapter 6.
-[23
+[25
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [24
+) (chapters/conclusion.tex [26
 
 ]
 Chapter 8.
-) [25
+) [27
 
-] [26
+] [28
 
 ] (appendix/appendix_1.tex
 Appendix A.
-) (appendix/code.tex [27
+) (appendix/code.tex [29
 
 ]
 Appendix B.
-[28
+[30
 
-] <figures/operating_point.jpg, id=505, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=529, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [29 <./figures/operating_point.jpg>])
-(appendix/appendix_2.tex [30]
+ [31 <./figures/operating_point.jpg>])
+(appendix/appendix_2.tex [32]
 Appendix C.
-) (appendix/appendix_3.tex [31
+) (appendix/appendix_3.tex [33
 
 ]
 Appendix D.
-) [32
+) [34
 
 ] (main.lox)
 \tf@lox=\write8
@@ -4034,7 +4055,7 @@ Appendix D.
 
  
 AED: lastpage setting LastPage
-[33
+[35
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
@@ -4061,10 +4082,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52214 strings out of 493323
- 1085139 string characters out of 3139066
- 1710131 words of memory out of 3000000
- 54715 multiletter control sequences out of 15000+200000
+ 52238 strings out of 493323
+ 1085567 string characters out of 3139066
+ 1710208 words of memory out of 3000000
+ 54727 multiletter control sequences out of 15000+200000
  659958 words of font info for 111 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10413b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4089,9 +4110,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy8.pfb>
-Output written on main.pdf (39 pages, 2033124 bytes).
+Output written on main.pdf (41 pages, 2046085 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 194 named destinations out of 1000 (max. 500000)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

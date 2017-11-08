@@ -230,5 +230,66 @@ with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the c
 	\caption{Angular velocity in function of time}
 	\label{fig:testCoef}
 \end{figure} 
-The coefficient found in the simulation is almost the same than in the theory and oscillations can be observed with a frequency equals to $f \approx \frac{2\pi}{\omega_0}$. This is due to the fact that the orbit is not exactly a circle but a ellipse. Thus, The angular velocity changes a little during a turn around the Earth. In order to limit the influence of these variations on the controller, A low pass filter will be added to reduce the amplitude of these oscillations.
+The coefficient found in the simulation is almost the same than in the theory and oscillations can be observed with a frequency equals to $f \approx \frac{2\pi}{\omega_0}$. This is due to the fact that the orbit is not exactly a circle but a ellipse. Thus, The angular velocity changes a little during a turn around the Earth. In order to limit the influence of these variations on the controller, A low pass filter will be added to reduce the amplitude of these oscillations. \\
+A state space representation can be derived:
+\begin{flalign}
+	{s}
+	= 
+	\begin{bmatrix}
+		\theta - \theta_{ref} \\
+		\dot{\theta}
+	\end{bmatrix} 
+\end{flalign}
+\begin{flalign}
+	&{\dot{s}(t)} ={A s(t) + Bu(t)}
+\end{flalign}  
+where
+\begin{flalign}
+	{A}
+	= 
+	\begin{bmatrix}
+		0& 1& \\
+		0& 0&
+	\end{bmatrix} 
+\end{flalign}
+\begin{flalign}
+	{B}
+	= 
+	\begin{bmatrix}
+		0& \\
+		\frac{3 \omega_0^2 R_0}{m}
+	\end{bmatrix} 
+\end{flalign}
+and $u = u_2 - u_1$ and $\theta$ is the angle between two satellites.
 \section{Distance control design}
+A first controller is designed to control the angle between two satellite. Due to the fact that the state representation is linear, A LQR control can be used with
+\begin{flalign}
+	{Q}
+	= 
+	\begin{bmatrix}
+		(\frac{pi}{3})^{-2}& 0& \\
+		0& 0&
+	\end{bmatrix} 
+\end{flalign}
+\begin{flalign}
+	{R}
+	= 
+	\begin{bmatrix}
+		u_{max}^{-2}
+	\end{bmatrix} 
+\end{flalign}
+Thanks to the function \textit{lqr(A,B,C,D,[])}, The vector of gain K is obtained. the control input signal can be computed ($u = u_2 - u_1$) and therefore if u is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If u is smaller than zero, it will be the opposite.
+\subsubsection{Frequency Analysis}
+The loop transfer function can be computed L(s) = P(s)C(s)LPF(s) where P(s) is the transfer function of the state representation system, C(s) = $K_1$ + $K_2$s is the transfer function of the controller and LPF(s) is the transfer function of the low pass filter.
+The bode diagram of L(s) is represented in the \figref{fig:bode_L}. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/Bode_L.eps}
+	\caption{Bode diagram of the loop transfer function}
+	\label{fig:Bode_L}
+\end{figure}
+In the modeling, the control input signal (drag force coefficient) was assumed to be able to change instantaneously but in the real system,variations of the orientation of the satellite take times. Therefore, the phase margin must be big enough to allow a delay in the controller. In the bode diagram, the phase margin can be estimated equal to $62^{circ}$ which is enough to accept a large delay due to the small crossover frequency. \\
+
+\subsubsection{Constellation Formation Control} 
+A second controller is designed now to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
