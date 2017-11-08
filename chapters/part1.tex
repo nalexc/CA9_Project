@@ -217,6 +217,18 @@ Taking into account all the above assumptions, this theoretical attitude of $y$ 
 % 
 it can be seen that the theoretical with the practical attitude of $y$  are not the same. Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
 %
-\section{Control of the angular velocity}
-As seen in the previous section, the angular velocity can not be assumed constant. Therefore a equation is needed to estimate it in function of the drag force.
+\section{Modelling based on the angular velocity}
+As seen in the previous section, the angular velocity can not be assumed constant. Therefore a equation is needed to estimate it in function of the drag force. In the appendix D, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 
+\begin{flalign}
+	\dot{\Delta \omega} = C u
+\end{flalign}
+with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($u = \frac{u_{min} + u_{max}}{2}$). The angular velocity in function of time with constant drag force is shown in \figref{fig:testCoef}. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/test_coef.eps}
+	\caption{Angular velocity in function of time}
+	\label{fig:testCoef}
+\end{figure} 
+The coefficient found in the simulation is almost the same than in the theory and oscillations can be observed with a frequency equals to $f \approx \frac{2\pi}{\omega_0}$. This is due to the fact that the orbit is not exactly a circle but a ellipse. Thus, The angular velocity changes a little during a turn around the Earth. In order to limit the influence of these variations on the controller, A low pass filter will be added to reduce the amplitude of these oscillations.
 \section{Distance control design}
