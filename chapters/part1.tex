@@ -215,14 +215,14 @@ Taking into account all the above assumptions, this theoretical attitude of $y$ 
 	\label{fig:practiceapprox}
 \end{figure}
 % 
-it can be seen that the theoretical with the practical attitude of $y$  are not the same. Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
+it can be seen that the theoretical with the practical attitude of $y$  are not the same. Since the rotation of the satellite is seen in the direction of $y$, with axis of rotation the radius of the earth, this leads to a non-constant angular velocity and therefore non-constant $R$. Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
 %
 \section{Modelling based on the angular velocity}
 As seen in the previous section, the angular velocity can not be assumed constant. Therefore a equation is needed to estimate it in function of the drag force. In the appendix D, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 
 \begin{flalign}
 	\dot{\Delta \omega} = C u
 \end{flalign}
-with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($u = \frac{u_{min} + u_{max}}{2}$). The angular velocity in function of time with constant drag force is shown in \figref{fig:testCoef}. \\
+with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($u = \frac{u_{min} + u_{max}}{2}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]
