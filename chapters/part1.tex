@@ -215,7 +215,25 @@ Taking into account all the above assumptions, this theoretical attitude of $y$ 
 	\label{fig:practiceapprox}
 \end{figure}
 % 
-it can be seen that the theoretical with the practical attitude of $y$  are not the same. Since the rotation of the satellite is seen in the direction of $y$, with axis of rotation the radius of the earth, this leads to a non-constant angular velocity and therefore non-constant $R$. Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
+it can be seen that the theoretical with the practical attitude of $y$  are not the same. This is due to the fact that as the drag force is becoming higher, the energy of the satellite is decreasing leading in increasing angular velocity with direction to the earth. Furthermore, when $u_2 > u_1$, then $w_2 > w_1$. This will lead to an increase in the angle $\theta$ between the satellites, and since $y = Rsin\theta$, $y$ will have increasing attitude. The above mentioned issues are shown in \figref{fig:inomega} which is the simulation for $w$ and in  \figref{fig:intheta} which is for $\theta$.    
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]
+	{figures/nonomega.eps}
+	\caption{For $u_2 >u_1$, $w$ is increasing  }
+	\label{fig:inomega}
+\end{figure}
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]
+	{figures/nontheta.eps}
+	\caption{For $u_2 >u_1$, $\theta$ is increasing }
+	\label{fig:intheta}
+\end{figure}
+%
+ Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
 %
 \section{Modelling based on the angular velocity}
 As seen in the previous section, the angular velocity can not be assumed constant. Therefore a equation is needed to estimate it in function of the drag force. In the appendix D, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  9 NOV 2017 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  11 NOV 2017 02:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -3838,6 +3838,46 @@ Package pdftex.def Info: figures/practiceapprox-eps-converted-to.pdf used on in
 put line 213.
 (pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
  [16 <./figures/theoryapprox-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/nonomega.eps>
+(epstopdf)                    date: 2017-11-11 02:48:02
+(epstopdf)                    size: 113618 bytes
+(epstopdf)             Output file: <figures/nonomega-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-11 02:49:43
+(epstopdf)                    size: 32832 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/nonomega-eps-conver
+ted-to.pdf figures/nonomega.eps>
+(epstopdf)             \includegraphics on input line 223.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/nonomega-eps-converted-to.pdf, id=378, 421.575pt x 316.18124pt>
+File: figures/nonomega-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/nonomega-eps-converted-to.pdf>
+Package pdftex.def Info: figures/nonomega-eps-converted-to.pdf used on input li
+ne 223.
+(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 224.
+Package epstopdf Info: Source file: <figures/nontheta.eps>
+(epstopdf)                    date: 2017-11-11 02:48:42
+(epstopdf)                    size: 77639 bytes
+(epstopdf)             Output file: <figures/nontheta-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-11 02:49:46
+(epstopdf)                    size: 23229 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/nontheta-eps-conver
+ted-to.pdf figures/nontheta.eps>
+(epstopdf)             \includegraphics on input line 231.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/nontheta-eps-converted-to.pdf, id=379, 421.575pt x 316.18124pt>
+File: figures/nontheta-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/nontheta-eps-converted-to.pdf>
+Package pdftex.def Info: figures/nontheta-eps-converted-to.pdf used on input li
+ne 231.
+(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
+ [17 <./figures/practiceapprox-eps-converted-to.pdf> <./figures/nonomega-eps-co
+nverted-to.pdf>]
 Package epstopdf Info: Source file: <figures/test_coef.eps>
 (epstopdf)                    date: 2017-11-09 01:42:34
 (epstopdf)                    size: 278596 bytes
@@ -3846,20 +3886,20 @@ Package epstopdf Info: Source file: <figures/test_coef.eps>
 (epstopdf)                    size: 65323 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/test_coef-eps-conve
 rted-to.pdf figures/test_coef.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/test_coef-eps-converted-to.pdf, id=377, 963.6pt x 457.71pt>
+<figures/test_coef-eps-converted-to.pdf, id=396, 963.6pt x 457.71pt>
 File: figures/test_coef-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/test_coef-eps-converted-to.pdf>
 Package pdftex.def Info: figures/test_coef-eps-converted-to.pdf used on input l
-ine 229.
+ine 247.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
- [17 <./figures/practiceapprox-eps-converted-to.pdf>] [18 <./figures/test_coef-
-eps-converted-to.pdf>]
+ [18 <./figures/nontheta-eps-converted-to.pdf>] [19 <./figures/test_coef-eps-co
+nverted-to.pdf>]
 
-LaTeX Warning: Reference `fig:bode_L' on page 19 undefined on input line 284.
+LaTeX Warning: Reference `fig:bode_L' on page 20 undefined on input line 302.
 
 Package epstopdf Info: Source file: <figures/Bode_L.eps>
 (epstopdf)                    date: 2017-11-09 01:42:34
@@ -3869,19 +3909,17 @@ Package epstopdf Info: Source file: <figures/Bode_L.eps>
 (epstopdf)                    size: 6905 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Bode_L-eps-converte
 d-to.pdf figures/Bode_L.eps>
-(epstopdf)             \includegraphics on input line 288.
+(epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Bode_L-eps-converted-to.pdf, id=400, 963.6pt x 457.71pt>
+<figures/Bode_L-eps-converted-to.pdf, id=420, 963.6pt x 457.71pt>
 File: figures/Bode_L-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Bode_L-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Bode_L-eps-converted-to.pdf used on input line
- 288.
+ 306.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
- [19 <./figures/Bode_L-eps-converted-to.pdf>]) (chapters/part2.tex [20]
+ [20 <./figures/Bode_L-eps-converted-to.pdf>]) (chapters/part2.tex [21]
 Chapter 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 7.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 7.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -3890,53 +3928,52 @@ Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input
 line 7.
 
 
-LaTeX Warning: Citation 'SADC' on page 21 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'SADC' on page 21 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 16.
 
-[21
+[22
 
 ]
 
-LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 54.
+LaTeX Warning: Citation 'SADC' on page 23 undefined on input line 54.
 
 
-LaTeX Warning: Citation 'SADC' on page 22 undefined on input line 60.
+LaTeX Warning: Citation 'SADC' on page 23 undefined on input line 60.
 
 
-LaTeX Warning: Citation 'Biezl' on page 22 undefined on input line 78.
+LaTeX Warning: Citation 'Biezl' on page 23 undefined on input line 78.
 
 
-LaTeX Warning: Citation 'Biezl' on page 22 undefined on input line 85.
+LaTeX Warning: Citation 'Biezl' on page 23 undefined on input line 85.
 
-[22] [23]
+[23] [24]
 
-LaTeX Warning: Citation 'SADC' on page 24 undefined on input line 158.
+LaTeX Warning: Citation 'SADC' on page 25 undefined on input line 158.
 
-) (chapters/acceptTest.tex [24]
+) (chapters/acceptTest.tex [25]
 Chapter 6.
-[25
+[26
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [26
+) (chapters/conclusion.tex [27
 
 ]
 Chapter 8.
-) [27
-
-] [28
+) [28
 
 ] (appendix/appendix_1.tex
 Appendix A.
 ) (appendix/code.tex [29
 
+
 ]
 Appendix B.
 [30
 
-] <figures/operating_point.jpg, id=529, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=543, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -3987,10 +4024,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51345 strings out of 493328
- 1057290 string characters out of 3139116
- 1691502 words of memory out of 3000000
- 53832 multiletter control sequences out of 15000+200000
+ 51359 strings out of 493328
+ 1057708 string characters out of 3139116
+ 1691640 words of memory out of 3000000
+ 53842 multiletter control sequences out of 15000+200000
  133326 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10413b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4003,21 +4040,21 @@ ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi
-6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmsy8.pfb>
-Output written on main.pdf (41 pages, 2046221 bytes).
+e1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (41 pages, 2105153 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 194 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
