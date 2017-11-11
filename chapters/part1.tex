@@ -280,7 +280,7 @@ where
 \end{flalign}
 and $u = u_2 - u_1$ and $\theta$ is the angle between two satellites.
 \section{Distance control design}
-A first controller is designed to control the angle between two satellite. Due to the fact that the state representation is linear, A LQR control can be used with
+A controller is designed to control the angle between two satellites. Due to the fact that the state representation is linear, Linear Quadratic Regulator(LQR) is choosen as control method with weights as  
 \begin{flalign}
 	{Q}
 	= 
@@ -296,10 +296,10 @@ A first controller is designed to control the angle between two satellite. Due t
 		u_{max}^{-2}
 	\end{bmatrix} 
 \end{flalign}
-Thanks to the function \textit{lqr(A,B,C,D,[])}, The vector of gain K is obtained. the control input signal can be computed ($u = u_2 - u_1$) and therefore if u is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If u is smaller than zero, it will be the opposite.
+ The vector of gain K is obtained using the command \textit{lqr(A,B,C,D,[])} in Matlab. The control input signal can be computed ($u = u_2 - u_1$) and therefore if u is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If u is smaller than zero, it will be the opposite.
 \subsubsection{Frequency Analysis}
 The loop transfer function can be computed L(s) = P(s)C(s)LPF(s) where P(s) is the transfer function of the state representation system, C(s) = $K_1$ + $K_2$s is the transfer function of the controller and LPF(s) is the transfer function of the low pass filter.
-The bode diagram of L(s) is represented in the \figref{fig:bode_L}. \\
+The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]
@@ -310,4 +310,40 @@ The bode diagram of L(s) is represented in the \figref{fig:bode_L}. \\
 In the modeling, the control input signal (drag force coefficient) was assumed to be able to change instantaneously but in the real system,variations of the orientation of the satellite take times. Therefore, the phase margin must be big enough to allow a delay in the controller. In the bode diagram, the phase margin can be estimated equal to $62^{circ}$ which is enough to accept a large delay due to the small crossover frequency. \\
 
 \subsubsection{Constellation Formation Control} 
-A second controller is designed now to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
+Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
+%
+\section{Simulation and results}
+ First the simulation results of the control scheme between two satellites are shown. The angle is chosen to be $60^{o}$. The inputs to the controller are $\theta$ and $\dot{\theta}$ and i order to smooth the high frequency  oscillations from $\theta$ to the controller a low pass filter is used.  
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/distance_control_twosat.eps}
+	\caption{Distance control of two satellites }
+	\label{fig:distancecontrol}
+\end{figure}
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/distance_contro_angle.eps}
+	\caption{Angle between two satellites }
+	\label{fig:distancecontrol2}
+\end{figure}
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/input_drag_sat1.eps}
+	\caption{The applied input of satellite 1 as a function of drag force  }
+	\label{fig:distancecontrol3}
+\end{figure}
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]
+	{figures/input_drag_sat2.eps}
+	\caption{The applied input of satellite 2 as a function of drag force  }
+	\label{fig:distancecontrol4}
+\end{figure}
+%
