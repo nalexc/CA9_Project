@@ -313,7 +313,7 @@ In the modeling, the control input signal (drag force coefficient) was assumed t
 Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
 %
 \section{Simulation and results}
- First the simulation results of the control scheme between two satellites are shown. The angle is chosen to be $60^{o}$. The inputs to the controller are $\theta$ and $\dot{\theta}$ and i order to smooth the high frequency  oscillations from $\theta$ to the controller a low pass filter is used.  
+ First the simulation results of the control scheme between two satellites are shown. The reference angle is chosen to be $60^{o}$. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller. The gain similar to proportional gives an overshoot with nice rise time and the gain similar to the derivative part gives good settling time with small steady state error.   
 %
 \begin{figure}[H]
 	\centering
@@ -323,6 +323,8 @@ Since the formation consists for more than two satellites a second controller is
 	\label{fig:distancecontrol}
 \end{figure}
 %
+The \figref{fig:distancecontrol2} shows that the angle settles at 60 degrees which is the desired angle in between the satellites. Since the satellites are assumed to start at the same position it can be seen that the angle at the beginning is at $0^{o}$. 
+%
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]
@@ -330,6 +332,8 @@ Since the formation consists for more than two satellites a second controller is
 	\caption{Angle between two satellites }
 	\label{fig:distancecontrol2}
 \end{figure}
+%
+The \figref{fig:distancecontrol3} and \figref{fig:distancecontrol4} are shown the input signal to the satellite 1 and satellite 2 respectively, as a function of the drag force. 
 %
 \begin{figure}[H]
 	\centering
@@ -346,4 +350,6 @@ Since the formation consists for more than two satellites a second controller is
 	\caption{The applied input of satellite 2 as a function of drag force  }
 	\label{fig:distancecontrol4}
 \end{figure}
+%
+Since the behavior of the controller and the simulation result for the angle are  good enough between two satellites, the next results to be shown are the results of the simulation between $n$ satellites around the earth. 
 %
