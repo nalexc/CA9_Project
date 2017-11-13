@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  12 NOV 2017 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  13 NOV 2017 17:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -3906,7 +3906,7 @@ Package epstopdf Info: Source file: <figures/Bode_L.eps>
 (epstopdf)                    size: 6905 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Bode_L-eps-converte
 d-to.pdf figures/Bode_L.eps>
-(epstopdf)             \includegraphics on input line 306.
+(epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/Bode_L-eps-converted-to.pdf, id=426, 963.6pt x 457.71pt>
@@ -3914,7 +3914,7 @@ File: figures/Bode_L-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Bode_L-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Bode_L-eps-converted-to.pdf used on input line
- 306.
+ 307.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
  [20 <./figures/Bode_L-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/distance_control_twosat.eps>
@@ -3926,38 +3926,37 @@ ted-to.pdf>
 (epstopdf)                    size: 38900 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/distance_control_tw
 osat-eps-converted-to.pdf figures/distance_control_twosat.eps>
-(epstopdf)             \includegraphics on input line 321.
+(epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/distance_control_twosat-eps-converted-to.pdf, id=441, 421.575pt x 316.
+<figures/distance_control_twosat-eps-converted-to.pdf, id=443, 421.575pt x 316.
 18124pt>
 File: figures/distance_control_twosat-eps-converted-to.pdf Graphic file (type p
 df)
  <use figures/distance_control_twosat-eps-converted-to.pdf>
 Package pdftex.def Info: figures/distance_control_twosat-eps-converted-to.pdf u
-sed on input line 321.
+sed on input line 372.
 (pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
-Package epstopdf Info: Source file: <figures/distance_contro_angle.eps>
-(epstopdf)                    date: 2017-11-11 04:06:11
-(epstopdf)                    size: 87822 bytes
-(epstopdf)             Output file: <figures/distance_contro_angle-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2017-11-11 04:14:13
-(epstopdf)                    size: 21493 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/distance_contro_ang
-le-eps-converted-to.pdf figures/distance_contro_angle.eps>
-(epstopdf)             \includegraphics on input line 331.
+ [21]
+Package epstopdf Info: Source file: <figures/newangle.eps>
+(epstopdf)                    date: 2017-11-13 13:20:58
+(epstopdf)                    size: 78734 bytes
+(epstopdf)             Output file: <figures/newangle-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-13 13:22:23
+(epstopdf)                    size: 21894 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/newangle-eps-conver
+ted-to.pdf figures/newangle.eps>
+(epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/distance_contro_angle-eps-converted-to.pdf, id=443, 421.575pt x 316.18
-124pt>
-File: figures/distance_contro_angle-eps-converted-to.pdf Graphic file (type pdf
-)
- <use figures/distance_contro_angle-eps-converted-to.pdf>
-Package pdftex.def Info: figures/distance_contro_angle-eps-converted-to.pdf use
-d on input line 331.
+<figures/newangle-eps-converted-to.pdf, id=457, 421.575pt x 316.18124pt>
+File: figures/newangle-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/newangle-eps-converted-to.pdf>
+Package pdftex.def Info: figures/newangle-eps-converted-to.pdf used on input li
+ne 382.
 (pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
- [21 <./figures/distance_control_twosat-eps-converted-to.pdf>]
+ [22 <./figures/distance_control_twosat-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/input_drag_sat1.eps>
 (epstopdf)                    date: 2017-11-11 04:08:47
 (epstopdf)                    size: 98682 bytes
@@ -3967,14 +3966,14 @@ df>
 (epstopdf)                    size: 21320 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/input_drag_sat1-eps
 -converted-to.pdf figures/input_drag_sat1.eps>
-(epstopdf)             \includegraphics on input line 341.
+(epstopdf)             \includegraphics on input line 392.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/input_drag_sat1-eps-converted-to.pdf, id=457, 421.575pt x 316.18124pt>
+<figures/input_drag_sat1-eps-converted-to.pdf, id=471, 421.575pt x 316.18124pt>
 File: figures/input_drag_sat1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/input_drag_sat1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/input_drag_sat1-eps-converted-to.pdf used on i
-nput line 341.
+nput line 392.
 (pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
 Package epstopdf Info: Source file: <figures/input_drag_sat2.eps>
 (epstopdf)                    date: 2017-11-11 04:07:40
@@ -3985,18 +3984,18 @@ df>
 (epstopdf)                    size: 23034 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/input_drag_sat2-eps
 -converted-to.pdf figures/input_drag_sat2.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/input_drag_sat2-eps-converted-to.pdf, id=458, 421.575pt x 316.18124pt>
+<figures/input_drag_sat2-eps-converted-to.pdf, id=472, 421.575pt x 316.18124pt>
 File: figures/input_drag_sat2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/input_drag_sat2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/input_drag_sat2-eps-converted-to.pdf used on i
-nput line 349.
+nput line 400.
 (pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
- [22 <./figures/distance_contro_angle-eps-converted-to.pdf>] [23 <./figures/inp
-ut_drag_sat1-eps-converted-to.pdf>]) (chapters/part2.tex [24 <./figures/input_d
-rag_sat2-eps-converted-to.pdf>]
+ [23 <./figures/newangle-eps-converted-to.pdf>] [24 <./figures/input_drag_sat1-
+eps-converted-to.pdf>])
+(chapters/part2.tex [25 <./figures/input_drag_sat2-eps-converted-to.pdf>]
 Chapter 5.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 7.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
@@ -4006,53 +4005,52 @@ Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input
 line 7.
 
 
-LaTeX Warning: Citation 'SADC' on page 25 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 26 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'SADC' on page 25 undefined on input line 16.
+LaTeX Warning: Citation 'SADC' on page 26 undefined on input line 16.
 
-[25
+[26
 
 ]
 
-LaTeX Warning: Citation 'SADC' on page 26 undefined on input line 54.
+LaTeX Warning: Citation 'SADC' on page 27 undefined on input line 54.
 
 
-LaTeX Warning: Citation 'SADC' on page 26 undefined on input line 60.
+LaTeX Warning: Citation 'SADC' on page 27 undefined on input line 60.
 
 
-LaTeX Warning: Citation 'Biezl' on page 26 undefined on input line 78.
+LaTeX Warning: Citation 'Biezl' on page 27 undefined on input line 78.
 
 
-LaTeX Warning: Citation 'Biezl' on page 26 undefined on input line 85.
+LaTeX Warning: Citation 'Biezl' on page 27 undefined on input line 85.
 
-[26] [27]
+[27] [28]
 
-LaTeX Warning: Citation 'SADC' on page 28 undefined on input line 158.
+LaTeX Warning: Citation 'SADC' on page 29 undefined on input line 158.
 
-) (chapters/acceptTest.tex [28]
+) (chapters/acceptTest.tex [29]
 Chapter 6.
-[29
+[30
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [30
+) (chapters/conclusion.tex [31
 
 ]
 Chapter 8.
-) [31
-
-] [32
+) [32
 
 ] (appendix/appendix_1.tex
 Appendix A.
 ) (appendix/code.tex [33
 
+
 ]
 Appendix B.
 [34
 
-] <figures/operating_point.jpg, id=598, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=606, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -4103,10 +4101,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51392 strings out of 493328
- 1058829 string characters out of 3139116
- 1691972 words of memory out of 3000000
- 53862 multiletter control sequences out of 15000+200000
+ 51410 strings out of 493328
+ 1059049 string characters out of 3139116
+ 1692297 words of memory out of 3000000
+ 53874 multiletter control sequences out of 15000+200000
  133326 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,23n,92p,10413b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4131,9 +4129,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (45 pages, 2209868 bytes).
+Output written on main.pdf (45 pages, 2214483 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
- 205 named destinations out of 1000 (max. 500000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
  370 words of extra memory for PDF output out of 10000 (max. 10000000)
 

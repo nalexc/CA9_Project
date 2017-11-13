@@ -260,6 +260,7 @@ A state space representation can be derived:
 \end{flalign}
 \begin{flalign}
 	&{\dot{s}(t)} ={A s(t) + Bu(t)}
+	\label{eq:statespacecomplex}
 \end{flalign}  
 where
 \begin{flalign}
@@ -279,7 +280,7 @@ where
 	\end{bmatrix} 
 \end{flalign}
 and $u = u_2 - u_1$ and $\theta$ is the angle between two satellites.
-\section{Distance control design}
+\section{Distance control design}\label{46}
 A controller is designed to control the angle between two satellites. Due to the fact that the state representation is linear, Linear Quadratic Regulator(LQR) is choosen as control method with weights as  
 \begin{flalign}
 	{Q}
@@ -312,6 +313,56 @@ In the modeling, the control input signal (drag force coefficient) was assumed t
 \subsubsection{Constellation Formation Control} 
 Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
 %
+\subsection{Stability Analysis}
+In order to analyze the stability of the distributed formation controller, once more, the system should be written in state space form as in  \eqref{eq:statespacecomplex}. The states are defined as 
+\begin{flalign*}
+	s = [\theta; \dot{\theta}]
+	\label{stateformation}
+\end{flalign*}
+where $\theta = [\theta_{12};\theta_{23};\theta_{34};\theta_{45};\theta_{56};\theta_{67};\theta_{78}]$ are the angles between neighbor satellites and $\dot{\theta} $ is the time derivative of the in between angles. So the system matrix will be a 14x14 matrix and for $i<8$ satellites, $\dot{s}_{i} = s_{i+7}$ and so $\dot{s(1)} = s(8)$ and so on. Depenting on the above the $A$ matrix can be written as
+%
+\begin{flalign}
+	{A}
+	= 
+	\begin{bmatrix}
+		0_{7x7}& I_{7x7}& \\
+		0_{7x7}& 0_{7x7}
+	\end{bmatrix} 
+\end{flalign}
+%
+and B matrix with $C = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;...;u_8-u_7]$ can be written as
+\begin{flalign}
+	{B}
+	= 
+	\begin{bmatrix}
+		0_{7x1}& \\
+		C_{7x1}
+	\end{bmatrix}
+\end{flalign}
+%
+The controller gain that has be found in section\ref{46}, $K = [K_{1} K_{2}]$, now can be written as $K_{s} = [K_{1}I_{7x7},  K_{1}I_{7x7}]$ and  by using a control law $u = -Ks$ a stability analysis can be made by using a Lyapunov candidate function as $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$ in the state space equation is obtained
+%
+\begin{flalign}
+	&{\dot{s}} ={(A  + BK_{s})s}
+	\label{eq:statespacecomplex2}
+\end{flalign}  
+%
+From lyapunov stability criterion it has to be shown that $\dot{V} <0$,$\forall s\neq0 $. The derivative of the candidate function can be written as 
+%
+\begin{flalign}
+	&{\dot{V}} ={\dot{s}^{T}s+s^{T}\dot{s}}
+	\label{eq:statespacecomplex3}
+\end{flalign}
+%
+and this is equal to 
+%
+\begin{flalign}
+	&{\dot{V}} ={s^{T}(A-BK)s + s^{T}(A-BK)s}
+	\label{eq:statespacecomplex4}
+\end{flalign}
+%
+so the only thing that has to be shown in order for the system to be stable is to show that the eigenvalues of $A-BK<0$. 
+%
 \section{Simulation and results}
  First the simulation results of the control scheme between two satellites are shown. The reference angle is chosen to be $60^{o}$. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller. The gain similar to proportional gives an overshoot with nice rise time and the gain similar to the derivative part gives good settling time with small steady state error.   
 %
@@ -328,7 +379,7 @@ The \figref{fig:distancecontrol2} shows that the angle settles at 60 degrees whi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]
-	{figures/distance_contro_angle.eps}
+	{figures/newangle.eps}
 	\caption{Angle between two satellites }
 	\label{fig:distancecontrol2}
 \end{figure}
