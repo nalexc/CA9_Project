@@ -282,6 +282,7 @@ A controller is designed to control the angle between two satellites. Due to the
 	\end{bmatrix} 
 \end{flalign}
  The vector of gain K is obtained using the command \textit{lqr(A,B,C,D,[])} in Matlab. The control input signal can be computed ($u = u_2 - u_1$) and therefore if u is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If u is smaller than zero, it will be the opposite.
+ The control law used for designing the controller is: $u = -K(1) \ \theta \ -K(2) \ \dot \theta $ \label{eq:ctr}
 \subsection{Frequency Analysis}
 The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller and $LPF(s)$ is the transfer function of the low pass filter.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
@@ -294,8 +295,11 @@ The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \end{figure}
 In the modeling, the control input signal (drag force coefficient) was assumed to be able to change instantaneously but in the real system,variations of the orientation of the satellite take times. Therefore, the phase margin must be big enough to allow a delay in the controller. In the bode diagram, the phase margin can be estimated equal to $62^{circ}$ which is enough to accept a large delay due to the small crossover frequency. \\
 
-\subsection{Constellation Formation Control} 
-Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
+\subsection{Satellite Formation Control} 
+\subsubsection{Global algorithm}
+Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
+\subsubsection{Distributed algorithm}
+In this case $u_1$ is chosen to be equal with $u_{medium}$, therefore $u_2$ is computed using the control law found in \eqref{eq:ctr}, which is function of the angle between the first satellite and the second one. The drag force of satellite $i$ can be determined by knowing the angle of satellite $i$ and the drag force of satellite $i-1$.
 \subsection{Stability Analysis}
 In order to analyze the stability of the distributed formation controller, once more, the system should be written in state space form as in  \eqref{eq:lt}. The states are defined as 
 \begin{flalign*}
@@ -318,7 +322,7 @@ where $\theta = [\theta_{12};\theta_{23};\theta_{34};\theta_{45};\theta_{56};\th
 	$
 with the constant $c = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;...;u_8-u_7]$.
 
-The controller gain that has be found in section \ref{ref}, $K = [K_{1} K_{2}]$, now can be written as $K_{s} = [K_{1}I_{7x7},  K_{1}I_{7x7}]$ and  by using a control law $u = -Ks$ a stability analysis can be made by using a Lyapunov candidate function as $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$ in the state space equation is obtained
+The controller gain that has be found in section \ref{ref}, $K = [K_{1} K_{2}]$, now can be written as $K_{s} = [K_{1}I_{(7\times7)},  K_{1}I_{(7\times7)}]$ and  by using a control law $u = -Ks$ a stability analysis can be made by using a Lyapunov candidate function as $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$ in the state space equation is obtained
 %
 \begin{flalign}
 	&{\dot{s}} ={(A  + BK_{s})s}
@@ -338,11 +342,11 @@ and this is equal to
 	&{\dot{V}} ={s^\mathsf{T}(A-BK)^\mathsf{T}s + s^\mathsf{T}(A-BK)s}
 	\label{eq:statespacecomplex4}
 \end{flalign}
-%
 so the only thing that has to be shown in order for the system to be stable is to show that the eigenvalues of $A-BK<0$. 
-%
+
+The eigenvalues $A-BK$ were computed using Matlab and the result was that the all eigenvalues are negative.
 \section{Simulation and results}
- First the simulation results of the control scheme between two satellites are shown. The reference angle is chosen to be $60^{o}$. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller. The gain similar to proportional gives an overshoot with nice rise time and the gain similar to the derivative part gives good settling time with small steady state error.   
+ First the simulation results of the control scheme between two satellites are shown. After the results of two satellites, the results for the whole satellite formation are shown with global and distributed algorithm. The reference angle is chosen to be $60^{o}$ for two satellites case and $45^{o}$ for the whole formation. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller. The gain similar to proportional gives an overshoot with nice rise time and the gain similar to the derivative part gives good settling time with small steady state error.   
 %
 \begin{figure}[H]
 	\centering
@@ -382,17 +386,24 @@ The \figref{fig:distancecontrol3} and \figref{fig:distancecontrol4} are shown th
 %
 Since the behavior of the controller and the simulation result for the angle are  good enough between two satellites, the next results to be shown are the results of the simulation between $n$ satellites around the earth. 
 
-The behaviour of the satellite formation was tested hypothesis to the assumption that the satellite formation starts at the same place. From \figref{fig:forr} it can be seen that in the beginning, some saturation appears, but finally, all the satellites converged to the desired angle of 60$^{\circ}$ .
+The behaviour of the satellite formation using global algoithm was tested according to hypothesis that the satellite formation starts at the same place. From \figref{fig:forr} it can be seen that in the beginning, some saturation appears, but finally, all the satellites converged to the desired angle of 45$^{\circ}$ .
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/form_sat}
 	\caption{Eight satellites in flying formation on orbit}
 	\label{fig:forr}
 \end{figure}
-%$
-%M = \left(\begin{array}{c@{}c@{}c}
-%A & | & B\\
-%\hline
-%C &  & D
-%\end{array}\right)
-%$
+In the case of distributed algorithm, the behaviour of the satellite formation is shown in \figref{fig:da1}, where it can be seen that the overshoot is big, therefore in order to reduce the overshoot, the derrivative gain is increased by a factor of 1.25, which will correct the overshoot as seen in 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/da1}
+	\caption{desc}
+	\label{fig:da1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/da2}
+	\caption{desc}
+	\label{fig:da1}
+\end{figure}
+The drawback of distributed algorithm is that the angle between satellites will converged slower compared with the global algorithm, moreover all the satellites are converging to $u_min$, while in the case of distributed algorithm are converging to $u_medium$

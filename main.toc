@@ -30,23 +30,25 @@
 \contentsline {section}{\numberline {4.5}Modelling based on the angular velocity}{18}{section.4.5}
 \contentsline {section}{\numberline {4.6}Distance control design}{19}{section.4.6}
 \contentsline {subsection}{Frequency Analysis}{20}{subsection*.35}
-\contentsline {subsection}{Constellation Formation Control}{21}{subsection*.37}
-\contentsline {subsection}{Stability Analysis}{21}{subsection*.38}
+\contentsline {subsection}{Satellite Formation Control}{21}{subsection*.37}
+\contentsline {subsubsection}{Global algorithm}{21}{subsubsection*.38}
+\contentsline {subsubsection}{Distributed algorithm}{21}{subsubsection*.39}
+\contentsline {subsection}{Stability Analysis}{21}{subsection*.40}
 \contentsline {section}{\numberline {4.7}Simulation and results}{22}{section.4.7}
-\contentsline {chapter}{\numberline {5}Attitude control}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Modelling}{27}{section.5.1}
-\contentsline {subsection}{Kinematics}{27}{subsection*.44}
-\contentsline {subsection}{Dynamic Model}{28}{subsection*.45}
-\contentsline {section}{\numberline {5.2}Disturbance Models}{29}{section.5.2}
-\contentsline {subsection}{Gravitational torque}{29}{subsection*.46}
-\contentsline {subsection}{Solar radiation}{30}{subsection*.47}
-\contentsline {section}{\numberline {5.3}Attitude control design}{30}{section.5.3}
-\contentsline {chapter}{\numberline {6} Implementation and test}{31}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acceptance test}{32}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{33}{chapter.8}
-\contentsline {subsection}{Future work}{33}{subsection*.48}
-\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{35}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{35}{subsection*.49}
-\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{36}{appendix.B}
-\contentsline {chapter}{\numberline {C}Linearisation of the relative dynamics eqations}{39}{appendix.C}
-\contentsline {chapter}{\numberline {D}Angular velocity equations}{40}{appendix.D}
+\contentsline {chapter}{\numberline {5}Attitude control}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modelling}{29}{section.5.1}
+\contentsline {subsection}{Kinematics}{29}{subsection*.48}
+\contentsline {subsection}{Dynamic Model}{30}{subsection*.49}
+\contentsline {section}{\numberline {5.2}Disturbance Models}{31}{section.5.2}
+\contentsline {subsection}{Gravitational torque}{31}{subsection*.50}
+\contentsline {subsection}{Solar radiation}{32}{subsection*.51}
+\contentsline {section}{\numberline {5.3}Attitude control design}{32}{section.5.3}
+\contentsline {chapter}{\numberline {6} Implementation and test}{33}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{34}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{35}{chapter.8}
+\contentsline {subsection}{Future work}{35}{subsection*.52}
+\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{37}{appendix.A}
+\contentsline {subsection}{Inertia matrix}{37}{subsection*.53}
+\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{38}{appendix.B}
+\contentsline {chapter}{\numberline {C}Linearisation of the relative dynamics eqations}{41}{appendix.C}
+\contentsline {chapter}{\numberline {D}Angular velocity equations}{42}{appendix.D}
