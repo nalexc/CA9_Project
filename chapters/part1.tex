@@ -54,28 +54,22 @@ Thus, the drag force can be expressed as the following.
 \end{flalign}
 where $u$ is the control input and it can take value between $7.27 \cdot 10^{-16}$ and $1.888 \cdot 10^{-15}$
 \subsection{Solar radiation}
-Tfhe surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite center of mass (CoM). \cite{SADC}
-
-The torque around CoM is given by:
-\begin{flalign}
-N_{rad} = F_{rad} \times R_{CoM}
-\label{eq:tor}
-\end{flalign}
-where $F_{rad}$  is the solar radiation  and $R_{CoM}$ is the vector from the centre of mass to the geometric centre of radiation
-
-The solar radiation $F_{rad}$ can be expressed as:
-\begin{flalign}
-F_{rad} = C_{a} P A
-\label{eq:Pres}
-\end{flalign}
-where $C_{a}$ is the surface’s reflectance: 0 for a perfect absorber, 1 for a perfect reflector,   while $P$ is the solar flux and  $A$ is the radiated area
+Solar radiation is emitted constantly by the Sun, which illuminates the surface of the CubeSat. The surface of the satellite will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat and produce a radiation force. \cite{SADC}
 
 The solar flux can be computed as follows:
 \begin{flalign}
-P = \dfrac{F_s}{c}
-\label{eq:flux}
+	P = \dfrac{F_s}{c}
+	\label{eq:flux}
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
+
+The solar radiation $F_{rad}$ can be expressed as:
+\begin{flalign}
+F_{rad} = C_{a} P A \ \frac{r_{sun,sat}}{||r_{sun,sat}||}
+\label{eq:Pres}
+\end{flalign}
+where $C_{a}$ is the surface’s reflectance: 0 for a perfect absorber, 2 for a perfect reflector, $P$ is the solar flux, $A$ is the radiated area, $r_{sun,sat}$ is the vector from the sun to the satellite and the norm of $||r_{sun,sat}||$ is equal to 1
+
 \subsection{$J_2$ gravity perturbation}
 A satellite orbiting the Earth encounter multiple perturbing forces. Some of these forces are the atmospheric drag, the gravity gradient, and the solar radiation. The influence of these forces upon the satellite is deemed to be negligible, but one perturbation produced by the oblateness of the Earth is taken into account because will provoke a change in the orientation of the orbit.
 
@@ -141,9 +135,10 @@ with
 {f(x)} = \left[ \begin{array}{c} {v} \\ -G\cdot m_{earth} \frac{p}{||{p}||^3} \end{array} \right], \ {g(x)} = \left[ \begin{array}{c} {0} \\ - \frac{1}{m_{sat}}||{v}||{v} \end{array} \right]
 \]
 and ${\delta(x,t)}$ reprensent the influence all the disturbances.
-\section{Relative dynamics}
+\section{Relative dynamics} 
+%ref:jesper randevouz article
 In order to analyse the distance between two satellites, the relative dynamics are analyzed. Furthermore, to simplify the system, satellites will be assumed to stay in the same plane. This assumption has also to be made due to the limitation of the direction of the input control (the drag force). \\
-To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the figure \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\hat{x}}$ is defined by ${\hat{x}} = \frac{{R}}{R}$ where ${R}$ is the vector from the center of the Earth to the first satellite, the axis ${\hat{y}}$ is perpendicular to ${\hat{x}}$ and in the plane of motion of the satellites and ${\hat{z}}$ is defined by the right-hand law (${\hat{z}} = {\hat{x}} \times {\hat{y}}$). \\
+To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the figure \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\hat{x}}$ is defined by ${\hat{x}} = \frac{{R}}{R}$ where ${R}$ is the vector from the center of the Earth to the first satellite, the axis ${\hat{y}}$ is perpendicular to ${\hat{x}}$ and in the plane of motion of the satellites and ${\hat{z}}$ is defined by the right-hand law (${\hat{z}} = {\hat{x}} \times {\hat{y}}$). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/relativeDynamics}
@@ -158,20 +153,13 @@ Therefore, the vector position from the Earth to the fist satellite and the seco
 The equations of relative motions are derived in \appref{chap:B}.
 %
 \subsubsection{Relative state space representation}
-%
-Since the equations of relative motion  that have been derived in \appref{chap:B} are not linear, an approximation of a linearization is made around the operating points, $x*$ and $y*$, by introducing the states with a new variable as $s = [x; \dot{x}; y; \dot{y}]$, more about this can be found in \appref{chap:C}.  
-%
-In order to derive the linear state space model the assumptions that the radius is constant and that the angular velocity, $w = \sqrt{\frac{\mu}{R^3}}$ is constant, lead in the assumption that $\dot{R} = 0$ and $\dot{w} = 0$. Furthermore, using the approximation $\dot{x}$, $y << y^{*}$ and $x, x^{*}$, $\frac{\dot{y}}{w} << R$, the \eqref{eq:statespaceassumption} has been derived. Finally assuming that $y* << R$ the linear system can be written in state space form  
-%
+Since the equations of relative motion  that have been derived in \appref{chap:B} are not linear, an approximation of a linearization is made around the operating points, $x^{*}$ and $y^{*}$, by introducing the states with a new variable as $s = [x \ \dot{x} \ y \ \dot{y}]^\mathsf{T}$, more about this can be found in \appref{chap:C}.  
+
+In order to derive the linear state space model the assumptions that the radius is constant and that the angular velocity, $w = \sqrt{\frac{\mu}{R^3}}$ is constant, lead in the assumption that $\dot{R} = 0$ and $\dot{w} = 0$. Furthermore, using the approximation $\dot{x}$, $y << y^{*}$ and $x, x^{*}$, $\frac{\dot{y}}{w} << R$, the \eqref{eq:statespaceassumption} has been derived. Finally assuming that $y^{*} << R$ the linear system can be written in state space form as follows: 
  \begin{flalign*}
- 	{\dot{x}(t)} ={A x(t) + Bu(t)}
+ 	{\dot{x}(t)} ={A x(t) + Bu(t)} \\
+ 	{y(t)} ={ C x(t) + D u(t)}
  \end{flalign*}  
- \begin{flalign*}
-	{y(t)} ={ C x(t) + D u(t)}
-\end{flalign*} 
-%
-as
-%
 \begin{flalign*}
 	{A}
 	= 
@@ -205,7 +193,7 @@ With this assumptions and by using a control law $u= u_2 - u_1$ from the \eqref{
 \label{fig:theoryapprox}
 \end{figure}
 % 
-Taking into account all the above assumptions, this theoretical attitude of $y$ should be the same with the results from the actual model simulation, in order to proceed to the design of the controller. From the \figref{fig:practiceapprox} 
+Taking into account all the above assumptions, this theoretical attitude of $y$ should be the same with the results from the actual model simulation, in order to proceed to the design of the controller. From the \figref{fig:practiceapprox} it can be seen that the theoretical with the practical attitude of $y$  are not the same. This is due to the fact that as the drag force is becoming higher, the energy of the satellite is decreasing leading in increasing angular velocity with direction to the earth. Furthermore, when $u_2 > u_1$, then $w_2 > w_1$. This will lead to an increase in the angle $\theta$ between the satellites, and since $y = Rsin\theta$, $y$ will have increasing attitude. The above mentioned issues are shown in \figref{fig:inomega} which is the simulation for $w$ and in  \figref{fig:intheta} which is for $\theta$.    
 %  
 \begin{figure}[H]
 	\centering
@@ -214,8 +202,6 @@ Taking into account all the above assumptions, this theoretical attitude of $y$ 
 	\caption{The practical attitude of y is increasing }
 	\label{fig:practiceapprox}
 \end{figure}
-% 
-it can be seen that the theoretical with the practical attitude of $y$  are not the same. This is due to the fact that as the drag force is becoming higher, the energy of the satellite is decreasing leading in increasing angular velocity with direction to the earth. Furthermore, when $u_2 > u_1$, then $w_2 > w_1$. This will lead to an increase in the angle $\theta$ between the satellites, and since $y = Rsin\theta$, $y$ will have increasing attitude. The above mentioned issues are shown in \figref{fig:inomega} which is the simulation for $w$ and in  \figref{fig:intheta} which is for $\theta$.    
 %
 \begin{figure}[H]
 	\centering
@@ -234,11 +220,10 @@ it can be seen that the theoretical with the practical attitude of $y$  are not 
 \end{figure}
 %
  Since the approximations that have been made are not sufficient and there is not enough control authority, this set up has not deemed good enough for implementation. 
-%
 \section{Modelling based on the angular velocity}
 As seen in the previous section, the angular velocity can not be assumed constant. Therefore a equation is needed to estimate it in function of the drag force. In the appendix D, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 
 \begin{flalign}
-	\dot{\Delta \omega} = C u
+	{\Delta \dot\omega} = C u
 \end{flalign}
 with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($u = \frac{u_{min} + u_{max}}{2}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. \\
 \begin{figure}[H]
@@ -259,8 +244,7 @@ A state space representation can be derived:
 	\end{bmatrix} 
 \end{flalign}
 \begin{flalign}
-	&{\dot{s}(t)} ={A s(t) + Bu(t)}
-	\label{eq:statespacecomplex}
+	&{\dot{s}(t)} ={A s(t) + Bu(t)}  	\label{eq:lt}
 \end{flalign}  
 where
 \begin{flalign}
@@ -280,8 +264,8 @@ where
 	\end{bmatrix} 
 \end{flalign}
 and $u = u_2 - u_1$ and $\theta$ is the angle between two satellites.
-\section{Distance control design}\label{46}
-A controller is designed to control the angle between two satellites. Due to the fact that the state representation is linear, Linear Quadratic Regulator(LQR) is choosen as control method with weights as  
+\section{Distance control design}
+A controller is designed to control the angle between two satellites. Due to the fact that the state representation is linear, Linear Quadratic Regulator(LQR) is choosen as control method with weights as  \label{ref}
 \begin{flalign}
 	{Q}
 	= 
@@ -298,8 +282,8 @@ A controller is designed to control the angle between two satellites. Due to the
 	\end{bmatrix} 
 \end{flalign}
  The vector of gain K is obtained using the command \textit{lqr(A,B,C,D,[])} in Matlab. The control input signal can be computed ($u = u_2 - u_1$) and therefore if u is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If u is smaller than zero, it will be the opposite.
-\subsubsection{Frequency Analysis}
-The loop transfer function can be computed L(s) = P(s)C(s)LPF(s) where P(s) is the transfer function of the state representation system, C(s) = $K_1$ + $K_2$s is the transfer function of the controller and LPF(s) is the transfer function of the low pass filter.
+\subsection{Frequency Analysis}
+The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller and $LPF(s)$ is the transfer function of the low pass filter.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
 	\centering
@@ -310,37 +294,31 @@ The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \end{figure}
 In the modeling, the control input signal (drag force coefficient) was assumed to be able to change instantaneously but in the real system,variations of the orientation of the satellite take times. Therefore, the phase margin must be big enough to allow a delay in the controller. In the bode diagram, the phase margin can be estimated equal to $62^{circ}$ which is enough to accept a large delay due to the small crossover frequency. \\
 
-\subsubsection{Constellation Formation Control} 
+\subsection{Constellation Formation Control} 
 Since the formation consists for more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of n-1 equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_min$. We have now a system of n equations with n unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
-%
 \subsection{Stability Analysis}
-In order to analyze the stability of the distributed formation controller, once more, the system should be written in state space form as in  \eqref{eq:statespacecomplex}. The states are defined as 
+In order to analyze the stability of the distributed formation controller, once more, the system should be written in state space form as in  \eqref{eq:lt}. The states are defined as 
 \begin{flalign*}
-	s = [\theta; \dot{\theta}]
+	s = [\theta \ \dot{\theta}]^\mathsf{T}
 	\label{stateformation}
 \end{flalign*}
-where $\theta = [\theta_{12};\theta_{23};\theta_{34};\theta_{45};\theta_{56};\theta_{67};\theta_{78}]$ are the angles between neighbor satellites and $\dot{\theta} $ is the time derivative of the in between angles. So the system matrix will be a 14x14 matrix and for $i<8$ satellites, $\dot{s}_{i} = s_{i+7}$ and so $\dot{s(1)} = s(8)$ and so on. Depenting on the above the $A$ matrix can be written as
-%
-\begin{flalign}
-	{A}
-	= 
-	\begin{bmatrix}
-		0_{7x7}& I_{7x7}& \\
-		0_{7x7}& 0_{7x7}
-	\end{bmatrix} 
-\end{flalign}
-%
-and B matrix with $C = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;...;u_8-u_7]$ can be written as
-\begin{flalign}
-	{B}
-	= 
-	\begin{bmatrix}
-		0_{7x1}& \\
-		C_{7x1}
-	\end{bmatrix}
-\end{flalign}
-%
-The controller gain that has be found in section\ref{46}, $K = [K_{1} K_{2}]$, now can be written as $K_{s} = [K_{1}I_{7x7},  K_{1}I_{7x7}]$ and  by using a control law $u = -Ks$ a stability analysis can be made by using a Lyapunov candidate function as $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$ in the state space equation is obtained
+where $\theta = [\theta_{12};\theta_{23};\theta_{34};\theta_{45};\theta_{56};\theta_{67};\theta_{78}]$ are the angles between neighbor satellites and $\dot{\theta} $ is the time derivative of the in between angles. So the system matrix will be a 14x14 matrix and for $i<8$ satellites, $\dot{s}_{i} = s_{i+7}$ and so $\dot{s(1)} = s(8)$ and so on. Depenting on the above the $A$ and $B$ matrix can be written as:
+
+	$
+	A = \left(\begin{array}{c@{}c@{}c}
+    0_{(7\times7)} & | & I_{(7\times7)}\\
+	\hline
+	  & 0
+	\end{array}\right),
+	B = \left(\begin{array}{c@{}c@{}c}
+	& 0_{(7\times7)} \\
+	\hline
+	& c \ I_{(7\times7)}
+	\end{array}\right)
+	$
+with the constant $c = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;...;u_8-u_7]$.
+
+The controller gain that has be found in section \ref{ref}, $K = [K_{1} K_{2}]$, now can be written as $K_{s} = [K_{1}I_{7x7},  K_{1}I_{7x7}]$ and  by using a control law $u = -Ks$ a stability analysis can be made by using a Lyapunov candidate function as $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$ in the state space equation is obtained
 %
 \begin{flalign}
 	&{\dot{s}} ={(A  + BK_{s})s}
@@ -350,14 +328,14 @@ The controller gain that has be found in section\ref{46}, $K = [K_{1} K_{2}]$, n
 From lyapunov stability criterion it has to be shown that $\dot{V} <0$,$\forall s\neq0 $. The derivative of the candidate function can be written as 
 %
 \begin{flalign}
-	&{\dot{V}} ={\dot{s}^{T}s+s^{T}\dot{s}}
+	&{\dot{V}} ={\dot{s}^\mathsf{T}s+s^\mathsf{T}\dot{s}}
 	\label{eq:statespacecomplex3}
 \end{flalign}
 %
 and this is equal to 
 %
 \begin{flalign}
-	&{\dot{V}} ={s^{T}(A-BK)s + s^{T}(A-BK)s}
+	&{\dot{V}} ={s^\mathsf{T}(A-BK)^\mathsf{T}s + s^\mathsf{T}(A-BK)s}
 	\label{eq:statespacecomplex4}
 \end{flalign}
 %
@@ -379,7 +357,7 @@ The \figref{fig:distancecontrol2} shows that the angle settles at 60 degrees whi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]
-	{figures/newangle.eps}
+	{figures/distance_contro_angle.eps}
 	\caption{Angle between two satellites }
 	\label{fig:distancecontrol2}
 \end{figure}
@@ -403,4 +381,18 @@ The \figref{fig:distancecontrol3} and \figref{fig:distancecontrol4} are shown th
 \end{figure}
 %
 Since the behavior of the controller and the simulation result for the angle are  good enough between two satellites, the next results to be shown are the results of the simulation between $n$ satellites around the earth. 
-%
+
+The behaviour of the satellite formation was tested hypothesis to the assumption that the satellite formation starts at the same place. From \figref{fig:forr} it can be seen that in the beginning, some saturation appears, but finally, all the satellites converged to the desired angle of 60$^{\circ}$ .
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/form_sat}
+	\caption{Eight satellites in flying formation on orbit}
+	\label{fig:forr}
+\end{figure}
+%$
+%M = \left(\begin{array}{c@{}c@{}c}
+%A & | & B\\
+%\hline
+%C &  & D
+%\end{array}\right)
+%$
