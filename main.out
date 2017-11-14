@@ -8,7 +8,7 @@
 \BOOKMARK [1][-]{section.2.3}{2.3 AAU-CubeSat sensors}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{2.4 Coordinate frames}{chapter.2}% 9
 \BOOKMARK [0][-]{chapter.3}{3 Requirements}{}% 10
-\BOOKMARK [0][-]{chapter.4}{4 Distance control}{}% 11
+\BOOKMARK [0][-]{chapter.4}{4 Angle control between satellites}{}% 11
 \BOOKMARK [1][-]{section.4.1}{4.1 Modelling}{chapter.4}% 12
 \BOOKMARK [1][-]{section.4.2}{4.2 Disturbance Models}{chapter.4}% 13
 \BOOKMARK [1][-]{section.4.3}{4.3 State Space Representation}{chapter.4}% 14
@@ -25,5 +25,4 @@
 \BOOKMARK [0][-]{chapter.8}{8 Conclusion}{}% 25
 \BOOKMARK [0][-]{appendix.A}{A Derivation of equation of motion }{}% 26
 \BOOKMARK [0][-]{appendix.B}{B Derivation of relative dynamics equations}{}% 27
-\BOOKMARK [0][-]{appendix.C}{C Linearisation of the relative dynamics eqations}{}% 28
-\BOOKMARK [0][-]{appendix.D}{D Angular velocity equations}{}% 29
+\BOOKMARK [0][-]{appendix.C}{C Angular velocity equations}{}% 28

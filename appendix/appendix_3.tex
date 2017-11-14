@@ -1,4 +1,4 @@
-\chapter{Angular velocity equations} \label{chap:D}
+\chapter{Angular velocity equations} \label{chap:C}
 The differential equations for R and $\omega$ for a satellite is given by the equation (ref B6). In order to find an expression of the angular velocity in function of the drag force, the little perturbation approximation is used for R and $\omega$. 
 \begin{flalign}
 R = R_0 - \Delta R \\
@@ -6,10 +6,10 @@ R = R_0 - \Delta R \\
 \end{flalign}
 where $R_0$ and $\omega_0$ are the initial value and $\omega_0 = \sqrt{\frac{\mu}{R_0^3}}$. Therefore, the system of equations B6 become:
 \begin{flalign}
-	&\ddot{\Delta R} - (\omega_0 + \Delta \omega)^2 (R_0 + \Delta R) = -\frac{\mu}{(R_0 + \Delta R)^2} - u \frac{v}{m} \dot{\Delta R} \\
+	&\ddot{\Delta R} - (\omega_0 + \Delta \omega)^2 (R_0 + \Delta R) = -\frac{\mu}{(R_0 + \Delta R)^2} - u \frac{v}{m} \dot{\Delta R} \label{eq:la5} \\
 	&2(\omega_0 + \Delta \omega) \dot{\Delta R} + \dot{\Delta \omega}(R_0 + \Delta R) = -u\frac{v}{m}(\omega_0 + \Delta \omega)(R_0 + \Delta R) 
 \end{flalign}
-The equation D.3 can be simplified using the the approximations that the speed of the satellites can be assumed constant ($||\vec{\dot{p}} = v_0 = \omega_0 R_0$), the second derivatice of $\Delta R$ is neglectable and by deleting all the second order term. Thus the equation gives:
+The \eqref{eq:la5} can be simplified using approximations that the speed of the satellites can be assumed constant ($||\vec{\dot{p}} = v_0 = \omega_0 R_0$), the second derivative of $\Delta R$ is neglectable and by deleting all the second order term. Thus the equation gives:
 \begin{flalign}
 	& -\omega_0^2 R_0 - 2\omega_0 R_0 \Delta \omega - w_0^2 \Delta R = -\frac{\mu}{R_0^2}(1 + \frac{\Delta R}{R_0})^{-2} - u\frac{v_0}{m}\dot{\Delta R} \\
 	\Rightarrow &-\omega_0^2 R_0 -2\omega_0 R_0 \Delta \omega - \omega_0^2 \Delta R = -\omega_0^2 R_0 +2 \omega_0^2 \Delta R - u\frac{v_0}{m}\dot{\Delta R} \\

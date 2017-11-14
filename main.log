@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  13 NOV 2017 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  14 NOV 2017 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2273,9 +2273,6 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
 (./main.aux
 
-LaTeX Warning: Label `fig:da1' multiply defined.
-
-
 LaTeX Warning: Label `sec:useCase' multiply defined.
 
 
@@ -2378,7 +2375,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
+(./main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Biezl
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
 \AtBeginShipoutBox=\box124
@@ -3624,7 +3629,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 7.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(./chapters/frontpage.tex <figures/c1.png, id=123, 838.13126pt x 598.235pt>
+(./chapters/frontpage.tex <figures/c1.png, id=119, 838.13126pt x 598.235pt>
 File: figures/c1.png Graphic file (type png)
 
 <use figures/c1.png>
@@ -3637,7 +3642,7 @@ es/c1.png>]) [2
 
 
 ] (./chapters/titelsheet2.tex
-<figures/aaulogo-en.png, id=139, 230.8625pt x 151.56625pt>
+<figures/aaulogo-en.png, id=135, 230.8625pt x 151.56625pt>
 File: figures/aaulogo-en.png Graphic file (type png)
 
 <use figures/aaulogo-en.png>
@@ -3676,91 +3681,61 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 [6] (./chapters/Introduction.tex
 Chapter 1.
-
-LaTeX Warning: Citation 'SIDI' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation 'SFF' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'SF' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'SF' on page 1 undefined on input line 10.
-
 [1
 
 
 ]) (./chapters/SetupDescribtion.tex [2]
 Chapter 2.
-<figures/sat_form.jpeg, id=207, 1742.51pt x 1607.00375pt>
+<figures/sat_form.jpeg, id=209, 1742.51pt x 1607.00375pt>
 File: figures/sat_form.jpeg Graphic file (type jpg)
 
 <use figures/sat_form.jpeg>
 Package pdftex.def Info: figures/sat_form.jpeg used on input line 7.
 (pdftex.def)             Requested size: 318.66948pt x 293.88264pt.
 
-<figures/cub.jpg, id=209, 185.69376pt x 206.7725pt>
+<figures/cub.jpg, id=211, 185.69376pt x 206.7725pt>
 File: figures/cub.jpg Graphic file (type jpg)
  <use figures/cub.jpg>
 Package pdftex.def Info: figures/cub.jpg used on input line 16.
 (pdftex.def)             Requested size: 136.57462pt x 152.08165pt.
 
-
-LaTeX Warning: Citation 'cs' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'cs' on page 3 undefined on input line 17.
-
 [3
 
  <./figures/sat_form.jpeg>]
-
-LaTeX Warning: Citation 'CDS' on page 4 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'PPOD' on page 4 undefined on input line 22.
-
-<figures/RW.jpeg, id=217, 1551.7975pt x 1397.22pt>
+<figures/RW.jpeg, id=223, 1551.7975pt x 1397.22pt>
 File: figures/RW.jpeg Graphic file (type jpg)
  <use figures/RW.jpeg>
 Package pdftex.def Info: figures/RW.jpeg used on input line 34.
 (pdftex.def)             Requested size: 200.76353pt x 180.74954pt.
 
-<figures/cubsat1.jpg, id=218, 208.3785pt x 239.9364pt>
+<figures/cubsat1.jpg, id=224, 208.3785pt x 239.9364pt>
 File: figures/cubsat1.jpg Graphic file (type jpg)
 
 <use figures/cubsat1.jpg>
 Package pdftex.def Info: figures/cubsat1.jpg used on input line 43.
 (pdftex.def)             Requested size: 223.07211pt x 256.85754pt.
-
-
-LaTeX Warning: Citation 'view' on page 4 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'view' on page 4 undefined on input line 44.
-
-[4 <./figures/cub.jpg>] [5 <./figures/RW.jpeg> <./figures/cubsat1.jpg>]
-<figures/ECI.jpeg, id=240, 978.65625pt x 925.4575pt>
+ [4 <./figures/cub.jpg>] [5 <./figures/RW.jpeg> <./figures/cubsat1.jpg>] <figur
+es/ECI.jpeg, id=252, 978.65625pt x 925.4575pt>
 File: figures/ECI.jpeg Graphic file (type jpg)
- <use figures/ECI.jpeg>
+
+<use figures/ECI.jpeg>
 Package pdftex.def Info: figures/ECI.jpeg used on input line 73.
 (pdftex.def)             Requested size: 227.62206pt x 215.25137pt.
-
-<figures/ECEF.jpeg, id=242, 1034.86626pt x 893.3375pt>
+ <figures/ECEF.jpeg, id=254, 1034.86626pt x 893.3375pt>
 File: figures/ECEF.jpeg Graphic file (type jpg)
- <use figures/ECEF.jpeg>
+
+<use figures/ECEF.jpeg>
 Package pdftex.def Info: figures/ECEF.jpeg used on input line 81.
 (pdftex.def)             Requested size: 227.62206pt x 196.48033pt.
-
-[6 <./figures/ECI.jpeg>] <figures/OFR.jpeg, id=256, 1551.7975pt x 1343.0175pt>
+ [6 <./figures/ECI.jpeg>]
+<figures/OFR.jpeg, id=268, 1551.7975pt x 1343.0175pt>
 File: figures/OFR.jpeg Graphic file (type jpg)
-
-<use figures/OFR.jpeg>
+ <use figures/OFR.jpeg>
 Package pdftex.def Info: figures/OFR.jpeg used on input line 91.
 (pdftex.def)             Requested size: 182.09486pt x 157.5894pt.
- [7 <./figures/ECEF.jpeg>]
-<figures/frames.jpeg, id=269, 1182.4175pt x 1198.4775pt>
+
+[7 <./figures/ECEF.jpeg>]
+<figures/frames.jpeg, id=281, 1182.4175pt x 1198.4775pt>
 File: figures/frames.jpeg Graphic file (type jpg)
 
 <use figures/frames.jpeg>
@@ -3773,23 +3748,14 @@ Chapter 3.
 
 ]
 Chapter 4.
-
-LaTeX Warning: Citation 'FSA' on page 10 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'SADC' on page 10 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'wik' on page 10 undefined on input line 28.
-
-<figures/drag_coef.jpg, id=289, 365.86688pt x 142.5325pt>
+<figures/drag_coef.jpg, id=304, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 34.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=290, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=305, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
@@ -3797,11 +3763,7 @@ Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
 
 [10
 
-]
-
-LaTeX Warning: Citation 'SADC' on page 11 undefined on input line 57.
-
-[11 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
+] [11 <./figures/drag_coef.jpg> <./figures/a_prep.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 73.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -3809,19 +3771,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 73.
 
-<figures/j2.jpg, id=317, 395.4775pt x 216.81pt>
+<figures/j2.jpg, id=340, 395.4775pt x 216.81pt>
 File: figures/j2.jpg Graphic file (type jpg)
  <use figures/j2.jpg>
-Package pdftex.def Info: figures/j2.jpg used on input line 89.
+Package pdftex.def Info: figures/j2.jpg used on input line 87.
 (pdftex.def)             Requested size: 273.14923pt x 149.74792pt.
- [12 <./figures/j2.jpg>] [13]
-<figures/relativeDynamics.png, id=345, 703.62875pt x 592.2125pt>
+ [12 <./figures/j2.jpg>] <figures/relativeDynamics.png, id=353, 703.62875pt x 5
+92.2125pt>
 File: figures/relativeDynamics.png Graphic file (type png)
 
 <use figures/relativeDynamics.png>
-Package pdftex.def Info: figures/relativeDynamics.png used on input line 144.
+Package pdftex.def Info: figures/relativeDynamics.png used on input line 142.
 (pdftex.def)             Requested size: 273.14923pt x 229.89565pt.
- [14] [15 <./figures/relativeDynamics.png (PNG copy)>]
+ [13] [14 <./figures/relativeDynamics.png (PNG copy)>]
 Package epstopdf Info: Source file: <figures/theoryapprox.eps>
 (epstopdf)                    date: 2017-11-07 18:51:35
 (epstopdf)                    size: 18993 bytes
@@ -3831,16 +3793,16 @@ Package epstopdf Info: Source file: <figures/theoryapprox.eps>
 (epstopdf)                    size: 6883 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/theoryapprox-eps-c
 onverted-to.pdf figures/theoryapprox.eps>
-(epstopdf)             \includegraphics on input line 191.
+(epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/theoryapprox-eps-converted-to.pdf, id=371, 421.575pt x 316.18124pt>
+<figures/theoryapprox-eps-converted-to.pdf, id=388, 421.575pt x 316.18124pt>
 File: figures/theoryapprox-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/theoryapprox-eps-converted-to.pdf>
 Package pdftex.def Info: figures/theoryapprox-eps-converted-to.pdf used on inpu
-t line 191.
-(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
+t line 186.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
 Package epstopdf Info: Source file: <figures/practiceapprox.eps>
 (epstopdf)                    date: 2017-11-07 18:51:35
 (epstopdf)                    size: 18402 bytes
@@ -3850,57 +3812,18 @@ f>
 (epstopdf)                    size: 6898 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/practiceapprox-eps
 -converted-to.pdf figures/practiceapprox.eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/practiceapprox-eps-converted-to.pdf, id=375, 421.575pt x 316.18124pt>
+<figures/practiceapprox-eps-converted-to.pdf, id=389, 421.575pt x 316.18124pt>
 File: figures/practiceapprox-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/practiceapprox-eps-converted-to.pdf>
 Package pdftex.def Info: figures/practiceapprox-eps-converted-to.pdf used on in
-put line 201.
-(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
-Package epstopdf Info: Source file: <figures/nonomega.eps>
-(epstopdf)                    date: 2017-11-11 17:37:42
-(epstopdf)                    size: 112689 bytes
-(epstopdf)             Output file: <figures/nonomega-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-11 17:38:10
-(epstopdf)                    size: 35515 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/nonomega-eps-conve
-rted-to.pdf figures/nonomega.eps>
-(epstopdf)             \includegraphics on input line 209.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/nonomega-eps-converted-to.pdf, id=376, 421.575pt x 316.18124pt>
-File: figures/nonomega-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/nonomega-eps-converted-to.pdf>
-Package pdftex.def Info: figures/nonomega-eps-converted-to.pdf used on input li
-ne 209.
-(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 210.
- [16 <./figures/theoryapprox-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures/nontheta.eps>
-(epstopdf)                    date: 2017-11-11 17:37:42
-(epstopdf)                    size: 76771 bytes
-(epstopdf)             Output file: <figures/nontheta-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-11 17:38:10
-(epstopdf)                    size: 26086 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/nontheta-eps-conve
-rted-to.pdf figures/nontheta.eps>
-(epstopdf)             \includegraphics on input line 217.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/nontheta-eps-converted-to.pdf, id=391, 421.575pt x 316.18124pt>
-File: figures/nontheta-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/nontheta-eps-converted-to.pdf>
-Package pdftex.def Info: figures/nontheta-eps-converted-to.pdf used on input li
-ne 217.
-(pdftex.def)             Requested size: 273.14923pt x 204.86406pt.
- [17 <./figures/practiceapprox-eps-converted-to.pdf> <./figures/nonomega-eps-co
-nverted-to.pdf>]
+put line 195.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
+ [15 <./figures/theoryapprox-eps-converted-to.pdf> <./figures/practiceapprox-ep
+s-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/test_coef.eps>
 (epstopdf)                    date: 2017-11-08 17:58:29
 (epstopdf)                    size: 263955 bytes
@@ -3909,18 +3832,17 @@ Package epstopdf Info: Source file: <figures/test_coef.eps>
 (epstopdf)                    size: 68006 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/test_coef-eps-conv
 erted-to.pdf figures/test_coef.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/test_coef-eps-converted-to.pdf, id=410, 963.6pt x 457.71pt>
+<figures/test_coef-eps-converted-to.pdf, id=412, 963.6pt x 457.71pt>
 File: figures/test_coef-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/test_coef-eps-converted-to.pdf>
 Package pdftex.def Info: figures/test_coef-eps-converted-to.pdf used on input l
-ine 232.
+ine 214.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
- [18 <./figures/nontheta-eps-converted-to.pdf>] [19 <./figures/test_coef-eps-co
-nverted-to.pdf>]
+ [16 <./figures/test_coef-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/Bode_L.eps>
 (epstopdf)                    date: 2017-11-09 00:14:12
 (epstopdf)                    size: 42505 bytes
@@ -3929,17 +3851,17 @@ Package epstopdf Info: Source file: <figures/Bode_L.eps>
 (epstopdf)                    size: 12113 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Bode_L-eps-convert
 ed-to.pdf figures/Bode_L.eps>
-(epstopdf)             \includegraphics on input line 292.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Bode_L-eps-converted-to.pdf, id=440, 963.6pt x 457.71pt>
+<figures/Bode_L-eps-converted-to.pdf, id=427, 963.6pt x 457.71pt>
 File: figures/Bode_L-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Bode_L-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Bode_L-eps-converted-to.pdf used on input line
- 292.
+ 276.
 (pdftex.def)             Requested size: 409.71692pt x 194.61148pt.
- [20 <./figures/Bode_L-eps-converted-to.pdf>] [21]
+ [17] [18 <./figures/Bode_L-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/distance_control_twosat.eps>
 (epstopdf)                    date: 2017-11-11 17:37:42
 (epstopdf)                    size: 124125 bytes
@@ -3949,38 +3871,36 @@ ted-to.pdf>
 (epstopdf)                    size: 42449 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/distance_control_t
 wosat-eps-converted-to.pdf figures/distance_control_twosat.eps>
-(epstopdf)             \includegraphics on input line 354.
+(epstopdf)             \includegraphics on input line 335.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/distance_control_twosat-eps-converted-to.pdf, id=473, 421.575pt x 316.
+<figures/distance_control_twosat-eps-converted-to.pdf, id=464, 421.575pt x 316.
 18124pt>
 File: figures/distance_control_twosat-eps-converted-to.pdf Graphic file (type p
 df)
  <use figures/distance_control_twosat-eps-converted-to.pdf>
 Package pdftex.def Info: figures/distance_control_twosat-eps-converted-to.pdf u
-sed on input line 354.
-(pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
-Package epstopdf Info: Source file: <figures/distance_contro_angle.eps>
-(epstopdf)                    date: 2017-11-11 17:37:42
-(epstopdf)                    size: 86882 bytes
-(epstopdf)             Output file: <figures/distance_contro_angle-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2017-11-11 17:38:11
-(epstopdf)                    size: 25303 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/distance_contro_an
-gle-eps-converted-to.pdf figures/distance_contro_angle.eps>
-(epstopdf)             \includegraphics on input line 364.
+sed on input line 335.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
+Package epstopdf Info: Source file: <figures/newangle.eps>
+(epstopdf)                    date: 2017-11-14 14:47:15
+(epstopdf)                    size: 78734 bytes
+(epstopdf)             Output file: <figures/newangle-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-14 14:48:15
+(epstopdf)                    size: 25645 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/newangle-eps-conve
+rted-to.pdf figures/newangle.eps>
+(epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/distance_contro_angle-eps-converted-to.pdf, id=475, 421.575pt x 316.18
-124pt>
-File: figures/distance_contro_angle-eps-converted-to.pdf Graphic file (type pdf
-)
- <use figures/distance_contro_angle-eps-converted-to.pdf>
-Package pdftex.def Info: figures/distance_contro_angle-eps-converted-to.pdf use
-d on input line 364.
-(pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
- [22 <./figures/distance_control_twosat-eps-converted-to.pdf>]
+<figures/newangle-eps-converted-to.pdf, id=465, 421.575pt x 316.18124pt>
+File: figures/newangle-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/newangle-eps-converted-to.pdf>
+Package pdftex.def Info: figures/newangle-eps-converted-to.pdf used on input li
+ne 344.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
+ [19]
 Package epstopdf Info: Source file: <figures/input_drag_sat1.eps>
 (epstopdf)                    date: 2017-11-11 17:37:42
 (epstopdf)                    size: 97723 bytes
@@ -3990,15 +3910,15 @@ df>
 (epstopdf)                    size: 25876 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/input_drag_sat1-ep
 s-converted-to.pdf figures/input_drag_sat1.eps>
-(epstopdf)             \includegraphics on input line 374.
+(epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/input_drag_sat1-eps-converted-to.pdf, id=493, 421.575pt x 316.18124pt>
+<figures/input_drag_sat1-eps-converted-to.pdf, id=478, 421.575pt x 316.18124pt>
 File: figures/input_drag_sat1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/input_drag_sat1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/input_drag_sat1-eps-converted-to.pdf used on i
-nput line 374.
-(pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
+nput line 357.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
 Package epstopdf Info: Source file: <figures/input_drag_sat2.eps>
 (epstopdf)                    date: 2017-11-11 17:37:42
 (epstopdf)                    size: 103403 bytes
@@ -4008,139 +3928,116 @@ df>
 (epstopdf)                    size: 27744 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/input_drag_sat2-ep
 s-converted-to.pdf figures/input_drag_sat2.eps>
-(epstopdf)             \includegraphics on input line 382.
+(epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/input_drag_sat2-eps-converted-to.pdf, id=494, 421.575pt x 316.18124pt>
+<figures/input_drag_sat2-eps-converted-to.pdf, id=479, 421.575pt x 316.18124pt>
 File: figures/input_drag_sat2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/input_drag_sat2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/input_drag_sat2-eps-converted-to.pdf used on i
-nput line 382.
-(pdftex.def)             Requested size: 409.71692pt x 307.29367pt.
- [23 <./figures/distance_contro_angle-eps-converted-to.pdf>] [24 <./figures/inp
-ut_drag_sat1-eps-converted-to.pdf>] <figures/form_sat.jpeg, id=525, 1331.97626p
-t x 728.7225pt>
+nput line 366.
+(pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
+
+<figures/form_sat.jpeg, id=481, 1331.97626pt x 728.7225pt>
 File: figures/form_sat.jpeg Graphic file (type jpg)
 
 <use figures/form_sat.jpeg>
-Package pdftex.def Info: figures/form_sat.jpeg used on input line 392.
+Package pdftex.def Info: figures/form_sat.jpeg used on input line 376.
 (pdftex.def)             Requested size: 455.24411pt x 249.06334pt.
- [25 <./figures/input_drag_sat2-eps-converted-to.pdf>]
+ [20 <./figures/distance_control_twosat-eps-converted-to.pdf> <./figures/newang
+le-eps-converted-to.pdf> <./figures/input_drag_sat1-eps-converted-to.pdf> <./fi
+gures/input_drag_sat2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/da1.eps>
 (epstopdf)                    date: 2017-11-13 18:20:58
 (epstopdf)                    size: 1059314 bytes
 (epstopdf)             Output file: <figures/da1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-13 19:40:09
+(epstopdf)                    size: 318559 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/da1-eps-converted-
 to.pdf figures/da1.eps>
-(epstopdf)             \includegraphics on input line 399.
-runsystem(repstopdf --outfile=figures/da1-eps-converted-to.pdf figures/da1.eps)
-...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 387.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figures/da1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-13 19:40:09
-(epstopdf)                    size: 318559 bytes.
- <figures/da1-eps-converted-to.pdf, id=542, 421.575pt x 316.18124pt>
+<figures/da1-eps-converted-to.pdf, id=528, 421.575pt x 316.18124pt>
 File: figures/da1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/da1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/da1-eps-converted-to.pdf used on input line 39
-9.
-(pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
+Package pdftex.def Info: figures/da1-eps-converted-to.pdf used on input line 38
+7.
+(pdftex.def)             Requested size: 245.38068pt x 184.03656pt.
+
+Overfull \hbox (22.30856pt too wide) in paragraph at lines 387--388
+ [][] 
+ []
+
 Package epstopdf Info: Source file: <figures/da2.eps>
 (epstopdf)                    date: 2017-11-13 18:21:02
 (epstopdf)                    size: 689196 bytes
 (epstopdf)             Output file: <figures/da2-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-13 19:40:09
+(epstopdf)                    size: 189273 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/da2-eps-converted-
 to.pdf figures/da2.eps>
-(epstopdf)             \includegraphics on input line 405.
-runsystem(repstopdf --outfile=figures/da2-eps-converted-to.pdf figures/da2.eps)
-...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/da2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-13 19:40:09
-(epstopdf)                    size: 189273 bytes.
-
-<figures/da2-eps-converted-to.pdf, id=543, 421.575pt x 316.18124pt>
+(epstopdf)             \includegraphics on input line 396.
+Package epstopdf Info: Output file is already uptodate.
+<figures/da2-eps-converted-to.pdf, id=529, 421.575pt x 316.18124pt>
 File: figures/da2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/da2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/da2-eps-converted-to.pdf used on input line 40
-5.
-(pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
- [26 <./figures/form_sat.jpeg>])
-(./chapters/part2.tex [27 <./figures/da1-eps-converted-to.pdf> <./figures/da2-e
-ps-converted-to.pdf>] [28]
+Package pdftex.def Info: figures/da2-eps-converted-to.pdf used on input line 39
+6.
+(pdftex.def)             Requested size: 245.38068pt x 184.03656pt.
+
+Overfull \hbox (22.30856pt too wide) in paragraph at lines 396--397
+ [][] 
+ []
+
+[21 <./figures/form_sat.jpeg>]) (./chapters/part2.tex [22 <./figures/da1-eps-co
+nverted-to.pdf> <./figures/da2-eps-converted-to.pdf>]
 Chapter 5.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 7.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 7.
+[23
 
-
-LaTeX Warning: Citation 'SADC' on page 29 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'SADC' on page 29 undefined on input line 16.
-
-[29
-
-]
-
-LaTeX Warning: Citation 'SADC' on page 30 undefined on input line 54.
-
-
-LaTeX Warning: Citation 'SADC' on page 30 undefined on input line 60.
-
-
-LaTeX Warning: Citation 'Biezl' on page 30 undefined on input line 78.
-
-
-LaTeX Warning: Citation 'Biezl' on page 30 undefined on input line 85.
-
-[30] [31]
-
-LaTeX Warning: Citation 'SADC' on page 32 undefined on input line 158.
-
-) (./chapters/acceptTest.tex [32]
+] [24] [25]) (./chapters/acceptTest.tex [26]
 Chapter 6.
-[33
+[27
 
 ]
 Chapter 7.
-) (./chapters/conclusion.tex [34
+) (./chapters/conclusion.tex [28
 
 ]
 Chapter 8.
-) [35
+) [29
 
-] [36
+] [30
 
 ] (./appendix/appendix_1.tex
 Appendix A.
-) (./appendix/code.tex [37
+) (./appendix/code.tex [31
 
 ]
 Appendix B.
-[38
+[32
 
-] <figures/operating_point.jpg, id=682, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=665, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [39 <./figures/operating_point.jpg>])
-(./appendix/appendix_2.tex [40]
+ [33 <./figures/operating_point.jpg>])
+(./appendix/appendix_3.tex [34]
 Appendix C.
-) (./appendix/appendix_3.tex [41
+) [35
 
 ]
-Appendix D.
-) [42
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 54.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [36
 
-] (./main.lox)
+]
+(./main.lox)
 \tf@lox=\write8
 \openout8 = `main.lox'.
 
@@ -4149,16 +4046,16 @@ Appendix D.
 
  
 AED: lastpage setting LastPage
-[43
+[37
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 917FCDBDDF250CE32A4D00B46B235DF7;1895.
+(rerunfilecheck)             Checksum: 9617A19B8BE944417AEA00B30872A314;1825.
 
 
 LaTeX Warning: There were undefined references.
@@ -4167,51 +4064,48 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49683 strings out of 493014
- 1029461 string characters out of 6133351
- 1623319 words of memory out of 5000000
- 52135 multiletter control sequences out of 15000+600000
- 133326 words of font info for 103 fonts, out of 8000000 for 9000
+ 49714 strings out of 493014
+ 1029853 string characters out of 6133351
+ 1622534 words of memory out of 5000000
+ 52168 multiletter control sequences out of 15000+600000
+ 120653 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,23n,92p,10411b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
-cal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
-16/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/
+ 57i,23n,92p,10411b,1771s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/
 fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
 dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/l
 m-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lm
-mi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm
-/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/lm/lmsy8.pfb>
-Output written on main.pdf (49 pages, 2926978 bytes).
+-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
+mmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
+m/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (43 pages, 2869416 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
+ 851 PDF objects out of 1000 (max. 8388607)
  732 compressed objects within 8 object streams
- 217 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 
