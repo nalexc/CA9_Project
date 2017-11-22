@@ -276,12 +276,12 @@ A controller is designed to control the angle between two satellites. Due to the
 \begin{flalign}
 \mathcal{I} =  \int (\vec{x}^\mathsf{T} \ \underline{Q} \ \vec{x} + \vec{u}^\mathsf{T} \ \underline{R}  \ \vec{u}) dx
 \end{flalign}
-where $Q$ and $R$ are weighting matrices chosen as: \label{ref}
+Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $R$ matrix is defined as $R = [u_{delta}^{-2}]$ ($u_{delta} = u_{max} - u_{min}$). For the states weighting matrices no maximum value is defined. The weight for the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converge, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller, since for big values of weights the controller will be in saturation mode faster and with low values the convergence will be slower. Therefore, the weighting matrices are given by \label{ref}:
 \begin{flalign}
 	{\underline{Q}}
 	= 
 	\begin{bmatrix}
-		(\frac{\pi}{3})^{-2}& 0& \\
+		(\frac{\pi}{7})^{-2}& 0& \\
 		0& 0&
 	\end{bmatrix} 
 \end{flalign}
@@ -289,13 +289,12 @@ where $Q$ and $R$ are weighting matrices chosen as: \label{ref}
 	{\underline{R}}
 	= 
 	\begin{bmatrix}
-		u_{max}^{-2}
+		u_{delta}^{-2}
 	\end{bmatrix} 
 \end{flalign}
  The vector of gains K is obtained by solving the Algebraic Riccati equation. The control input signal can be computed ($u = u_2 - u_1$) and therefore if $u$ is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If $u$ is smaller than zero, it will be the opposite. The control law used for designing the controller is: $u = -K(1) \ \theta \ -K(2) \ \dot \theta $. \label{eq:ctr}
  
- Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $R$ matrix is defined as $R = [u_{max}^{-2}]$. For the states weighting matrices no maximum value is defined. The weight for the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converge, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller, since for big values of weights the controller will be in saturation mode faster and with low values the convergence will be slower.
-\subsection{Frequency Analysis}
+ \subsection{Frequency Analysis}
 The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller and $LPF(s)$ is the transfer function of the second order low pass filter.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
@@ -412,7 +411,7 @@ In the case of a distributed algorithm, the behaviour of the satellite formation
 		\centering
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=1.1\linewidth]{figures/da1}
+			\includegraphics[width=1.1\linewidth]{figures/da1.eps}
 			\caption{ Distributed algorithm with overshoot }
 			\label{fig:da1}
 		\end{figure}
