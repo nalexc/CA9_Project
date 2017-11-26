@@ -42,7 +42,7 @@
 \contentsline {subsection}{Kinematics}{24}{subsection*.53}
 \contentsline {subsection}{Dynamic Model}{25}{subsection*.54}
 \contentsline {section}{\numberline {5.2}Disturbance Models}{26}{section.5.2}
-\contentsline {subsection}{Gravitational torque}{26}{subsection*.55}
+\contentsline {subsection}{Gravity-Gradient torque}{26}{subsection*.55}
 \contentsline {subsection}{Solar radiation}{27}{subsection*.56}
 \contentsline {section}{\numberline {5.3}Attitude control design}{27}{section.5.3}
 \contentsline {chapter}{\numberline {6} Implementation and test}{28}{chapter.6}
