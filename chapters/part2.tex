@@ -75,14 +75,14 @@ the angle approximations where taken as $\cos\frac{\Delta\Phi}{2} \simeq 1$ and 
 \subsection{Dynamic Model}
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   
 %
-Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques\cite{Biezl} and is given by: 
+Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques\cite{SADC} and is given by: 
 % 
 \begin{flalign}
 	\dot{L} = {N_{tot}- \omega }{\times {L}}
 	\label{eq:eulerequation}
 \end{flalign}
 % 
-where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by\cite{Biezl}:
+where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by\cite{SADC}:
 %
 \begin{flalign}
 	{L} = {I_{s}}{\omega}+{h_{tot}}
@@ -121,34 +121,91 @@ where the negative sign denotes the absorbed momentum. The total torque from ext
 \end{flalign}
 %
 which constitute the dynamics of the satellite with three reaction wheels. At the final equation \eqref{eq:angularmomentum4} is shown the time dependency of the variables. 
-%
-\section{Disturbance Models}\label{sec:useCase} 
-\subsection{Gravity-Gradient torque}
-An unbalanced satellite in orbit is subjected to a torque due to earth's non-uniform gravitational field . Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} acting on the mass element located at position $R{i}$ from the earth's geometric centre that can be calculated as\cite{wertz}
+\subsection{Equation of motion} \label{subsec:eom} 
+The dynamic and kinematic equations are put together, which will give the nonlinear equations of motion for the satellite.
 \begin{flalign}
-	d\vec{F_i} = -G\frac{m_{earth}}{R_i^3}dm_i \cdot \vec{R_i}
+\begin{bmatrix}
+	\vec{\dot q(t)} \\
+	\dot \omega{(t)}
+\end{bmatrix} 	
+= 
+\begin{bmatrix}
+	\frac{1}{2} \underline{\Omega}_{(4\times4)} \vec q(t) \\
+	{-I_{s}^{-1}S(\omega)I_{s}\omega(t)-I_{s}^{-1}S(\omega)h_{tot}+I_{s}^{-1}N_{c}(t)+I_{s}^{-1}N_{dis}(t)}
+\end{bmatrix} 
+	\label{eq:le}
+\end{flalign}
+where,\\
+  $\vec{\dot q(t)} = [q_1 \ q_2 \ q_3 \ q_4]^T$ \\
+  $\dot \omega{(t)} = [ \omega_1 \ \omega_2 \ \omega_3]^T$ \\
+  $\underline{\Omega}(\omega)$ is the $4\times4$ skew symmetric matrix \\
+  $I_{s}$ is the inertia matrix \\
+  $\underline{S}(\omega)$ is the $3\times3$ skew symmetric matrix \\
+  $N_{dis}(t)$ is the disturbance torque \\
+  $N_{c}(t)$ is the control torque and is equal with $N_{mt}-N_{mw}$, where $N_{mt}$ is the torque from magnetorques and $N_{mw}$ is the torque from momentum wheels 
+\subsection{Linearized equation of motion} \label{subsec:lem} 
+The kinematic and dynamic equations are linearized for the purpose of designing a linear controller. Thus, the linearized equation of motion for the satellite are given by: 
+
+\begin{flalign}
+	\begin{bmatrix}
+		\vec{ \dot {\tilde{q}}(t) } \\
+	{ \dot {\tilde{\omega}}(t) }
+	\end{bmatrix} 	
+	= 
+	\begin{bmatrix}
+	-S(\bar{\omega}) &	\frac{1}{2} \underline{\vec 1}_{(3\times3)} \\
+	 \underline{\vec 0}_{(3\times3)} &	{I_{s}^{-1}S(\omega)I_{s}\omega(t)-I_{s}^{-1}S(\omega)h_{tot}}
+	\end{bmatrix} 
+		\begin{bmatrix}
+		\vec{  {\tilde{q}}(t) } \\
+		{  {\tilde{\omega}}(t) }
+    	\end{bmatrix} 	
++
+	\begin{bmatrix}
+	\underline{\vec 0}_{(3\times3)} \\
+		{I_{s}^{-1}}
+    \end{bmatrix} 	
+  \tilde N_c(t)
+	\label{eq:le}
+\end{flalign}
+where: \\
+$\vec{ {\tilde{q}}}$ is the quaternion wich represents a change in attitude \\
+$\bar{\omega}$ is the operating point \\
+$\tilde{\omega}$ represents the changes of angular velocity around 
+\section{Disturbance Models}\label{sec:csf} 
+\subsection{Gravitational torque}
+An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to Newton's law of universal gravitation.
+\begin{flalign}
+	dF_i = -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
 	\label{eq:ref1}
 \end{flalign}
-where $G$ is the gravitational constant, $m_{earth}$ is the mass of the earth and $\vec{R_i}$ is the vector from the Earth's geometric centre to the infinitesimal element of the satellite. \\
-The torque about the geometric centre of the satellite due to a force \textit{$dF_i$} at a distance $r_i$ from the geometric centre of the satellite is calculated as 
+where \textit{G} is the gravitational constant, \textit{$m_{earth}$} is the mass of the earth and \textit{$R_i^2$} is the vector from the Earth to the infinitesimal element of the satellite. \\
+The moment of the gravitational force about the geometric center is calculated as the formula:
 \begin{flalign}
-	d\vec{N_{gra}} =  r_i \times d\vec{F_i} 
+	N_{gra} = \int_{sat} r_i \times dF_i 
 	\label{eq:ref2}
 \end{flalign}
- $r_i$ can be written as the sum of two vectors,$r_{co}$ which is the vector from geometric centre of the satellite to the centre of mass, and $r_{ci}$ which is the vector from the centre of mass to the infinitesimal element.  Therefore, the expression of the gravity gradient torque is obtained by integrating \eqref{eq:ref2} and thus we obtain\cite{wertz}
+with $r_i$ is the vector from the geometric center to the infinitesimal element. $r_i$ can be written as the sum of the vector from the geometric vector to the mass center $r_{g,m}$ and the vector from the mass center of the element $r_{m,i}$. Therefore, the expression of the gravitational torque is simplified:
 \begin{flalign}
-	N_{gra} &= \int_{sat} (r_{co} +r_{ci}) \times d\vec{F_i}  
+	N_{gra} &= \int_{sat} r_{g,m} \times dF_i + \int_{sat} r_{m,i} \times dF_i 
 	\label{eq:ref3}
 \end{flalign}
-The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the inertia matrix $I$, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as\cite{wertz}  
-%
+\[
+= \int_{sat} r_{g,m} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i} + \int_{sat} r_{m,i} \times -G\frac{m_{earth}}{R_i^2}dm_i \cdot \hat{R_i}
+\]
+We can assumed that $r_{m,g} << R_i$ and $R_i$ can be supposed constant and equals to the vector from the center of the earth to the geometric center of the satellite $R_{e,g}$. Thus, The second term is null by definition of the mass center.
 \begin{flalign}
-N_{gra} &= \dfrac{3\mu}{R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{sc}}})] 
-\label{eq:ref4}
+	\Rightarrow N_{gra} = G\frac{m_{sat} \cdot m_{earth}}{R_{e,g}^2} \cdot (\hat{R_i} \times r_{g,m})
+	\label{eq:ref4}
 \end{flalign}
-%
+The position of the center of mass was measured for the previous project and is eqals to [?;?;?] in the frame of the satellite. Therefore, $r_{g,m,i}$ can be expressed in the inertial frame as following:
+\begin{flalign}
+	[r_{g,m,i};0] = q_{i,s} \otimes [?;?;?.0] \otimes q_{i,s}*
+	\label{eq:ref5}
+\end{flalign}
+where $q_{i,s}$ is the quaternion that represents the rotation of the satellite in the inertia frame and $\otimes$ is the quaternion multiplication. Thus, the moment of force can be calculated by this expression above.
 \subsection{Solar radiation}
-The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass(CoM). \cite{SADC}
+Tfhe surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite center of mass(CoM). \cite{SADC}
 
 The torque around CoM is given by:
 \begin{flalign}
@@ -170,4 +227,5 @@ The solar flux can be computed as follows:
 	\label{eq:flux}
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
+
 \section{Attitude control design}
