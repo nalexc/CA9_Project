@@ -44,7 +44,7 @@
 \contentsline {subsection}{Equation of motion}{26}{subsection*.55}
 \contentsline {subsection}{Linearized equation of motion}{26}{subsection*.56}
 \contentsline {section}{\numberline {5.2}Disturbance Models}{27}{section.5.2}
-\contentsline {subsection}{Gravitational torque}{27}{subsection*.57}
+\contentsline {subsection}{Gravity-Gradient torque}{27}{subsection*.57}
 \contentsline {subsection}{Solar radiation}{28}{subsection*.58}
 \contentsline {section}{\numberline {5.3}Attitude control design}{28}{section.5.3}
 \contentsline {chapter}{\numberline {6} Implementation and test}{29}{chapter.6}
