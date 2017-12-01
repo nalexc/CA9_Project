@@ -295,7 +295,7 @@ Due to the fact that no predefined cost is specified, the weighting matrices can
  The vector of gains K is obtained by solving the Algebraic Riccati equation. The control input signal can be computed ($u = u_2 - u_1$) and therefore if $u$ is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If $u$ is smaller than zero, it will be the opposite. The control law used for designing the controller is: $u = -K(1) \ \theta \ -K(2) \ \dot \theta $. \label{eq:ctr}
  
  \subsection{Frequency Analysis}
-The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller and $LPF(s)$ is the transfer function of the second order low pass filter.
+The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s) \ H_attittude(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller, $LPF(s)$ is the transfer function of the second order low pass filter and $H_attitude$ represent is the first order transfer function where the rise time is chosen to be equal to 10 minutes which is a estimation of time that the satellite take to converge into the good orientation.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
 	\centering
@@ -304,7 +304,8 @@ The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 	\caption{Bode diagram of the loop transfer function}
 	\label{fig:Bode_L}
 \end{figure}
-In the modelling, the control input signal (drag force coefficient) was assumed to be able to change instantaneously but in the real system, variations of the orientation of the satellite take times. Therefore, the phase margin must be big enough to allow a delay in the controller. In the bode diagram, the phase margin can be estimated equal to 60$^{\circ}$  which is enough to accept a large delay due to the small crossover frequency. \\
+The crossover frequency and the phase margin can be extracted from the bode diagram. The crossover frequency is equal to $2.6418*10^{-7}\frac{rad}{s}$ and the phase margin is equal to $62.7074^{\circ}$ which is enough to accept a large delay due to the small crossover frequency. \\.
+ 
 \subsection{Satellite Formation Control} 
 \subsubsection{Global algorithm}
 Since the formation consists of more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of $n-1$ equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of $n$ equations with $n$ unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.

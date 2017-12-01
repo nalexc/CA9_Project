@@ -109,7 +109,7 @@ For the ease of notation, the cross product can be written as matrix operation u
 The rate of change in angular momentum $\dot{h}_{(tot)}$ can be absorbed from the controller. This can be written as:
 %
 \begin{flalign}
-	{\dot{h}_{(tot)}} ={-N{c}}
+	{\dot{h}_{(mv)}} ={-N{mw}}
 	\label{eq:rate of change}
 \end{flalign}
 %
@@ -122,29 +122,37 @@ where the negative sign denotes the absorbed momentum. The total torque from ext
 %
 which constitute the dynamics of the satellite with three reaction wheels. At the final equation \eqref{eq:angularmomentum4} is shown the time dependency of the variables. 
 \subsection{Equation of motion} \label{subsec:eom} 
-The dynamic and kinematic equations are put together, which will give the nonlinear equations of motion for the satellite.
+The behaviour of the satellite attitude is described by the dynamic and kinematic equations, which give a non-linear state space representations.
 \begin{flalign}
 \begin{bmatrix}
 	\vec{\dot q(t)} \\
-	\dot \omega{(t)}
+	\vec{\dot \omega{(t)}}
 \end{bmatrix} 	
 = 
 \begin{bmatrix}
 	\frac{1}{2} \underline{\Omega}_{(4\times4)} \vec q(t) \\
-	{-I_{s}^{-1}S(\omega)I_{s}\omega(t)-I_{s}^{-1}S(\omega)h_{tot}+I_{s}^{-1}N_{c}(t)+I_{s}^{-1}N_{dis}(t)}
+	{-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\underline{I}_{s}\vec{\omega}(t)-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\vec{h_{mw}}+\underline{I}_{s}^{-1}\vec{N_{c}}(t)+\underline{I}_{s}^{-1}\vec{N_{dis}}(t)}
 \end{bmatrix} 
 	\label{eq:le}
 \end{flalign}
 where,\\
   $\vec{\dot q(t)} = [q_1 \ q_2 \ q_3 \ q_4]^T$ \\
-  $\dot \omega{(t)} = [ \omega_1 \ \omega_2 \ \omega_3]^T$ \\
+  $\vec{\dot \omega{(t)}} = [ \omega_1 \ \omega_2 \ \omega_3]^T$ \\
   $\underline{\Omega}(\omega)$ is the $4\times4$ skew symmetric matrix \\
-  $I_{s}$ is the inertia matrix \\
+  $\underline{I}_{s}$ is the inertia matrix \\
   $\underline{S}(\omega)$ is the $3\times3$ skew symmetric matrix \\
-  $N_{dis}(t)$ is the disturbance torque \\
-  $N_{c}(t)$ is the control torque and is equal with $N_{mt}-N_{mw}$, where $N_{mt}$ is the torque from magnetorques and $N_{mw}$ is the torque from momentum wheels 
+  $\vec{N_{dis}}(t)$ is the disturbance torque \\
+  $\vec{N_{c}}(t)$ is the control torque and is equal with $\vec{N_{mt}-N_{mw}}$, where $\vec{N_{mt}}$ is the torque from magnetorques and $\vec{N_{mw}}$ is the torque from momentum wheels \\
+  
+ %add underline and vec, h_tot -> h_mw; add the equation for dot(h_mw)
 \subsection{Linearized equation of motion} \label{subsec:lem} 
-The kinematic and dynamic equations are linearized for the purpose of designing a linear controller. Thus, the linearized equation of motion for the satellite are given by: 
+The kinematic and dynamic equations are linearized around the operating point for the purpose of designing a linear controller. The quaternion $\vec{q(t)}$ is split in the operating point ($\vec{\bar{q}}$) and the error quaternion ($\vec{\tilde{q}}$) and the angular velocity $\vec{\omega}$ is split in the nominal value $\vec{\tilde{\omega}}$ and the error $\vec{\tilde{\omega}}$.
+\begin{flalign}
+	&\vec{q} = \vec{\bar{q}} \otimes \vec{\tilde{q}} \\
+	&\vec{\tilde{q}} = \vec{\bar{q}}^{-1} \otimes \vec{q} \\
+	&\vec{\omega} = \vec{\bar{\omega}} + \vec{\tilde{\omega}} 
+\end{flalign}
+	 Thus, the linearized equation of motion for the satellite are given by: 
 
 \begin{flalign}
 	\begin{bmatrix}
@@ -168,10 +176,7 @@ The kinematic and dynamic equations are linearized for the purpose of designing 
   \tilde N_c(t)
 	\label{eq:le}
 \end{flalign}
-where: \\
-$\vec{ {\tilde{q}}}$ is the quaternion wich represents a change in attitude \\
-$\bar{\omega}$ is the operating point \\
-$\tilde{\omega}$ represents the changes of angular velocity around 
+
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravitational torque}
 An unbalanced satellite in orbit is subjected to a torque due to the gravitational torque. Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} that can be calculated thanks to Newton's law of universal gravitation.
