@@ -47,11 +47,13 @@
 \contentsline {subsection}{Gravity-Gradient torque}{27}{subsection*.57}
 \contentsline {subsection}{Solar radiation}{28}{subsection*.58}
 \contentsline {section}{\numberline {5.3}Attitude control design}{28}{section.5.3}
-\contentsline {chapter}{\numberline {6} Implementation and test}{29}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acceptance test}{30}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{31}{chapter.8}
-\contentsline {subsection}{Future work}{31}{subsection*.59}
-\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{33}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{33}{subsection*.60}
-\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{34}{appendix.B}
-\contentsline {chapter}{\numberline {C}Angular velocity equations}{37}{appendix.C}
+\contentsline {subsection}{Relationship between drag force and quaternion}{28}{subsection*.59}
+\contentsline {paragraph}{Nota Bene:}{32}{paragraph*.63}
+\contentsline {chapter}{\numberline {6} Implementation and test}{33}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{34}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{35}{chapter.8}
+\contentsline {subsection}{Future work}{35}{subsection*.64}
+\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{37}{appendix.A}
+\contentsline {subsection}{Inertia matrix}{37}{subsection*.65}
+\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{38}{appendix.B}
+\contentsline {chapter}{\numberline {C}Angular velocity equations}{41}{appendix.C}

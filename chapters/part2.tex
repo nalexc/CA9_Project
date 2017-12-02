@@ -227,3 +227,64 @@ The solar flux can be computed as follows:
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 
 \section{Attitude control design}
+\subsection{Relationship between drag force and quaternion}
+In order to applied the desired drag force, a function have to be found to compute the quaternion. \\
+A method to find a bijective function is to find the 2 quaternions that give the minimum and the maximum drag force and to analyse the drag force in the path between them. \\
+the quaternion can be defined as a sequence of three rotations around the three axis.
+\begin{flalign}
+	q = q_x \otimes q_y \otimes q_z
+\end{flalign}
+with
+\begin{flalign}
+	q_x = sin(\frac{\theta_x}{2})*i + cos(\frac{\theta_x}{2}) \\
+	q_y = sin(\frac{\theta_y}{2})*j + cos(\frac{\theta_y}{2}) \\
+	q_z = sin(\frac{\theta_z}{2})*k + cos(\frac{\theta_z}{2})
+\end{flalign}
+The drag force can be computed as the folowing:
+\begin{flalign}
+	u = \frac{u_{min}}{A_{min}}A_{perp}(q) \\
+	u = u_{min} \ f(q)
+\end{flalign}
+where is the $A_{\perp}$ is the perpendicular area of the satellite with a rotation q and f is defined by $f = \frac{A_{\perp}}{A_{min}}$. Due to the fact that the velocity of the satellite is along the x axis in the orbit frame, a rotation around doesn't change $A_{\perp}$. Therefore, f can be analysed using only rotation around y and z axes. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/perp_area.eps}
+	\caption{Perpendicular area in function of rotations around y and z axes}
+	\label{fig:perp_area}
+\end{figure} 
+The quaternion for the minimum drag force is defined by the rotations $\theta_y = \theta_z = 0$ and the quaternion that give the maximum drag force is defined by the rotations $\theta_{y,max} = 0.61568$ rad and $\theta_{z,max} = \frac{\pi}{4}$. \\
+the path between the minimum and the maximum drag force is analyzed:
+\begin{flalign}
+	q = q_y \otimes q_z \\
+\end{flalign}
+with
+\begin{flalign}
+	\theta_y = \alpha \ \theta_{y,max} \\
+	\theta_z = \alpha \ \theta_{z,max}
+\end{flalign}
+and $ \alpha \in [0,1]$. the \figref{path_alpha} shows f(q) as a function of $\alpha$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/path_f.eps}
+	\caption{Perpendicular area in function of rotations around y and z axes}
+	\label{fig:path_alpha}
+\end{figure} 
+This function can be approximated by a polynomial of degree 2. the relative error of this approximation represented in the \figref{rel_err} is really small and thus, the approximation by a polynomial of degree 2 can be used. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/rel_err.eps}
+	\caption{Relative error of the fitting approximation }
+	\label{fig:rel_err}
+\end{figure}
+Therefore, the quaternion that give the desired drag force in the orbit frame can be computed by following this algorithm:
+\begin{flalign}
+	\frac{u}{u_{min}} &= f( \alpha ) \approx p_1 \alpha^2 + p_2 \alpha + p_3 \\
+	\Rightarrow \alpha &= \frac{-p_2 + \sqrt{p_2^2 - 4 p_1 p_2}}{2 p_1} \\
+	\Rightarrow \theta_y &= \alpha \theta_{y,max} \\
+	\theta_z &= \alpha \theta_{z,max} \\
+	\Rightarrow q_y &= sin(\frac{\theta_y}{2})*j + cos(\frac{\theta_y}{2}) \\
+	q_z &= sin(\frac{\theta_z}{2})*k + cos(\frac{\theta_z}{2}) \\
+	\Rightarrow q_{ref} &= q_y \otimes q_z
+\end{flalign}
+\paragraph{Nota Bene:}
+This is one solution of the problem but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented and we didn't find a way to do it. (i don't know if it's a good idea to say that)
