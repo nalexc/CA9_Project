@@ -288,3 +288,69 @@ Therefore, the quaternion that give the desired drag force in the orbit frame ca
 \end{flalign}
 \paragraph{Nota Bene:}
 This is one solution of the problem but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented and we didn't find a way to do it. (i don't know if it's a good idea to say that)
+\subsection{State Feedback Control}
+The linearized equation \eqref{le} of the attitude system allows to design a state feedback control. However, the nominal values of the quaternion and of the angular velocity depends of the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
+
+The norm of $\bar{\omega}$ is known and to the angular velocity of the satellite around the Earth ($||\bar{\omega}|| \approx 0.0011$). Due to this value is very small compare to $\frac{1}{2}$. The A matrix can be approximated by:
+
+\begin{flalign}
+\underline{A}
+\approx
+\begin{bmatrix}
+\underline{0}_{(3\times3)} & \frac{1}{2} \underline{\vec 1}_{(3\times3)} \\ \underline{0}_{(3\times3)} & \underline{0}_{(3\times3)}
+\end{bmatrix} 
+\label{eq:state_feedback}
+\end{flalign} 
+The system can be split in three subsystems defined by the matrix equation:
+
+\begin{flalign}
+\begin{bmatrix}
+\vec{ \dot {\tilde{q}}_i(t) } \\
+ \dot {\tilde{\omega}}_i(t)
+\end{bmatrix} 	
+= 
+\begin{bmatrix}
+0 &	\frac{1}{2}  \\
+0 & 0	
+\end{bmatrix} 
+\begin{bmatrix}
+\vec{  {\tilde{q}}_i(t) } \\
+ {\tilde{\omega}}_i(t)
+\end{bmatrix} 	
++
+\begin{bmatrix}
+0 \\
+{I_{i,s}^{-1}}
+\end{bmatrix} 	
+ N_{i,c}(t)
+\label{eq:le_bis}
+\end{flalign}
+The input control torque is defined by a state feedback law:
+\begin{flalign}
+Nc = 
+-\begin{bmatrix}
+k_1 & k_2
+\end{bmatrix} 
+\begin{bmatrix}
+\vec{  {\tilde{q}}_i(t) } \\
+{\tilde{\omega}}_i(t)
+\end{bmatrix}
+\end{flalign} 
+Therefore, 
+\begin{flalign}
+A-BK = 
+\begin{bmatrix}
+0 & \frac{1}{2} \\
+-\frac{k_1}{I_{i,s}} & -\frac{k_2}{I_{i,s}}
+\end{bmatrix}
+\end{flalign}
+Pole Placement:
+\begin{flalign}
+det(sI-(A -BK)) = s^2 + \frac{k_2}{I_{i,s}} s + \frac{k_1}{2I_{i,s}}
+\end{flalign} 
+By Identification with a general second order equation $s^2 + 2\zeta \omega_n s + \omega_n^2$ where $\zeta$ is the damping factor and $\omega_n$ is the natural frequency, the gains are given by:
+\begin{flalign}
+k_1 &= -2 \ I_{i,s} \ \omega_n^2 \\
+k_2 &= -2 \ I_{i,s} \ \zeta \ \omega_n
+\end{flalign}
+The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$.

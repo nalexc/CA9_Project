@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  2 DEC 2017 02:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  10 DEC 2017 00:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -4160,30 +4160,33 @@ File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/rel_err-eps-converted-to.pdf used on input lin
 e 275.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
- [30 <./figures/path_f-eps-converted-to.pdf>]) (chapters/acceptTest.tex [31 <./
-figures/rel_err-eps-converted-to.pdf>] [32]
+ [30 <./figures/path_f-eps-converted-to.pdf>] [31 <./figures/rel_err-eps-conver
+ted-to.pdf>]
+
+LaTeX Warning: Reference `le' on page 32 undefined on input line 292.
+
+[32]) (chapters/acceptTest.tex [33]
 Chapter 6.
-[33
+[34
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [34
+) (chapters/conclusion.tex [35
 
 ]
 Chapter 8.
-) [35
-
-] [36
+) [36
 
 ] (appendix/appendix_1.tex
 Appendix A.
 ) (appendix/code.tex [37
 
+
 ]
 Appendix B.
 [38
 
-] <figures/operating_point.jpg, id=712, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=720, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -4228,10 +4231,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52369 strings out of 493323
- 1088474 string characters out of 3139066
- 1711857 words of memory out of 3000000
- 54800 multiletter control sequences out of 15000+200000
+ 52386 strings out of 493323
+ 1088698 string characters out of 3139066
+ 1711967 words of memory out of 3000000
+ 54809 multiletter control sequences out of 15000+200000
  644172 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10413b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4286,9 +4289,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (47 pages, 3144102 bytes).
+Output written on main.pdf (47 pages, 3149606 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
+ 887 PDF objects out of 1000 (max. 8388607)
+ 264 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
