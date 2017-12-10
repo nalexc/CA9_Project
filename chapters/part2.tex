@@ -353,4 +353,13 @@ By Identification with a general second order equation $s^2 + 2\zeta \omega_n s 
 k_1 &= -2 \ I_{i,s} \ \omega_n^2 \\
 k_2 &= -2 \ I_{i,s} \ \zeta \ \omega_n
 \end{flalign}
-The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$.
+The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$. Therefore, all the eigen values are equal to -0.0367.
+\subsection{Stability}
+The stability of control designed in the previous section have to be checked for all $\bar{\omega}$. Due to the fact that the matrix A is affine in $\bar{\omega}$. The stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\bar{\omega}$ as represented in the \figref{sta_PID} (reference lectures NLCS).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/rel_err.eps}
+	\caption{Convex Polyhedron}
+	\label{fig:sta_PID}
+\end{figure} 
+The maximum real part of the eigenvalue in the vertices of the cube is equal -0.0308 that is very close to the desired eigenvalue.
