@@ -49,13 +49,14 @@
 \contentsline {section}{\numberline {5.3}Attitude control design}{28}{section.5.3}
 \contentsline {subsection}{Relationship between drag force and quaternion}{28}{subsection*.59}
 \contentsline {paragraph}{Nota Bene:}{32}{paragraph*.63}
-\contentsline {subsection}{State Feedback Control}{32}{subsection*.64}
+\contentsline {subsection}{Linear Control Design - State Feedback }{32}{subsection*.64}
 \contentsline {subsection}{Stability}{33}{subsection*.65}
+\contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{33}{subsection*.67}
 \contentsline {chapter}{\numberline {6} Implementation and test}{34}{chapter.6}
 \contentsline {chapter}{\numberline {7}Acceptance test}{35}{chapter.7}
 \contentsline {chapter}{\numberline {8}Conclusion}{36}{chapter.8}
-\contentsline {subsection}{Future work}{36}{subsection*.67}
+\contentsline {subsection}{Future work}{36}{subsection*.68}
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{37}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{37}{subsection*.68}
+\contentsline {subsection}{Inertia matrix}{37}{subsection*.69}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{38}{appendix.B}
 \contentsline {chapter}{\numberline {C}Angular velocity equations}{41}{appendix.C}

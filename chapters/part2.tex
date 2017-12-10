@@ -196,13 +196,13 @@ The torque about the geometric centre of the satellite due to a force \textit{$d
 	N_{gra} &= \int_{sat} (r_{co} +r_{ci}) \times d\vec{F_i}  
 	\label{eq:ref3}
 \end{flalign}
-The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the inertia matrix $I$, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as\cite{wertz}  
+The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the formula of inertia, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as\cite{wertz}  
 %
 \begin{flalign}
 N_{gra} &= \dfrac{3\mu}{R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{sc}}})] 
 \label{eq:ref4}
 \end{flalign}
-where $q_{i,s}$ is the quaternion that represents the rotation of the satellite in the inertia frame and $\otimes$ is the quaternion multiplication. Thus, the moment of force can be calculated by this expression above.
+where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
 The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass(CoM). \cite{SADC}
 The torque around CoM is given by:
@@ -288,7 +288,7 @@ Therefore, the quaternion that give the desired drag force in the orbit frame ca
 \end{flalign}
 \paragraph{Nota Bene:}
 This is one solution of the problem but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented and we didn't find a way to do it. (i don't know if it's a good idea to say that)
-\subsection{State Feedback Control}
+\subsection{Linear Control Design - State Feedback }
 The linearized equation \eqref{le} of the attitude system allows to design a state feedback control. However, the nominal values of the quaternion and of the angular velocity depends of the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
 
 The norm of $\bar{\omega}$ is known and to the angular velocity of the satellite around the Earth ($||\bar{\omega}|| \approx 0.0011$). Due to this value is very small compare to $\frac{1}{2}$. The A matrix can be approximated by:
@@ -363,3 +363,9 @@ The stability of control designed in the previous section have to be checked for
 	\label{fig:sta_PID}
 \end{figure} 
 The maximum real part of the eigenvalue in the vertices of the cube is equal -0.0308 that is very close to the desired eigenvalue.
+%
+\subsection{Non linear Control Design - Sliding Mode Control }
+%
+In parallel to the linear feedback control design also a non-linear method has been designed.A sliding mode controller is implemented in order to compare the differences between the two methods.
+
+The sliding mode controller brings the system states to a designed manifold or a hyperplane $s$, such that when the states are on the manifold to converge to the desired reference. If the states are not on the manifold a control law that drives the states to the manifold is necessary\cite{Rafael}. The outcome of this control law is the desired torque that will be fed back to the satellite.     
