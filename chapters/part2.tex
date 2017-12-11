@@ -1,46 +1,49 @@
 \chapter{Attitude control}
 \section{Modelling}
-This section provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within LEO. The coordinate systems are defined first and then the model for the satellite is derived, based on rigid body dynamics and kinematics. 
+This section provides a description of the dynamic and kinematic equations of motion which constitute the basis for further analysis and description of the forces and/or disturbances, which may affect a rigid body within LEO. The model for the satellite is derived based on rigid body dynamics and kinematics. 
 %In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
 %
 \subsection{Kinematics}
-This section will provide the orbit-attitude determination of the satellite using quaternion representation. Since the differential drag control method is based on the rotation of the satellite in order to achieve the effective cross-sectional area, a notation with respect the collaborating frames have been obtained.
+Source: \cite{SADC}
 
-Quaternion parameterization it is deemed useful for the kinematic analysis of the satellite. Since the product of two quaternions gives the combined rotation, we shall specify the representation of rotation at time $t$ of the collaborating frames in order to derive the combined rotation at time $t+\Delta{t}$. The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$. The orientation of the controller reference frame $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $\Delta{t}$ with respect the orientation at time $t$ can be represented as $q_{c}(\Delta_{t}$, then the orientation of the satellite at $t+\Delta{t}$ can found as
+This section will provide the orbit-attitude determination of the satellite using quaternion representation. 
+
+Quaternion parameterization is deemed useful for the kinematic analysis of the satellite. The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$. The orientation of $q(t+\Delta t)$ can be found by multiplying the quaternion at time $t$ and the rotations of the satellite during the interval $\Delta t$, as follows:
 %
 \begin{flalign}
-	q(t+\Delta{t}) = {q_{c}(\Delta_{t}) \otimes q(t)}
+	q(t+\Delta{t}) = {q (\Delta {t}) \otimes q(t)}
 	\label{eq:quaternionproduct}
 \end{flalign}
 %
-with the components of the rotation axis unit vector along $\hat{x_{c}}, \hat{y_{c}}, \hat{z_{c}}$ at time $t$ \cite{SADC} written as $[e_{x} e_{y} e_{z}]$ respectively and $\Delta{\Phi}$ the rotation at time $\Delta(t)$, the parameters of the controller quaternion can be written\cite{SADC} as 
+The axis $\hat{x}, \hat{y}, \hat{z}$  are the three axis of the satellite body frame at time $t$ and $[e_{x} \ e_{y} \ e_{z}]$ are the components of the rotation axis unit vector along $\hat{x}, \hat{y}, \hat{z}$. Therefore $q (\Delta {t})$ can be expresed as:
 %
 \begin{flalign}
-	q_{1c} = {e_{x}\sin\frac{\Delta\Phi}{2}}
+	q_{1}(\Delta {t})  = {e_{x}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion1}
 \end{flalign}
 %
 \begin{flalign}
-	q_{2c} = {e_{y}\sin\frac{\Delta\Phi}{2}}
+	q_{2}(\Delta {t}) = {e_{y}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion2}
 \end{flalign}
 %
 \begin{flalign}
-	q_{3c} = {e_{z}\sin\frac{\Delta\Phi}{2}}
+	q_{3} (\Delta {t})= {e_{z}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion3}
 \end{flalign}
 %
 \begin{flalign}
-	q_{4c} = {\cos\frac{\Delta\Phi}{2}}
+	q_{4}(\Delta {t}) = {\cos\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion4}
 \end{flalign}
-%
-combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion4} with \eqref{eq:quaternionproduct} we obtain 
+where
+$\Delta \Phi$ is the rotation in time $\Delta t$ \\
+Combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion4} with \eqref{eq:quaternionproduct} we obtain 
 %
 \begin{flalign}
 	q(t+\Delta{t})
 	= 
-	\left\{\cos\frac{\Delta\Phi}{2} I_{(4x4)}+\sin\frac{\Delta\Phi}{2}
+	\left\{\cos\frac{\Delta\Phi}{2} I_{(4\times4)}+\sin\frac{\Delta\Phi}{2}
 	\begin{bmatrix}
 		0 &e_{z}&-e_{y}&e_{x} \\
 		-e_{z}&0&e_{x}&e_{y}  \\ 
@@ -51,7 +54,7 @@ combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion
 	\label{eq:quaternionmult}
 \end{flalign}  
 %
-where I is the $4x4$ identity matrix. Using the small angle approximation \cite{SADC} for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
+where I is the $4\times4$ identity matrix. Using the small angle approximation for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
 %
  \begin{flalign}
  	q(t+\Delta{t}) = \left[1 + \frac{1}{2} \Omega \Delta(t)\right]q(t)
@@ -73,54 +76,66 @@ with $\Omega$ be the skew symmetric matrix\cite{SADC}
 the angle approximations where taken as $\cos\frac{\Delta\Phi}{2} \simeq 1$ and $\sin\frac{\Delta\Phi}{2}\simeq \frac{1}{2} \omega \Delta(t) $
 %
 \subsection{Dynamic Model}
-In order to describe the behavior of the satellite a dynamic model based on reaction wheels and by using Euler's equation of motion has been derived.   
+Source: \cite{SADC}\\
+In order to describe the behavior of the satellite a dynamic model based on reaction wheels and using Euler's equation of motion has been derived.   
 %
-Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques\cite{SADC} and is given by: 
+Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques and is given by: 
 % 
 \begin{flalign}
-	\dot{L} = {N_{tot}- \omega }{\times {L}}
+	\dot{L} = {N_{mw}- \omega }{\times {L}}
 	\label{eq:eulerequation}
 \end{flalign}
 % 
-where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by\cite{SADC}:
+where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by:
 %
 \begin{flalign}
-	{L} = {I_{s}}{\omega}+{h_{tot}}
+	{L} = {I_{s}}{\omega}+{h_{mw}}
 	\label{eq:angularmomentum}
 \end{flalign}
 %
-where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$, all seen in the satellites coordinate system and $I_{s}$ is the inertia matrix of the satellite.
+where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$ in the satellites coordinate system and $I_{s}$ is the inertia matrix of the satellite.
 %
-Inserting the equation \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain
+Inserting the  \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain:
 %
 \begin{flalign}
-	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(tot)}} ={N_{tot}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
+	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(mw)}} ={N_{mw}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
-For three reaction wheels attached at the body coordinate system which are the axis roll, pitch and yaw, three equations shall be derived. The derivation of the three equations of motion along with the diagonal inertia matrix can be found in the \appref{chap:A}.
+The derivation of equation of motion can be found in the \appref{chap:A}.
 %
-For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
+For the ease of notation, the cross product can be written as matrix operation using the $S()$ notation representing the skew symmetric matrix  given by:
+\begin{flalign}
+	{S(\omega)}
+	= 
+	\begin{bmatrix}
+		0& -\omega_{3}& \omega_{2} \\
+		\omega_{3}& 0&-\omega_{1}  \\ 
+		-\omega_{2} & \omega_{1} &0
+	\end{bmatrix} 
+	\label{eq:skewsymmetricmatrix}
+\end{flalign}
+ Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
 \begin{flalign}
-	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_{(tot)}+I_{s}^{-1}N_{tot}}
+	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{mw}-I_{s}^{-1}\dot{h}_{(mw)}-I_{s}^{-1}N_{mw}}
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
-The rate of change in angular momentum $\dot{h}_{(tot)}$ can be absorbed from the controller. This can be written as:
+The rate of change of angular momentum $\dot{h}_{mw}$ is given by Newton's second law for rotation:
 %
 \begin{flalign}
-	{\dot{h}_{(mv)}} ={-N{mw}}
+	{\dot{h}_{mv}} = N_{mw}
 	\label{eq:rate of change}
 \end{flalign}
 %
-where the negative sign denotes the absorbed momentum. The total torque from external disturbances can be written as $N_{dis}$. Rearranging, equation \eqref{eq:angularmomentum3} now reads 
+The total torque from external disturbances can be written as $N_{dis}$. Therefore, \eqref{eq:angularmomentum3} becomes:
 %
 \begin{flalign}
-	{\dot{\omega}(t)} ={-I_{s}^{-1}S(\omega)I_{s}\omega(t)-I_{s}^{-1}S(\omega)h_{tot}+I_{s}^{-1}N_{c}(t)+I_{s}^{-1}N_{dis}(t)}
+	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{mw}-I_{s}^{-1}N_{mw}+I_{s}^{-1}N_{dis}}
 	\label{eq:angularmomentum4}
 \end{flalign}
 %
-which constitute the dynamics of the satellite with three reaction wheels. At the final equation \eqref{eq:angularmomentum4} is shown the time dependency of the variables. 
+which constitute the dynamics of the satellite with three reaction wheels.  
 \subsection{Equation of motion} \label{subsec:eom} 
 The behaviour of the satellite attitude is described by the dynamic and kinematic equations, which give a non-linear state space representations.
 \begin{flalign}
@@ -131,7 +146,7 @@ The behaviour of the satellite attitude is described by the dynamic and kinemati
 = 
 \begin{bmatrix}
 	\frac{1}{2} \underline{\Omega}_{(4\times4)} \vec q(t) \\
-	{-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\underline{I}_{s}\vec{\omega}(t)-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\vec{h_{mw}}+\underline{I}_{s}^{-1}\vec{N_{c}}(t)+\underline{I}_{s}^{-1}\vec{N_{dis}}(t)}
+	{-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\underline{I}_{s}\vec{\omega}(t)-\underline{I}_{s}^{-1}\underline{S}(\vec{\omega})\vec{h_{mw}}-\underline{I}_{s}^{-1}\vec{N_{mw}}(t)+\underline{I}_{s}^{-1}\vec{N_{dis}}(t)}
 \end{bmatrix} 
 	\label{eq:le}
 \end{flalign}
@@ -142,7 +157,7 @@ where,\\
   $\underline{I}_{s}$ is the inertia matrix \\
   $\underline{S}(\omega)$ is the $3\times3$ skew symmetric matrix \\
   $\vec{N_{dis}}(t)$ is the disturbance torque \\
-  $\vec{N_{c}}(t)$ is the control torque and is equal with $\vec{N_{mt}-N_{mw}}$, where $\vec{N_{mt}}$ is the torque from magnetorques and $\vec{N_{mw}}$ is the torque from momentum wheels \\
+  $\vec{N_{mw}}$ is the torque from momentum wheels \\
   
  %add underline and vec, h_tot -> h_mw; add the equation for dot(h_mw)
 \subsection{Linearized equation of motion} \label{subsec:lem} 
@@ -163,24 +178,25 @@ The kinematic and dynamic equations are linearized around the operating point fo
 	= 
 	\begin{bmatrix}
 	-S(\bar{\omega}) &	\frac{1}{2} \underline{\vec 1}_{(3\times3)} \\
-	 \underline{\vec 0}_{(3\times3)} &	{I_{s}^{-1}S(\omega)I_{s}\omega(t)-I_{s}^{-1}S(\omega)h_{tot}}
+	 \underline{\vec 0}_{(3\times3)} &	{I_{s}^{-1}S(I_{s}\omega(t))-I_{s}^{-1}S(\omega)I_{s}}
 	\end{bmatrix} 
 		\begin{bmatrix}
 		\vec{  {\tilde{q}}(t) } \\
 		{  {\tilde{\omega}}(t) }
     	\end{bmatrix} 	
-+
+-
 	\begin{bmatrix}
 	\underline{\vec 0}_{(3\times3)} \\
 		{I_{s}^{-1}}
     \end{bmatrix} 	
-  \tilde N_c(t)
+  \tilde N_{mw}
 	\label{eq:lele}
 \end{flalign}
 
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravity-Gradient torque}
-An unbalanced satellite in orbit is subjected to a torque due to earth's non-uniform gravitational field . Assumed that the earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} acting on the mass element located at position $R{i}$ from the earth's geometric centre that can be calculated as\cite{wertz}
+Source: \cite{wertz} \\
+An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} acting on the mass element located at position $R{i}$ from the earth's geometric centre that can be calculated as
 \begin{flalign}
 d\vec{F_i} = -G\frac{m_{earth}}{R_i^3}dm_i \cdot \vec{R_i}
 	\label{eq:ref1}
@@ -192,12 +208,18 @@ The torque about the geometric centre of the satellite due to a force \textit{$d
 	d\vec{N_{gra}} =  r_i \times d\vec{F_i} 
 	\label{eq:ref2}
 \end{flalign}
- $r_i$ can be written as the sum of two vectors,$r_{co}$ which is the vector from geometric centre of the satellite to the centre of mass, and $r_{ci}$ which is the vector from the centre of mass to the infinitesimal element.  Therefore, the expression of the gravity gradient torque is obtained by integrating \eqref{eq:ref2} and thus we obtain\cite{wertz}
+ $r_i$ can be written as the sum of two vectors as seen in the \figref{fig:ggt}, $r_{co}$ which is the vector from geometric centre of the satellite to the centre of mass, and $r_{ci}$ which is the vector from the centre of mass to the infinitesimal element.  Therefore, the expression of the gravity gradient torque is obtained by integrating \eqref{eq:ref2} and thus obtaining:
 \begin{flalign}
 	N_{gra} &= \int_{sat} (r_{co} +r_{ci}) \times d\vec{F_i}  
 	\label{eq:ref3}
 \end{flalign}
-The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the formula of inertia, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as\cite{wertz}  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/ggt}
+	\caption{Coordinate system for the calculation of gravity gradient torque}
+	\label{fig:ggt}
+\end{figure}
+The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the formula of inertia, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as 
 %
 \begin{flalign}
 N_{gra} &= \dfrac{3\mu}{R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{sc}}})] 
@@ -205,7 +227,8 @@ N_{gra} &= \dfrac{3\mu}{R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{
 \end{flalign}
 where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
-The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass(CoM). \cite{SADC}
+Source: \cite{SADC} \\
+The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass (CoM). 
 The torque around CoM is given by:
 \begin{flalign}
 	N_{rad} = F_{rad} \times R_{CoM}
@@ -227,12 +250,13 @@ The solar flux can be computed as follows:
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 \subsection{Atmospheric drag}
+Source: \cite{SADC} \\
 For objects in LEO, friction with molecules can have a significant impact on the satellite surface by creating a force which acts upon the satellite surface. [ref: sat orbits and missions]. 
 
 The equation of the atmospheric drag force is already computed as shown in \eqref{eq:ec1c}.
 Since the force has been computed also the torque can be computed by using the cross product between the drag force and the vector from the center of mass to the center of pressure of the satellite.
 
-The aerodynamic torque acting on the satellite can be written as[ref:SADC]:
+The aerodynamic torque acting on the satellite can be written as:
 \begin{flalign}
 	N_{drag} = \vec r_{s}  \times F_{D}
 	\label{eq:drag}
@@ -242,9 +266,9 @@ $\vec r_{s}$ is the vector from the center of mass to the center of pressure, wh
 $F_D$  is the atmospheric drag force
 \section{Attitude control design}
 \subsection{Relationship between drag force and quaternion}
-In order to applied the desired drag force, a function have to be found to compute the quaternion. \\
-A method to find a bijective function is to find the 2 quaternions that give the minimum and the maximum drag force and to analyse the drag force in the path between them. \\
-the quaternion can be defined as a sequence of three rotations around the three axis.
+In order to apply the desired drag force, a function have to be found to compute the asociated quaternion. A method to find a bijective function between drag force and quaternion is to find two quaternions that give the minimum and the maximum drag force and analyse the drag force in the path between them. 
+
+A quaternion can be defined as a sequence of three rotations around the three axis.
 \begin{flalign}
 	q = q_x \otimes q_y \otimes q_z
 \end{flalign}
@@ -256,18 +280,19 @@ with
 \end{flalign}
 The drag force can be computed as the folowing:
 \begin{flalign}
-	u = \frac{u_{min}}{A_{min}}A_{perp}(q) \\
+	u = \frac{u_{min}}{A_{min}}A_{\perp}(q) \\
 	u = u_{min} \ f(q)
 \end{flalign}
-where is the $A_{\perp}$ is the perpendicular area of the satellite with a rotation q and f is defined by $f = \frac{A_{\perp}}{A_{min}}$. Due to the fact that the velocity of the satellite is along the x axis in the orbit frame, a rotation around doesn't change $A_{\perp}$. Therefore, f can be analysed using only rotation around y and z axes. \\
+where $A_{\perp}(q)$ is the perpendicular area of the satellite with a rotation $q$ and $f(q)$ is defined by $f = \frac{A_{\perp}}{A_{min}}$. Due to the fact that the velocity of the satellite is along the $x$ axis in the orbit frame, a rotation around this axis doesn't change $A_{\perp}$. Therefore, $f$ can be analysed using only rotation around $y$ and $z$ axes. The graph of $f$ in function of $\theta_z$ and $\theta_y$ can be seen in the \figref{fig:perp_area}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/perp_area.eps}
-	\caption{Perpendicular area in function of rotations around y and z axes}
+	\includegraphics[width= 0.8\linewidth]{figures/perp_area.eps}
+	\caption{Perpendicular area in function of rotations around $y$ and $z$ axes}
 	\label{fig:perp_area}
 \end{figure} 
-The quaternion for the minimum drag force is defined by the rotations $\theta_y = \theta_z = 0$ and the quaternion that give the maximum drag force is defined by the rotations $\theta_{y,max} = 0.61568$ rad and $\theta_{z,max} = \frac{\pi}{4}$. \\
-the path between the minimum and the maximum drag force is analyzed:
+The quaternion for the minimum drag force is defined by the rotations $\theta_{y,min} = \theta_{z,min} = 0$ and the quaternion that give the maximum drag force is defined by the rotations $\theta_{y,max} = 0.61568$ rad and $\theta_{z,max} = \frac{\pi}{4}$. 
+
+The function $f(q)$ is computed in the pathm between the minimum and maximum drag force:
 \begin{flalign}
 	q = q_y \otimes q_z \\
 \end{flalign}
@@ -276,14 +301,16 @@ with
 	\theta_y = \alpha \ \theta_{y,max} \\
 	\theta_z = \alpha \ \theta_{z,max}
 \end{flalign}
-and $ \alpha \in [0,1]$. the \figref{path_alpha} shows f(q) as a function of $\alpha$.
+and $ \alpha \in [0,1]$. 
+
+The \figref{fig:path_alpha} shows $f(q)$ as a function of $\alpha$:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/path_f.eps}
-	\caption{Perpendicular area in function of rotations around y and z axes}
+	\caption{Perpendicular area in function of rotations around $y$ and $z$ axes}
 	\label{fig:path_alpha}
 \end{figure} 
-This function can be approximated by a polynomial of degree 2. the relative error of this approximation represented in the \figref{rel_err} is really small and thus, the approximation by a polynomial of degree 2 can be used. \\
+This function can be approximated by a polynomial of degree two. The relative error of this approximation represented in the \figref{fig:rel_err} is small and thus, the approximation by a polynomial of degree two can be used. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/rel_err.eps}
@@ -293,7 +320,7 @@ This function can be approximated by a polynomial of degree 2. the relative erro
 Therefore, the quaternion that give the desired drag force in the orbit frame can be computed by following this algorithm:
 \begin{flalign}
 	\frac{u}{u_{min}} &= f( \alpha ) \approx p_1 \alpha^2 + p_2 \alpha + p_3 \\
-	\Rightarrow \alpha &= \frac{-p_2 + \sqrt{p_2^2 - 4 p_1 p_2}}{2 p_1} \\
+	\Rightarrow \alpha &= \frac{-p_2 + \sqrt{p_2^2 - 4 p_1 (p_3 - \dfrac{u}{u_{min}})}}{2 p_1} \\
 	\Rightarrow \theta_y &= \alpha \theta_{y,max} \\
 	\theta_z &= \alpha \theta_{z,max} \\
 	\Rightarrow q_y &= sin(\frac{\theta_y}{2})*j + cos(\frac{\theta_y}{2}) \\
@@ -301,11 +328,11 @@ Therefore, the quaternion that give the desired drag force in the orbit frame ca
 	\Rightarrow q_{ref} &= q_y \otimes q_z
 \end{flalign}
 \paragraph{Nota Bene:}
-This is one solution of the problem but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented and we didn't find a way to do it. (i don't know if it's a good idea to say that)
+This is one solution of the problem, but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented.
 \subsection{Linear Control Design - State Feedback }
-The linearized equation \eqref{le} of the attitude system allows to design a state feedback control. However, the nominal values of the quaternion and of the angular velocity depends of the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
+The linearized equation \eqref{eq:lele} of the attitude system allows to design a state feedback control. However, the nominal values of the quaternion and the angular velocity depends of the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
 
-The norm of $\bar{\omega}$ is known and to the angular velocity of the satellite around the Earth ($||\bar{\omega}|| \approx 0.0011$). Due to this value is very small compare to $\frac{1}{2}$. The A matrix can be approximated by:
+The norm of $\bar{\omega}$ is known and is equal to the angular velocity of the satellite around the Earth ($||\bar{\omega}|| \approx 0.0011$). Due to the fact that this value is small compare to $\frac{1}{2}$, the $A$ matrix can be approximated by:
 
 \begin{flalign}
 \underline{A}
@@ -339,9 +366,11 @@ The system can be split in three subsystems defined by the matrix equation:
  N_{i,c}(t)
 \label{eq:le_bis}
 \end{flalign}
+where $i$ is equal to 1, 2, 3
+
 The input control torque is defined by a state feedback law:
 \begin{flalign}
-Nc = 
+N_{i,{mw}} = 
 -\begin{bmatrix}
 k_1 & k_2
 \end{bmatrix} 
@@ -358,18 +387,18 @@ A-BK =
 -\frac{k_1}{I_{i,s}} & -\frac{k_2}{I_{i,s}}
 \end{bmatrix}
 \end{flalign}
-Pole Placement:
+\subsubsection{Pole Placement}
 \begin{flalign}
 det(sI-(A -BK)) = s^2 + \frac{k_2}{I_{i,s}} s + \frac{k_1}{2I_{i,s}}
 \end{flalign} 
-By Identification with a general second order equation $s^2 + 2\zeta \omega_n s + \omega_n^2$ where $\zeta$ is the damping factor and $\omega_n$ is the natural frequency, the gains are given by:
+By identification with a general second order equation $s^2 + 2\zeta \omega_n s + \omega_n^2$ where $\zeta$ is the damping factor and $\omega_n$ is the natural frequency, the gains are given by:
 \begin{flalign}
 k_1 &= -2 \ I_{i,s} \ \omega_n^2 \\
 k_2 &= -2 \ I_{i,s} \ \zeta \ \omega_n
 \end{flalign}
-The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$. Therefore, all the eigen values are equal to -0.0367.
+The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$. Therefore, all the eigenvalues are equal to -0.0367.
 \subsection{Stability}
-The stability of control designed in the previous section have to be checked for all $\bar{\omega}$. Due to the fact that the matrix A is affine in $\bar{\omega}$. The stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\bar{\omega}$ as represented in the \figref{sta_PID} (reference lectures NLCS).
+The stability of control designed in the previous section have to be checked for all $\bar{\omega}$. Due to the fact that the matrix A is affine in $\bar{\omega}$. The stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\bar{\omega}$ as represented in the \figref{fig:sta_PID} (reference lectures NLCS).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/cs}
@@ -379,11 +408,12 @@ The stability of control designed in the previous section have to be checked for
 The maximum real part of the eigenvalue in the vertices of the cube is equal -0.0308 that is very close to the desired eigenvalue.
 %
 \subsection{Non linear Control Design - Sliding Mode Control }
-%
+Source: [Rafael pdf] 
+
 In parallel to the linear feedback control design also a non-linear method has been designed.A sliding mode controller is implemented in order to compare the differences between the two methods.
 
-The sliding mode controller brings the system states to a designed manifold or a hyperplane $s$, such that when the states are on the manifold to converge to the desired reference. If the states are not on the manifold a control law that drives the states to the manifold is necessary\cite{Rafael}. The outcome of this control law is the desired torque that will be fed back to the satellite.
-According to \cite{Rafael} the satellite motion can be represented to the space of the sliding variable $s$.
+The sliding mode controller brings the system states to a designed manifold or a hyperplane $s$, such that when the states are on the manifold to converge to the desired reference. If the states are not on the manifold a control law that drives the states to the manifold is necessary. The outcome of this control law is the desired torque that will be fed back to the satellite.
+According to the satellite motion can be represented to the space of the sliding variable $s$.
 %
 The sliding variable can be written in terms of the small signal deviation as derived in \eqref{eq:smallsignal}.The quaternion error can be written as 
 \begin{flalign}
@@ -418,8 +448,8 @@ where $q_{r}$ represents the quaternion reference and $q$ the measured quaternio
 	\end{bmatrix}
 	\label{eq:quater}
 \end{flalign}
-where $[\omega_{1} \omega_{2} \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame.
- Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to \cite{Rafael}, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according to \cite{http://www.diva-portal.org/smash/get/diva2:1020537/FULLTEXT02.pdf} as 
+where $[\omega_{1} \ \omega_{2} \ \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame.
+ Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according as:
  %
  \begin{flalign}
  	\vec{\dot{\tilde{q_{e}}}} 

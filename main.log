@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  11 DEC 2017 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  11 DEC 2017 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2278,6 +2278,9 @@ LaTeX Warning: Label `eq:Pres' multiply defined.
 
 LaTeX Warning: Label `eq:flux' multiply defined.
 
+
+LaTeX Warning: Label `eq:skewsymmetricmatrix' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -4012,15 +4015,15 @@ Chapter 5.
 
 ] [25] [26]
 
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 183.
+LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 198.
 
+<figures/ggt.jpeg, id=604, 1575.8875pt x 1182.4175pt>
+File: figures/ggt.jpeg Graphic file (type jpg)
+ <use figures/ggt.jpeg>
+Package pdftex.def Info: figures/ggt.jpeg used on input line 218.
+(pdftex.def)             Requested size: 273.14923pt x 204.94151pt.
 
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 195.
-
-
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 200.
-
-[27] [28]
+[27] [28 <./figures/ggt.jpeg>] [29]
 Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 131423 bytes
@@ -4029,20 +4032,19 @@ Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    size: 136687 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/perp_area-eps-conv
 erted-to.pdf figures/perp_area.eps>
-(epstopdf)             \includegraphics on input line 265.
+(epstopdf)             \includegraphics on input line 289.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/perp_area-eps-converted-to.pdf, id=634, 421.575pt x 316.18124pt>
+<figures/perp_area-eps-converted-to.pdf, id=643, 421.575pt x 316.18124pt>
 File: figures/perp_area-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/perp_area-eps-converted-to.pdf>
 Package pdftex.def Info: figures/perp_area-eps-converted-to.pdf used on input l
-ine 265.
-(pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
- [29]
-
-LaTeX Warning: Reference `path_alpha' on page 30 undefined on input line 279.
-
+ine 289.
+(pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 290.
+ [30 <./figures/perp_area-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 34877 bytes
@@ -4051,19 +4053,16 @@ Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    size: 14143 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/path_f-eps-convert
 ed-to.pdf figures/path_f.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
-<figures/path_f-eps-converted-to.pdf, id=649, 421.575pt x 316.18124pt>
+
+<figures/path_f-eps-converted-to.pdf, id=663, 421.575pt x 316.18124pt>
 File: figures/path_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/path_f-eps-converted-to.pdf>
 Package pdftex.def Info: figures/path_f-eps-converted-to.pdf used on input line
- 282.
+ 309.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
- [30 <./figures/perp_area-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `rel_err' on page 31 undefined on input line 286.
-
 Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 29244 bytes
@@ -4072,45 +4071,25 @@ Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    size: 51201 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/rel_err-eps-conver
 ted-to.pdf figures/rel_err.eps>
-(epstopdf)             \includegraphics on input line 289.
+(epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
+
 <figures/rel_err-eps-converted-to.pdf, id=665, 421.575pt x 316.18124pt>
 File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rel_err-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rel_err-eps-converted-to.pdf used on input lin
-e 289.
+e 316.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
  [31 <./figures/path_f-eps-converted-to.pdf>] [32 <./figures/rel_err-eps-conver
-ted-to.pdf>]
-
-LaTeX Warning: Reference `le' on page 33 undefined on input line 306.
-
-[33]
-
-LaTeX Warning: Reference `sta_PID' on page 34 undefined on input line 372.
-
-<figures/cs.jpeg, id=709, 1371.1225pt x 1264.725pt>
+ted-to.pdf>] [33]
+<figures/cs.jpeg, id=715, 1371.1225pt x 1264.725pt>
 File: figures/cs.jpeg Graphic file (type jpg)
  <use figures/cs.jpeg>
-Package pdftex.def Info: figures/cs.jpeg used on input line 375.
+Package pdftex.def Info: figures/cs.jpeg used on input line 404.
 (pdftex.def)             Requested size: 182.09486pt x 167.95157pt.
 
-
-LaTeX Warning: Citation 'Rafael' on page 34 undefined on input line 385.
-
-
-LaTeX Warning: Citation 'Rafael' on page 34 undefined on input line 386.
-
-[34 <./figures/cs.jpeg>]
-
-LaTeX Warning: Citation 'Rafael' on page 35 undefined on input line 422.
-
-
-LaTeX Warning: Citation 'http://www.diva-portal.org/smash/get/diva2:1020537/FUL
-LTEXT02.pdf' on page 35 undefined on input line 422.
-
-) (./chapters/acceptTest.tex [35]
+[34 <./figures/cs.jpeg>]) (./chapters/acceptTest.tex [35]
 Chapter 6.
 [36
 
@@ -4131,7 +4110,7 @@ Appendix A.
 Appendix B.
 [40
 
-] <figures/operating_point.jpg, id=776, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=783, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -4178,18 +4157,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49771 strings out of 493014
- 1030710 string characters out of 6133351
- 1624798 words of memory out of 5000000
- 52182 multiletter control sequences out of 15000+600000
- 117540 words of font info for 93 fonts, out of 8000000 for 9000
+ 49789 strings out of 493014
+ 1030950 string characters out of 6133351
+ 1623772 words of memory out of 5000000
+ 52192 multiletter control sequences out of 15000+600000
+ 124572 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10411b,1771s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.70} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@SADC} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{cite.0@SADC} has been referenced but does not exi
+st, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.0@wik} has been referenced but does not exist,
  replaced by a fixed one
@@ -4218,34 +4194,34 @@ pdfTeX warning (dest): name{cite.0@SFF} has been referenced but does not exist,
 pdfTeX warning (dest): name{cite.0@SIDI} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/loca
-l/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016
-/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dis
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
+l/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/
+2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dis
 t/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/en
 c/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmm
-i6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
-lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/lm/lmsy8.pfb>
-Output written on main.pdf (50 pages, 3288186 bytes).
+ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi
+6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
+mr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/lm/lmsy8.pfb>
+Output written on main.pdf (50 pages, 3367989 bytes).
 PDF statistics:
- 958 PDF objects out of 1000 (max. 8388607)
- 822 compressed objects within 9 object streams
- 278 named destinations out of 1000 (max. 500000)
- 392 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
