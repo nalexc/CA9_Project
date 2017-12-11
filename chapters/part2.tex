@@ -195,7 +195,8 @@ The kinematic and dynamic equations are linearized around the operating point fo
 
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravity-Gradient torque}
-Source: \cite{wertz} \\
+Source: \cite{SADC} 
+
 An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$\vec dF_i$} acting on the mass element located at position $\vec R{i}$ from the earth's geometric centre that can be calculated as
 \begin{flalign}
 d\vec{F_i} = -G\frac{m_{earth}}{\vec R_i^3}dm_i \cdot \vec{R_i}
@@ -227,7 +228,8 @@ The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$.
 \end{flalign}
 where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $\underline I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
-Source: \cite{SADC} \\
+Source: \cite{SADC} 
+
 The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass (CoM). 
 The torque around CoM is given by:
 \begin{flalign}
@@ -250,7 +252,8 @@ The solar flux can be computed as follows:
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 \subsection{Atmospheric drag}
-Source: \cite{SADC} \\
+Source: \cite{SADC} 
+
 For objects in LEO, friction with molecules can have a significant impact on the satellite surface by creating a force which acts upon the satellite surface. [ref: sat orbits and missions]. 
 
 The equation of the atmospheric drag force is already computed as shown in \eqref{eq:ec1c}.
@@ -398,7 +401,7 @@ k_2 &= -2 \ I_{i,s} \ \zeta \ \omega_n
 \end{flalign}
 The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$. Therefore, all the eigenvalues are equal to -0.0367.
 \subsection{Stability}
-The stability of control designed in the previous section have to be checked for all $\bar{\omega}$. Due to the fact that the matrix A is affine in $\bar{\omega}$. The stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\bar{\omega}$ as represented in the \figref{fig:sta_PID} (reference lectures NLCS).
+The stability of control designed in the previous section have to be checked for all $\bar{\omega}$. Due to the fact that the matrix A is affine in $\bar{\omega}$. The stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\bar{\omega}$ as represented in the \figref{fig:sta_PID}. \cite{NLCS}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/cs}
@@ -408,7 +411,7 @@ The stability of control designed in the previous section have to be checked for
 The maximum real part of the eigenvalue in the vertices of the cube is equal -0.0308 that is very close to the desired eigenvalue.
 %
 \subsection{Non linear Control Design - Sliding Mode Control }
-Source: [Rafael pdf] 
+Source: \cite{WR}
 
 In parallel to the linear feedback control design also a non-linear method has been designed.A sliding mode controller is implemented in order to compare the differences between the two methods.
 
@@ -449,7 +452,7 @@ where $q_{r}$ represents the quaternion reference and $q$ the measured quaternio
 	\label{eq:quater}
 \end{flalign}
 where $[\omega_{1} \ \omega_{2} \ \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame.
- Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according as:
+ Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according as \cite{ref}:
  %
  \begin{flalign}
  	\vec{\dot{\tilde{q_{e}}}} 

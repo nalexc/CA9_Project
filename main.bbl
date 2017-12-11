@@ -262,8 +262,49 @@
       \field{title}{Spacecraft attitude determination and control}
       \field{year}{1984}
     \endentry
+    \entry{NLCS}{book}{}
+      \name{author}{1}{}{%
+        {{hash=51a5f7d6e2ec60d73e5605dcf6856f91}{%
+           family={Briat},
+           family_i={B\bibinitperiod},
+           given={Corentin},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{51a5f7d6e2ec60d73e5605dcf6856f91}
+      \strng{fullhash}{51a5f7d6e2ec60d73e5605dcf6856f91}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Linear Parameter Varying and Time-Delay Systems}
+      \field{year}{2015}
+    \endentry
+    \entry{WR}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1e5416bf5f80f7f96d3d33acb8f06b09}{%
+           family={Rafal},
+           family_i={R\bibinitperiod},
+           given={Wisniewski},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AAU}%
+      }
+      \strng{namehash}{1e5416bf5f80f7f96d3d33acb8f06b09}
+      \strng{fullhash}{1e5416bf5f80f7f96d3d33acb8f06b09}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Satellite Attitude Control Using Only Electromagnetic Actuation}
+      \field{year}{1997}
+    \endentry
   \endsortlist
-  \missing{Biezl}
 \endrefsection
 \endinput
 
