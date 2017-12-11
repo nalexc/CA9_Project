@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  11 DEC 2017 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  11 DEC 2017 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4009,7 +4009,7 @@ Chapter 5.
 File: figures/ggt.jpeg Graphic file (type jpg)
 
 <use figures/ggt.jpeg>
-Package pdftex.def Info: figures/ggt.jpeg used on input line 219.
+Package pdftex.def Info: figures/ggt.jpeg used on input line 220.
 (pdftex.def)             Requested size: 273.14923pt x 204.94151pt.
  [27] [28 <./figures/ggt.jpeg>] [29]
 Package epstopdf Info: Source file: <figures/perp_area.eps>
@@ -4020,7 +4020,7 @@ Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    size: 136687 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/perp_area-eps-conv
 erted-to.pdf figures/perp_area.eps>
-(epstopdf)             \includegraphics on input line 292.
+(epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/perp_area-eps-converted-to.pdf, id=635, 421.575pt x 316.18124pt>
@@ -4028,10 +4028,10 @@ File: figures/perp_area-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/perp_area-eps-converted-to.pdf>
 Package pdftex.def Info: figures/perp_area-eps-converted-to.pdf used on input l
-ine 292.
+ine 293.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 293.
+(Font)              <5> on input line 294.
  [30 <./figures/perp_area-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
@@ -4041,7 +4041,7 @@ Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    size: 14143 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/path_f-eps-convert
 ed-to.pdf figures/path_f.eps>
-(epstopdf)             \includegraphics on input line 312.
+(epstopdf)             \includegraphics on input line 313.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/path_f-eps-converted-to.pdf, id=655, 421.575pt x 316.18124pt>
@@ -4049,7 +4049,7 @@ File: figures/path_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/path_f-eps-converted-to.pdf>
 Package pdftex.def Info: figures/path_f-eps-converted-to.pdf used on input line
- 312.
+ 313.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
 Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
@@ -4059,7 +4059,7 @@ Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    size: 51201 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/rel_err-eps-conver
 ted-to.pdf figures/rel_err.eps>
-(epstopdf)             \includegraphics on input line 319.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/rel_err-eps-converted-to.pdf, id=657, 421.575pt x 316.18124pt>
@@ -4067,19 +4067,19 @@ File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rel_err-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rel_err-eps-converted-to.pdf used on input lin
-e 319.
+e 320.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
  [31 <./figures/path_f-eps-converted-to.pdf>] [32 <./figures/rel_err-eps-conver
 ted-to.pdf>] [33]
 <figures/cs.jpeg, id=708, 1371.1225pt x 1264.725pt>
 File: figures/cs.jpeg Graphic file (type jpg)
  <use figures/cs.jpeg>
-Package pdftex.def Info: figures/cs.jpeg used on input line 407.
+Package pdftex.def Info: figures/cs.jpeg used on input line 408.
 (pdftex.def)             Requested size: 182.09486pt x 167.95157pt.
 
 [34 <./figures/cs.jpeg>]
 
-LaTeX Warning: Citation 'ref' on page 35 undefined on input line 455.
+LaTeX Warning: Citation 'ref' on page 35 undefined on input line 456.
 
 ) (./chapters/conclusion.tex [35]
 Chapter 6.
@@ -4145,7 +4145,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  49832 strings out of 493014
  1031872 string characters out of 6133351
- 1623863 words of memory out of 5000000
+ 1623871 words of memory out of 5000000
  52238 multiletter control sequences out of 15000+600000
  127685 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4176,7 +4176,7 @@ mf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lm
 sy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (48 pages, 3422721 bytes).
+Output written on main.pdf (48 pages, 3416822 bytes).
 PDF statistics:
  964 PDF objects out of 1000 (max. 8388607)
  826 compressed objects within 9 object streams

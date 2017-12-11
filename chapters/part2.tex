@@ -4,7 +4,7 @@ This section provides a description of the dynamic and kinematic equations of mo
 %In order to control the distance between two or more satellites in orbit, a mathematical description of the governing equations should be derived. Since precious work have been made in previous projects, and all the measurements are available, in-depth analysis it is deemed not necessary. 
 %
 \subsection{Kinematics}
-Source: \cite{SADC}
+Source: James R. Wertz \cite{SADC}
 
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. 
 
@@ -76,7 +76,8 @@ with $\underline \Omega$ be the skew symmetric matrix\cite{SADC}
 the angle approximations where taken as $\cos\frac{\Delta\Phi}{2} \simeq 1$ and $\sin\frac{\Delta\Phi}{2}\simeq \frac{1}{2} \omega \Delta(t) $
 %
 \subsection{Dynamic Model}
-Source: \cite{SADC}\\
+Source: James R. Wertz \cite{SADC}
+
 In order to describe the behavior of the satellite a dynamic model based on reaction wheels and using Euler's equation of motion has been derived.   
 %
 Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques and is given by: 
@@ -93,12 +94,12 @@ where $\vec{N_{tot}}$ represents all the external torques caused from the actuat
 	\label{eq:angularmomentum}
 \end{flalign}
 %
-where $\vec{h_{tot}}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$ in the satellites coordinate system and $\underline I_{s}$ is the inertia matrix of the satellite.
+where $\vec{h_{mw}}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$ in the satellites coordinate system and $\underline I_{s}$ is the inertia matrix of the satellite.
 %
 Inserting the  \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain:
 %
 \begin{flalign}
-	{\frac{d}{dt}(\underline I_{s}\vec {\omega})+\vec{\dot{h}_{(mw)}}} =\vec{{N_{mw}}-\vec{\omega}}     {\times  ({\underline I_{s}}{\vec{\omega}} +{\vec{h_{tot}}})}
+	{\frac{d}{dt}(\underline I_{s}\vec {\omega})+\vec{\dot{h}_{(mw)}}} =\vec{{N_{mw}}-\vec{\omega}}     {\times  ({\underline I_{s}}{\vec{\omega}} +{\vec{h_{mw}}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
 The derivation of equation of motion can be found in the \appref{chap:A}.
@@ -195,7 +196,7 @@ The kinematic and dynamic equations are linearized around the operating point fo
 
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravity-Gradient torque}
-Source: \cite{SADC} 
+Source: James R. Wertz \cite{SADC} 
 
 An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$\vec dF_i$} acting on the mass element located at position $\vec R{i}$ from the earth's geometric centre that can be calculated as
 \begin{flalign}
@@ -228,7 +229,7 @@ The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$.
 \end{flalign}
 where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $\underline I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
-Source: \cite{SADC} 
+Source: James R. Wertz \cite{SADC} 
 
 The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass (CoM). 
 The torque around CoM is given by:
@@ -252,7 +253,7 @@ The solar flux can be computed as follows:
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 \subsection{Atmospheric drag}
-Source: \cite{SADC} 
+Source: James R. Wertz \cite{SADC} 
 
 For objects in LEO, friction with molecules can have a significant impact on the satellite surface by creating a force which acts upon the satellite surface. [ref: sat orbits and missions]. 
 
