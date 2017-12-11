@@ -226,7 +226,20 @@ The solar flux can be computed as follows:
 	\label{eq:flux}
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
+\subsection{Atmospheric drag}
+For objects in LEO, friction with molecules can have a significant impact on the satellite surface by creating a force which acts upon the satellite surface. [ref: sat orbits and missions]. 
 
+The equation of the atmospheric drag force is already computed as shown in \eqref{eq:ec1c}.
+Since the force has been computed also the torque can be computed by using the cross product between the drag force and the vector from the center of mass to the center of pressure of the satellite.
+
+The aerodynamic torque acting on the satellite can be written as[ref:SADC]:
+\begin{flalign}
+	N_{drag} = \vec r_{s}  \times F_{D}
+	\label{eq:drag}
+\end{flalign}
+where:\\
+$\vec r_{s}$ is the vector from the center of mass to the center of pressure, where the center of pressure is equal with the geometric center of the exposed area\\
+$F_D$  is the atmospheric drag force
 \section{Attitude control design}
 \subsection{Relationship between drag force and quaternion}
 In order to applied the desired drag force, a function have to be found to compute the quaternion. \\

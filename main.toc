@@ -46,17 +46,18 @@
 \contentsline {section}{\numberline {5.2}Disturbance Models}{27}{section.5.2}
 \contentsline {subsection}{Gravity-Gradient torque}{27}{subsection*.57}
 \contentsline {subsection}{Solar radiation}{28}{subsection*.58}
-\contentsline {section}{\numberline {5.3}Attitude control design}{28}{section.5.3}
-\contentsline {subsection}{Relationship between drag force and quaternion}{28}{subsection*.59}
-\contentsline {paragraph}{Nota Bene:}{32}{paragraph*.63}
-\contentsline {subsection}{Linear Control Design - State Feedback }{32}{subsection*.64}
-\contentsline {subsection}{Stability}{33}{subsection*.65}
-\contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{33}{subsection*.67}
-\contentsline {chapter}{\numberline {6} Implementation and test}{35}{chapter.6}
-\contentsline {chapter}{\numberline {7}Acceptance test}{36}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{37}{chapter.8}
-\contentsline {subsection}{Future work}{37}{subsection*.68}
+\contentsline {subsection}{Atmospheric drag}{28}{subsection*.59}
+\contentsline {section}{\numberline {5.3}Attitude control design}{29}{section.5.3}
+\contentsline {subsection}{Relationship between drag force and quaternion}{29}{subsection*.60}
+\contentsline {paragraph}{Nota Bene:}{33}{paragraph*.64}
+\contentsline {subsection}{Linear Control Design - State Feedback }{33}{subsection*.65}
+\contentsline {subsection}{Stability}{34}{subsection*.66}
+\contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{34}{subsection*.68}
+\contentsline {chapter}{\numberline {6} Implementation and test}{36}{chapter.6}
+\contentsline {chapter}{\numberline {7}Acceptance test}{37}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{38}{chapter.8}
+\contentsline {subsection}{Future work}{38}{subsection*.69}
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{39}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{39}{subsection*.69}
+\contentsline {subsection}{Inertia matrix}{39}{subsection*.70}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{40}{appendix.B}
 \contentsline {chapter}{\numberline {C}Angular velocity equations}{43}{appendix.C}
