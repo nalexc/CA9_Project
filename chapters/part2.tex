@@ -102,7 +102,7 @@ For three reaction wheels attached at the body coordinate system which are the a
 For the ease of notation, the cross product can be written as matrix operation using the $S()$ representing the skew symmetric matrix. Solving for $\dot{\omega}$ the dynamic equation can be written as 
 %
 \begin{flalign}
-	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_{(tot)}+I_{s}^{-1}N_{tot}}
+	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_{(tot)}+I_{s}^{-1}N_{tot}}
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
@@ -151,6 +151,7 @@ The kinematic and dynamic equations are linearized around the operating point fo
 	&\vec{q} = \vec{\bar{q}} \otimes \vec{\tilde{q}} \\
 	&\vec{\tilde{q}} = \vec{\bar{q}}^{-1} \otimes \vec{q} \\
 	&\vec{\omega} = \vec{\bar{\omega}} + \vec{\tilde{\omega}} 
+	\label{eq:smallsignal}
 \end{flalign}
 	 Thus, the linearized equation of motion for the satellite are given by: 
 
@@ -174,7 +175,7 @@ The kinematic and dynamic equations are linearized around the operating point fo
 		{I_{s}^{-1}}
     \end{bmatrix} 	
   \tilde N_c(t)
-	\label{eq:le}
+	\label{eq:lele}
 \end{flalign}
 
 \section{Disturbance Models}\label{sec:csf} 
@@ -368,4 +369,62 @@ The maximum real part of the eigenvalue in the vertices of the cube is equal -0.
 %
 In parallel to the linear feedback control design also a non-linear method has been designed.A sliding mode controller is implemented in order to compare the differences between the two methods.
 
-The sliding mode controller brings the system states to a designed manifold or a hyperplane $s$, such that when the states are on the manifold to converge to the desired reference. If the states are not on the manifold a control law that drives the states to the manifold is necessary\cite{Rafael}. The outcome of this control law is the desired torque that will be fed back to the satellite.     
+The sliding mode controller brings the system states to a designed manifold or a hyperplane $s$, such that when the states are on the manifold to converge to the desired reference. If the states are not on the manifold a control law that drives the states to the manifold is necessary\cite{Rafael}. The outcome of this control law is the desired torque that will be fed back to the satellite.
+According to \cite{Rafael} the satellite motion can be represented to the space of the sliding variable $s$.
+%
+The sliding variable can be written in terms of the small signal deviation as derived in \eqref{eq:smallsignal}.The quaternion error can be written as 
+\begin{flalign}
+	 \vec{\tilde{q_{e}}} = \vec{\bar{q}}^{-1} \otimes \vec{q} 
+	 =
+	\begin{bmatrix}
+		q_{4r} & q_{3r}& -q_{2r}& -q_{1r}\\
+		-q_{3r} & q_{4r}& q_{1r}& -q_{2r}\\
+		q_{2r} & -q_{1r}& q_{4r}& -q_{3r}\\
+		q_{1r} & q_{2r}& q_{3r}& q_{4r}\\
+	\end{bmatrix} 	
+	\begin{bmatrix}
+	q_{1} \\ q_{2}\\ q_{3}\\ q_{4}
+	\end{bmatrix}
+	\label{eq:quat}
+\end{flalign}
+%
+where $q_{r}$ represents the quaternion reference and $q$ the measured quaternion. The rate of change of quaternion can be re written as 
+%
+\begin{flalign}
+	\vec{\dot{\tilde{q_{e}}}} 
+	=
+	\frac{1}{2}
+	\begin{bmatrix}
+		q_{4e} & -q_{3e}& q_{2e}\\
+		q_{3e} & q_{4e}& -q_{1e}\\
+		-q_{2e} & q_{1e}& q_{4r}\\
+		-q_{1e} & -q_{2e}& -q_{3e}\\
+	\end{bmatrix} 	
+	\begin{bmatrix}
+		\omega_{1} \\ \omega_{2}\\ \omega_{3}\\ 0
+	\end{bmatrix}
+	\label{eq:quater}
+\end{flalign}
+where $[\omega_{1} \omega_{2} \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame.
+ Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to \cite{Rafael}, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according to \cite{http://www.diva-portal.org/smash/get/diva2:1020537/FULLTEXT02.pdf} as 
+ %
+ \begin{flalign}
+ 	\vec{\dot{\tilde{q_{e}}}} 
+ 	=
+ 	\frac{1}{2}
+ 	\begin{bmatrix}
+ 		q_{4e} & -q_{3e}& q_{2e}\\
+ 		q_{3e} & q_{4e}& -q_{1e}\\
+ 		-q_{2e} & q_{1e}& q_{4r}\\
+ 	\end{bmatrix} 	
+ 	\begin{bmatrix}
+ 		\omega_{1} \\ \omega_{2}\\ \omega_{3}\\ 
+ 	\end{bmatrix}
+ 	\label{eq:quatermodified}
+ \end{flalign}
+ %
+  The sliding variable can now been written as
+ \begin{flalign}
+ 	s = F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega}}= 0
+ 	\label{eq:slidingvar}
+ \end{flalign}

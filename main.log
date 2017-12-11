@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  11 DEC 2017 00:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  11 DEC 2017 04:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -2251,9 +2251,6 @@ Package biblatex Info: ... file 'english.lbx' found.
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 ) (main.aux
 
-LaTeX Warning: Label `eq:le' multiply defined.
-
-
 LaTeX Warning: Label `eq:Pres' multiply defined.
 
 
@@ -3996,13 +3993,13 @@ Chapter 5.
 
 ] [25] [26]
 
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 182.
+LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 183.
 
 
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 194.
+LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 195.
 
 
-LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 199.
+LaTeX Warning: Citation 'wertz' on page 27 undefined on input line 200.
 
 [27] [28]
 Package epstopdf Info: Source file: <figures/perp_area.eps>
@@ -4013,7 +4010,7 @@ Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    size: 60026 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/perp_area-eps-conve
 rted-to.pdf figures/perp_area.eps>
-(epstopdf)             \includegraphics on input line 251.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/perp_area-eps-converted-to.pdf, id=605, 421.575pt x 316.18124pt>
@@ -4021,11 +4018,11 @@ File: figures/perp_area-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/perp_area-eps-converted-to.pdf>
 Package pdftex.def Info: figures/perp_area-eps-converted-to.pdf used on input l
-ine 251.
+ine 252.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
  [29 <./figures/perp_area-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `path_alpha' on page 30 undefined on input line 265.
+LaTeX Warning: Reference `path_alpha' on page 30 undefined on input line 266.
 
 Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    date: 2017-12-02 16:30:14
@@ -4035,18 +4032,18 @@ Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    size: 12293 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/path_f-eps-converte
 d-to.pdf figures/path_f.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 <figures/path_f-eps-converted-to.pdf, id=623, 421.575pt x 316.18124pt>
 File: figures/path_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/path_f-eps-converted-to.pdf>
 Package pdftex.def Info: figures/path_f-eps-converted-to.pdf used on input line
- 268.
+ 269.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
 
 
-LaTeX Warning: Reference `rel_err' on page 30 undefined on input line 272.
+LaTeX Warning: Reference `rel_err' on page 30 undefined on input line 273.
 
 Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    date: 2017-12-02 16:30:14
@@ -4056,62 +4053,74 @@ Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    size: 26652 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/rel_err-eps-convert
 ed-to.pdf figures/rel_err.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 <figures/rel_err-eps-converted-to.pdf, id=624, 421.575pt x 316.18124pt>
 File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rel_err-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rel_err-eps-converted-to.pdf used on input lin
-e 275.
+e 276.
 (pdftex.def)             Requested size: 455.24411pt x 341.4417pt.
  [30 <./figures/path_f-eps-converted-to.pdf>] [31 <./figures/rel_err-eps-conver
 ted-to.pdf>]
 
-LaTeX Warning: Reference `le' on page 32 undefined on input line 292.
+LaTeX Warning: Reference `le' on page 32 undefined on input line 293.
 
 [32]
 
-LaTeX Warning: Reference `sta_PID' on page 33 undefined on input line 358.
+LaTeX Warning: Reference `sta_PID' on page 33 undefined on input line 359.
 
 <figures/cs.jpeg, id=669, 1371.1225pt x 1264.725pt>
 File: figures/cs.jpeg Graphic file (type jpg)
  <use figures/cs.jpeg>
-Package pdftex.def Info: figures/cs.jpeg used on input line 361.
+Package pdftex.def Info: figures/cs.jpeg used on input line 362.
 (pdftex.def)             Requested size: 182.09486pt x 167.95157pt.
 
 
-LaTeX Warning: Citation 'Rafael' on page 33 undefined on input line 371.
+LaTeX Warning: Citation 'Rafael' on page 33 undefined on input line 372.
 
-) (chapters/acceptTest.tex [33 <./figures/cs.jpeg>]
+
+LaTeX Warning: Citation 'Rafael' on page 33 undefined on input line 373.
+
+[33 <./figures/cs.jpeg>]
+
+LaTeX Warning: Citation 'Rafael' on page 34 undefined on input line 409.
+
+
+LaTeX Warning: Citation 'http://www.diva-portal.org/smash/get/diva2:1020537/FUL
+LTEXT02.pdf' on page 34 undefined on input line 409.
+
+) (chapters/acceptTest.tex [34]
 Chapter 6.
-[34
+[35
 
 ]
 Chapter 7.
-) (chapters/conclusion.tex [35
+) (chapters/conclusion.tex [36
 
 ]
 Chapter 8.
-) [36
+) [37
+
+] [38
 
 ] (appendix/appendix_1.tex
 Appendix A.
-) (appendix/code.tex [37
-
+) (appendix/code.tex [39
 
 ]
 Appendix B.
-[38
+[40
 
-] <figures/operating_point.jpg, id=724, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=741, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [39 <./figures/operating_point.jpg>])
-(appendix/appendix_3.tex [40]
+ [41 <./figures/operating_point.jpg>])
+(appendix/appendix_3.tex [42]
 Appendix C.
 ) (main.lox)
 \tf@lox=\write8
@@ -4122,7 +4131,7 @@ Appendix C.
 
  
 AED: lastpage setting LastPage
-[41
+[43
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
@@ -4149,10 +4158,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51503 strings out of 493328
- 1060573 string characters out of 3139116
- 1692343 words of memory out of 3000000
- 53920 multiletter control sequences out of 15000+200000
+ 51519 strings out of 493328
+ 1060774 string characters out of 3139116
+ 1693949 words of memory out of 3000000
+ 53930 multiletter control sequences out of 15000+200000
  117540 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10413b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4207,9 +4216,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (47 pages, 3248154 bytes).
+Output written on main.pdf (49 pages, 3254052 bytes).
 PDF statistics:
- 892 PDF objects out of 1000 (max. 8388607)
- 267 named destinations out of 1000 (max. 500000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
  392 words of extra memory for PDF output out of 10000 (max. 10000000)
 
