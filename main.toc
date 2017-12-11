@@ -42,7 +42,7 @@
 \contentsline {subsection}{Kinematics}{24}{subsection*.53}
 \contentsline {subsection}{Dynamic Model}{25}{subsection*.54}
 \contentsline {subsection}{Equation of motion}{26}{subsection*.55}
-\contentsline {subsection}{Linearized equation of motion}{26}{subsection*.56}
+\contentsline {subsection}{Linearized equation of motion}{27}{subsection*.56}
 \contentsline {section}{\numberline {5.2}Disturbance Models}{27}{section.5.2}
 \contentsline {subsection}{Gravity-Gradient torque}{27}{subsection*.57}
 \contentsline {subsection}{Solar radiation}{28}{subsection*.59}

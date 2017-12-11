@@ -8,27 +8,27 @@ Source: \cite{SADC}
 
 This section will provide the orbit-attitude determination of the satellite using quaternion representation. 
 
-Quaternion parameterization is deemed useful for the kinematic analysis of the satellite. The orientation of the rigid body at time $t$ is represented as $q(t)$ and at time $q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$. The orientation of $q(t+\Delta t)$ can be found by multiplying the quaternion at time $t$ and the rotations of the satellite during the interval $\Delta t$, as follows:
+Quaternion parameterization is deemed useful for the kinematic analysis of the satellite. The orientation of the rigid body at time $t$ is represented as $\vec q(t)$ and at time $\vec q(t+\Delta{t})$ is the resulting quaternion at time $t+\Delta{t}$. The orientation of $\vec q(t+\Delta t)$ can be found by multiplying the quaternion at time $t$ and the rotations of the satellite during the interval $\Delta t$, as follows:
 %
 \begin{flalign}
-	q(t+\Delta{t}) = {q (\Delta {t}) \otimes q(t)}
+	\vec q(t+\Delta{t}) = \vec{q (\Delta {t}) \otimes \vec q(t)}
 	\label{eq:quaternionproduct}
 \end{flalign}
 %
 The axis $\hat{x}, \hat{y}, \hat{z}$  are the three axis of the satellite body frame at time $t$ and $[e_{x} \ e_{y} \ e_{z}]$ are the components of the rotation axis unit vector along $\hat{x}, \hat{y}, \hat{z}$. Therefore $q (\Delta {t})$ can be expresed as:
 %
 \begin{flalign}
-	q_{1}(\Delta {t})  = {e_{x}\sin\frac{\Delta\Phi}{2}}
+	\vec q_{1}(\Delta {t})  = {e_{x}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion1}
 \end{flalign}
 %
 \begin{flalign}
-	q_{2}(\Delta {t}) = {e_{y}\sin\frac{\Delta\Phi}{2}}
+	\vec q_{2}(\Delta {t}) = {e_{y}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion2}
 \end{flalign}
 %
 \begin{flalign}
-	q_{3} (\Delta {t})= {e_{z}\sin\frac{\Delta\Phi}{2}}
+	\vec q_{3} (\Delta {t})= {e_{z}\sin\frac{\Delta\Phi}{2}}
 	\label{eq:controllerquaternion3}
 \end{flalign}
 %
@@ -37,32 +37,32 @@ The axis $\hat{x}, \hat{y}, \hat{z}$  are the three axis of the satellite body f
 	\label{eq:controllerquaternion4}
 \end{flalign}
 where
-$\Delta \Phi$ is the rotation in time $\Delta t$ \\
+$\Delta \Phi$ is the rotation at time $\Delta t$ \\
 Combining the  \eqref{eq:controllerquaternion1} - \eqref{eq:controllerquaternion4} with \eqref{eq:quaternionproduct} we obtain 
 %
 \begin{flalign}
-	q(t+\Delta{t})
+	\vec q(t+\Delta{t})
 	= 
-	\left\{\cos\frac{\Delta\Phi}{2} I_{(4\times4)}+\sin\frac{\Delta\Phi}{2}
+	\left\{\cos\frac{\Delta\Phi}{2} \underline I_{(4\times4)}+\sin\frac{\Delta\Phi}{2}
 	\begin{bmatrix}
 		0 &e_{z}&-e_{y}&e_{x} \\
 		-e_{z}&0&e_{x}&e_{y}  \\ 
 		e_{y}&-e_{x}&0&e_{z} \\
 		-e_{x} &e_{y}&-e_{z}&0
 	\end{bmatrix} 
-\right \} q(t)
+\right \} \vec q(t)
 	\label{eq:quaternionmult}
 \end{flalign}  
 %
-where I is the $4\times4$ identity matrix. Using the small angle approximation for infinitesimal $\Delta(t)$ and denoted $\omega$ the instantaneous change in angular velocity it is obtained 
+where $\underline I$ is the $4\times4$ identity matrix. Using the small angle approximation for infinitesimal $\Delta(t)$ and denoted $vec{\omega}$ the instantaneous change in angular velocity it is obtained 
 %
  \begin{flalign}
- 	q(t+\Delta{t}) = \left[1 + \frac{1}{2} \Omega \Delta(t)\right]q(t)
+ 	\vec{q(t+\Delta{t})} = \left[1 + \frac{1}{2} \underline \Omega \Delta(t)\right]\vec{q(t)}
  	\label{eq:controllerquaternionfinal}
  \end{flalign} 
-with $\Omega$ be the skew symmetric matrix\cite{SADC} 
+with $\underline \Omega$ be the skew symmetric matrix\cite{SADC} 
 \begin{flalign}
-	\Omega
+	\underline \Omega
 	= 
 	\begin{bmatrix}
 		0& \omega_{z}& - \omega_{y}& \omega_{x} \\
@@ -82,30 +82,30 @@ In order to describe the behavior of the satellite a dynamic model based on reac
 Euler's equation of motion describing the rotation of a rigid body relates the time derivative of angular momentum to the applied torques and is given by: 
 % 
 \begin{flalign}
-	\dot{L} = {N_{mw}- \omega }{\times {L}}
+	\vec{\dot{L}} = {\vec{N_{mw}}- \vec{\omega} }{\times \vec{L}}
 	\label{eq:eulerequation}
 \end{flalign}
 % 
-where $N_{tot}$ represents all the external torques caused from the actuator and the disturbances, $\omega$ is the angular velocity of the satellite and $L$ is the total angular momentum of the satellite including reaction wheels, given by:
+where $\vec{N_{tot}}$ represents all the external torques caused from the actuator and the disturbances, $\vec{\omega}$ is the angular velocity of the satellite and $\vec{L}$ is the total angular momentum of the satellite including reaction wheels, given by:
 %
 \begin{flalign}
-	{L} = {I_{s}}{\omega}+{h_{mw}}
+	{\vec{L}} = {\underline I_{s}}{\vec{\omega}}+{\vec{h_{mw}}}
 	\label{eq:angularmomentum}
 \end{flalign}
 %
-where $h_{tot}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$ in the satellites coordinate system and $I_{s}$ is the inertia matrix of the satellite.
+where $\vec{h_{tot}}$ is the vector of the angular momentum of the wheels $[h_1 \ h_2 \ h_3]^{T}$ in the satellites coordinate system and $\underline I_{s}$ is the inertia matrix of the satellite.
 %
 Inserting the  \eqref{eq:angularmomentum} into \eqref{eq:eulerequation} we obtain:
 %
 \begin{flalign}
-	{\frac{d}{dt}(I_{s}{\omega})+\dot{h}_{(mw)}} ={N_{mw}-\omega}     {\times  ({I_{s}}{\omega} +{h_{tot}})}
+	{\frac{d}{dt}(\underline I_{s}\vec {\omega})+\vec{\dot{h}_{(mw)}}} =\vec{{N_{mw}}-\vec{\omega}}     {\times  ({\underline I_{s}}{\vec{\omega}} +{\vec{h_{tot}}})}
 	\label{eq:angularmomentum2}
 \end{flalign}
 The derivation of equation of motion can be found in the \appref{chap:A}.
 %
-For the ease of notation, the cross product can be written as matrix operation using the $S()$ notation representing the skew symmetric matrix  given by:
+For the ease of notation, the cross product can be written as matrix operation using the $\underline S()$ notation representing the skew symmetric matrix  given by:
 \begin{flalign}
-	{S(\omega)}
+	{\underline S(\omega)}
 	= 
 	\begin{bmatrix}
 		0& -\omega_{3}& \omega_{2} \\
@@ -114,24 +114,24 @@ For the ease of notation, the cross product can be written as matrix operation u
 	\end{bmatrix} 
 	\label{eq:skewsymmetricmatrix}
 \end{flalign}
- Solving for $\dot{\omega}$ the dynamic equation can be written as 
+ Solving for $\vec{\dot{\omega}}$ the dynamic equation can be written as 
 %
 \begin{flalign}
-	{\dot{\omega}}={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{mw}-I_{s}^{-1}\dot{h}_{(mw)}-I_{s}^{-1}N_{mw}}
+	{\vec{\dot{\omega}}}={-\underline I_{s}^{-1}\underline S(\omega)\underline I_{s}\omega-\underline I_{s}^{-1}\underline S(\omega)\vec h_{mw}-\underline I_{s}^{-1}\vec {\dot{h}_{(mw)}}-\underline I_{s}^{-1}\vec {N_{mw}}}
 	\label{eq:angularmomentum3}
 \end{flalign} 
 %
-The rate of change of angular momentum $\dot{h}_{mw}$ is given by Newton's second law for rotation:
+The rate of change of angular momentum $\vec{\dot{h}_{mw}}$ is given by Newton's second law for rotation:
 %
 \begin{flalign}
-	{\dot{h}_{mv}} = N_{mw}
+	{\vec{ \dot{h}_{mv}}} = \vec {N_{mw}}
 	\label{eq:rate of change}
 \end{flalign}
 %
-The total torque from external disturbances can be written as $N_{dis}$. Therefore, \eqref{eq:angularmomentum3} becomes:
+The total torque from external disturbances can be written as $\vec{N_{dis}}$. Therefore, \eqref{eq:angularmomentum3} becomes:
 %
 \begin{flalign}
-	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}\omega-I_{s}^{-1}S(\omega)h_{mw}-I_{s}^{-1}N_{mw}+I_{s}^{-1}N_{dis}}
+	{\vec{\dot{\omega}}} ={-\underline I_{s}^{-1}\underline S(\omega)\underline I_{s}\vec \omega-\underline I_{s}^{-1}\underline S(\omega)\vec h_{mw}-\underline I_{s}^{-1}\vec N_{mw}+\underline I_{s}^{-1}\vec N_{dis}}
 	\label{eq:angularmomentum4}
 \end{flalign}
 %
@@ -187,30 +187,30 @@ The kinematic and dynamic equations are linearized around the operating point fo
 -
 	\begin{bmatrix}
 	\underline{\vec 0}_{(3\times3)} \\
-		{I_{s}^{-1}}
+		{\underline I_{s}^{-1}}
     \end{bmatrix} 	
-  \tilde N_{mw}
+  \vec {\tilde N_{mw}}
 	\label{eq:lele}
 \end{flalign}
 
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravity-Gradient torque}
 Source: \cite{wertz} \\
-An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$dF_i$} acting on the mass element located at position $R{i}$ from the earth's geometric centre that can be calculated as
+An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$\vec dF_i$} acting on the mass element located at position $\vec R{i}$ from the earth's geometric centre that can be calculated as
 \begin{flalign}
-d\vec{F_i} = -G\frac{m_{earth}}{R_i^3}dm_i \cdot \vec{R_i}
+d\vec{F_i} = -G\frac{m_{earth}}{\vec R_i^3}dm_i \cdot \vec{R_i}
 	\label{eq:ref1}
 \end{flalign}
 where $G$ is the gravitational constant, $m_{earth}$ is the mass of the earth and $\vec{R_i}$ is the vector from the Earth's geometric centre to the infinitesimal element of the satellite. 
 
 The torque about the geometric centre of the satellite due to a force \textit{$dF_i$} at a distance $r_i$ from the geometric centre of the satellite is calculated as:
 \begin{flalign}
-	d\vec{N_{gra}} =  r_i \times d\vec{F_i} 
+	d\vec{N_{gra}} =  \vec r_i \times d\vec{F_i} 
 	\label{eq:ref2}
 \end{flalign}
- $r_i$ can be written as the sum of two vectors as seen in the \figref{fig:ggt}, $r_{co}$ which is the vector from geometric centre of the satellite to the centre of mass, and $r_{ci}$ which is the vector from the centre of mass to the infinitesimal element.  Therefore, the expression of the gravity gradient torque is obtained by integrating \eqref{eq:ref2} and thus obtaining:
+ $\vec r_i$ can be written as the sum of two vectors as seen in the \figref{fig:ggt}, $\vec r_{co}$ which is the vector from geometric centre of the satellite to the centre of mass, and $\vec r_{ci}$ which is the vector from the centre of mass to the infinitesimal element.  Therefore, the expression of the gravity gradient torque is obtained by integrating \eqref{eq:ref2} and thus obtaining:
 \begin{flalign}
-	N_{gra} &= \int_{sat} (r_{co} +r_{ci}) \times d\vec{F_i}  
+	\vec N_{gra} &= \int_{sat} (\vec r_{co} +\vec r_{ci}) \times d\vec{F_i}  
 	\label{eq:ref3}
 \end{flalign}
 \begin{figure}[H]
@@ -222,23 +222,23 @@ The torque about the geometric centre of the satellite due to a force \textit{$d
 The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$. Finally assuming that the geometric centre of the satellite is aligned with its centre of mass, this is equal by setting $r_{co} = 0$, and by using the formula of inertia, and replacing the term $dF_i$ by \eqref{eq:ref1}  the gravity gradient torque can be written as 
 %
 \begin{flalign}
-N_{gra} &= \dfrac{3\mu}{R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{sc}}})] 
+\vec N_{gra} &= \dfrac{3\mu}{\vec R_{sc}^3}[\vec{\hat{R_{sc}}}\times(\vec{I} \vec{\hat{R_{sc}}})] 
 \label{eq:ref4}
 \end{flalign}
-where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $I$ is the diagonal inertia matrix of the satellite. 
+where ${\vec{\hat{R_{sc}}}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $\underline I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
 Source: \cite{SADC} \\
 The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass (CoM). 
 The torque around CoM is given by:
 \begin{flalign}
-	N_{rad} = F_{rad} \times R_{CoM}
+	\vec N_{rad} = F_{rad} \times \vec R_{CoM}
 	\label{eq:tor}
 \end{flalign}
-where $F_{rad}$  is the solar radiation  and $R_{CoM}$ is the vector from the centre of mass to the geometric centre of radiation
+where $ F_{rad}$  is the solar radiation  and $\vec R_{CoM}$ is the vector from the centre of mass to the geometric centre of radiation
 
-The solar radiation $F_{rad}$ can be expressed as:
+The solar radiation $\vec F_{rad}$ can be expressed as:
 \begin{flalign}
-	F_{rad} = C_{a} P A
+	 F_{rad} = C_{a} P A
 	\label{eq:Pres}
 \end{flalign}
 where $C_{a}$ is the surface’s reflectance: 0 for a perfect absorber, 1 for a perfect reflector,   while $P$ is the solar flux and  $A$ is the radiated area
@@ -258,7 +258,7 @@ Since the force has been computed also the torque can be computed by using the c
 
 The aerodynamic torque acting on the satellite can be written as:
 \begin{flalign}
-	N_{drag} = \vec r_{s}  \times F_{D}
+	\vec N_{drag} = \vec r_{s}  \times F_{D}
 	\label{eq:drag}
 \end{flalign}
 where:\\

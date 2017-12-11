@@ -19,14 +19,14 @@ The general Euler's rotation equation with three reaction wheels aligned on the 
 The equation in compact form has been written as 
 %
 \begin{flalign}
-	{\dot{\omega}} ={-I_{s}^{-1}S(\omega)I_{s}^{-1}\omega-I_{s}^{-1}S(\omega)h_{tot}-I_{s}^{-1}\dot{h}_{(tot)}+I_{s}^{-1}N_{tot}}
+	{\dot{\omega}} ={-\underline I_{s}^{-1}\underline S(\omega)\underline I_{s}^{-1}\vec{\omega}-\underline I_{s}^{-1}\underline S(\omega)\vec {h_{tot}}-\underline I_{s}^{-1}\vec {\dot{h}_{(mw)}}+\underline I_{s}^{-1}\vec {N_{tot}}}
 	\label{eq:angularmomentum2Appedix4}
 \end{flalign}
 %
-where $S(\omega)$ is the skew symmetric matrix given by
+where $\underline S(\omega)$ is the skew symmetric matrix given by
 %
 \begin{flalign}
-	{S(\omega)}
+	{\underline S(\omega)}
 	= 
 	\begin{bmatrix}
 		0& -\omega_{3}& \omega_{2} \\
@@ -36,13 +36,13 @@ where $S(\omega)$ is the skew symmetric matrix given by
 	\label{eq:skewsymmetricmatrix}
 \end{flalign}
 %
-and the angular momentum of the reaction wheels as $h_{tot}=[h_1 \ h_2 \ h_3]^{T}$.
+and the angular momentum of the reaction wheels as $\vec h_{tot}=[h_1 \ h_2 \ h_3]^{T}$.
 \subsection{Inertia matrix}
 %
 The inertia matrix for a solid cuboid of height $z$ , width $y$, and depth $x$, amd mass $m_{i}$ with respect the center of mass is given by 
 %
 \begin{flalign}
-	{I}_{i}
+	\underline {I}_{i}
 	= 
 	\begin{bmatrix}
 		\frac{1}{12} m_i(z^{2}+y^{2}) &0&0 \\

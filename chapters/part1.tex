@@ -226,10 +226,10 @@ In conclusion, the approximation that the time derivative of angular velocity is
 \section{Modelling based on the angular velocity}
 As seen in the previous section, the angular velocity cannot be assumed constant. Therefore an equation is needed to estimate it as a function of the drag force. In \appref{chap:C}, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 
 \begin{flalign}
-	{\Delta \dot\omega} = C u
+	{\Delta \dot\omega} = C \vec u
 	\label{eq:u3}
 \end{flalign}
-with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($u = u_{min}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. 
+with $C = \frac{3 \vec\omega_0^2 \vec R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($\vec u = u_{min}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/test_coef.eps}
@@ -242,7 +242,7 @@ with $C = \frac{3 \omega_0^2 R_0}{m}$. In order to check this equation and the c
 	\caption{}
 	\label{fig:u23}
 	\end{figure}
-The coefficient found in the simulation is almost the same than in the theory. The oscillations can be observed in \figref{fig:u23} with a frequency equals to $f \approx \frac{2\pi}{\omega_0}$, where $\omega_0$ is the angular velocity of the satellite in the beginning. This is due to the fact that the orbit is not exactly a circle but an ellipse. Thus, the angular velocity changes slightly during a turn around the Earth. In order to limit the influence of these variations on the controller, a second order low pass filter is added to reduce the amplitude of these oscillations. A state space representation can be derived with states $\theta$ and $\dot \theta$, where $\theta$ is the angle between two satellites. The time derritve of $\dot \theta$ is equal with $\dot \omega_2 - \dot \omega_1$ and using \eqref{eq:u3}, $\ddot \theta = C   u_2 - C u_1 = C u$.
+The coefficient found in the simulation is almost the same than in the theory. The oscillations can be observed in \figref{fig:u23} with a frequency equals to $f \approx \frac{2\pi}{\vec\omega_0}$, where $\omega_0$ is the angular velocity of the satellite in the beginning. This is due to the fact that the orbit is not exactly a circle but an ellipse. Thus, the angular velocity changes slightly during a turn around the Earth. In order to limit the influence of these variations on the controller, a second order low pass filter is added to reduce the amplitude of these oscillations. A state space representation can be derived with states $\theta$ and $\dot \theta$, where $\theta$ is the angle between two satellites. The time derritve of $\dot \theta$ is equal with $\vec{\dot \omega_2} - \vec {\dot \omega_1}$ and using \eqref{eq:u3}, $\ddot \theta = C  \vec u_2 -  C \vec u_1 = C \vec u$.
 \begin{flalign}
 	{s}
 	= 
@@ -252,11 +252,11 @@ The coefficient found in the simulation is almost the same than in the theory. T
 	\end{bmatrix} 
 \end{flalign}
 \begin{flalign}
-	&{\dot{s}(t)} ={A s(t) + Bu(t)}  	\label{eq:lt}
+	&{\dot{s}(t)} ={\underline A s(t) + \underline B u(t)}  	\label{eq:lt}
 \end{flalign}  
 where
 \begin{flalign}
-	{A}
+	{\underline A}
 	= 
 	\begin{bmatrix}
 		0& 1& \\
@@ -264,7 +264,7 @@ where
 	\end{bmatrix} 
 \end{flalign}
 \begin{flalign}
-	{B}
+	{\underline B}
 	= 
 	\begin{bmatrix}
 		0& \\
@@ -317,15 +317,15 @@ In order to analyze the stability of the distributed formation controller, the g
 	s = [\theta_n \ \dot{\theta_n}]^\mathsf{T}
 	\label{stateformation}
 \end{flalign*}
-where $\theta_n = [\theta_{12} \ \theta_{23} \ \theta_{34} \ \theta_{45} \ \theta_{56} \ \theta_{67} \ \theta_{78}]^\mathsf{T}$ are the angles between neighbour satellites and $\dot{\theta_n} $ is the time derivative of these angles. The system matrix will be a 14x14 matrix and for $i<8$ satellites, $\dot{s}_{i} = s_{i+7}$. Therefore the $A$ and $B$ matrix can be written as:
+where $\theta_n = [\theta_{12} \ \theta_{23} \ \theta_{34} \ \theta_{45} \ \theta_{56} \ \theta_{67} \ \theta_{78}]^\mathsf{T}$ are the angles between neighbour satellites and $\dot{\theta_n} $ is the time derivative of these angles. The system matrix will be a 14x14 matrix and for $i<8$ satellites, $\dot{s}_{i} = s_{i+7}$. Therefore the $\underline A$ and $\underline B$ matrix can be written as:
 
 	$
-	A = \left(\begin{array}{c@{}c@{}c}
+	\underline A = \left(\begin{array}{c@{}c@{}c}
     0_{(7\times7)} & | & I_{(7\times7)}\\
 	\hline
 	  & 0
 	\end{array}\right),
-	B = \left(\begin{array}{c@{}c@{}c}
+	\underline B = \left(\begin{array}{c@{}c@{}c}
 	& 0_{(7\times7)} \\
 	\hline
 	& C \ I_{(7\times7)}
@@ -335,7 +335,7 @@ with the constant $C = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;..
 
 The controller gain that has been found in section \ref{ref}, $K = [K_{1} \ K_{2}]$, now can be written as $K_{s} = [K_{1}I_{(7\times7)},  \ K_{2}I_{(7\times7)}]$ and  by using a control law $u = -Ks$ a stability analysis can be made using a Lyapunov candidate function $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$, the state space equation becomes:
 \begin{flalign}
-	&{\dot{s}} ={(A  + BK_{s})s}
+	&{\dot{s}} ={(\underline A  + \underline B\underline K_{s})s}
 	\label{eq:statespacecomplex2}
 \end{flalign}  
 %
@@ -349,10 +349,10 @@ From Lyapunov stability criterion, it has to be shown that $\dot{V} <0$,$\forall
 and this is equal to 
 %
 \begin{flalign}
-	&{\dot{V}} ={s^\mathsf{T}(A-BK)^\mathsf{T}s + s^\mathsf{T}(A-BK)s}
+	&{\dot{V}} ={s^\mathsf{T}(\underline A-\underline B\underline K)^\mathsf{T}s + s^\mathsf{T}(\underline A-\underline B\underline K)s}
 	\label{eq:statespacecomplex4}
 \end{flalign}
-so the only thing that has to be shown in order the system to be stable is to show that the all the eigenvalues of $A-BK<0$. The eigenvalues $A-BK$ were computed and the result was that all eigenvalues have negative real part.
+so the only thing that has to be shown in order the system to be stable is to show that the all the eigenvalues of $\underline A-\underline B\underline K<0$. The eigenvalues $A-BK$ were computed and the result was that all eigenvalues have negative real part.
 \section{Simulation and results}
  First, the simulation results of the control scheme between two satellites are shown. After the results of two satellites, the results for the whole satellite formation are shown with global and distributed algorithm. The reference angle is chosen to be $45^{o}$ for the whole formation. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller and in \figref{fig:distancecontrol2} the angle between two satellites. The settling time is $2\times10^7$ which is equivalent to 230 days which is satisfactory, and also no saturation in the drag force appears.
 \begin{table}[H]
