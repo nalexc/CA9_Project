@@ -15,7 +15,7 @@ Quaternion parameterization is deemed useful for the kinematic analysis of the s
 	\label{eq:quaternionproduct}
 \end{flalign}
 %
-The axis $\hat{x}, \hat{y}, \hat{z}$  are the three axis of the satellite body frame at time $t$ and $[e_{x} \ e_{y} \ e_{z}]$ are the components of the rotation axis unit vector along $\hat{x}, \hat{y}, \hat{z}$. Therefore $q (\Delta {t})$ can be expresed as:
+The axis $\vec{\hat{x}}, \vec{\hat{y}}, \vec{\hat{z}}$  are the three axis of the satellite body frame at time $t$ and $[e_{x} \ e_{y} \ e_{z}]$ are the components of the rotation axis unit vector along $\vec{\hat{x}}, \vec{\hat{y}}, \vec{\hat{z}}$. Therefore $q (\Delta {t})$ can be expresed as:
 %
 \begin{flalign}
 	q_{1}(\Delta {t})  = {e_{x}\sin\frac{\Delta\Phi}{2}}
@@ -350,8 +350,8 @@ The system can be split in three subsystems defined by the matrix equation:
 
 \begin{flalign}
 \begin{bmatrix}
- \dot {\tilde{q}}_i(t)  \\
- \dot {\tilde{\omega}}_i(t)
+\vec{ \dot {\tilde{q}}_i}(t)  \\
+ \vec{\dot {\tilde{\omega}}_i}(t)
 \end{bmatrix} 	
 = 
 \begin{bmatrix}
@@ -359,28 +359,28 @@ The system can be split in three subsystems defined by the matrix equation:
 0 & 0	
 \end{bmatrix} 
 \begin{bmatrix}
-  {\tilde{q}}_i(t)  \\
- {\tilde{\omega}}_i(t)
+  {\vec{\tilde{q}}}_i(t)  \\
+ {\vec{\tilde{\omega}}}_i(t)
 \end{bmatrix} 	
 +
 \begin{bmatrix}
 0 \\
-{I_{i,s}^{-1}}
+{ {I_{i,s}^{-1}}}
 \end{bmatrix} 	
-N_{i,c}(t)
+\vec{N_{i,c}}(t)
 \label{eq:le_bis}
 \end{flalign}
 where $i$ is equal to 1, 2, 3
 
 The input control torque is defined by a state feedback law:
 \begin{flalign}
-N_{i,{mw}} = 
+\vec{N_{i,{mw}}} = 
 -\begin{bmatrix}
 k_1 & k_2
 \end{bmatrix} 
 \begin{bmatrix}
 \vec{  {\tilde{q}}_i(t) } \\
-{\tilde{\omega}}_i(t)
+{\vec{\tilde{\omega}}_i}(t)
 \end{bmatrix}
 \end{flalign} 
 Therefore, 

@@ -8,10 +8,10 @@ The satellite is mainly subjected to three forces: the gravity, the drag force a
 \end{flalign}
 with the gravity modeled by:
 \begin{flalign}
-{F_g} = -G\frac{m_{earth} m_{sat}}{||\vec{p}||^3} \vec{p}
+{\vec F_g} = -G\frac{m_{earth} m_{sat}}{||\vec{p}||^3} \vec{p}
 	\label{eq:eccc}
 \end{flalign}
-where $\vec{p}$ is the vector position of the satellite from the Earth centre to the mass centre of the satellite in the inertial frame and the expression for ${F_D}$ and ${F_{rad}}$ are explained in the next section.
+where $\vec{p}$ is the vector position of the satellite from the Earth centre to the mass centre of the satellite in the inertial frame and the expression for ${\vec F_D}$ and ${\vec F_{rad}}$ are explained in the next section.
 \section{Disturbance Models}
 \subsection{Aerodynamic Drag Force}
 The satellite is subjected to an aerodynamic drag force due to the atmosphere. The collisions with the air cause a force in the opposite direction of the velocity of the satellite. The force was modelled by Lord Rayleigh.\cite{FSA}
@@ -63,7 +63,7 @@ The solar flux can be computed as follows:
 \end{flalign}
 where $F_s$ is the mean solar energy and it is equal with 1358 $W/m^2$ and $c$ is the speed of light
 
-The solar radiation $F_{rad}$ can be expressed as:
+The solar radiation $\vec F_{rad}$ can be expressed as:
 \begin{flalign}
 \vec {F_{rad}} = C_{a} P A \ \frac{\vec {r_{sun,sat}}}{||\vec {r_{sun,sat}}||}
 \label{eq:Pres}
@@ -124,8 +124,8 @@ The state of the system is the vector position and the vector velocity in the in
 \end{flalign}
 The equation is given by:
 \begin{flalign}
-\dot{x} &= \left[ \begin{array}{c} \dot{p} \\ \dot{v} \end{array} \right] = \left[ \begin{array}{c} {v} \\ {a} \end{array} \right] \\
- &= \left[ \begin{array}{c} \vec{v} \\ \frac{1}{m_{sat}}(-G\frac{m_{earth}  m_{sat}}{||{p}||^3} {p} - u ||\vec{v}|| \vec{v}) + {\delta(x,t)} \end{array} \right] \\
+\dot{x} &= \left[ \begin{array}{c} \vec {\dot{p}} \\ \vec {\dot{v}} \end{array} \right] = \left[ \begin{array}{c} {v} \\ {a} \end{array} \right] \\
+ &= \left[ \begin{array}{c} \vec{v} \\ \frac{1}{m_{sat}}(-G\frac{m_{earth}  m_{sat}}{||\vec{p}||^3} {p} - u ||\vec{v}|| \vec{v}) + {\delta(x,t)} \end{array} \right] \\
  &= {f(x)} + u \cdot {g(x)} + {\delta(x,t)}
 \end{flalign}
 with 
@@ -136,7 +136,7 @@ and ${\delta(x,t)}$ reprensent the influence all the disturbances.
 \section{Relative dynamics} 
 %ref:jesper randevouz article
 In order to analyse the distance between two satellites, the relative dynamics are analyzed. Furthermore, to simplify the system, satellites will be assumed to stay on the same plane. This assumption has also to be made due to the limitation of the direction of the input control (the drag force). \\
-To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\hat{x}}$ is defined by ${\hat{x}} = \frac{\vec R}{|| \vec R ||}$, where ${R}$ is the vector from the centre of the Earth to the first satellite. The axis ${\hat{y}}$ is perpendicular to ${\hat{x}}$ and in the plane of motion of the satellites and ${\hat{z}}$ is defined by the right-hand law (${\hat{z}} = {\hat{x}} \times {\hat{y}}$). 
+To compute the equations of the motion of one satellite compared to another, a new frame is used. The frame is illustrated in the \figref{fig:rel_dyn}, where the origin is the first satellite and the axis ${\vec{\hat{x}}}$ is defined by ${\vec{\hat{x}}} = \frac{\vec R}{|| \vec R ||}$, where ${\vec R}$ is the vector from the centre of the Earth to the first satellite. The axis ${\vec{\hat{y}}}$ is perpendicular to ${\vec{\hat{x}}}$ and in the plane of motion of the satellites and ${\vec{\hat{z}}}$ is defined by the right-hand law (${\vec{\hat{z}}} = {\vec{\hat{x}}} \times {\vec{\hat{y}}}$). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/relativeDynamics}
@@ -177,10 +177,10 @@ Moreover, the norm of the velocity of both satellite is assumed to be equal and 
 \end{equation}
 using the approximation $\dot{x}$, $y \ll y^{*}$ and $x, x^{*}$, $\frac{\dot{y}}{w} \ll R$, therefore the system in state space can be writen as:
  \begin{flalign*}
- 	{\dot{s}(t)} ={A s(t) + Bu(t)} 
+ 	{\dot{s}(t)} ={\underline A s(t) + \underline Bu(t)} 
  \end{flalign*}  
 \begin{flalign*}
-	{A}
+	{\underline A}
 	= 
 	\begin{bmatrix}
 		0& 1& 0 & 0 \\
@@ -190,7 +190,7 @@ using the approximation $\dot{x}$, $y \ll y^{*}$ and $x, x^{*}$, $\frac{\dot{y}}
 	\end{bmatrix} 
 \end{flalign*}
 \begin{flalign*}
-	{B}
+	{\underline B}
 	= 
 	\begin{bmatrix}
 		0& \\
@@ -226,10 +226,10 @@ In conclusion, the approximation that the time derivative of angular velocity is
 \section{Modelling based on the angular velocity}
 As seen in the previous section, the angular velocity cannot be assumed constant. Therefore an equation is needed to estimate it as a function of the drag force. In \appref{chap:C}, the time derivative of the angular velocity can be approximated as a linear function of the drag force. 
 \begin{flalign}
-	{\Delta \dot\omega} = C \vec u
+	{\Delta \dot\omega} = C  u
 	\label{eq:u3}
 \end{flalign}
-with $C = \frac{3 \vec\omega_0^2 \vec R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($\vec u = u_{min}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. 
+with $C = \frac{3 \omega_0^2  R_0}{m}$. In order to check this equation and the coefficient, a simulation is performed using a constant drag force coefficient ($ u = u_{min}$). The angular velocity as a function of time with constant drag force is shown in \figref{fig:testCoef}. 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/test_coef.eps}
@@ -242,7 +242,7 @@ with $C = \frac{3 \vec\omega_0^2 \vec R_0}{m}$. In order to check this equation 
 	\caption{}
 	\label{fig:u23}
 	\end{figure}
-The coefficient found in the simulation is almost the same than in the theory. The oscillations can be observed in \figref{fig:u23} with a frequency equals to $f \approx \frac{2\pi}{\vec\omega_0}$, where $\omega_0$ is the angular velocity of the satellite in the beginning. This is due to the fact that the orbit is not exactly a circle but an ellipse. Thus, the angular velocity changes slightly during a turn around the Earth. In order to limit the influence of these variations on the controller, a second order low pass filter is added to reduce the amplitude of these oscillations. A state space representation can be derived with states $\theta$ and $\dot \theta$, where $\theta$ is the angle between two satellites. The time derritve of $\dot \theta$ is equal with $\vec{\dot \omega_2} - \vec {\dot \omega_1}$ and using \eqref{eq:u3}, $\ddot \theta = C  \vec u_2 -  C \vec u_1 = C \vec u$.
+The coefficient found in the simulation is almost the same than in the theory. The oscillations can be observed in \figref{fig:u23} with a frequency equals to $f \approx \frac{2\pi}{\omega_0}$, where $\omega_0$ is the angular velocity of the satellite in the beginning. This is due to the fact that the orbit is not exactly a circle but an ellipse. Thus, the angular velocity changes slightly during a turn around the Earth. In order to limit the influence of these variations on the controller, a second order low pass filter is added to reduce the amplitude of these oscillations. A state space representation can be derived with states $\theta$ and $\dot \theta$, where $\theta$ is the angle between two satellites. The time derritve of $\dot \theta$ is equal with ${\dot \omega_2} -  {\dot \omega_1}$ and using \eqref{eq:u3}, $\ddot \theta = C   u_2 -  C u_1 = C  u$.
 \begin{flalign}
 	{s}
 	= 
@@ -276,7 +276,7 @@ A controller is designed to control the angle between two satellites. Due to the
 \begin{flalign}
 \mathcal{I} =  \int (\vec{x}^\mathsf{T} \ \underline{Q} \ \vec{x} + \vec{u}^\mathsf{T} \ \underline{R}  \ \vec{u}) dx
 \end{flalign}
-Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $R$ matrix is defined as $R = [u_{delta}^{-2}]$ ($u_{delta} = u_{max} - u_{min}$). For the states weighting matrices no maximum value is defined. The weight for the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converge, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller, since for big values of weights the controller will be in saturation mode faster and with low values the convergence will be slower. Therefore, the weighting matrices are given by \label{ref}:
+Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $\underline R$ matrix is defined as $\underline R = [u_{delta}^{-2}]$ ($u_{delta} = u_{max} - u_{min}$). For the states weighting matrices no maximum value is defined. The weight for the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converge, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller, since for big values of weights the controller will be in saturation mode faster and with low values the convergence will be slower. Therefore, the weighting matrices are given by \label{ref}:
 \begin{flalign}
 	{\underline{Q}}
 	= 
@@ -295,7 +295,7 @@ Due to the fact that no predefined cost is specified, the weighting matrices can
  The vector of gains K is obtained by solving the Algebraic Riccati equation. The control input signal can be computed ($u = u_2 - u_1$) and therefore if $u$ is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If $u$ is smaller than zero, it will be the opposite. The control law used for designing the controller is: $u = -K(1) \ \theta \ -K(2) \ \dot \theta $. \label{eq:ctr}
  
  \subsection{Frequency Analysis}
-The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s) \ H_attittude(s)$ where $P(s$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller, $LPF(s)$ is the transfer function of the second order low pass filter and $H_attitude$ represent is the first order transfer function where the rise time is chosen to be equal to 10 minutes which is a estimation of time that the satellite take to converge into the good orientation.
+The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s) \ H_{attittude}(s)$ where $P(s)$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller, $LPF(s)$ is the transfer function of the second order low pass filter and $H_{attitude}$ represent is the first order transfer function where the rise time is chosen to be equal to 10 minutes which is a estimation of time that the satellite take to converge into the good orientation.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
 	\centering
@@ -308,7 +308,7 @@ The crossover frequency and the phase margin can be extracted from the bode diag
  
 \subsection{Satellite Formation Control} 
 \subsubsection{Global algorithm}
-Since the formation consists of more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of $n-1$ equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of $n$ equations with $n$ unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
+Since the formation consists of more than two satellites a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbors satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of $n-1$ equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of $n$ equations with $n$ unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite.
 \subsubsection{Distributed algorithm}
 In this case, $u_1$ is chosen to be equal with $u_{medium}$, therefore $u_2$ is computed using the control law found in \eqref{eq:ctr}, which is a function of the angle between the first satellite and the second one. The drag force of satellite $i$ can be determined by knowing the angle between the satellite $i$ and $i-1$, the time derivative of this angle and the drag force of the satellite $i-1$.
 \subsection{Stability Analysis}
@@ -333,7 +333,7 @@ where $\theta_n = [\theta_{12} \ \theta_{23} \ \theta_{34} \ \theta_{45} \ \thet
 	$
 with the constant $C = \frac{3 \omega_0^2 R_0}{m} $ and $u = [u_2-u_1;u_3-u_2;...;u_8-u_7]$.
 
-The controller gain that has been found in section \ref{ref}, $K = [K_{1} \ K_{2}]$, now can be written as $K_{s} = [K_{1}I_{(7\times7)},  \ K_{2}I_{(7\times7)}]$ and  by using a control law $u = -Ks$ a stability analysis can be made using a Lyapunov candidate function $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $K_{s}$, the state space equation becomes:
+The controller gain that has been found in section \ref{ref}, $K = [K_{1} \ K_{2}]$, now can be written as $\underline K_{s} = [K_{1}I_{(7\times7)},  \ K_{2}I_{(7\times7)}]$ and  by using a control law $u = -\underline K s$ a stability analysis can be made using a Lyapunov candidate function $V = s^{T}s$ where $V>0$, $\forall s\neq0 $. Inserting $\underline K_{s}$, the state space equation becomes:
 \begin{flalign}
 	&{\dot{s}} ={(\underline A  + \underline B\underline K_{s})s}
 	\label{eq:statespacecomplex2}
@@ -352,7 +352,7 @@ and this is equal to
 	&{\dot{V}} ={s^\mathsf{T}(\underline A-\underline B\underline K)^\mathsf{T}s + s^\mathsf{T}(\underline A-\underline B\underline K)s}
 	\label{eq:statespacecomplex4}
 \end{flalign}
-so the only thing that has to be shown in order the system to be stable is to show that the all the eigenvalues of $\underline A-\underline B\underline K<0$. The eigenvalues $A-BK$ were computed and the result was that all eigenvalues have negative real part.
+so the only thing that has to be shown in order the system to be stable is to show that the all the eigenvalues of $\underline A-\underline B\underline K<0$. The eigenvalues $\underline A- \underline B\underline K$ were computed and the result was that all eigenvalues have negative real part.
 \section{Simulation and results}
  First, the simulation results of the control scheme between two satellites are shown. After the results of two satellites, the results for the whole satellite formation are shown with global and distributed algorithm. The reference angle is chosen to be $45^{o}$ for the whole formation. The inputs to the controller are $\Delta\theta$ and $\dot{\theta}$, where $\Delta\theta = \theta - \theta{ref}$ and $\dot{\theta} = w_2 - w_1$. In order to smooth the high frequency  oscillations from $\theta$, $w_1$ and $w_2$ to the controller a low pass filter is used. The control design is similar to PD controller. In \figref{fig:distancecontrol} is shown the response of the controller and in \figref{fig:distancecontrol2} the angle between two satellites. The settling time is $2\times10^7$ which is equivalent to 230 days which is satisfactory, and also no saturation in the drag force appears.
 \begin{table}[H]
