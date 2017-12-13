@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  12 DEC 2017 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  13 DEC 2017 14:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -3756,14 +3756,14 @@ LaTeX Warning: Citation 'FSA' on page 10 undefined on input line 26.
 
 LaTeX Warning: Citation 'wik' on page 10 undefined on input line 28.
 
-<figures/drag_coef.jpg, id=272, 365.86688pt x 142.5325pt>
+<figures/drag_coef.jpg, id=270, 365.86688pt x 142.5325pt>
 File: figures/drag_coef.jpg Graphic file (type jpg)
 
 <use figures/drag_coef.jpg>
 Package pdftex.def Info: figures/drag_coef.jpg used on input line 34.
 (pdftex.def)             Requested size: 178.45836pt x 69.52399pt.
 
-<figures/a_prep.jpeg, id=273, 1686.3pt x 909.3975pt>
+<figures/a_prep.jpeg, id=271, 1686.3pt x 909.3975pt>
 File: figures/a_prep.jpeg Graphic file (type jpg)
  <use figures/a_prep.jpeg>
 Package pdftex.def Info: figures/a_prep.jpeg used on input line 43.
@@ -3783,12 +3783,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 73.
 
-<figures/j2.jpg, id=303, 395.4775pt x 216.81pt>
+<figures/j2.jpg, id=301, 395.4775pt x 216.81pt>
 File: figures/j2.jpg Graphic file (type jpg)
  <use figures/j2.jpg>
 Package pdftex.def Info: figures/j2.jpg used on input line 87.
 (pdftex.def)             Requested size: 273.14923pt x 149.74792pt.
- [12 <./figures/j2.jpg>] <figures/relativeDynamics.png, id=319, 703.62875pt x 5
+ [12 <./figures/j2.jpg>] <figures/relativeDynamics.png, id=317, 703.62875pt x 5
 92.2125pt>
 File: figures/relativeDynamics.png Graphic file (type png)
 
@@ -3806,7 +3806,7 @@ Package epstopdf Info: Source file: <figures/pic2.eps>
 to.pdf figures/pic2.eps>
 (epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
- <figures/pic2-eps-converted-to.pdf, id=350, 421.575pt x 316.18124pt>
+ <figures/pic2-eps-converted-to.pdf, id=348, 421.575pt x 316.18124pt>
 File: figures/pic2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pic2-eps-converted-to.pdf>
@@ -3824,7 +3824,7 @@ to.pdf figures/pic1.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/pic1-eps-converted-to.pdf, id=351, 421.575pt x 316.18124pt>
+<figures/pic1-eps-converted-to.pdf, id=349, 421.575pt x 316.18124pt>
 File: figures/pic1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pic1-eps-converted-to.pdf>
@@ -3843,7 +3843,7 @@ rted-to.pdf figures/test_coef.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/test_coef-eps-converted-to.pdf, id=363, 963.6pt x 457.71pt>
+<figures/test_coef-eps-converted-to.pdf, id=361, 963.6pt x 457.71pt>
 File: figures/test_coef-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/test_coef-eps-converted-to.pdf>
@@ -3862,7 +3862,7 @@ ons-eps-converted-to.pdf figures/test_coef_oscillations.eps>
 (epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/test_coef_oscillations-eps-converted-to.pdf, id=364, 963.6pt x 457.71p
+<figures/test_coef_oscillations-eps-converted-to.pdf, id=362, 963.6pt x 457.71p
 t>
 File: figures/test_coef_oscillations-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3883,7 +3883,7 @@ Package epstopdf Info: Source file: <figures/Bode_L.eps>
 d-to.pdf figures/Bode_L.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
- <figures/Bode_L-eps-converted-to.pdf, id=394, 963.6pt x 457.71pt>
+ <figures/Bode_L-eps-converted-to.pdf, id=392, 963.6pt x 457.71pt>
 File: figures/Bode_L-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Bode_L-eps-converted-to.pdf>
@@ -3902,7 +3902,7 @@ erted-to.pdf figures/controller.eps>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/controller-eps-converted-to.pdf, id=427, 421.575pt x 316.18124pt>
+<figures/controller-eps-converted-to.pdf, id=425, 421.575pt x 316.18124pt>
 File: figures/controller-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/controller-eps-converted-to.pdf>
@@ -3920,7 +3920,7 @@ Package epstopdf Info: Source file: <figures/angle.eps>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle-eps-converted-to.pdf, id=428, 421.575pt x 316.18124pt>
+<figures/angle-eps-converted-to.pdf, id=426, 421.575pt x 316.18124pt>
 File: figures/angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle-eps-converted-to.pdf>
@@ -3939,7 +3939,7 @@ o.pdf figures/u_1.eps>
 (epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/u_1-eps-converted-to.pdf, id=440, 421.575pt x 316.18124pt>
+<figures/u_1-eps-converted-to.pdf, id=438, 421.575pt x 316.18124pt>
 File: figures/u_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/u_1-eps-converted-to.pdf>
@@ -3957,7 +3957,7 @@ o.pdf figures/u_2.eps>
 (epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/u_2-eps-converted-to.pdf, id=441, 421.575pt x 316.18124pt>
+<figures/u_2-eps-converted-to.pdf, id=439, 421.575pt x 316.18124pt>
 File: figures/u_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/u_2-eps-converted-to.pdf>
@@ -3965,7 +3965,7 @@ Package pdftex.def Info: figures/u_2-eps-converted-to.pdf used on input line 39
 4.
 (pdftex.def)             Requested size: 223.07211pt x 167.30508pt.
 
-<figures/gl.jpeg, id=443, 2744.2525pt x 1672.2475pt>
+<figures/gl.jpeg, id=441, 2744.2525pt x 1672.2475pt>
 File: figures/gl.jpeg Graphic file (type jpg)
  <use figures/gl.jpeg>
 Package pdftex.def Info: figures/gl.jpeg used on input line 404.
@@ -3984,7 +3984,7 @@ Package epstopdf Info: Source file: <figures/da1.eps>
 o.pdf figures/da1.eps>
 (epstopdf)             \includegraphics on input line 415.
 Package epstopdf Info: Output file is already uptodate.
- <figures/da1-eps-converted-to.pdf, id=470, 421.575pt x 316.18124pt>
+ <figures/da1-eps-converted-to.pdf, id=468, 421.575pt x 316.18124pt>
 File: figures/da1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/da1-eps-converted-to.pdf>
@@ -4008,7 +4008,7 @@ s-converted-to.pdf figures/distributed_algo.eps>
 (epstopdf)             \includegraphics on input line 424.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/distributed_algo-eps-converted-to.pdf, id=471, 421.575pt x 316.18124pt
+<figures/distributed_algo-eps-converted-to.pdf, id=469, 421.575pt x 316.18124pt
 >
 File: figures/distributed_algo-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/distributed_algo-eps-converted-to.pdf>
@@ -4039,7 +4039,7 @@ LaTeX Warning: Citation 'SADC' on page 25 undefined on input line 79.
 
 LaTeX Warning: Citation 'SADC' on page 27 undefined on input line 199.
 
-<figures/ggt.jpeg, id=538, 1575.8875pt x 1182.4175pt>
+<figures/ggt.jpeg, id=536, 1575.8875pt x 1182.4175pt>
 File: figures/ggt.jpeg Graphic file (type jpg)
  <use figures/ggt.jpeg>
 Package pdftex.def Info: figures/ggt.jpeg used on input line 220.
@@ -4064,7 +4064,7 @@ Package epstopdf Info: Source file: <figures/perp_area.eps>
 rted-to.pdf figures/perp_area.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
- <figures/perp_area-eps-converted-to.pdf, id=576, 421.575pt x 316.18124pt>
+ <figures/perp_area-eps-converted-to.pdf, id=574, 421.575pt x 316.18124pt>
 File: figures/perp_area-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/perp_area-eps-converted-to.pdf>
@@ -4085,7 +4085,7 @@ d-to.pdf figures/path_f.eps>
 (epstopdf)             \includegraphics on input line 313.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/path_f-eps-converted-to.pdf, id=596, 421.575pt x 316.18124pt>
+<figures/path_f-eps-converted-to.pdf, id=594, 421.575pt x 316.18124pt>
 File: figures/path_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/path_f-eps-converted-to.pdf>
@@ -4103,7 +4103,7 @@ ed-to.pdf figures/rel_err.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/rel_err-eps-converted-to.pdf, id=598, 421.575pt x 316.18124pt>
+<figures/rel_err-eps-converted-to.pdf, id=596, 421.575pt x 316.18124pt>
 File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rel_err-eps-converted-to.pdf>
@@ -4115,7 +4115,7 @@ ted-to.pdf>] [33]
 
 LaTeX Warning: Citation 'NLCS' on page 34 undefined on input line 405.
 
-<figures/cs.jpeg, id=645, 1371.1225pt x 1264.725pt>
+<figures/cs.jpeg, id=643, 1371.1225pt x 1264.725pt>
 File: figures/cs.jpeg Graphic file (type jpg)
  <use figures/cs.jpeg>
 Package pdftex.def Info: figures/cs.jpeg used on input line 408.
@@ -4124,31 +4124,28 @@ Package pdftex.def Info: figures/cs.jpeg used on input line 408.
 
 LaTeX Warning: Citation 'WR' on page 34 undefined on input line 415.
 
-[34 <./figures/cs.jpeg>]
-
-LaTeX Warning: Citation 'ref' on page 35 undefined on input line 456.
-
-) (chapters/conclusion.tex [35]
+[34 <./figures/cs.jpeg>] [35]) (chapters/conclusion.tex [36]
 Chapter 6.
-) [36
+) [37
+
+] [38
 
 ] (appendix/appendix_1.tex
 Appendix A.
-) (appendix/code.tex [37
-
+) (appendix/code.tex [39
 
 ]
 Appendix B.
-[38
+[40
 
-] <figures/operating_point.jpg, id=702, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=715, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [39 <./figures/operating_point.jpg>])
-(appendix/appendix_3.tex [40]
+ [41 <./figures/operating_point.jpg>])
+(appendix/appendix_3.tex [42]
 Appendix C.
 )
 \tf@thm=\write8
@@ -4156,7 +4153,7 @@ Appendix C.
 
  
 AED: lastpage setting LastPage
-[41
+[43
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
@@ -4183,10 +4180,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51496 strings out of 493328
- 1060310 string characters out of 3139116
- 1693855 words of memory out of 3000000
- 53916 multiletter control sequences out of 15000+200000
+ 51507 strings out of 493328
+ 1060444 string characters out of 3139116
+ 1694175 words of memory out of 3000000
+ 53923 multiletter control sequences out of 15000+200000
  124572 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10413b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4212,9 +4209,9 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (47 pages, 3336547 bytes).
+Output written on main.pdf (49 pages, 3339422 bytes).
 PDF statistics:
- 872 PDF objects out of 1000 (max. 8388607)
- 264 named destinations out of 1000 (max. 500000)
+ 887 PDF objects out of 1000 (max. 8388607)
+ 268 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

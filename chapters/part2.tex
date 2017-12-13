@@ -66,7 +66,7 @@ with $\underline \Omega$ be the skew symmetric matrix\cite{SADC}
 	= 
 	\begin{bmatrix}
 		0& \omega_{z}& - \omega_{y}& \omega_{x} \\
-		-\omega_{z}& 0&\omega_{1}& \omega_{x}  \\ 
+		-\omega_{z}& 0&\omega_{x}& \omega_{y}  \\ 
 		\omega_{y}& -\omega_{x}&0& \omega_{z} \\
 		-\omega_{x}& -\omega_{y}& -\omega_{z}&0
 	\end{bmatrix} 
@@ -350,8 +350,8 @@ The system can be split in three subsystems defined by the matrix equation:
 
 \begin{flalign}
 \begin{bmatrix}
-\vec{ \dot {\tilde{q}}_i}(t)  \\
- \vec{\dot {\tilde{\omega}}_i}(t)
+{ \dot {\tilde{q}}_i}(t)  \\
+ {\dot {\tilde{\omega}}_i}(t)
 \end{bmatrix} 	
 = 
 \begin{bmatrix}
@@ -359,28 +359,28 @@ The system can be split in three subsystems defined by the matrix equation:
 0 & 0	
 \end{bmatrix} 
 \begin{bmatrix}
-  {\vec{\tilde{q}}}_i(t)  \\
- {\vec{\tilde{\omega}}}_i(t)
+  {{\tilde{q}}}_i(t)  \\
+ {{\tilde{\omega}}}_i(t)
 \end{bmatrix} 	
 +
 \begin{bmatrix}
 0 \\
 { {I_{i,s}^{-1}}}
 \end{bmatrix} 	
-\vec{N_{i,c}}(t)
+{N_{i,c}}(t)
 \label{eq:le_bis}
 \end{flalign}
 where $i$ is equal to 1, 2, 3
 
 The input control torque is defined by a state feedback law:
 \begin{flalign}
-\vec{N_{i,{mw}}} = 
+{N_{i,{mw}}} = 
 -\begin{bmatrix}
 k_1 & k_2
 \end{bmatrix} 
 \begin{bmatrix}
-\vec{  {\tilde{q}}_i(t) } \\
-{\vec{\tilde{\omega}}_i}(t)
+{  {\tilde{q}}_i(t) } \\
+{{\tilde{\omega}}_i}(t)
 \end{bmatrix}
 \end{flalign} 
 Therefore, 
@@ -424,10 +424,10 @@ The sliding variable can be written in terms of the small signal deviation as de
 	 \vec{\tilde{q_{e}}} = \vec{\bar{q}}^{-1} \otimes \vec{q} 
 	 =
 	\begin{bmatrix}
-		q_{4r} & q_{3r}& -q_{2r}& -q_{1r}\\
-		-q_{3r} & q_{4r}& q_{1r}& -q_{2r}\\
-		q_{2r} & -q_{1r}& q_{4r}& -q_{3r}\\
-		q_{1r} & q_{2r}& q_{3r}& q_{4r}\\
+		q_{4r} & q_{3r}& -q_{2r}& q_{1r}\\
+		-q_{3r} & q_{4r}& q_{1r}& q_{2r}\\
+		q_{2r} & -q_{1r}& q_{4r}& q_{3r}\\
+		-q_{1r} & -q_{2r}& -q_{3r}& q_{4r}\\
 	\end{bmatrix} 	
 	\begin{bmatrix}
 	q_{1} \\ q_{2}\\ q_{3}\\ q_{4}
@@ -435,44 +435,65 @@ The sliding variable can be written in terms of the small signal deviation as de
 	\label{eq:quat}
 \end{flalign}
 %
-where $q_{r}$ represents the quaternion reference and $q$ the measured quaternion. The rate of change of quaternion can be re written as 
+where $q_{r}$ represents the quaternion reference and $q$ the measured quaternion. The rate of change of quaternion from \Eqref{eq:le} can be  written as 
 %
 \begin{flalign}
 	\vec{\dot{\tilde{q_{e}}}} 
 	=
-	\frac{1}{2}
+	-\frac{1}{2}
 	\begin{bmatrix}
-		q_{4e} & -q_{3e}& q_{2e}\\
-		q_{3e} & q_{4e}& -q_{1e}\\
-		-q_{2e} & q_{1e}& q_{4r}\\
-		-q_{1e} & -q_{2e}& -q_{3e}\\
+		0& \omega_{3}& - \omega_{2}& \omega_{1} \\
+	-\omega_{3}& 0&\omega_{1}& \omega_{2}  \\ 
+	\omega_{2}& -\omega_{1}&0& \omega_{3} \\
+	-\omega_{1}& -\omega_{2}& -\omega_{3}&0
 	\end{bmatrix} 	
 	\begin{bmatrix}
-		\omega_{1} \\ \omega_{2}\\ \omega_{3}\\ 0
+		q_{1e} \\ q_{2e}\\ q_{3e}\\ q_{4e}
 	\end{bmatrix}
 	\label{eq:quater}
 \end{flalign}
-where $[\omega_{1} \ \omega_{2} \ \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame.
- Note that the \eqref{eq:lele} has slightly been modified such that the skew symmetric matrix represents the quaternion. According to, for the sliding variable only the vector part of the quaternion is used. \Eqref{eq:quater} can be further modified according as \cite{ref}:
+where $[\omega_{1} \ \omega_{2} \ \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame and $[q_{1e} ..q_{4e}]$ is the quaternion error.
+ For the representation of the satellite motion on the sliding variable only the vector part of the quaternion is used. Since only the vector part of the quaternion is used \Eqref{eq:le} can be written:
  %
  \begin{flalign}
  	\vec{\dot{\tilde{q_{e}}}} 
  	=
  	\frac{1}{2}
  	\begin{bmatrix}
- 		q_{4e} & -q_{3e}& q_{2e}\\
- 		q_{3e} & q_{4e}& -q_{1e}\\
- 		-q_{2e} & q_{1e}& q_{4r}\\
+ 		0 & -\omega_{3}& \omega_{2}\\
+ 		\omega_{3} & 0& -\omega_{1} \\
+ 		-\omega_{2} & \omega_{1} & 0\\
  	\end{bmatrix} 	
  	\begin{bmatrix}
- 		\omega_{1} \\ \omega_{2}\\ \omega_{3}\\ 
+ 		q_{1e} \\ q_{2e}\\ q_{3e}\\ 
  	\end{bmatrix}
  	\label{eq:quatermodified}
  \end{flalign}
  %
   The sliding variable can now been written as
  \begin{flalign}
- 	s = F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega}}= 0
+ 	s = F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega_{e}}}= 0
  	\label{eq:slidingvar}
  \end{flalign}
-where the tilde values represent the signal values with small deviation from the nominal values.
+where $F = -0.005diag[1 1 1]$ the tilde values represent the signal values with small deviation from the nominal values. Assuming a lyapunov candidate function as
+\begin{flalign}
+	V = \frac{1}{2}s^{T}s
+	\label{eq:lyap}
+\end{flalign}
+the time derivative of the lyapunov fuction can be written as
+\begin{flalign}
+	\dot V = \dot{s^{T}}s+s^{T}\dot{s}
+	\label{eq:lyap1}
+\end{flalign}
+In order to prove stability it has to be shown that $\dot {V} <0 $ $\forall s\neq0$ this is equal by showing 
+\begin{flalign}
+	 s^{T}\dot{s} < 0 \ \forall s\neq0 
+	\label{eq:lyap2}
+\end{flalign} 
+%
+the \eqref{eq:slidingvar} is substitute 
+%
+\begin{flalign}
+	\dot V = s^{T}(F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega_{e}}}) 
+	\label{eq:lyap3}
+\end{flalign}
