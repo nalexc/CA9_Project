@@ -441,18 +441,25 @@ where $\vec{\bar{q}}$ represents the quaternion reference and $\vec{q}$ the meas
 \end{flalign}
 %
 
-where $\vec{q_{\bar{\omega}}} = \bar{\omega_{1}}*i +  \bar{\omega_{2}}*j + \bar{\omega_{1}}*k + 0$ and $\vec{q_{\tilde{\omega}}} = \tilde{\omega_{1}}*i +  \tilde{\omega_{2}}*j + \tilde{\omega_{1}}*k + 0$. By choosing the sliding manifold variable to be equal:  
+where $\vec{q_{\bar{\omega}}} = \bar{\omega_{1}}*i +  \bar{\omega_{2}}*j + \bar{\omega_{3}}*k + 0$ and $\vec{q_{\tilde{\omega}}} = \tilde{\omega_{1}}*i +  \tilde{\omega_{2}}*j + \tilde{\omega_{3}}*k + 0$. By choosing the sliding manifold variable to be equal:  
  \begin{flalign}
  	s = F\vec{\tilde{q}} +\vec{\tilde{\omega}}
  	\label{eq:slidingvar}
  \end{flalign}
-where $F = a* diag[1 \ 1  \ 1]$ is positive definite. Therefore, on the manifold, $\vec{ \tilde{\omega} } = -a*\vec{ \tilde{q} }$ and thus the time derivatime of the real part of the error quaternion is computed from the equation \ref{eq:time_deri}:
+where $F = D*diag[1 \ 1  \ 1]$ is positive definite. The angular velocity error can be written as $\vec{\tilde{\omega}} = \vec{\omega}  -\vec{\bar{\omega}} $. Therefore, when s = $\vec{0}$, $\vec{ \tilde{\omega} } = -D*\vec{ \tilde{q}_{1:3}}$ and thus the time derivative of the real part of the error quaternion is computed from the equation \ref{eq:time_deri}:
 \begin{flalign}
-	\dot{q}_{4} &= -\frac{1}{2} \vec{\tilde{\omega}} \cdot \vec{  \tilde{q}_{1:3}} \\
-	&= a||\vec{\tilde{q}}_{1:3}||^2 \\
-	&= a(1 - \tilde{q}_4^2)
-\end{flalign}
-\\
+	\dot{\tilde{q}}_{4} &= -\frac{1}{2} \vec{\tilde{\omega}} \cdot \vec{  \tilde{q}_{1:3}} \\
+	&= \frac{D}{2}||\vec{\tilde{q}}_{1:3}||^2 \\
+	&= \frac{D}{2} (1 - \tilde{q}_4^2)
+	\label{eq:dq_4}
+\end{flalign} 
+According to equation \ref{eq:dq_4}, $\vec{\tilde{q}}$ will converge to $[0; 0; 0; 1]$ and $a$ can be designed by trial and error to have the desired convergence. The behaviour of $\tilde{q}_4$ with $D$ equal to 0.035 is represented in the \figref{fig:dq4}. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/design_D}
+	\caption{$\tilde{q}_4$ in function of time with D = 0.035}
+	\label{fig:dq4}
+\end{figure}  
 Assuming a lyapunov candidate function as
 \begin{flalign}
 	V = \frac{1}{2}s^{T}s

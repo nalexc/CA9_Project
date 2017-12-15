@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  15 DEC 2017 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  15 DEC 2017 14:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -4219,7 +4219,27 @@ Package pdftex.def Info: figures/cs.jpeg used on input line 408.
 
 LaTeX Warning: Citation 'WR' on page 34 undefined on input line 415.
 
-[34 <./figures/cs.jpeg>] [35]) (chapters/conclusion.tex [36]
+[34 <./figures/cs.jpeg>]
+Package epstopdf Info: Source file: <figures/design_D.eps>
+(epstopdf)                    date: 2017-12-15 14:27:58
+(epstopdf)                    size: 21312 bytes
+(epstopdf)             Output file: <figures/design_D-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-12-15 14:30:25
+(epstopdf)                    size: 5138 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/design_D-eps-conver
+ted-to.pdf figures/design_D.eps>
+(epstopdf)             \includegraphics on input line 459.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/design_D-eps-converted-to.pdf, id=659, 479.7925pt x 316.18124pt>
+File: figures/design_D-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/design_D-eps-converted-to.pdf>
+Package pdftex.def Info: figures/design_D-eps-converted-to.pdf used on input li
+ne 459.
+(pdftex.def)             Requested size: 318.66948pt x 210.00218pt.
+ [35]) (chapters/conclusion.tex
+[36 <./figures/design_D-eps-converted-to.pdf>]
 Chapter 6.
 ) [37
 
@@ -4233,7 +4253,7 @@ Appendix A.
 Appendix B.
 [40
 
-] <figures/operating_point.jpg, id=716, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=724, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -4275,16 +4295,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52399 strings out of 493323
- 1088708 string characters out of 3139066
- 1712798 words of memory out of 3000000
- 54815 multiletter control sequences out of 15000+200000
+ 52415 strings out of 493323
+ 1088959 string characters out of 3139066
+ 1712958 words of memory out of 3000000
+ 54821 multiletter control sequences out of 15000+200000
  651204 words of font info for 108 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10413b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
 thex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program 
 Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
@@ -4298,15 +4318,16 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.
 ic/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (49 pages, 3339886 bytes).
+ype1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (49 pages, 3359784 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 
