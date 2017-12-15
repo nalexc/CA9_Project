@@ -107,14 +107,14 @@ The gravitational forces acting on the satellite are obtained from the relation:
 	F = -m \nabla U
 	\label{eq:Pr3431}
 \end{flalign}
-and is obtaining the following:
+and is obtaining the following \cite{SIDI}:
 \begin{flalign}
 	F_x = -\frac{\partial U}{\partial x} = \mu \left[ -\frac{x}{r^3} + A_{J_2} \left(15 \frac{xz^2}{r^7} - 3\frac{x}{r^5}   \right ) \right ]       \\
 		F_y = -\frac{\partial U}{\partial y} = \mu \left[ -\frac{y}{r^3} + A_{J_2} \left(15 \frac{yz^2}{r^7} - 3\frac{y}{r^5}   \right ) \right ]       \\
 			F_z = - \frac{\partial U}{\partial z} =  \mu \left[ -\frac{z}{r^3} + A_{J_2} \left(15 \frac{z^3}{r^7} - 3\frac{z}{r^5}   \right )  \right]       
 	\label{eq:Pr34331}
 \end{flalign}
-where $A_{J_2}  = \frac{1}{2} J_2 R_e^2$ and and$R_e$ is the mean radius ofthe earth at the equator
+where $A_{J_2}  = \frac{1}{2} J_2 R_e^2$ and and $R_e$ is the mean radius ofthe earth at the equator
 	
 \section{State Space Representation}
 The state of the system is the vector position and the vector velocity in the inertial frame:
@@ -140,7 +140,7 @@ To compute the equations of the motion of one satellite compared to another, a n
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/relativeDynamics}
-	\caption{Frame for the relative dynamics}
+	\caption{Frame for the relative dynamics \cite{SFF}}
 	\label{fig:rel_dyn}
 \end{figure} 
 Therefore, the vector position from the Earth to the fisrt satellite and the second satellite can be expressed in this frame:
@@ -152,10 +152,10 @@ The relative equation of motion can be writen as follows:
 \begin{equation}
 \left\{
 \begin{aligned}
-& \ddot{x} - 2\dot{y}w - (y + y^{*})\dot{w} - (x + x^{*})w^2 = \\
-&-(x + x^{*})\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y^{*})w) + \frac{\Delta F_{dist,x}}{m}\\
+& \ddot{x} - 2\dot{y}w - (y + y^{\ast})\dot{w} - (x + x^{*})w^2 = \\
+&-(x + x^{*})\frac{\mu}{R^3} + \frac{u_1}{m} ||{\vec{\dot p_{1}}}|| \dot{R} - \frac{u_2}{m} ||{\vec{\dot p_{2}}}||(\dot{R} + \dot{x} - (y + y^{*})w) + \frac{\Delta F_{dist,x}}{m}\\
 &\ddot{y} + 2\dot{x}w + (x + x^{*})\dot{w} - (y + y^{*})w^2 =\\
-& -(y + y^{*})\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x^{*})w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+& -(y + y^{*})\frac{\mu}{R^3} + \frac{u_1}{m}||{\vec{\dot p_{1}}}||wR - \frac{u_2}{m}||{\vec{\dot p_{2}}}||(wR + (x + x^{*})w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 \end{aligned}
 \right.
 \label{eq:la21}
@@ -163,14 +163,14 @@ The relative equation of motion can be writen as follows:
 The derivation of these equations can be found in \appref{chap:B}.
 \subsubsection{Relative state space representation}
 Since the equations of relative motion that have been derived in \appref{chap:B} are not linear, a linearization is made around the operating point, $x^{*}$ and $y^{*}$, by introducing the states with a new variable as $s = [x \ \dot{x} \ y \ \dot{y}]^\mathsf{T}$. From the \eqref{eq:la21} and assuming that the radius is constant and the angular velocity equals to $w = \sqrt{\frac{\mu}{R^3}}$, a linearization of the system can be derived using some approximations. 
-Moreover, the norm of the velocity of both satellite is assumed to be equal and constant as $||\vec{\dot{p_1}}|| = ||\vec{\dot{p_2}}|| = C$, where $C=\sqrt{\frac{\mu}{R}}=\omega \ R$. Therefore, the nominal system is given by:
+Moreover, the norm of the velocity of both satellite is assumed to be equal and constant as $||{\vec{\dot p_{1}}}|| = ||{\vec{\dot p_{2}}}|| = C$, where $C=\sqrt{\frac{\mu}{R}}=\omega \ R$. Therefore, the nominal system is given by:
 \begin{equation}
 \left\{
 \begin{aligned}
-& \dot{s_1} = s_2 \\
-& \dot{s_2} = 2ws_4 - u_2\frac{y^{*}wC}{m} \\
-& \dot{s_3} = s_4 \\
-& \dot{s_4} = -2ws_2 - (u_2 - u_1)\frac{wRC}{m}
+& {\dot s_{1}} = s_2 \\
+& {\dot s_{2}} = 2ws_4 - u_2\frac{y^{*}wC}{m} \\
+& {\dot s_{3}} = s_4 \\
+& {\dot s_{4}} = -2ws_2 - \Big(u_2 - u_1 \Big) \frac{wRC}{m}
 \label{eq:statespaceassumption}  
 \end{aligned}
 \right.

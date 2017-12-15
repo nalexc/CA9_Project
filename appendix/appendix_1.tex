@@ -2,24 +2,24 @@
 The general Euler's rotation equation with three reaction wheels aligned on the satellite body axis are derived as
 %
 \begin{flalign}
-	{I_{1} \dot{\omega_{1}}} ={(I_{2}-I_{3})\omega_{2}\omega_{3}+N_{1}-\omega_{2}h_{3}+\omega_{3}h_{2}}
+	{I_{1}  {\dot \omega_{1}}} ={(I_{2}-I_{3})\omega_{2}\omega_{3}+N_{1}-\omega_{2}h_{3}+\omega_{3}h_{2}}
 	\label{eq:angularmomentum2Appedix1}
 \end{flalign}
 %
 \begin{flalign}
-	{I_{2} \dot{\omega_{2}}} ={(I_{3}-I_{1})\omega_{1}\omega_{3}+N_{2}-\omega_{3}h_{1}+\omega_{1}h_{3}}
+	{I_{2}  {\dot \omega_{2}}} ={(I_{3}-I_{1})\omega_{1}\omega_{3}+N_{2}-\omega_{3}h_{1}+\omega_{1}h_{3}}
 	\label{eq:angularmomentum2Appedix2}
 \end{flalign}  
 %
 \begin{flalign}
-	{I_{3} \dot{\omega_{3}}} ={(I_{1}-I_{2})\omega_{1}\omega_{2}+N_{3}-\omega_{1}h_{2}+\omega_{2}h_{1}}
+	{I_{3}  {\dot \omega_{3}}} ={(I_{1}-I_{2})\omega_{1}\omega_{2}+N_{3}-\omega_{1}h_{2}+\omega_{2}h_{1}}
 	\label{eq:angularmomentum2Appedix3}
 \end{flalign}
 %
 The equation in compact form has been written as 
 %
 \begin{flalign}
-	{\dot{\omega}} ={-\underline I_{s}^{-1}\underline S(\omega)\underline I_{s}^{-1}\vec{\omega}-\underline I_{s}^{-1}\underline S(\omega)\vec {h_{tot}}-\underline I_{s}^{-1}\vec {\dot{h}_{(mw)}}+\underline I_{s}^{-1}\vec {N_{tot}}}
+	{\dot{\omega}} ={-\underline I_{s}^{-1}\underline S(\omega)\underline I_{s}^{-1}\vec{\omega}-\underline I_{s}^{-1}\underline S(\omega)\vec {h_{tot}}-\underline I_{s}^{-1}\vec {\dot{h}_{mw}}+\underline I_{s}^{-1}\vec {N_{tot}}}
 	\label{eq:angularmomentum2Appedix4}
 \end{flalign}
 %
@@ -36,7 +36,7 @@ where $\underline S(\omega)$ is the skew symmetric matrix given by
 	\label{eq:skewsymmetricmatrix}
 \end{flalign}
 %
-and the angular momentum of the reaction wheels as $\vec h_{tot}=[h_1 \ h_2 \ h_3]^{T}$.
+and the angular momentum of the reaction wheels as $\vec h_{mw}=[h_1 \ h_2 \ h_3]^{T}$.
 \subsection{Inertia matrix}
 %
 The inertia matrix for a solid cuboid of height $z$ , width $y$, and depth $x$, amd mass $m_{i}$ with respect the center of mass is given by 
