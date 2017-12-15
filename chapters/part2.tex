@@ -467,7 +467,7 @@ Assuming a lyapunov candidate function as
 \end{flalign}
 the time derivative of the lyapunov fuction can be written as
 \begin{flalign}
-	\dot V = \dot{s^{T}}s+s^{T}\dot{s}
+	\dot V = \frac{1}{2}(\dot{s^{T}}s+s^{T}\dot{s})
 	\label{eq:lyap1}
 \end{flalign}
 In order to prove stability it has to be shown that $\dot {V} <0 $ $\forall s\neq0$ this is equal by showing 
@@ -485,30 +485,24 @@ the \eqref{eq:slidingvar} is substitute
 and using the \eqref{eq:le} for $\vec{\dot{\tilde{\omega}}}$ the \eqref{eq:lyap3} becomes
 %
 \begin{flalign}
-	\dot V = s^{T}[-\underline I_{s}^{-1}({\underline S(\vec \omega)\underline I_{s}\vec \omega+\underline S(\vec \omega)\vec h_{mw}+\vec N_{mw}-\vec N_{dis}}-I_{s}\dot{\bar{\omega}})]+I_{s}F\vec{\dot{\tilde{q}}} + u 
+	\dot V = s^{T}\underline I_{s}^{-1}(-{\underline S(\vec \omega)\underline I_{s}\vec \omega-\underline S(\vec \omega)\vec h_{mw}-\vec N_{mw}+\vec N_{dis}}-I_{s}\dot{\bar{\omega}}+I_{s}F\vec{\dot{\tilde{q}}})
 	\label{eq:lyap4}
 \end{flalign}
 %
 where $\bar{\omega}$ is the desired angular velocity. Choosing o control law as
 %
 \begin{flalign}
-	u = {\underline S(\vec \omega)\underline I_{s}\vec \omega+\underline S(\vec \omega)\vec h_{mw}+\vec N_{mw}-\vec N_{dis}}-I_{3\times3}\dot{\bar{\omega}}-I_{s}F\vec{\dot{\tilde{q}}} -I_{s}{\lambda sign(s)}
+	\vec{ N_{mw}} = -\underline S(\vec \omega)\underline I_{s}\vec \omega-\underline S(\vec \omega)\vec h_{mw}-\underline I_s\dot{\omega}-I_{s}F\vec{\dot{\tilde{q}}} -I_{s}{\lambda sign(s)}
 	\label{eq:controllaw}
 	\end{flalign}
 %
 the \eqref{eq:lyap4} is written as
 %
 \begin{flalign}
-	\dot V = -s^{T}\underline I_{s}^{-1}(-I_{s}\dot{\bar{\omega}}-I_{s}{\lambda sign(s)}) 
+	\dot V = -s^{T}\underline (\dot{\tilde{\omega}} + \lambda sign(s) - \vec{N}_{dis}) 
 	\label{eq:lyap5}
 \end{flalign}
 %
-using the notation $\vec{\bar{\omega}} = \vec{\omega}  -\vec{\tilde{\omega}} $ and re-arranging it is obtained
-%
-\begin{flalign}
-	\dot V = -s^{T}(\dot{\tilde{\omega}}+{\lambda sign(s)}) 
-	\label{eq:lyap6}
-\end{flalign}
-%
-Choosing $\lambda > {{\dot{\tilde{\omega}}}_{max}} $ the condition $\dot {V} <0 $ is satisfied.
+
+Choosing $\lambda > ||\dot{\tilde{\omega}}_{max}|| + ||\vec{N}_{dis}|| $, the condition $\dot {V} <0 $ is satisfied.
 \subsubsection{ Sliding Mode Control- simulation}
