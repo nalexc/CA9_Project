@@ -446,18 +446,18 @@ where $\vec{q_{\bar{\omega}}} = \bar{\omega_{1}}*i +  \bar{\omega_{2}}*j + \bar{
  	s = F\vec{\tilde{q}} +\vec{\tilde{\omega}}
  	\label{eq:slidingvar}
  \end{flalign}
-where $F = D*diag[1 \ 1  \ 1]$ is positive definite. The angular velocity error can be written as $\vec{\tilde{\omega}} = \vec{\omega}  -\vec{\bar{\omega}} $. Therefore, when s = $\vec{0}$, $\vec{ \tilde{\omega} } = -D*\vec{ \tilde{q}_{1:3}}$ and thus the time derivative of the real part of the error quaternion is computed from the equation \ref{eq:time_deri}:
+where $F = d*diag[1 \ 1  \ 1]$ is positive definite. The angular velocity error can be written as $\vec{\tilde{\omega}} = \vec{\omega}  -\vec{\bar{\omega}} $. Therefore, when s = $\vec{0}$, $\vec{ \tilde{\omega} } = -d*\vec{ \tilde{q}_{1:3}}$ and thus the time derivative of the real part of the error quaternion is computed from the equation \ref{eq:time_deri}:
 \begin{flalign}
 	\dot{\tilde{q}}_{4} &= -\frac{1}{2} \vec{\tilde{\omega}} \cdot \vec{  \tilde{q}_{1:3}} \\
-	&= \frac{D}{2}||\vec{\tilde{q}}_{1:3}||^2 \\
-	&= \frac{D}{2} (1 - \tilde{q}_4^2)
+	&= \frac{d}{2}||\vec{\tilde{q}}_{1:3}||^2 \\
+	&= \frac{d}{2} (1 - \tilde{q}_4^2)
 	\label{eq:dq_4}
 \end{flalign} 
-According to equation \ref{eq:dq_4}, $\vec{\tilde{q}}$ will converge to $[0; 0; 0; 1]$ and $a$ can be designed by trial and error to have the desired convergence. The behaviour of $\tilde{q}_4$ with $D$ equal to 0.035 is represented in the \figref{fig:dq4}. 
+According to equation \ref{eq:dq_4}, $\vec{\tilde{q}}$ will converge to $[0; 0; 0; 1]$ and $d$ can be designed by trial and error to have the desired convergence. The behaviour of $\tilde{q}_4$ with $d$ equal to 0.035 is represented in the \figref{fig:dq4}. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/design_D}
-	\caption{$\tilde{q}_4$ in function of time with D = 0.035}
+	\caption{$\tilde{q}_4$ in function of time with d = 0.035}
 	\label{fig:dq4}
 \end{figure}  
 Assuming a lyapunov candidate function as
@@ -479,6 +479,36 @@ In order to prove stability it has to be shown that $\dot {V} <0 $ $\forall s\ne
 the \eqref{eq:slidingvar} is substitute 
 %
 \begin{flalign}
-	\dot V = s^{T}(F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega_{e}}}) 
+	\dot V = s^{T}(F\vec{\dot{\tilde{q}}} +\vec{\dot{\tilde{\omega}}}) 
 	\label{eq:lyap3}
 \end{flalign}
+and using the \eqref{eq:le} for $\vec{\dot{\tilde{\omega}}}$ the \eqref{eq:lyap3} becomes
+%
+\begin{flalign}
+	\dot V = s^{T}[-\underline I_{s}^{-1}({\underline S(\vec \omega)\underline I_{s}\vec \omega+\underline S(\vec \omega)\vec h_{mw}+\vec N_{mw}-\vec N_{dis}}-I_{s}\dot{\bar{\omega}})]+I_{s}F\vec{\dot{\tilde{q}}} + u 
+	\label{eq:lyap4}
+\end{flalign}
+%
+where $\bar{\omega}$ is the desired angular velocity. Choosing o control law as
+%
+\begin{flalign}
+	u = {\underline S(\vec \omega)\underline I_{s}\vec \omega+\underline S(\vec \omega)\vec h_{mw}+\vec N_{mw}-\vec N_{dis}}-I_{3\times3}\dot{\bar{\omega}}-I_{s}F\vec{\dot{\tilde{q}}} -I_{s}{\lambda sign(s)}
+	\label{eq:controllaw}
+	\end{flalign}
+%
+the \eqref{eq:lyap4} is written as
+%
+\begin{flalign}
+	\dot V = -s^{T}\underline I_{s}^{-1}(-I_{s}\dot{\bar{\omega}}-I_{s}{\lambda sign(s)}) 
+	\label{eq:lyap5}
+\end{flalign}
+%
+using the notation $\vec{\bar{\omega}} = \vec{\omega}  -\vec{\tilde{\omega}} $ and re-arranging it is obtained
+%
+\begin{flalign}
+	\dot V = -s^{T}(\dot{\tilde{\omega}}+{\lambda sign(s)}) 
+	\label{eq:lyap6}
+\end{flalign}
+%
+Choosing $\lambda > {{\dot{\tilde{\omega}}}_{max}} $ the condition $\dot {V} <0 $ is satisfied.
+\subsubsection{ Sliding Mode Control- simulation}
