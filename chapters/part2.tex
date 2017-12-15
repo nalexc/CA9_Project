@@ -420,7 +420,7 @@ The sliding mode controller brings the system states to a designed manifold or a
 %
 The sliding variable can be written in terms of the signal deviation as derived in \eqref{eq:smallsignal}.The quaternion error can be written as 
 \begin{flalign}
-	 \vec{\tilde{q_{e}}} = \vec{\bar{q}}^{-1} \otimes \vec{q} 
+	 \vec{\tilde{q}} = \vec{\bar{q}}^{-1} \otimes \vec{q} 
 	 =
 	\begin{bmatrix}
 		q_{4r} & q_{3r}& -q_{2r}& q_{1r}\\
@@ -434,47 +434,26 @@ The sliding variable can be written in terms of the signal deviation as derived 
 	\label{eq:quat}
 \end{flalign}
 %
-where $q_{r}$ represents the quaternion reference and $q$ the measured quaternion. The rate of change of quaternion from \Eqref{eq:le} can be  written as 
-%
+where $\vec{\bar{q}}$ represents the quaternion reference and $\vec{q}$ the measured quaternion. The time derivative of the error quaternion is given by[master thesis]:
 \begin{flalign}
-	\vec{\dot{\tilde{q_{e}}}} 
-	=
-	-\frac{1}{2}
-	\begin{bmatrix}
-		0& \omega_{3}& - \omega_{2}& \omega_{1} \\
-	-\omega_{3}& 0&\omega_{1}& \omega_{2}  \\ 
-	\omega_{2}& -\omega_{1}&0& \omega_{3} \\
-	-\omega_{1}& -\omega_{2}& -\omega_{3}&0
-	\end{bmatrix} 	
-	\begin{bmatrix}
-		q_{1e} \\ q_{2e}\\ q_{3e}\\ q_{4e}
-	\end{bmatrix}
-	\label{eq:quater}
+\vec{\dot{\tilde{q}}} = \frac{1}{2}(-\vec{q_{\bar{\omega}}} \otimes \vec{\tilde{q}} + \vec{\tilde{q}} \otimes \vec{q_{\bar{\omega}}} + \vec{\tilde{q}} \otimes \vec{q_{\tilde{\omega}}} )
+\label{eq:time_deri}
 \end{flalign}
-where $[\omega_{1} \ \omega_{2} \ \omega_{3} ]^{T}$ is the angular velocity as seen in the satellite frame and $[q_{1e} ..q_{4e}]$ is the quaternion error.
- For the representation of the satellite motion on the sliding variable only the vector part of the quaternion is used. Since only the vector part is used \Eqref{eq:le} can be written:
- %
+%
+
+where $\vec{q_{\bar{\omega}}} = \bar{\omega_{1}}*i +  \bar{\omega_{2}}*j + \bar{\omega_{1}}*k + 0$ and $\vec{q_{\tilde{\omega}}} = \tilde{\omega_{1}}*i +  \tilde{\omega_{2}}*j + \tilde{\omega_{1}}*k + 0$. By choosing the sliding manifold variable to be equal:  
  \begin{flalign}
- 	\vec{\dot{\tilde{q_{e}}}} 
- 	=
- 	\frac{1}{2}
- 	\begin{bmatrix}
- 		0 & -\omega_{3}& \omega_{2}\\
- 		\omega_{3} & 0& -\omega_{1} \\
- 		-\omega_{2} & \omega_{1} & 0\\
- 	\end{bmatrix} 	
- 	\begin{bmatrix}
- 		q_{1e} \\ q_{2e}\\ q_{3e}\\ 
- 	\end{bmatrix}
- 	\label{eq:quatermodified}
- \end{flalign}
- %
-  The sliding variable can now been written as
- \begin{flalign}
- 	s = F\vec{\tilde{q_{e}}} +\vec{\tilde{\omega_{e}}}= 0
+ 	s = F\vec{\tilde{q}} +\vec{\tilde{\omega}}
  	\label{eq:slidingvar}
  \end{flalign}
-where $F = 0.005diag[1 1 1]$ is positive definite and the tilde values represent the quaternion error and the angular velocity error respectively. The angular velocity error can be written as $\vec{\tilde{\omega_{e}}} = \vec{\omega_{cur}}  -\vec{\omega_{obj}} $ Assuming a lyapunov candidate function as
+where $F = a* diag[1 \ 1  \ 1]$ is positive definite. The angular velocity error can be written as $\vec{\tilde{\omega}} = \vec{\omega}  -\vec{\bar{\omega}} $. Therefore, on the manifold, $\vec{ \tilde{\omega} } = -a*\vec{ \tilde{q} }$ and thus the time derivatime of the real part of the error quaternion is computed from the equation \ref{eq:time_deri}:
+\begin{flalign}
+	\dot{q}_{4} &= -\frac{1}{2} \vec{\tilde{\omega}} \cdot \vec{  \tilde{q}_{1:3}} \\
+	&= a||\vec{\tilde{q}}_{1:3}||^2 \\
+	&= a(1 - \tilde{q}_4^2)
+\end{flalign}
+\\
+Assuming a lyapunov candidate function as
 \begin{flalign}
 	V = \frac{1}{2}s^{T}s
 	\label{eq:lyap}
