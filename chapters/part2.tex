@@ -300,14 +300,14 @@ and $ \alpha \in [0,1]$.
 The \figref{fig:path_alpha} shows $f(\vec{ ^s_o q})$ as a function of $\alpha$:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/path_f.eps}
+	\includegraphics[width=0.8\linewidth]{figures/path_f.eps}
 	\caption{Perpendicular area in function of rotations around $y$ and $z$ axes}
 	\label{fig:path_alpha}
 \end{figure} 
 This function can be approximated by a polynomial of degree two. The relative error of this approximation represented in the \figref{fig:rel_err} is small and thus, the approximation by a polynomial of degree two can be used. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/rel_err.eps}
+	\includegraphics[width=0.8\linewidth]{figures/rel_err.eps}
 	\caption{Relative error of the fitting approximation }
 	\label{fig:rel_err}
 \end{figure}
@@ -503,7 +503,7 @@ Sliding mode control suffers from chattering around the manifold. In order to re
 %
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/sat_tanh.eps}
+	\includegraphics[width=0.8\linewidth]{figures/sat_tanh.eps}
 	\caption{ saturation and hyperbolic tangent functions}
 	\label{fig:sat_tanh.eps}
 \end{figure} 
@@ -512,7 +512,30 @@ From the \figref{fig:rel_err}, it can be seen that the relative error due to the
 %
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/design_eps.eps}
+	\includegraphics[width=0.8\linewidth]{figures/design_eps.eps}
 	\caption{Design of $\epsilon$}
 	\label{fig:design_eps}
 \end{figure} 
+\section{Simulation and results}
+The simulation of the state feedback control and sliding mode control are shown in the figure \ref{fig:simul_sta} and figure \ref{fig:simul_sliding} respectively. At the beginning, the drag force reference is chosen to be equal to the minimum and after 500 seconds alters to the maximum. 
+\begin{table}[H]
+\begin{minipage}[b]{0.49\linewidth}
+	\centering
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/test_state_feedback.eps}
+		\caption{ Simulation of the state feedback control}
+		\label{fig:simul_sta}
+	\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.49\linewidth}
+	\centering
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/test_sliding.eps}
+		\caption{Simulation of the sliding mode control}
+		\label{fig:simul_sliding}
+	\end{figure}
+\end{minipage}
+\end{table}
+It can be seen that, in the simulation of the state feedback control, the error increases sometimes due to the fact that the linear controller does not take into account the non-linearities of the system. However, in the simulation of sliding mode control, the error quaternion converges as expected.
