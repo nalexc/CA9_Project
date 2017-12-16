@@ -55,11 +55,10 @@
 \contentsline {subsection}{Stability}{34}{subsection*.68}
 \contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{34}{subsection*.70}
 \contentsline {section}{\numberline {5.4}Simulation and results}{39}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusion}{41}{chapter.6}
-\contentsline {subsection}{Future work}{41}{subsection*.78}
-\contentsline {chapter}{\numberline {7} Implementation and test}{42}{chapter.7}
-\contentsline {chapter}{\numberline {8}Acceptance test}{43}{chapter.8}
-\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{45}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{45}{subsection*.79}
-\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{46}{appendix.B}
-\contentsline {chapter}{\numberline {C}Angular velocity equations}{49}{appendix.C}
+\contentsline {chapter}{\numberline {6}Acceptance test}{41}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}
+\contentsline {subsection}{Future work}{42}{subsection*.78}
+\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{43}{appendix.A}
+\contentsline {subsection}{Inertia matrix}{43}{subsection*.79}
+\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{44}{appendix.B}
+\contentsline {chapter}{\numberline {C}Angular velocity equations}{47}{appendix.C}
