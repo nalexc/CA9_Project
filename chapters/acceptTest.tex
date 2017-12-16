@@ -1,3 +1,14 @@
 \chapter{Acceptance test} \label{chap:acceptanceTest}
 The system is tested to see if it fulfills the requirements put up (\chapref{chap:requirements}).
 
+\subsection{The formation shall be able to maintain a given angle within 45$^{\circ}$.}
+%
+The requirement was to test if the system of satellites can create and maintain a certain distance between them which is measured with an angle of 45$^{\circ}$ from the center of the earth using the drag force. A linear quadratic controller has been designed. It is assumed that the satellites can turn instantly to the direction of the desired drag force. So the output of the controller can be seen as the applied drag force to the satellite.        
+%
+The satellites are assumed to start from the same place. Two cases have been tested, a global algorithm where the formation converge to $u_{min}$ and distributed algorithm where the formation converge to $u_medium$. In both cases the controller reacts well even if the convergence in the global algorithm is faster.
+%
+In conclusion the requirement is fulfilled in both cases since the system is able to create an maintain a constant angle.  
+\subsection{Each satellite shall be able to change its orientation.}
+%
+
+
