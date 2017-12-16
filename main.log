@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  16 DEC 2017 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  16 DEC 2017 16:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -4210,8 +4210,14 @@ File: figures/sat_tanh-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/sat_tanh-eps-converted-to.pdf used on input li
 ne 506.
 (pdftex.def)             Requested size: 318.66948pt x 239.00726pt.
-) (chapters/conclusion.tex [37 <./figures/s-eps-converted-to.pdf>] [38 <./figur
-es/sat_tanh-eps-converted-to.pdf>]
+ [37 <./figures/s-eps-converted-to.pdf>]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 511.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 511.
+
+) (chapters/conclusion.tex [38 <./figures/sat_tanh-eps-converted-to.pdf>]
 Chapter 6.
 ) [39
 
@@ -4225,7 +4231,7 @@ Appendix A.
 Appendix B.
 [42
 
-] <figures/operating_point.jpg, id=753, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=754, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
@@ -4298,9 +4304,9 @@ lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmsy8.pfb>
-Output written on main.pdf (51 pages, 3380009 bytes).
+Output written on main.pdf (51 pages, 3380729 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
+ 934 PDF objects out of 1000 (max. 8388607)
  278 named destinations out of 1000 (max. 500000)
  396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
