@@ -499,7 +499,12 @@ Therefore, with $\lambda > ||\dot{\tilde{\omega}}_{max}|| + ||\vec{N}_{dis}|| $,
 	\label{fig:s}
 \end{figure}  
 %
-Sliding mode control suffers from chattering around the manifold. In order to reduce chattering the $sign$ function is replaced with the hyperbolic tangent function $tanh(\frac{s}{\epsilon})$. The same result could be achieved with saturation function $sat(\frac{s}{\epsilon})$ but with saturation function the simulation of the system is very slow due to singularities.  
+Sliding mode control suffers from chattering around the manifold. In order to reduce chattering the $sign$ function is replaced with the hyperbolic tangent function $tanh(\frac{s}{\epsilon})$. The same result could be achieved with saturation function $sat(\frac{s}{\epsilon})$ but with saturation function the simulation of the system is very slow due to singularities. The difference between $sat$ and $tanh$ is seen in the \figref{fig:sat_tanh.eps} 
 %
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/sat_tanh.eps}
+	\caption{ saturation and hyperbolic tangent functions}
+	\label{fig:sat_tanh.eps}
+\end{figure} 
 %

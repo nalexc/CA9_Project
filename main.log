@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  16 DEC 2017 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.5)  16 DEC 2017 16:18
 entering extended mode
 **./main.tex
 (main.tex
@@ -4192,28 +4192,47 @@ File: figures/s-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/s-eps-converted-to.pdf used on input line 497.
 
 (pdftex.def)             Requested size: 318.66948pt x 239.00726pt.
- [36 <./figures/design_D-eps-converted-to.pdf>]) (chapters/conclusion.tex [37 <
-./figures/s-eps-converted-to.pdf>]
+ [36 <./figures/design_D-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/sat_tanh.eps>
+(epstopdf)                    date: 2017-12-16 16:13:17
+(epstopdf)                    size: 37033 bytes
+(epstopdf)             Output file: <figures/sat_tanh-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-12-16 16:17:11
+(epstopdf)                    size: 9119 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/sat_tanh-eps-conver
+ted-to.pdf figures/sat_tanh.eps>
+(epstopdf)             \includegraphics on input line 506.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/sat_tanh-eps-converted-to.pdf, id=695, 421.575pt x 316.18124pt>
+File: figures/sat_tanh-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/sat_tanh-eps-converted-to.pdf>
+Package pdftex.def Info: figures/sat_tanh-eps-converted-to.pdf used on input li
+ne 506.
+(pdftex.def)             Requested size: 318.66948pt x 239.00726pt.
+) (chapters/conclusion.tex [37 <./figures/s-eps-converted-to.pdf>] [38 <./figur
+es/sat_tanh-eps-converted-to.pdf>]
 Chapter 6.
-) [38
+) [39
+
+] [40
 
 ] (appendix/appendix_1.tex
 Appendix A.
-) (appendix/code.tex [39
-
+) (appendix/code.tex [41
 
 ]
 Appendix B.
-[40
+[42
 
-] <figures/operating_point.jpg, id=737, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=753, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [41 <./figures/operating_point.jpg>])
-(appendix/appendix_3.tex [42]
+ [43 <./figures/operating_point.jpg>])
+(appendix/appendix_3.tex [44]
 Appendix C.
 )
 \tf@thm=\write8
@@ -4221,7 +4240,7 @@ Appendix C.
 
  
 AED: lastpage setting LastPage
-[43
+[45
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
@@ -4248,46 +4267,40 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51544 strings out of 493328
- 1061037 string characters out of 3139116
- 1693782 words of memory out of 3000000
- 53941 multiletter control sequences out of 15000+200000
+ 51549 strings out of 493328
+ 1061221 string characters out of 3139116
+ 1693712 words of memory out of 3000000
+ 53944 multiletter control sequences out of 15000+200000
  124572 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,24n,92p,10413b,1827s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.78} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{page.45} has been referenced but does not exist, re
-placed by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files
-/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-ex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fi
-les/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmsy8.pfb>
-Output written on main.pdf (49 pages, 3370638 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program 
+Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmm
+i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmsy8.pfb>
+Output written on main.pdf (51 pages, 3380009 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 277 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 933 PDF objects out of 1000 (max. 8388607)
+ 278 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
