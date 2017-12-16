@@ -54,10 +54,9 @@
 \contentsline {subsubsection}{Pole Placement}{34}{subsubsection*.67}
 \contentsline {subsection}{Stability}{34}{subsection*.68}
 \contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{34}{subsection*.70}
-\contentsline {subsubsection}{ Sliding Mode Control- simulation}{37}{subsubsection*.73}
 \contentsline {chapter}{\numberline {6}Conclusion}{38}{chapter.6}
-\contentsline {subsection}{Future work}{38}{subsection*.74}
+\contentsline {subsection}{Future work}{38}{subsection*.73}
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{39}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{39}{subsection*.75}
+\contentsline {subsection}{Inertia matrix}{39}{subsection*.74}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{40}{appendix.B}
 \contentsline {chapter}{\numberline {C}Angular velocity equations}{43}{appendix.C}

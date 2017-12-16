@@ -498,4 +498,8 @@ Therefore, with $\lambda > ||\dot{\tilde{\omega}}_{max}|| + ||\vec{N}_{dis}|| $,
 	\caption{s in function of time with c = $10^{-3}$}
 	\label{fig:s}
 \end{figure}  
-\subsubsection{ Sliding Mode Control- simulation}
+%
+Sliding mode control suffers from chattering around the manifold. In order to reduce chattering the $sign$ function is replaced with the hyperbolic tangent function $tanh(\frac{s}{\epsilon})$. The same result could be achieved with saturation function $sat(\frac{s}{\epsilon})$ but with saturation function the simulation of the system is very slow due to singularities.  
+%
+
+%
