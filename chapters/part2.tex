@@ -503,9 +503,16 @@ Sliding mode control suffers from chattering around the manifold. In order to re
 %
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/sat_tanh.eps}
+	\includegraphics[width=0.9\linewidth]{figures/sat_tanh.eps}
 	\caption{ saturation and hyperbolic tangent functions}
 	\label{fig:sat_tanh.eps}
 \end{figure} 
 %
-In order to choose the value of $\epsilon$ the maximum quaternion error is considered. From the \figref{fig:rel_err} can be seen that the relative error from the polynomial fitting is $- 0,003\textless\tilde{q}\textless0.003$ 
+From the \figref{fig:rel_err}, it can be seen that the relative error due to the polynomial fitting is about $10^{-3}$. Therefore, a choice of a smaller value for the maximum error quaternion will not influence the total error. Thus, the maximum acceptable error quaternion is chosen to be equal to $10^{-3}$. Consequently, the maximum error on $s$ is equal to $d*10^{-3} = 3.5*10^{-5}$. $\epsilon$ is designed by trial and error to set the boundaries of $s$ inside this maximum acceptable error for the sliding mode variable. The figure \ref{fig:design_eps} shows s in function of time with $\epsilon = 2*10^{-3}$.  
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/design_eps.eps}
+	\caption{Design of $\epsilon$}
+	\label{fig:design_eps}
+\end{figure} 
