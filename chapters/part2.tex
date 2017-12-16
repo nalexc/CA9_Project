@@ -490,7 +490,12 @@ the \eqref{eq:lyap4} is written as
 	\dot V = -s^{T}\underline (-\dot{\tilde{\omega}} + \lambda sign(s) - \vec{N}_{dis}) 
 	\label{eq:lyap5}
 \end{flalign}
-%
 
-Choosing $\lambda > ||\dot{\tilde{\omega}}_{max}|| + ||\vec{N}_{dis}|| $, the condition $\dot {V} <0 $ is satisfied.
+Therefore, with $\lambda > ||\dot{\tilde{\omega}}_{max}|| + ||\vec{N}_{dis}|| $, the condition $\dot {V} <0 $ is satisfied. Thus, $\lambda$ is chosen to be equal to $||\vec{\dot{\tilde{\omega}}}|| + c$ where $c$s is designed by trial and error to have the desired behaviour of the sliding manifold s as represented in the figure \ref{fig:s}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/s}
+	\caption{s in function of time with c = $10^{-3}$}
+	\label{fig:s}
+\end{figure}  
 \subsubsection{ Sliding Mode Control- simulation}
