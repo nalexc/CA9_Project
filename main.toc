@@ -59,8 +59,7 @@
 \contentsline {subsection}{The formation shall be able to maintain a given angle within 45$^{\circ }$.}{41}{subsection*.78}
 \contentsline {subsection}{Each satellite shall be able to change its orientation.}{41}{subsection*.79}
 \contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}
-\contentsline {subsection}{Future work}{42}{subsection*.80}
 \contentsline {chapter}{\numberline {A}Derivation of equation of motion }{43}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{43}{subsection*.81}
+\contentsline {subsection}{Inertia matrix}{43}{subsection*.80}
 \contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{44}{appendix.B}
 \contentsline {chapter}{\numberline {C}Angular velocity equations}{47}{appendix.C}

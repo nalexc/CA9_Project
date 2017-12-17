@@ -1,4 +1,8 @@
 \chapter{Conclusion}
+The overall objective of this project was to consider more than one satellite flying in formation with the purpose of pointing towards a target. In order to obtain this goal, two controllers were designed: one for controlling the angle between satellites using the drag force and another one for attitude control in order to be able to rotate the satellite to the desired orientation.
 
-\subsection{Future work}
+First, for designing a controller for the angle, the relative dynamics between two satellites are analyzed. Therefore, an LQR controller is implemented to control the angle between two satellites. The simulations showed that the LQR performed properly. Additionally, two algorithms for formation control are designed, a global and distributed algorithm. Both algorithms are working as intended, where all satellites converged to the desired angle of 45$^{\circ}$, with the mention that in the distributed algorithm case the convergence rate will be slower compared with the global algorithm.
 
+Afterwards, two control methods to obtain the desired orientation of the satellite has been implemented. The first method is using a state feedback control which is a linear controller. For implementing this controller the equation of motion need to be linearized. The second method is using a non linear control method called sliding mode control. The results from sliding mode control showed that the error quaternion converged faster compared with the state feedback control, but in this case the state feedback is deemd to be more suitable. Besides, the sliding mode convergence is faster, but the downside is that it needs more time to run due to the control law which is more complex. 
+
+In conclusion, some the acceptance tests have been made to establish that the requirements were accomplish. 
