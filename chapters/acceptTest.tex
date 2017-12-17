@@ -10,5 +10,5 @@ The satellites are assumed to start from the same place. Two cases have been tes
 In conclusion the requirement is fulfilled in both cases since the system is able to create an maintain a constant angle.  
 \subsection{Each satellite shall be able to change its orientation.}
 %
-
+The requirement was to test if the system can change its orientation such that the surface of the satellite which is subjected to the drag force is the desired in order to keep the formation with constant angle between them. At this part the satellites are not assumed that can turn instantly, instead the desired drag force is a function of the quaternions that represent the rotation. In order for the satellite to turn, momentum wheels are used. The outcome of the controller is the desired torque the will be fed to the wheels. Two controllers are designed, a linear similar to PD and a non-linear sliding mode regulator. In both cases the controllers are performed well and the error of quaternion and angular velocity are converge to zero. In conclusion the requirement is fulfilled since the system is able to orient to the desired reference and able to maintain its orientation. 
 
