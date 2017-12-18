@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  18 DEC 2017 01:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  18 DEC 2017 02:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4008,13 +4008,13 @@ da1-eps-converted-to.pdf> <./figures/distributed_algo-eps-converted-to.pdf>]
 Chapter 5.
 [23
 
-] [24] [25] <figures/ggt.jpeg, id=600, 1620.0525pt x 1332.98pt>
+] [24] [25] [26] <figures/ggt.jpeg, id=613, 1620.0525pt x 1332.98pt>
 File: figures/ggt.jpeg Graphic file (type jpg)
 
 <use figures/ggt.jpeg>
-Package pdftex.def Info: figures/ggt.jpeg used on input line 208.
+Package pdftex.def Info: figures/ggt.jpeg used on input line 209.
 (pdftex.def)             Requested size: 273.14923pt x 224.73236pt.
- [26] [27 <./figures/ggt.jpeg>]
+ [27 <./figures/ggt.jpeg>] [28]
 Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 131423 bytes
@@ -4023,19 +4023,19 @@ Package epstopdf Info: Source file: <figures/perp_area.eps>
 (epstopdf)                    size: 136687 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/perp_area-eps-conv
 erted-to.pdf figures/perp_area.eps>
-(epstopdf)             \includegraphics on input line 270.
+(epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/perp_area-eps-converted-to.pdf, id=634, 421.575pt x 316.18124pt>
+<figures/perp_area-eps-converted-to.pdf, id=643, 421.575pt x 316.18124pt>
 File: figures/perp_area-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/perp_area-eps-converted-to.pdf>
 Package pdftex.def Info: figures/perp_area-eps-converted-to.pdf used on input l
-ine 270.
+ine 271.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 271.
- [28]
+(Font)              <5> on input line 272.
+ [29 <./figures/perp_area-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 34877 bytes
@@ -4044,17 +4044,16 @@ Package epstopdf Info: Source file: <figures/path_f.eps>
 (epstopdf)                    size: 14143 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/path_f-eps-convert
 ed-to.pdf figures/path_f.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 291.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/path_f-eps-converted-to.pdf, id=650, 421.575pt x 316.18124pt>
+<figures/path_f-eps-converted-to.pdf, id=663, 421.575pt x 316.18124pt>
 File: figures/path_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/path_f-eps-converted-to.pdf>
 Package pdftex.def Info: figures/path_f-eps-converted-to.pdf used on input line
- 290.
+ 291.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
- [29 <./figures/perp_area-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    date: 2017-12-02 10:23:17
 (epstopdf)                    size: 29244 bytes
@@ -4063,22 +4062,22 @@ Package epstopdf Info: Source file: <figures/rel_err.eps>
 (epstopdf)                    size: 51201 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/rel_err-eps-conver
 ted-to.pdf figures/rel_err.eps>
-(epstopdf)             \includegraphics on input line 297.
+(epstopdf)             \includegraphics on input line 298.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/rel_err-eps-converted-to.pdf, id=669, 421.575pt x 316.18124pt>
+<figures/rel_err-eps-converted-to.pdf, id=665, 421.575pt x 316.18124pt>
 File: figures/rel_err-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rel_err-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rel_err-eps-converted-to.pdf used on input lin
-e 297.
+e 298.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
  [30 <./figures/path_f-eps-converted-to.pdf>] [31 <./figures/rel_err-eps-conver
 ted-to.pdf>] [32]
 <figures/cs.jpeg, id=717, 1371.1225pt x 1264.725pt>
 File: figures/cs.jpeg Graphic file (type jpg)
  <use figures/cs.jpeg>
-Package pdftex.def Info: figures/cs.jpeg used on input line 396.
+Package pdftex.def Info: figures/cs.jpeg used on input line 397.
 (pdftex.def)             Requested size: 182.09486pt x 167.95157pt.
 
 [33 <./figures/cs.jpeg>]
@@ -4090,7 +4089,7 @@ Package epstopdf Info: Source file: <figures/design_D.eps>
 (epstopdf)                    size: 7446 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/design_D-eps-conve
 rted-to.pdf figures/design_D.eps>
-(epstopdf)             \includegraphics on input line 443.
+(epstopdf)             \includegraphics on input line 444.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/design_D-eps-converted-to.pdf, id=735, 479.7925pt x 316.18124pt>
@@ -4098,7 +4097,7 @@ File: figures/design_D-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/design_D-eps-converted-to.pdf>
 Package pdftex.def Info: figures/design_D-eps-converted-to.pdf used on input li
-ne 443.
+ne 444.
 (pdftex.def)             Requested size: 318.66948pt x 210.00218pt.
  [34]
 Package epstopdf Info: Source file: <figures/s.eps>
@@ -4109,14 +4108,14 @@ Package epstopdf Info: Source file: <figures/s.eps>
 (epstopdf)                    size: 7642 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/s-eps-converted-to
 .pdf figures/s.eps>
-(epstopdf)             \includegraphics on input line 493.
+(epstopdf)             \includegraphics on input line 494.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/s-eps-converted-to.pdf, id=754, 421.575pt x 316.18124pt>
 File: figures/s-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/s-eps-converted-to.pdf>
-Package pdftex.def Info: figures/s-eps-converted-to.pdf used on input line 493.
+Package pdftex.def Info: figures/s-eps-converted-to.pdf used on input line 494.
 
 (pdftex.def)             Requested size: 318.66948pt x 239.00726pt.
  [35 <./figures/design_D-eps-converted-to.pdf>]
@@ -4128,14 +4127,14 @@ Package epstopdf Info: Source file: <figures/sat_tanh.eps>
 (epstopdf)                    size: 11379 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/sat_tanh-eps-conve
 rted-to.pdf figures/sat_tanh.eps>
-(epstopdf)             \includegraphics on input line 502.
+(epstopdf)             \includegraphics on input line 503.
 Package epstopdf Info: Output file is already uptodate.
  <figures/sat_tanh-eps-converted-to.pdf, id=774, 421.575pt x 316.18124pt>
 File: figures/sat_tanh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/sat_tanh-eps-converted-to.pdf>
 Package pdftex.def Info: figures/sat_tanh-eps-converted-to.pdf used on input li
-ne 502.
+ne 503.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
  [36 <./figures/s-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/design_eps.eps>
@@ -4146,7 +4145,7 @@ Package epstopdf Info: Source file: <figures/design_eps.eps>
 (epstopdf)                    size: 9253 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/design_eps-eps-con
 verted-to.pdf figures/design_eps.eps>
-(epstopdf)             \includegraphics on input line 511.
+(epstopdf)             \includegraphics on input line 512.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/design_eps-eps-converted-to.pdf, id=791, 421.575pt x 316.18124pt>
@@ -4154,7 +4153,7 @@ File: figures/design_eps-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/design_eps-eps-converted-to.pdf>
 Package pdftex.def Info: figures/design_eps-eps-converted-to.pdf used on input 
-line 511.
+line 512.
 (pdftex.def)             Requested size: 364.19667pt x 273.15047pt.
  [37 <./figures/sat_tanh-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/test_state_feedback.eps>
@@ -4166,7 +4165,7 @@ to.pdf>
 (epstopdf)                    size: 11558 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/test_state_feedbac
 k-eps-converted-to.pdf figures/test_state_feedback.eps>
-(epstopdf)             \includegraphics on input line 522.
+(epstopdf)             \includegraphics on input line 523.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/test_state_feedback-eps-converted-to.pdf, id=807, 421.575pt x 316.1812
@@ -4174,10 +4173,10 @@ Package epstopdf Info: Output file is already uptodate.
 File: figures/test_state_feedback-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/test_state_feedback-eps-converted-to.pdf>
 Package pdftex.def Info: figures/test_state_feedback-eps-converted-to.pdf used 
-on input line 522.
+on input line 523.
 (pdftex.def)             Requested size: 245.38068pt x 184.03656pt.
 
-Overfull \hbox (22.30856pt too wide) in paragraph at lines 522--523
+Overfull \hbox (22.30856pt too wide) in paragraph at lines 523--524
  [][] 
  []
 
@@ -4190,17 +4189,17 @@ Package epstopdf Info: Source file: <figures/test_sliding.eps>
 (epstopdf)                    size: 12946 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/test_sliding-eps-c
 onverted-to.pdf figures/test_sliding.eps>
-(epstopdf)             \includegraphics on input line 531.
+(epstopdf)             \includegraphics on input line 532.
 Package epstopdf Info: Output file is already uptodate.
 <figures/test_sliding-eps-converted-to.pdf, id=808, 421.575pt x 316.18124pt>
 File: figures/test_sliding-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/test_sliding-eps-converted-to.pdf>
 Package pdftex.def Info: figures/test_sliding-eps-converted-to.pdf used on inpu
-t line 531.
+t line 532.
 (pdftex.def)             Requested size: 245.38068pt x 184.03656pt.
 
-Overfull \hbox (22.30856pt too wide) in paragraph at lines 531--532
+Overfull \hbox (22.30856pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
@@ -4216,27 +4215,23 @@ Chapter 7.
 
 ] [42
 
-] (./appendix/appendix_1.tex
+] (./appendix/code.tex
 Appendix A.
-) (./appendix/code.tex [43
+[43
 
-]
-Appendix B.
-[44
-
-] <figures/operating_point.jpg, id=888, 1038.88126pt x 549.05125pt>
+] <figures/operating_point.jpg, id=880, 1038.88126pt x 549.05125pt>
 File: figures/operating_point.jpg Graphic file (type jpg)
 
 <use figures/operating_point.jpg>
 Package pdftex.def Info: figures/operating_point.jpg used on input line 80.
 (pdftex.def)             Requested size: 341.43307pt x 180.44183pt.
- [45 <./figures/operating_point.jpg>])
-(./appendix/appendix_3.tex [46]
-Appendix C.
-) [47
+ [44 <./figures/operating_point.jpg>])
+(./appendix/appendix_3.tex [45]
+Appendix B.
+) [46
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 55.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 54.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -4246,17 +4241,23 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 AED: lastpage setting LastPage
-[48
+[47
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2C3CF13CB082240FB9016C3C4012A743;1756.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 2C3CF13CB082240FB9016C3C4012A743;1756
+(rerunfilecheck)             After:  3CC77034CC9F79C4AE2E5FF49F0FA2BD;1684.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -4265,44 +4266,56 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49915 strings out of 493014
- 1033628 string characters out of 6133351
- 1624958 words of memory out of 5000000
- 52282 multiletter control sequences out of 15000+600000
+ 49901 strings out of 493014
+ 1033434 string characters out of 6133351
+ 1624993 words of memory out of 5000000
+ 52276 multiletter control sequences out of 15000+600000
  138474 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,24n,92p,10411b,1769s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
-16/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/
-fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
-dvips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/l
-m-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
-mmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy7
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (54 pages, 3414311 bytes).
+ 57i,24n,92p,10411b,1749s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{equation.C.0.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.74} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{page.48} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{appendix.C} has been referenced but does not exist,
+ replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016
+/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/fo
+nts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dv
+ips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-
+ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmm
+i12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
+m/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/lm/lmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy7.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (53 pages, 3411202 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 930 compressed objects within 10 object streams
- 297 named destinations out of 1000 (max. 500000)
+ 1086 PDF objects out of 1200 (max. 8388607)
+ 925 compressed objects within 10 object streams
+ 292 named destinations out of 1000 (max. 500000)
  409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

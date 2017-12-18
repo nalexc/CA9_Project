@@ -50,10 +50,8 @@
 \contentsline {subsection}{Non linear Control Design - Sliding Mode Control }{33}{subsection*.63}
 \contentsline {section}{\numberline {5.4}Simulation and results}{38}{section.5.4}
 \contentsline {chapter}{\numberline {6}Acceptance test}{40}{chapter.6}
-\contentsline {subsection}{The formation shall be able to maintain a given angle within 45$^{\circ }$.}{40}{subsection*.71}
-\contentsline {subsection}{Each satellite shall be able to change its orientation.}{40}{subsection*.72}
+\contentsline {subsection}{1. The formation shall be able to maintain a given angle within 45$^{\circ }$.}{40}{subsection*.71}
+\contentsline {subsection}{2. Each satellite shall be able to change its orientation.}{40}{subsection*.72}
 \contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}
-\contentsline {chapter}{\numberline {A}Derivation of equation of motion }{43}{appendix.A}
-\contentsline {subsection}{Inertia matrix}{43}{subsection*.73}
-\contentsline {chapter}{\numberline {B}Derivation of relative dynamics equations}{44}{appendix.B}
-\contentsline {chapter}{\numberline {C}Angular velocity equations}{47}{appendix.C}
+\contentsline {chapter}{\numberline {A}Derivation of relative dynamics equations}{43}{appendix.A}
+\contentsline {chapter}{\numberline {B}Angular velocity equations}{46}{appendix.B}

@@ -128,6 +128,7 @@ The rate of change of angular momentum $\vec{\dot{h}_{mw}}$ is given by Newton's
 	{\vec{ \dot{h}_{rv}}} = \vec {N_{rw}}
 	\label{eq:rate of change}
 \end{flalign}
+\textbf{N.B.:} In this project, the focus will not be on desinging the magnetotorques and will be set to zero. Therefore, the reaction wheels will be assumed to not have any saturation.
 \subsection{Equation of motion} \label{subsec:eom} 
 The behaviour of the satellite attitude is described by the dynamic and kinematic equations, which give a non-linear state space representations.
 \begin{flalign}
@@ -500,16 +501,16 @@ Sliding mode control suffers from chattering around the manifold. In order to re
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/sat_tanh.eps}
-	\caption{ saturation and hyperbolic tangent functions}
+	\caption{ Saturation and hyperbolic tangent functions}
 	\label{fig:sat_tanh.eps}
 \end{figure} 
 %
-From the \figref{fig:rel_err}, it can be seen that the relative error due to the polynomial fitting is about $10^{-3}$. Therefore, a choice of a smaller value for the maximum error quaternion will not influence the total error. Thus, the maximum acceptable error quaternion is chosen to be equal to $10^{-3}$. Consequently, the maximum error on $s$ is equal to $d*10^{-3} = 3.5*10^{-5}$. $\epsilon$ is designed by trial and error to set the boundaries of $s$ inside this maximum acceptable error for the sliding mode variable. The figure \ref{fig:design_eps} shows s in function of time with $\epsilon = 2*10^{-3}$.  
+From the \figref{fig:rel_err}, it can be seen that the relative error due to the polynomial fitting is about $10^{-3}$. Therefore, a choice of a smaller value for the maximum error quaternion will not influence the total error. Thus, the maximum acceptable error quaternion is chosen to be equal to $10^{-3}$. Consequently, the maximum error on $\vec s$ is equal to $d*10^{-3} = 3.5*10^{-5}$. $\epsilon$ is designed by trial and error to set the boundaries of $\vec s$ inside this maximum acceptable error for the sliding mode variable. The figure \ref{fig:design_eps} shows $\vec s$ in function of time with $\epsilon = 2*10^{-3}$.  
 %
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/design_eps.eps}
-	\caption{Design of $\epsilon$}
+	\caption{$\vec s$ in function of time with $ \epsilon = 2*10^{-3}$}
 	\label{fig:design_eps}
 \end{figure} 
 \section{Simulation and results}
