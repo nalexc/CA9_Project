@@ -53,5 +53,5 @@
 \contentsline {subsection}{1. The formation shall be able to maintain a given angle within 45$^{\circ }$.}{40}{subsection*.74}
 \contentsline {subsection}{2. Each satellite shall be able to change its orientation.}{40}{subsection*.75}
 \contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}
-\contentsline {chapter}{\numberline {A}Derivation of relative dynamics equations}{43}{appendix.A}
-\contentsline {chapter}{\numberline {B}Angular velocity equations}{46}{appendix.B}
+\contentsline {chapter}{\numberline {A}Derivation of relative dynamics equations}{42}{appendix.A}
+\contentsline {chapter}{\numberline {B}Angular velocity equations}{45}{appendix.B}
