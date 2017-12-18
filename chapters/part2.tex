@@ -185,7 +185,7 @@ The kinematic and dynamic equations are linearized around the operating point fo
 
 \section{Disturbance Models}\label{sec:csf} 
 \subsection{Gravity-Gradient torque}
-An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$\vec dF_i$} acting on the mass element located at position $\vec R{i}$ from the earth's geometric centre that can be calculated as  \cite{SADC}:
+An unbalanced satellite in orbit is subjected to a torque due to Earth's non-uniform gravitational field. Assumed that the Earth is a point mass and the satellite is a rigid body, the gravitational torque can be estimated. Each infinitesimal element of the satellite of mass \textit{$dm_i$} is subjected to an infinitesimal force \textit{$\vec dF_i$} acting on the mass element located at position $\vec R{i}$ from the Earth's geometric centre that can be calculated as  \cite{SADC}:
 \begin{flalign}
 d\vec{F_i} = -G\frac{m_{earth}}{\vec R_i^3}dm_i \cdot \vec{R_i}
 	\label{eq:ref1}
@@ -214,7 +214,7 @@ The vector $\vec{R_i}$ can be written as $\vec{R_i} = \vec{R_{sc}} + \vec{r_i}$.
 \vec N_{gra} &= \dfrac{3\mu}{\vec R_{sc}^3}[\vec{\hat R_{sc}} \times(\vec{I} \ \vec{\hat R_{sc}}] 
 \label{eq:ref4}
 \end{flalign}
-where $\vec{\hat R_{sc}}$ is the unit vector from the earth's geometric center to the satellite's geometric center, and $\underline I$ is the diagonal inertia matrix of the satellite. 
+where $\vec{\hat R_{sc}}$ is the unit vector from the earth's geometric centre to the satellite's geometric centre, and $\underline I$ is the diagonal inertia matrix of the satellite. 
 \subsection{Solar radiation}
 The surface of the CubeSat will absorb or reflect the solar radiation, nevertheless, these two situations will alter the CubeSat, which will produce a torque about the satellite centre of mass (CoM). 
 The torque around CoM is given by \cite{SADC}:
@@ -234,7 +234,7 @@ where $\vec{ \hat{R}_{sun,sat}}$ is the unit vector with the direction from the 
 For objects in LEO, friction with molecules can have a significant impact on the satellite surface by creating a force which acts upon the satellite surface. [ref: sat orbits and missions]. 
 
 The equation of the atmospheric drag force is already computed as shown in \eqref{eq:ec1c}.
-Since the force has been computed also the torque can be computed by using the cross product between the drag force and the vector from the center of mass to the center of pressure of the satellite.
+Since the force has been computed also the torque can be computed by using the cross product between the drag force and the vector from the centre of mass to the centre of pressure of the satellite.
 
 The aerodynamic torque acting on the satellite can be written as \cite{SADC}:
 \begin{flalign}
@@ -242,11 +242,11 @@ The aerodynamic torque acting on the satellite can be written as \cite{SADC}:
 	\label{eq:drag}
 \end{flalign}
 where:\\
-$\vec r_{s}$ is the vector from the center of mass to the center of pressure, where the center of pressure is equal with the geometric center of the exposed area\\
+$\vec r_{s}$ is the vector from the centre of mass to the centre of pressure, where the centre of pressure is equal with the geometric centre of the exposed area\\
 $\vec F_D$  is the atmospheric drag force
 \section{Attitude control design}
 \subsection{Relationship between drag force and quaternion}
-In order to apply the desired drag force, a function have to be found to compute the asociated quaternion. A method to find a bijective function between drag force and quaternion is to find two quaternions that give the minimum and the maximum drag force and analyse the drag force in the path between them. 
+In order to apply the desired drag force, a function has to be found to compute the associated quaternion. A method to find a bijective function between drag force and quaternion is to find two quaternions that give the minimum and the maximum drag force and analyse the drag force in the path between them. 
 
 A quaternion can be defined as a sequence of three rotations around the three axis:
 \begin{flalign}
@@ -263,7 +263,7 @@ The drag force can be computed as the folowing:
 	&u = \frac{u_{min}}{A_{min}}A_{\perp}(\vec{ ^s_o q}) \\
 	&u = u_{min} \ f(\vec{ ^s_o q} )
 \end{flalign}
-where $A_{\perp}(\vec{ ^s_o q})$ is the perpendicular area of the satellite with a rotation $\vec{ ^s_o q}$ and $f(\vec{ ^s_o q})$ is defined by $f = \frac{A_{\perp}}{A_{min}}$. Due to the fact that the velocity of the satellite is along the $x$ axis in the orbit frame, a rotation around this axis doesn't change $A_{\perp}$. Therefore, $f$ can be analysed using only rotation around $y$ and $z$ axes. The graph of $f$ in function of $\theta_z$ and $\theta_y$ can be seen in the \figref{fig:perp_area}.
+where $A_{\perp}(\vec{ ^s_o q})$ is the perpendicular area of the satellite with a rotation $\vec{ ^s_o q}$ and $f(\vec{ ^s_o q})$ is defined by $f = \frac{A_{\perp}}{A_{min}}$. Due to the fact that the velocity of the satellite is along the $x$ axis in the orbit frame, a rotation around this axis doesn't change $A_{\perp}$. Therefore, $f$ can be analysed using only rotation around $y$ and $z$ axes. The graph of $f$ in function of $\theta_z$ and $\theta_y$ can be seen in \figref{fig:perp_area}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width= 0.8\linewidth]{figures/perp_area.eps}
@@ -272,7 +272,7 @@ where $A_{\perp}(\vec{ ^s_o q})$ is the perpendicular area of the satellite with
 \end{figure} 
 The quaternion for the minimum drag force is defined by the rotations $\theta_{y,min} = \theta_{z,min} = 0$ and the quaternion that give the maximum drag force is defined by the rotations $\theta_{y,max} = 0.61568$ rad and $\theta_{z,max} = \frac{\pi}{4}$. 
 
-Due to the fact that there are no singularities in the path betweem the minimum and maximum drag force, the function $f(\vec{ ^s_o q})$ can be computed and analyzed in this path:
+Due to the fact that there are no singularities in the path between the minimum and maximum drag force, the function $f(\vec{ ^s_o q})$ can be computed and analyzed in this path:
 \begin{flalign}
 	\vec{ ^s_o q} = \vec{ ^s_o q_y} \otimes \vec{ ^s_o q_z} \\
 \end{flalign}
@@ -290,7 +290,7 @@ The \figref{fig:path_alpha} shows $f(\vec{ ^s_o q(\alpha)})$:
 	\caption{Perpendicular area in function of rotations around $y$ and $z$ axes}
 	\label{fig:path_alpha}
 \end{figure} 
-This function can be approximated by a polynomial of degree two. The relative error of this approximation represented in the \figref{fig:rel_err} is small and thus, the approximation by a polynomial of degree two can be used. 
+This function can be approximated by a polynomial of degree two. The relative error of this approximation represented in \figref{fig:rel_err} is small and thus, the approximation by a polynomial of degree two can be used. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/rel_err.eps}
@@ -308,11 +308,11 @@ Therefore, the quaternion that give the desired drag force in the orbit frame ca
 	\Rightarrow \vec{ ^s_o q_{ref}} &= \vec{ ^s_o q_y} \otimes \vec{ ^s_o q_z}
 \end{flalign}
 \paragraph{N.B.:}
-This is one solution of the problem, but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that give the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implemented.
+This is one solution to the problem, but there is an infinity of quaternions for one drag force. A better solution would be to choose the reference quaternion that gives the desired drag force and that requires the smallest rotation relative to the current position of the satellite. However, this solution is very hard to implement.
 \subsection{Linear Control Design - State Feedback }
-The linearized \eqref{eq:lele} of the attitude system allows to design a state feedback control. However, the nominal values of the quaternion and the angular velocity depends of the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
+The linearized \eqref{eq:lele} of the attitude system allows designing a state feedback control. However, the nominal values of the quaternion and the angular velocity depends on the drag force desired and thus, they aren't constant all over the time. Therefore, the designed control have to stabilize the system for all the possibilities of $\bar{q}$ and $\bar{\omega}$. \\
 
-The norm of $\bar{\vec \omega}$ is known and is equal to the angular velocity of the satellite around the Earth ($||\vec{\bar{\omega}}|| \approx 0.0011$). Due to the fact that this value is small compare to $\frac{1}{2}$, the $A$ matrix can be approximated by:
+The norm of $\bar{\vec \omega}$ is known and is equal to the angular velocity of the satellite around the Earth ($||\vec{\bar{\omega}}|| \approx 0.0011$). Due to the fact that this value is small compared to $\frac{1}{2}$, the $A$ matrix can be approximated by:
 
 \begin{flalign}
 \underline{A}
@@ -378,7 +378,7 @@ k_2 &= -2 \ I_{i,s} \ \zeta \ \omega_n
 \end{flalign}
 The damping factor is chosen to be equal to 1 and the rise time is chosen to be equal to 60 and thus $\omega_n = \frac{2\pi}{T_n} = \frac{2\pi}{60/0.35}$. Therefore, all the eigenvalues are equal to -0.0367.
 \subsection{Stability}
-The stability of control designed in the previous section have to be verified for all $\vec{\bar{\omega}}$. 
+The stability of control designed in the previous section has to be verified for all $\vec{\bar{\omega}}$. 
 \begin{flalign}
 \underline A(\vec{\bar{\omega}})
 	= 
@@ -389,7 +389,7 @@ The stability of control designed in the previous section have to be verified fo
 \end{flalign}
 
 
-Due to the fact that the above A matrix is affine in $\vec{\bar{\omega}}$, the stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\vec{\bar{\omega}}$ as represented in the \figref{fig:sta_PID}. \cite{NLCS}
+Due to the fact that the above A matrix is affine in $\vec{\bar{\omega}}$, the stability can be only checked on the vertices of the convex polyhedron (cube) that contains all the possibilities of $\vec{\bar{\omega}}$ as represented in \figref{fig:sta_PID}. \cite{NLCS}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/cs}
