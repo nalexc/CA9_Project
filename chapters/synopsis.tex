@@ -1,7 +1,7 @@
-This report describes the design and implementation of a control system on an AAU-CubeSat, a pico- satellite used for Low Earth Orbit flight.
+This report describes the design and simulation of a control system on a AAU-CubeSat, which is a pico- satellite used for Low Earth Orbit flight.
 
-The objective is to use a flight formation for monitoring Greenland, by having six satellites equally distributed on orbit.
+The objective is to use a flight formation for monitoring Greenland, by having eight satellites equally distributed in orbit.
 
-Two controllers must be design, one for controlling the distance between the satellites using the drag force, and one for attitude control.
+Two controllers must be designed, one to control the angle between the satellites using the drag force, and one for attitude control.  The drag force applied on the satellite depends on the cross section area which can be controlled using the orientation of the satellite.
 
-Given the nonlinear nature of the system a SMC is implemented.
+A linear and a non-linear control method have been designed in order to compare the diferences between them.  
