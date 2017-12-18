@@ -262,6 +262,85 @@
       \field{title}{Spacecraft attitude determination and control}
       \field{year}{1984}
     \endentry
+    \entry{LQR}{online}{}
+      \name{author}{3}{}{%
+        {{hash=7fe0e2dc00e80a28f9c3f0995983c5e4}{%
+           family={U.},
+           family_i={U\bibinitperiod},
+           given={Eze\bibnamedelima Charles},
+           given_i={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3532824b17712dc06aa7b6582c8232bd}{%
+           family={C},
+           family_i={C\bibinitperiod},
+           given={Dr\bibnamedelima Mbaocha\bibnamedelima Christian},
+           given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0117d99b7f36a13d40f86e6b377561f1}{%
+           family={O.},
+           family_i={O\bibinitperiod},
+           given={Dr\bibnamedelima Onojo\bibnamedelima James},
+           given_i={D\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8415c852e4b1ef3196cee4e896af8990}
+      \strng{fullhash}{8415c852e4b1ef3196cee4e896af8990}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design of Linear Quadratic Regulator for the Three-Axis Attitude Control System Stabilization of Microsatellites.}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.ijser.org/researchpaper/Design-of-Linear-Quadratic-Regulator-for-the-Three-Axis-Attitude-Control-System-Stabilization-of-Microsatellites.pdf
+      \endverb
+    \endentry
+    \entry{TH}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cc51dc54768f80ad5a790542afd06216}{%
+           family={Jensen},
+           family_i={J\bibinitperiod},
+           given={Kasper\bibnamedelima Fuglsang},
+           given_i={K\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=6c9660eae40f055a7dca1f7b80bfa4dd}{%
+           family={Vinther},
+           family_i={V\bibinitperiod},
+           given={Kasper},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Aalborg University}%
+      }
+      \strng{namehash}{edb20271394d895746b5f56bf5bbcc62}
+      \strng{fullhash}{edb20271394d895746b5f56bf5bbcc62}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Attitude Determination and Control System for AAUSAT3}
+      \field{year}{2010}
+    \endentry
+    \entry{SOM}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a1d9ffb44b166b177ce09a1b20031da8}{%
+           family={Capderou},
+           family_i={C\bibinitperiod},
+           given={Michel},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a1d9ffb44b166b177ce09a1b20031da8}
+      \strng{fullhash}{a1d9ffb44b166b177ce09a1b20031da8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Satellites Orbits and Missions}
+      \field{year}{2005}
+    \endentry
     \entry{NLCS}{book}{}
       \name{author}{1}{}{%
         {{hash=51a5f7d6e2ec60d73e5605dcf6856f91}{%
@@ -292,7 +371,7 @@
            given_i={W\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {AAU}%
+        {Aalborg University}%
       }
       \strng{namehash}{1e5416bf5f80f7f96d3d33acb8f06b09}
       \strng{fullhash}{1e5416bf5f80f7f96d3d33acb8f06b09}
@@ -304,8 +383,40 @@
       \field{title}{Satellite Attitude Control Using Only Electromagnetic Actuation}
       \field{year}{1997}
     \endentry
+    \entry{err}{online}{}
+      \name{author}{3}{}{%
+        {{hash=cfe262c3f51898323bda1152bdb13bda}{%
+           family={Yu},
+           family_i={Y\bibinitperiod},
+           given={Peijun},
+           given_i={P\bibinitperiod}}}%
+        {{hash=eda66060efbed95c51ef51548b10c446}{%
+           family={Xia},
+           family_i={X\bibinitperiod},
+           given={Keqiang},
+           given_i={K\bibinitperiod}}}%
+        {{hash=e94569ed34617a5a05cd6029173bfd3d}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Jiancheng},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef52eb383fc9062213ba117f7b1d9551}
+      \strng{fullhash}{ef52eb383fc9062213ba117f7b1d9551}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Design of Reconfigurable Satellite Control System with Reaction Wheels Based on Error Quaternion Model}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \field{year}{2011}
+      \verb{url}
+      \verb https://www.ijser.org/researchpaper/Design-of-Linear-Quadratic-Regulator-for-the-Three-Axis-Attitude-Control-System-Stabilization-of-Microsatellites.pdf
+      \endverb
+    \endentry
   \endsortlist
-  \missing{TH}
 \endrefsection
 \endinput
 
