@@ -6,23 +6,23 @@ The vector position from the centre of the Earth to the satellite 1 and the sate
 \end{flalign}
 the first time derivative and second time relative of $\vec{p_1}$ and $\vec{p_2}$ is computed:
 \begin{flalign*}
-\dot{\vec{p_1}} &= \dot{R}  \vec{\hat{x}} + R(\vec{w} \times \vec{\hat{x}}) 
+\vec{\dot{p}_1} &= \dot{R}  \vec{\hat{x}} + R(\vec{w} \times \vec{\hat{x}}) 
 \end{flalign*}
 where $\vec{w}$ is the angular velocity vector and $\vec{w} = w  \vec{\hat{z}}$ due to the fact the position of the satellites stay all over the time in the plan $(\vec{\hat{x}},\vec{\hat{y}})$. Therefore, the first time derivative and the second time derivative are given by:
 \begin{flalign*}
-\dot{\vec{p_1}} &= \dot{R}  \vec{\hat{x}} + w R  \vec{\hat{y}} \\
-\ddot{\vec{p_1}} &= \ddot{R}  \vec{\hat{x}} + w\dot{R}  \vec{\hat{y}} + \dot{w} R  \vec{\hat{y}} + w \dot{R}  \vec{\hat{y}} + wR  (\vec{w} \times \vec{\hat{y}}) \\
+\\vec{\dot{p}_1} &= \dot{R}  \vec{\hat{x}} + w R  \vec{\hat{y}} \\
+\vec{\ddot{p}_1} &= \ddot{R}  \vec{\hat{x}} + w\dot{R}  \vec{\hat{y}} + \dot{w} R  \vec{\hat{y}} + w \dot{R}  \vec{\hat{y}} + wR  (\vec{w} \times \vec{\hat{y}}) \\
 &= \ddot{R}  \vec{\hat{x}} + 2w\dot{R}  \vec{\hat{y}} - w^2R  \vec{\hat{x}} \\
-\dot{\vec{p_2}} &= \dot{\vec{p_1}} +  \dot{x}  \vec{\hat{x}} + x w  \vec{\hat{y}} + \dot{y}  \vec{\hat{y}} - y w  \vec{\hat{x}} \\
-&= \dot{\vec{p_1}} + (\dot{x} - yw)  \vec{\hat{x}} + (xw + \dot{y})  \vec{\hat{y}} \\
-\ddot{\vec{p_2}} & = \ddot{\vec{p_1}} + (\ddot{x} - \dot{y}w - y\dot{w})  \vec{\hat{x}} + (\dot{x} - yw) w  \vec{\hat{y}} + (\dot{x}w + x\dot{w} + \ddot{y})  \vec{\hat{y}} - (xw + \dot{y}) w  \vec{\hat{x}} \\
-&= \ddot{\vec{p_1}} + (\ddot{x} - 2\dot{y}w - y\dot{w} - xw^2)  \vec{\hat{x}} + (\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2)  \vec{\hat{y}}
+\vec{\dot{p}_2} &= \vec{\dot{p}_1} +  \dot{x}  \vec{\hat{x}} + x w  \vec{\hat{y}} + \dot{y}  \vec{\hat{y}} - y w  \vec{\hat{x}} \\
+&= \vec{\dot{p}_1} + (\dot{x} - yw)  \vec{\hat{x}} + (xw + \dot{y})  \vec{\hat{y}} \\
+\vec{\ddot{p}_2} & = \vec{\ddot{p}_1} + (\ddot{x} - \dot{y}w - y\dot{w})  \vec{\hat{x}} + (\dot{x} - yw) w  \vec{\hat{y}} + (\dot{x}w + x\dot{w} + \ddot{y})  \vec{\hat{y}} - (xw + \dot{y}) w  \vec{\hat{x}} \\
+&= \vec{\ddot{p}_1} + (\ddot{x} - 2\dot{y}w - y\dot{w} - xw^2)  \vec{\hat{x}} + (\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2)  \vec{\hat{y}}
 \end{flalign*}
 Furthermore, The Newton law gives:
 \begin{flalign}
-	m\ddot{\vec{p_1}} &= \vec{F_{grav,1}} + \vec{F_{drag,1}} + \vec{F_{dist,1}}	\label{eq:l3} \\
-	m\ddot{\vec{p_2}} &= \vec{F_{grav,2}} + \vec{F_{drag,2}} + \vec{F_{dist,2}} 	\label{eq:l4} \\
-	\Rightarrow \ddot{\vec{p_2}} - \ddot{\vec{p_1}} &= \frac{1}{m}(\Delta \vec{F_{grav}} + \Delta \vec{F_{drag}} + \Delta \vec F_{dist}) 	\label{eq:l5}
+	m\vec{\ddot{p}_1} &= \vec{F_{grav,1}} + \vec{F_{drag,1}} + \vec{F_{dist,1}}	\label{eq:l3} \\
+	m\vec{\ddot{p}_2} &= \vec{F_{grav,2}} + \vec{F_{drag,2}} + \vec{F_{dist,2}} 	\label{eq:l4} \\
+	\Rightarrow \vec{\ddot{p}_2} - \vec{\ddot{p}_2} &= \frac{1}{m}(\Delta \vec{F_{grav}} + \Delta \vec{F_{drag}} + \Delta \vec F_{dist}) 	\label{eq:l5}
 \end{flalign}
 with m is the mass of both satellites. The gravity is given by the universal law of gravitation:
 \begin{flalign*}
@@ -50,17 +50,17 @@ and thus, the difference between the gravity force on satellite 2 and the the gr
 \end{flalign*} 
 with $\mu = G  m_{earth}$, The drag force can be modelling be using \eqref{eq:teor}:
 \begin{flalign*}
-	\vec{F_{drag,1}} &= -u_1 ||\dot{\vec{p_1}}|| \dot{\vec{p_1}}\\
-	& = -u_1 ||\dot{\vec{p_1}}|| (\dot{R}  \vec{\hat{x}} + wR  \vec{\hat{y}}) \\
-	\vec{F_{drag,2}} &= -u_2 ||\dot{\vec{p_2}}|| \dot{\vec{p_2}} \\
-	& = -u_2 ||\dot{\vec{p_2}}|| ((\dot{R} + \dot{x} - yw) \vec{\hat{x}} + (wR + xw + \dot{y})  \vec{\hat{y}})
+	\vec{F_{drag,1}} &= -u_1 ||\vec{\dot{p}_1}|| \vec{\dot{p}_1}\\
+	& = -u_1 ||\vec{\dot{p}_1}|| (\dot{R}  \vec{\hat{x}} + wR  \vec{\hat{y}}) \\
+	\vec{F_{drag,2}} &= -u_2 ||\vec{\dot{p}_2}|| \vec{\dot{p}_2} \\
+	& = -u_2 ||\vec{\dot{p}_2}|| ((\dot{R} + \dot{x} - yw) \vec{\hat{x}} + (wR + xw + \dot{y})  \vec{\hat{y}})
 \end{flalign*}
 Therefore, the \eqref{eq:l3} becomes:
 \begin{equation}
 \left\{
 	\begin{aligned}
-		&\ddot{R} - w^2R = -\frac{\mu}{R^2} -\frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} + \frac{F_{dist,1,x}}{m} \\
-		&2w\dot{R} + \dot{w}R = -\frac{u_1}{m} ||\dot{\vec{p_1}}|| wR + \frac{F_{dist,1,y}}{m}
+		&\ddot{R} - w^2R = -\frac{\mu}{R^2} -\frac{u_1}{m} ||\vec{\dot{p}_1}|| \dot{R} + \frac{F_{dist,1,x}}{m} \\
+		&2w\dot{R} + \dot{w}R = -\frac{u_1}{m} ||\vec{\dot{p}_1}|| wR + \frac{F_{dist,1,y}}{m}
 	\end{aligned}
 \right.
 \end{equation}
@@ -68,8 +68,8 @@ and the \eqref{eq:l5} gives:
 \begin{equation}
 \left\{
 	\begin{aligned}
-		& \ddot{x} - 2\dot{y}w - y\dot{w} - xw^2 = -x\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - yw) + \frac{\Delta F_{dist,x}}{m}\\
-		&\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2 = -y\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + xw + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+		& \ddot{x} - 2\dot{y}w - y\dot{w} - xw^2 = -x\frac{\mu}{R^3} + \frac{u_1}{m} ||\vec{\dot{p}_1}|| \dot{R} - \frac{u_2}{m} ||\vec{\dot{p}_2}||(\dot{R} + \dot{x} - yw) + \frac{\Delta F_{dist,x}}{m}\\
+		&\ddot{y} + 2\dot{x}w + x\dot{w} - yw^2 = -y\frac{\mu}{R^3} + \frac{u_1}{m}||\vec{\dot{p}_1}||wR - \frac{u_2}{m}||\vec{\dot{p}_2}||(wR + xw + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 	\end{aligned}
 \right.
 \label{eq:l7}
@@ -101,9 +101,9 @@ Thus, the equations \eqref{eq:l7} become:
 \left\{
 \begin{aligned}
 	& \ddot{x} - 2\dot{y}w - (y + y^{*})\dot{w} - (x + x^{*})w^2 = \\
-	&-(x + x^{*})\frac{\mu}{R^3} + \frac{u_1}{m} ||\dot{\vec{p_1}}|| \dot{R} - \frac{u_2}{m} ||\dot{\vec{p_2}}||(\dot{R} + \dot{x} - (y + y^{*})w) + \frac{\Delta F_{dist,x}}{m}\\
+	&-(x + x^{*})\frac{\mu}{R^3} + \frac{u_1}{m} ||\vec{\dot{p}_1}|| \dot{R} - \frac{u_2}{m} ||\vec{\dot{p}_2}||(\dot{R} + \dot{x} - (y + y^{*})w) + \frac{\Delta F_{dist,x}}{m}\\
 	&\ddot{y} + 2\dot{x}w + (x + x^{*})\dot{w} - (y + y^{*})w^2 =\\
-	& -(y + y^{*})\frac{\mu}{R^3} + \frac{u_1}{m}||\dot{\vec{p_1}}||wR - \frac{u_2}{m}||\dot{\vec{p_2}}||(wR + (x + x^{*})w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
+	& -(y + y^{*})\frac{\mu}{R^3} + \frac{u_1}{m}||\vec{\dot{p}_1}||wR - \frac{u_2}{m}||\vec{\dot{p}_2}||(wR + (x + x^{*})w + \dot{y}) + \frac{\Delta F_{dist,y}}{m}
 \end{aligned}
 \right.
 	\label{eq:la1}
