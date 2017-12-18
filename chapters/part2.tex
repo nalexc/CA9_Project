@@ -448,18 +448,18 @@ Considering the Lyapunov candidate function as:
 	V = \frac{1}{2}\vec{s^{T}}\vec{s}
 	\label{eq:lyap}
 \end{flalign}
-the time derivative of the lyapunov fuction can be written as
+The time derivative of the Lyapunov fuction can be written as:
 \begin{flalign}
 	\dot V = \frac{1}{2}\Big(\dot{\vec{s^{T}}}\vec{s}+\vec{s^{T}}\dot{\vec{s}}\Big)
 	\label{eq:lyap1}
 \end{flalign}
-In order to prove stability it has to be shown that $\dot {V} <0 $ $\forall s\neq0$ this is equal by showing 
+In order to prove stability it has to be shown that $\dot {V} <0 $ $\forall s\neq0$ this is equal by showing:
 \begin{flalign}
 	 \vec{s^{T}}\dot{\vec{s}} < 0 \ \forall \vec{s}\neq0 
 	\label{eq:lyap2}
 \end{flalign} 
 %
-the \eqref{eq:slidingvar} is substitute 
+The \eqref{eq:slidingvar} is substitute 
 %
 \begin{flalign}
 	\dot V = \vec{s^{T}}(F\vec{\dot{\tilde{q}}} +\vec{\dot{\tilde{\omega}}}) 
@@ -479,7 +479,7 @@ where $\bar{\vec \omega}$ is the desired angular velocity. Choosing a control la
 	\label{eq:controllaw}
 	\end{flalign}
 %
-the \eqref{eq:lyap4} is written as
+The \eqref{eq:lyap4} is written as:
 %
 \begin{flalign}
 	\dot V = -\vec{s^{T}}(-\vec{ \dot{\tilde{\omega}}} + \lambda sign(\vec s) - \vec{N}_{dis}) 
