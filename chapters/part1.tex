@@ -271,7 +271,7 @@ A controller is designed to control the angle between two satellites. Due to the
 \begin{flalign}
 \mathcal{I} =  \int (\vec{x}^\mathsf{T} \ \underline{Q} \ \vec{x} + \vec{u}^\mathsf{T} \ \underline{R}  \ \vec{u}) dt
 \end{flalign}
-Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $\underline R$ matrix is defined as $\underline R = [u_{delta}^{-2}]$ ($u_{delta} = u_{max} - u_{min}$). For the states weighting matrices no maximum value is defined. The weight for the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converge, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller, since for big values of weights the controller will be in saturation mode faster and with low values the convergence will be slower. Therefore, the weighting matrices are given by \label{ref}:
+Due to the fact that no predefined cost is specified, the weighting matrices can be chosen as maximum acceptable values [optimality notes], thus, the $\underline R$ matrix is defined as $\underline R = [u_{delta}^{-2}]$ ($u_{delta} = u_{max} - u_{min}$). For the states weighting matrices, no maximum value is defined. The weight of the second state is chosen to be equal to zero because the desired state to converge is $\theta$ and if the first state converges, the second state will also converge to zero. The weight for the first state ($\theta$), is chosen by trial and error leading to the trade off between fast saturation and slow controller since for big values of weights the controller will be in saturation mode faster and with low values, the convergence will be slower. Therefore, the weighting matrices are given by \label{ref}:
 \begin{flalign}
 	{\underline{Q}}
 	= 
@@ -287,10 +287,10 @@ Due to the fact that no predefined cost is specified, the weighting matrices can
 		u_{delta}^{-2}
 	\end{bmatrix} 
 \end{flalign}
- The vector of gains K is obtained by solving the Algebraic Riccati equation. The control input signal can be computed ($u = u_2 - u_1$) and therefore if $u$ is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If $u$ is smaller than zero, it will be the opposite. The control law used for designing the controller is: $u = -K(1) \ \theta \ -K(2) \ \dot \theta $. \label{eq:ctr}
+ The vector of gains K is obtained by solving the Algebraic Riccati equation. The control input signal can be computed ($u = u_2 - u_1$) and therefore if $u$ is bigger than zero, $u_1$ will be equal to $u_{min}$ and $u_2$ will be equal to $u + u_{min}$. If $u$ is smaller than zero, it will be the opposite. The control law used for designing the controller is $u = -K(1) \ \theta \ -K(2) \ \dot \theta $. \label{eq:ctr}
  
  \subsection{Frequency Analysis}
-The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s) \ H_{attittude}(s)$ where $P(s)$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller, $LPF(s)$ is the transfer function of the second order low pass filter and $H_{attitude}$ is a first order transfer function where the rise time is chosen to be equal to 10 minutes which is a estimation of time that the satellite take to converge into the good orientation.
+The loop transfer function can be computed $L(s) = P(s) \ C(s) \ LPF(s) \ H_{attittude}(s)$ where $P(s)$ is the transfer function of the state representation system, $C(s) = K_1 + K_2 s$ is the transfer function of the controller, $LPF(s)$ is the transfer function of the second order low pass filter and $H_{attitude}$ is a first order transfer function where the rise time is chosen to be equal to 10 minutes which is an estimation of time that the satellite takes to converge into the good orientation.
 The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 \begin{figure}[H]
 	\centering
@@ -299,11 +299,11 @@ The bode diagram of L(s) is represented in the \figref{fig:Bode_L}. \\
 	\caption{Bode diagram of the loop transfer function}
 	\label{fig:Bode_L}
 \end{figure}
-The crossover frequency and the phase margin can be extracted from the bode diagram. The crossover frequency is equal to $2.6418*10^{-7}\frac{rad}{s}$ and the phase margin is equal to $62.7074^{\circ}$ which is enough to accept a large delay due to the small crossover frequency. \\.
+The crossover frequency and the phase margin can be extracted from the bode diagram. The crossover frequency is equal to $2.6418*10^{-7}\frac{rad}{s}$ and the phase margin is equal to $62.7074^{\circ}$ which is enough to accept a large delay due to the small crossover frequency. 
  
 \subsection{Satellite Formation Control} 
 \subsubsection{Global algorithm}
-Since the formation consists of more than two satellites, a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbors satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of $n-1$ equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of $n$ equations with $n$ unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite. Therefore, to compute the drag force applied on one satellite, the controller needs to know the states of all the other satellites.
+Since the formation consists of more than two satellites, a second controller is designed to control n satellites around the Earth. The gain vector K computed above can be used to calculate the difference drag force between two neighbours satellites (called $u_a = u_2 - u_1$, $u_b = u_3 - u_2$, ...). Thus, a system of $n-1$ equations with n unknown variables is obtained. the last equation is chosen to set the minimum value of $u_1$, $u_2$,... equals to $u_{min}$. We have now a system of $n$ equations with $n$ unknown variables that can be solved to determine the drag force coefficient $u_i$ for each satellite. Therefore, to compute the drag force applied on one satellite, the controller needs to know the states of all the other satellites.
 \subsubsection{Distributed algorithm}
 In this case, $u_1$ is chosen to be equal with $u_{medium}$, therefore $u_2$ is computed using the control law found in \eqref{eq:ctr}, which is a function of the angle between the first satellite and the second one. The drag force of satellite $i$ can be determined by knowing the angle between the satellite $i$ and $i-1$, the time derivative of this angle and the drag force of the satellite $i-1$.
 \subsection{Stability Analysis}
